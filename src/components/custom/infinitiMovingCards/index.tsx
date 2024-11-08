@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-import TestimonialCard from "@/components/common/CallToAction/TestimonialCard";
+import TestimonialCard from "@/components/common/archive/CallToAction/TestimonialCard";
 
 export const InfiniteMovingCards = ({
   testimonials,

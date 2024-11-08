@@ -1,10 +1,10 @@
 import React from "react";
-import MarieforleoTemplate from "@/components/MarieforleoTemplate/MarieforleoTemplate";
+import Main from "@/components/pages/Main";
 
 export default function Home() {
   return (
     <>
-      <MarieforleoTemplate />
+      <Main />
     </>
   );
 }

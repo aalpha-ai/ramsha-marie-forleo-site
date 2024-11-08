@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import TestimonialCard from "@/components/common/CallToAction/TestimonialCard";
+import TestimonialCard from "@/components/common/archive/CallToAction/TestimonialCard";
 
 export const TestimonialParallax = ({
   testimonials,
