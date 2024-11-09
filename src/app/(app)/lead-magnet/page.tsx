@@ -1,10 +1,10 @@
 import React from "react";
-import FreeTools from "@/components/pages/FreeTools";
+import LeadMagnet from "@/components/pages/LeadMagnet";
 
 export default function Page() {
   return (
     <>
-      <FreeTools />
+      <LeadMagnet />
     </>
   );
 }
