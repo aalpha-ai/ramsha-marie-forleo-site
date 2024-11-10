@@ -27,7 +27,7 @@ const EntrepreneurQuiz: React.FC = () => {
   ];
 
   return (
-    <main className="flex flex-col text-base max-w-[916px] text-neutral-800">
+    <div className="xl:mb-[110px] lg:mb-[90px] md:mb-[70px] mb-[50px] xl:mt-[134px] xl:pt-[56px] lg:mt-[110px] lg:pt-[45px] md:mt-[80px] md:pt-[35px] mt-[45px] pt-[20px] flex flex-col text-base text-neutral-800 xl:px-[40px] xl:mx-[120px] lg:px-[54px] md:px-[54px] px-[20px]">
       {quizData.map((quiz, index) => (
         <QuizCard
           key={index}
@@ -38,7 +38,7 @@ const EntrepreneurQuiz: React.FC = () => {
           buttonText={quiz.buttonText}
         />
       ))}
-    </main>
+    </div>
   );
 };
 

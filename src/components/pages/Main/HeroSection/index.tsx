@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
         />
       </div>
 
-      <div className="absolute basis-full  inset-0 z-0 flex flex-col justify-center h-full items-center w-full      max-md:max-w-full">
+      <div className="absolute basis-full inset-0 z-0 flex flex-col justify-center h-full items-center w-full max-md:max-w-full">
         <BlurFade className="h-full">
           <div className="h-full flex items-center justify-center max-lg:max-w-lg.5 max-w-5xl max-md:px-5">
             <h1 className="text-6xl text-white text-center tracking-normal w-full max-md:px-0 max-md:max-w-full lg:text-9xl md:text-[88px] max-md:leading-[59px] font-ivy-presto">

@@ -9,7 +9,7 @@ interface HeadingProps {
 
 export const Heading: React.FC<HeadingProps> = ({ children }) => {
   return (
-    <h1 className="self-end pr-48 pl-48 max-w-full text-5xl tracking-wide leading-[70px] text-neutral-800 w-[919px] max-md:px-5 max-md:max-w-full max-md:text-4xl">
+    <h1 className="w-full whitespace-nowrap text-[32px] md:text-[40px] lg:text-[56px] font-[600] tracking-wide leading-[70px] text-neutral-800 font-ivy-presto">
       {children}
     </h1>
   );

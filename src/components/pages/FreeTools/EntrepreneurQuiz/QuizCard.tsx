@@ -19,28 +19,36 @@ const QuizCard: React.FC<QuizCardProps> = ({
   buttonText,
 }) => {
   return (
-    <section className="flex overflow-hidden flex-wrap gap-8 py-12 pr-5 pl-12 w-full bg-rose-50 shadow-sm max-md:pl-5 max-md:max-w-full">
-      <img
-        loading="lazy"
-        src={imageSrc}
-        alt=""
-        className="object-contain grow shrink aspect-[0.7] max-w-[915px] w-[182px]"
-      />
-      <div className="flex flex-col grow shrink px-10 pb-4 min-w-[240px] w-[540px] max-md:px-5 max-md:max-w-full">
-        <h2 className="z-10 pb-px text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:max-w-full">
-          Free Quiz
-        </h2>
-        <h3 className="mt-3 text-3xl tracking-wider leading-[48.6px] max-md:max-w-full">
-          {title}
-        </h3>
-        <p className="mt-2.5 tracking-normal leading-8 text-black max-md:max-w-full">
-          {description}
-        </p>
-        <button className="px-24 pt-2.5 pb-3 mt-6 max-w-full font-bold tracking-wide leading-6 text-center text-white capitalize rounded-3xl bg-neutral-800 w-[300px] max-md:px-5">
-          {buttonText}
-        </button>
-      </div>
-    </section>
+    <div className="relative mb-[50px]">
+      {/* Shadow Layer */}
+      <div className="absolute inset-0 bg-rose-200 translate-x-2 translate-y-2"></div>
+      
+      <section className="relative flex items-center gap-16 py-16 px-[14px] lg:px-16 w-full bg-rose-50 max-md:flex-col max-md:px-6">
+        <div className="w-[220px] lg:w-1/3">
+          <img
+            loading="lazy"
+            src={imageSrc}
+            alt=""
+            className="w-full object-cover"
+          />
+        </div>
+        
+        <div className="flex flex-col flex-1 w-full md:max-w-[600px] max-md:max-w-full md:w-2/3">
+          <h2 className="text-sm font-extrabold uppercase tracking-[2.16px] text-neutral-800 text-center md:text-left">
+            Free Quiz
+          </h2>
+          <h3 className="mt-4 text-[27px] md:text-[21px] lg:text-[36px] xl:text-[40px] leading-[1.2] tracking-wide font-[600] font-ivy-presto text-center md:text-left">
+            {title}
+          </h3>
+          <p className="mt-6 md:text-[16px] text-lg leading-relaxed text-neutral-800 text-center md:text-left">
+            {description}
+          </p>
+          <button className="md:text-[16px] py-[12px] px-[25px] md:w-[300px] text-[16px] w-[315px] mt-8 font-bold text-white bg-neutral-800 rounded-full w-fit max-md:w-full">
+            {buttonText}
+          </button>
+        </div>
+      </section>
+    </div>
   );
 };
 
