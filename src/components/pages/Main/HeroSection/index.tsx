@@ -11,22 +11,22 @@ const HeroSection: React.FC = () => {
       <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full">
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5f875cd64cb9bdc3802fdbbeb125844db1c975b1965dbb7f2c17a476e93ec28?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
+          src="/hero.svg"
           alt="Background image"
           className="object-contain w-full aspect-[1.78] max-md:max-w-full"
         />
       </div>
 
       <div className="absolute basis-full inset-0 z-0 flex flex-col justify-center h-full items-center w-full max-md:max-w-full">
-        <BlurFade className="h-full">
+        {/* <BlurFade className="h-full">
           <div className="h-full flex items-center justify-center max-lg:max-w-lg.5 max-w-5xl max-md:px-5">
             <h1 className="text-6xl text-white text-center tracking-normal w-full max-md:px-0 max-md:max-w-full lg:text-9xl md:text-[88px] max-md:leading-[59px] font-ivy-presto">
               Create a Business and Life You{" "}
               <span className="italic text-red-200 underline">Love</span>
             </h1>
           </div>
-        </BlurFade>
-        <div className="flex basis-[5%] px-1 md:px-5 lg:px-16  py-5 h-full items-center justify-between w-full self-baseline">
+        </BlurFade> */}
+        {/* <div className="flex basis-[5%] px-1 md:px-5 lg:px-16  py-5 h-full items-center justify-between w-full self-baseline">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd653a3ff2efef6fb1a9b7c023274555fd29122b07edf8c69748cc5fefbfa517?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
             className="object-contain w-6 h-4 relative left-1/2 "
           />
           <VideoButton />
-        </div>
+        </div> */}
       </div>
     </section>
   );

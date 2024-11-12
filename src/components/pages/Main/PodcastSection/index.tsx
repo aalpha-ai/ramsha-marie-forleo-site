@@ -7,8 +7,20 @@ import PodcastSectionItem from "./PodcastSectionItem";
 const PodcastSection: React.FC = () => {
   return (
     <PodcastSectionItem
-      title="The Marie Forleo Podcast"
-      description="Named by Oprah as a thought leader for the next generation and owner of one of Inc.'s 500 fastest growing companies, Marie Forleo's goal is to help you become the person you most want to be. Marie and her guests share actionable strategies for greater happiness, success, motivation, creativity, productivity, love, health, contribution, and fulfillment — often with a lot of laughs."
+      title="RICH RECEIVER"
+      description={
+        <span className="text-center text-xl leading-relaxed">
+          <span className="mb-8">
+            When you embody your feminine energy,<br/>
+            you will receive gifts from Allah like a Queen of Paradise.
+          </span>
+          <span>
+            Get instant access to my best-selling meditation that will relax<br/>
+            your body into a deep, loving state of surrender - so you can<br/>
+            relax & let God Give you His Gifts ↓
+          </span>
+        </span>
+      }
     />
   );
 };

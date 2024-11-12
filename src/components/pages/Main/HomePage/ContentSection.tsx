@@ -5,7 +5,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import React from "react";
 
 type ContentSectionProps = {
-  title: string;
+  title: any;
   subtitle: string;
   description: string;
   buttonText: string;
@@ -15,6 +15,7 @@ type ContentSectionProps = {
   reverse?: boolean;
   textContainerClassName?: string;
   imageContainerClassName?: string;
+  backgroundColor?: string;
 };
 
 const ContentSection: React.FC<ContentSectionProps> = ({
@@ -27,37 +28,41 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   imageAlt,
   textContainerClassName = "col-span-6",
   imageContainerClassName = "col-span-6",
+  backgroundColor,
 }) => {
   return (
-    <section className="flex flex-col items-center w-full  bg-stone-100 py-11 px-10 lg:py-24 lg:px-7 ">
+    <section 
+      className="flex flex-col items-center w-full py-11 px-10 lg:py-24 lg:px-7"
+      style={{ backgroundColor: backgroundColor }}
+    >
       <div className="flex flex-col w-full max-w-5xl.5">
         <BlurFade>
-          <div className="flex flex-col-reverse md:grid gap-5 grid-cols-12 w-full">
+          <div className="flex flex-row w-full">
             <div
-              className={`flex flex-col ${textContainerClassName} shrink text-neutral-800 `}
+              className={`flex flex-col ${textContainerClassName} shrink text-neutral-800 w-1/2`}
             >
-              <div className="z-10 pb-px text-xs font-extrabold leading-5 uppercase tracking-[2.16px] font-area-extended">
+              <div className="z-10 pb-px text-xs font-[700] leading-5 uppercase tracking-[2.16px]">
                 {subtitle}
               </div>
-              <h2 className="mt-6 text-4xl lg:text-5xl leading-[62.4px] font-ivy-presto">
+              <h2 className="mt-6 text-4xl lg:text-[40px] leading-[62.4px] font-ivy-presto font-[700] w-[412px]">
                 {title}
               </h2>
-              <p className="pb-px mt-5 text-lg tracking-normal leading-9 text-black ">
+              <p className="pb-px mt-5 text-lg tracking-normal leading-9 text-black font-[600] w-[412px]">
                 {description}
               </p>
               <a
                 href={buttonLink}
-                className="overflow-hidden z-10 px-24 pt-2.5 pb-3 mt-6 max-w-full text-base font-bold tracking-wide leading-6 text-center text-black capitalize rounded-3xl bg-red-50 w-full md:w-fit max-md:px-5 shadow-button hover:shadow-button-hover font-area-normal"
+                className="overflow-hidden z-10 px-24 pt-2.5 pb-3 mt-6 max-w-full text-base font-bold tracking-wide leading-6 text-center text-white capitalize rounded-3xl bg-[#994A25] w-full md:w-fit max-md:px-5 shadow-button hover:shadow-button-hover font-[700]"
               >
                 {buttonText}
               </a>
             </div>
-            <div className={`${imageContainerClassName}`}>
+            <div className={`${imageContainerClassName} pt-[45px] w-1/2 flex justify-end items-start`}>
               <img
                 loading="lazy"
                 src={imageSrc}
                 alt={imageAlt}
-                className="object-contain w-full"
+                className="object-contain w-full max-w-[395px]"
               />
             </div>
           </div>

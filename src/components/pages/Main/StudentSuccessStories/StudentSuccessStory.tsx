@@ -38,7 +38,7 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
     <section className="flex overflow-hidden flex-col items-center  py-20 bg-white max-md:px-5 max-sm:px-0">
       <header className="flex flex-col pt-6 pb-5 md:pb-10 max-w-full text-center text-neutral-800 ">
         <h2 className="pb-px w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full">
-          Our students get results
+          Our clients win
         </h2>
         <h3 className="px-28 mt-3 w-full text-4xl lg:text-5xl md:tracking-wider md:leading-[62.4px] max-md:px-5 max-md:max-w-full font-ivy-presto">
           Will You Be The Next Success Story?

@@ -5,19 +5,19 @@ import React from "react";
 
 interface PodcastInfoProps {
   title: string;
-  description: string;
+  description: any;
 }
 
 const PodcastInfo: React.FC<PodcastInfoProps> = ({ title, description }) => {
   return (
     <>
-      <h2 className="text-4xl tracking-wider leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full font-ivy-presto">
+      <h2 className="text-4xl tracking-wider leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full font-ivy-presto font-[700]">
         {title}
       </h2>
       <p className="mt-7 text-base tracking-normal leading-8 text-black max-md:max-w-full">
         {description}
       </p>
-      <p className="mt-8 italic font-bold">Listen on:</p>
+      {/* <p className="mt-8 italic font-bold">Listen on:</p> */}
     </>
   );
 };

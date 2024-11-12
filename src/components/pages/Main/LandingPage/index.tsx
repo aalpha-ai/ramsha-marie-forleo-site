@@ -6,8 +6,8 @@ import HeroSection from "./HeroSection";
 
 const LandingPage: React.FC = () => {
   return (
-    <main className="flex  justify-center relative bg-stone-200">
-      <div className="  w-full max-w-[940px] min-[1920px]:max-w-7xl ">
+    <main className="flex justify-center relative bg-stone-200">
+      <div className="w-full pl-[60px]">
         <HeroSection />
       </div>
     </main>

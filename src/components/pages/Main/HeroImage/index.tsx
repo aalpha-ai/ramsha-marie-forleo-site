@@ -9,7 +9,7 @@ const MainComponent: React.FC = () => {
     <main>
       <section>
         <ImageComponent
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/83004fd615d6828f26c40bf9237ff391c55e72ef2e3fba9a50a9cd314ad40b3b?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
+          src="/hero-background.svg"
           alt="Main content image"
         />
       </section>

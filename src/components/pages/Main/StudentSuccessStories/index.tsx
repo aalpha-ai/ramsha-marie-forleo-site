@@ -12,10 +12,10 @@ interface Story {
 
 const stories: Story[] = [
   {
-    category: "B-School",
+    category: "Private Client",
     testimonial:
-      "The EXACT messages I needed to hear to kick me in the bum, get me started and, most importantly, to BELIEVE in myself.",
-    author: "Bonnie U.",
+      "She is a mentor you want to keep by your side for the rest of your life because she will NOT keep you stuck.",
+    author: "HAANI K.",
   },
 ];
 

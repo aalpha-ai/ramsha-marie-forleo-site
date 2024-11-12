@@ -12,17 +12,21 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Blog" },
-  { label: "Courses", hasDropdown: true },
-  { label: "MarieTV", href: "https://www.marieforleo.com/marietv" },
-  { label: "Podcast", href: "https://www.marieforleo.com/podcast" },
-  { label: "About", href: "https://www.marieforleo.com/about" },
-  { label: "More", hasDropdown: true },
+  { label: "Work With Me" },
+  { label: "In The Press" },
+  { label: "About" },
+  // { label: "Courses", hasDropdown: true },
+  // { label: "MarieTV", href: "https://www.marieforleo.com/marietv" },
+  // { label: "Podcast", href: "https://www.marieforleo.com/podcast" },
+  // { label: "About", href: "https://www.marieforleo.com/about" },
+  // { label: "More", hasDropdown: true },
 ];
 
 const Navigation: React.FC = () => {
   return (
     <nav className="flex flex-wrap items-center self-stretch my-auto min-w-[320px] max-md:max-w-full">
-      <div className="flex text-base font-semibold leading-5  text-neutral-800 w-[564px] max-md:max-w-full">
+      {/* <div className="flex text-base font-semibold leading-5  text-neutral-800 w-full"> */}
+      <div className="flex text-base font-semibold leading-5  text-neutral-800 w-full">
         {navItems.map((item, index) => (
           <NavigationItem key={index} {...item} />
         ))}

@@ -10,13 +10,17 @@ import { AlignJustify } from "lucide-react";
 const Header: React.FC = () => {
   return (
     <header className="flex flex-col pb-px bg-white border-b border-solid border-b-zinc-400 w-full max-lg:py-5">
-      <div className="flex gap-10 justify-between items-center px-7 w-full max-md:px-5 max-md:max-w-full">
-        <Logo />
-        <div className="flex items-center max-lg:hidden">
+      <div className="grid grid-cols-8 items-center px-7 w-full max-md:px-5 max-md:max-w-full">
+        {/* <Logo /> */}
+        {/* <div className="col-span-2">
+        </div> */}
+        <div className="col-start-3 col-span-4 flex justify-center items-center max-lg:hidden">
           <Navigation />
+        </div>
+        <div className="col-start-8 flex justify-end items-center max-lg:hidden">
           <FreeTrainingButton />
         </div>
-        <div className="lg:hidden ">
+        <div className="lg:hidden col-start-8">
           <AlignJustify />
         </div>
       </div>

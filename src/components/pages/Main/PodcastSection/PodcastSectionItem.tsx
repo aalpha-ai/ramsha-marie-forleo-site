@@ -9,7 +9,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 interface PodcastSectionProps {
   title: string;
-  description: string;
+  description: any;
 }
 
 const PodcastSection: React.FC<PodcastSectionProps> = ({
@@ -17,28 +17,28 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({
   description,
 }) => {
   return (
-    <section className="flex flex-col items-center  bg-red-100 ">
-      <div className="flex flex-col bg-red-100  ">
+    <section className="flex flex-col items-center bg-[#ECE2D7]">
+      <div className="flex flex-col bg-[#ECE2D7]">
         <BlurFade>
           <div className="flex flex-wrap gap-5 justify-center w-full ">
             <div className="relative -top-32 ">
               <div className="grid grid-col md:grid-cols-3 items-start px-5">
                 <div className="col-span-1">
                   <ImageComponent
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/08ab79017ba7cd5eb455e71c3ae36b7f8d5bc830a99b3eddab897d3e66560886?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
+                    src="/hero-device.svg"
                     alt="Podcast cover image"
-                    className="relative max-md:hidden left-8 object-contain w-full  max-w-96"
+                    className="relative max-md:hidden left-8 object-contain w-full max-w-96"
                   />
                 </div>
-                <div className="flex flex-col col-span-2 mt-8 px-9 pt-16 pb-9 w-full text-center bg-white rounded-3xl border border-black border-solid max-w-[760px] max-md:px-5">
+                <div className="h-2/3 flex flex-col col-span-2 mt-8 px-9 pt-16 pb-9 w-full text-center bg-white rounded-3xl border border-black border-solid max-w-[760px] max-md:px-5">
                   <PodcastInfo title={title} description={description} />
-                  <PodcastListenOn />
+                  {/* <PodcastListenOn /> */}
                 </div>
               </div>
               <ImageComponent
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/fd81bb596394a17a0566bd8514d403f35b741d16f1d850de00dd82f97f4ec058?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
                 alt="Decorative element"
-                className="absolute -bottom-10 md:-bottom-10 lg:bottom-20 right-0 object-contain z-10 mt-0 mr-0  w-40 h-36 aspect-[1.12]"
+                className="absolute -bottom-1/3 md:bottom-1/4 lg:bottom-1/4 right-0 object-contain z-10 mt-0 mr-0 w-40 h-36 aspect-[1.12]"
               />
             </div>
           </div>

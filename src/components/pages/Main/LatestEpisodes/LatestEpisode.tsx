@@ -13,32 +13,32 @@ interface Episode {
 
 const episodes: Episode[] = [
   {
-    number: "410",
+    number: "",
     title:
-      "Overstimulation Is Ruining Your Life! 8 Habits To Calm Down & Take Back Control",
+      "Generational Healing of Trauma Can Only Happen With God",
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/94ee757f1db37c983507b059bd07c87a767cef8c19ffbf9eec5262fbee82895c?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a",
   },
   {
-    number: "409",
+    number: "",
     title: "Do This Every Morning To Stop Procrastination & Never Be Lazy",
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/94ee757f1db37c983507b059bd07c87a767cef8c19ffbf9eec5262fbee82895c?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a",
   },
   {
-    number: "408",
+    number: "",
     title: "How I Manage My Time — 5 Tips To Win At Anything In Life",
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/94ee757f1db37c983507b059bd07c87a767cef8c19ffbf9eec5262fbee82895c?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a",
   },
   {
-    number: "407",
+    number: "",
     title: "This Conversation Could Save Your Relationship | Harville & Helen",
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/94ee757f1db37c983507b059bd07c87a767cef8c19ffbf9eec5262fbee82895c?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a",
   },
   {
-    number: "406",
+    number: "",
     title: "The Best Anti-Aging Advice for Women Over 40 (Wish I Knew Sooner)",
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/94ee757f1db37c983507b059bd07c87a767cef8c19ffbf9eec5262fbee82895c?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a",
@@ -47,29 +47,28 @@ const episodes: Episode[] = [
 
 const LatestEpisodes: React.FC = () => {
   return (
-    <section className="flex flex-col grow shrink items-center pb-12 w-full max-md:max-w-full">
-      <h2 className="pt-6 pb-3 text-xs font-extrabold leading-5 uppercase text-neutral-800 tracking-[2.16px]">
-        The latest
-      </h2>
-      <div className="flex flex-col items-end pb-10">
-        {episodes.map((episode, index) => (
-          <EpisodeItem key={index} {...episode} />
-        ))}
-      </div>
-      <Button
-        className="shadow-none hover:shadow-none bg-black rounded-full px-6 pt-2.5 pb-3 text-base font-bold  text-center hover:bg-black/85 "
-        variant="default"
-        size="lg"
-        asChild
-      >
-        <a
-          href="https://www.marieforleo.com/podcast"
-          target="_blank"
-          rel="noopener noreferrer"
+    <section className="bg-[#ECE2D7] ">
+      <section className="flex flex-col grow shrink items-center pb-12 w-3/5 ml-auto mr-[80px]">
+        <h2 className="pt-6 pb-3 text-xs font-extrabold leading-5 uppercase text-neutral-800 tracking-[2.16px]">
+          KEYNOTE SPEAKER TOPICS
+        </h2>
+        <div className="flex flex-col items-end pb-10">
+          {episodes.map((episode, index) => (
+            <EpisodeItem key={index} {...episode} />
+          ))}
+        </div>
+        <button
+          className="text-white shadow-none hover:shadow-none bg-black rounded-full px-6 pt-2.5 pb-3 text-base font-bold text-center hover:bg-black/85 "
         >
-          View All episodes
-        </a>
-      </Button>
+          <a
+            href="https://www.marieforleo.com/podcast"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View All Episodes
+          </a>
+        </button>
+      </section>
     </section>
   );
 };

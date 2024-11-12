@@ -8,24 +8,34 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-white p-2 md:p-7 grid gap-2 md:gap-7">
       <ContentSection
-        title="Get inspired with our award-winning show, MarieTV."
-        subtitle="watch and learn"
-        description="With hundreds of episodes, MarieTV will motivate you with wit and wisdom to build your dreams. Search our library to find the perfect one for you."
-        buttonText="watch now"
+        title={
+          <div className="font-serif">
+            Attract Your Soulmate Husband the <span className="italic font-[300]">Halal</span>{' '}Way.
+          </div>
+        }
+        subtitle="Featured On International TV"
+        description="Inspired by clients & my own story, this episode will reveal how you can meet the right guy without compromising your values. It’s liquid gold."
+        buttonText="Listen To The Episode"
         buttonLink="#"
-        imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/72d12a5dd3ce684b397024922d0ac6f34e46ebabca5cd071f88410ce1839f545?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
+        imageSrc="/british-muslim.svg"
         imageAlt="MarieTV show preview"
+        backgroundColor="#FFFFFF"
       />
       <ContentSection
-        title="Everything Is Figureoutable"
-        subtitle="INSTANT #1 New york times best seller"
-        description="It's more than just a fun phrase to say. It's a philosophy of relentless optimism. A mindset. A mantra. A conviction. Most important, it's about to make you unstoppable. Everything is Figureoutable is NOW AVAILABLE in 32 languages."
-        buttonText="tell me everything"
+        title={
+          <div className="font-serif">
+            SUBMISSION, THE THEORY OF EVERYTHING
+          </div>
+        }
+        subtitle="THE BOOK THAT LED TO A GLOBAL MOVEMENT"
+        description="This book is made to open your heart to the most surrendered version of you so you can receive more success, doing less."
+        buttonText="order the book"
         buttonLink="https://everythingisfigureoutable.com/"
-        imageSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/0d263579a8703ea80a2bebf6ec0df0c7aa8fe4d6c622f47fc4c425fdeffe50fe?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
+        imageSrc="/theory-of-everything.svg"
         imageAlt="Everything Is Figureoutable book cover"
         textContainerClassName="col-span-7"
         imageContainerClassName="col-span-5"
+        backgroundColor="#F6F1EB"
       />
     </div>
   );

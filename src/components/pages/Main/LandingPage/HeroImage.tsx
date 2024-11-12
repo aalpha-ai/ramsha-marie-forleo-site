@@ -5,16 +5,22 @@ import React from "react";
 
 const HeroImage: React.FC = () => {
   return (
-    <div className="lg:-mt-28 relative z-10">
-      <div className="flex flex-col grow justify-center items-start ">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb857db79f0f0e929ca82d1fa491831be059b1da239a8297ddce9430e9207ebb?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
-          alt="Marie's portrait"
-          className="relative z-10 max-lg:w-full h-full max-w-xl bottom-0"
-        />
-      </div>
-    </div>
+    // <div className="lg:-mt-28 relative z-10">
+    //   <div className="flex flex-col grow justify-center items-start ">
+    //     <img
+    //       loading="lazy"
+    //       src="/hero-2.svg"
+    //       alt="Marie's portrait"
+    //       className="relative z-10 max-lg:w-full h-full max-w-xl bottom-0"
+    //     />
+    //   </div>
+    // </div>
+    <img
+      loading="lazy"
+      src="/hero-2.svg"
+      alt="Ramsha's portrait"
+      className="w-full h-full"
+    />
   );
 };
 

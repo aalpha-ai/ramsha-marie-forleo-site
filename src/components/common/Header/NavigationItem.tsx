@@ -16,7 +16,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
 }) => {
   const content = (
     <>
-      <div className="self-stretch my-auto">{label}</div>
+      <div className="self-stretch my-auto whitespace-nowrap">{label}</div>
       {hasDropdown && (
         <img
           loading="lazy"

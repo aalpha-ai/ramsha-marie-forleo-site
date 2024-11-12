@@ -5,13 +5,11 @@ import React from "react";
 
 export const LearnImage: React.FC = () => {
   return (
-    <div className="">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/689b0482b0a3713089794d9ba655904eecb14201ca4367b6ae3fd1b66c0f5753?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
-        className="object-contain w-full max-w-[340px]"
-        alt="Learn Anything illustration"
-      />
-    </div>
+    <img
+      loading="lazy"
+      src="/cta-image-2.svg"
+      className="object-contain w-2/4"
+      alt="Learn Anything illustration"
+    />
   );
 };
