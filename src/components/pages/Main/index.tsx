@@ -26,7 +26,7 @@ export default function Component() {
       <PodcastSection />
       <LatestEpisodes />
       <StudentSuccessStories />
-      <ImageGallery />
+      {/* <ImageGallery /> */}
       <HeroParralax />
       <Footer />
     </div>

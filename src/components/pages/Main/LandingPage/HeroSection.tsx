@@ -8,13 +8,13 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="grid md:grid-cols-2 grid-cols-1 max-lg:px-8 max-md:px-5 max-md:flex-col">
-      <div className="pb-10">
+    <section className="flex flex-col md:flex-row max-lg:px-8 max-md:px-5">
+      <div className="w-full md:w-1/2 pb-10">
         <BlurFade inViewMargin="-200px">
           <HeroContent />
         </BlurFade>
       </div>
-      <div>
+      <div className="w-full md:w-1/2">
         <BlurFade inViewMargin="-200px">
           <HeroImage />
         </BlurFade>

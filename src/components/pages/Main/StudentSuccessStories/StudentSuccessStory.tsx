@@ -45,7 +45,8 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
         </h3>
       </header>
       <main className="flex flex-col pt-8 pb-9 max-w-full w-[1200px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 relative justify-center items-start w-full bg-stone-100 max-md:max-w-full">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 relative justify-center items-start w-full bg-stone-100 max-md:max-w-full"> */}
+        <div className="flex flex-col sm:flex-row justify-center items-start w-full bg-stone-100 max-md:max-w-full">
           <img
             loading="lazy"
             src="/carousel.png"
@@ -57,8 +58,8 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
             testimonial={stories[currentStoryIndex].testimonial}
             author={stories[currentStoryIndex].author}
           />
-          <NavigationArrow direction="left" onClick={handlePrevStory} />
-          <NavigationArrow direction="right" onClick={handleNextStory} />
+          {/* <NavigationArrow direction="left" onClick={handlePrevStory} />
+          <NavigationArrow direction="right" onClick={handleNextStory} /> */}
         </div>
       </main>
     </section>

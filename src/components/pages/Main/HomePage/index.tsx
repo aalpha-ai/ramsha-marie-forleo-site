@@ -6,7 +6,7 @@ import ContentSection from "./ContentSection";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="bg-white p-2 md:p-7 grid gap-2 md:gap-7">
+    <div className="bg-white p-2 md:p-4 lg:p-7 grid gap-2 md:gap-7">
       <ContentSection
         title={
           <div className="font-serif">

@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 
 const HeroContent: React.FC = () => {
   return (
-    <div className="flex flex-col max-md:ml-0 max-md:w-full pt-20">
+    <div className="flex flex-col max-md:ml-0 max-md:w-full lg:pt-20">
       <div className="flex flex-col text-neutral-800 max-md:mt-2.5 max-md:max-w-full">
-        <h2 className="mt-4 text-9xl font-ivy-presto tracking-wider uppercase max-w-md leading-[129.2px] max-md:max-w-full max-md:text-8xl max-md:leading-14">
+        <h2 className="md:w-[180px] mt-4 md:text-[86px] lg:text-9xl font-ivy-presto uppercase lg:tracking-wider lg:leading-[129.2px] lg:leading-14">
           MEET RAMSHA
         </h2>
-        <p className="pb-px mt-5 text-lg tracking-normal leading-9 text-black w-[512px] font-[500]">
+        <p className="pb-px mt-5 text-lg tracking-normal leading-9 text-black lg:w-[512px] font-[500]">
           Something tells me you&apos;re a generational trailblazer. 
           You&apos;ve decided that generational healing <span className="underline">begins</span> with you.
           A decade ago, I made the same choice. Now, I&apos;m an 
@@ -23,7 +23,7 @@ const HeroContent: React.FC = () => {
           here to let go & let God ease our missions for us as
           we take over the world.
         </p>
-        <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-bold tracking-wide leading-6 text-center text-white capitalize bg-[#082F2E] rounded-3xl  w-[300px] max-md:px-5 hover:bg-white">
+        <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-bold tracking-wide leading-6 text-center text-white capitalize bg-[#082F2E] rounded-3xl  lg:w-[300px] max-md:px-5 hover:bg-white">
           <a
             href="https://www.marieforleo.com/about"
             target="_blank"

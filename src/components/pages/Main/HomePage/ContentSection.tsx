@@ -44,10 +44,10 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               <div className="z-10 pb-px text-xs font-[700] leading-5 uppercase tracking-[2.16px]">
                 {subtitle}
               </div>
-              <h2 className="mt-6 text-4xl lg:text-[40px] leading-[62.4px] font-ivy-presto font-[700] w-[412px]">
+              <h2 className="mt-6 text-4xl lg:text-[40px] leading-[62.4px] font-ivy-presto font-[700] lg:w-[412px]">
                 {title}
               </h2>
-              <p className="pb-px mt-5 text-lg tracking-normal leading-9 text-black font-[600] w-[412px]">
+              <p className="pb-px mt-5 text-lg tracking-normal leading-9 text-black font-[600] lg:w-[412px]">
                 {description}
               </p>
               <a
@@ -62,7 +62,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
                 loading="lazy"
                 src={imageSrc}
                 alt={imageAlt}
-                className="object-contain w-full max-w-[395px]"
+                className="object-contain w-full lg:max-w-[395px]"
               />
             </div>
           </div>

@@ -53,7 +53,7 @@ const MediaLogos: React.FC = () => {
         </h2>
       </BlurFade>
       <BlurFade>
-        <div className="flex flex-row gap-x-12 justify-center">
+        <div className="flex flex-wrap md:flex-row gap-x-6 lg:gap-x-12 justify-center">
           {mediaLogos.map((logo, index) => (
             <MediaLogo key={index} {...logo} />
           ))}

@@ -8,7 +8,7 @@ export const LearnImage: React.FC = () => {
     <img
       loading="lazy"
       src="/cta-image-2.svg"
-      className="object-contain w-2/4"
+      className="object-contain md:w-4/5 lg:w-1/2"
       alt="Learn Anything illustration"
     />
   );
