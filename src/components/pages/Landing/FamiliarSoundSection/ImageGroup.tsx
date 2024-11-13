@@ -3,23 +3,29 @@
  */
 import React from "react";
 import { ImageData } from "./types";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 interface ImageGroupProps {
   images: ImageData;
+  idx: number;
 }
 
-const ImageGroup: React.FC<ImageGroupProps> = ({ images }) => {
+const ImageGroup: React.FC<ImageGroupProps> = ({ images, idx }) => {
   return (
-    <div className="flex flex-col grow shrink min-w-[240px] w-[239px]">
+    <div
+      className={cn("flex flex-col  justify-start items-start", {
+        "justify-start items-end": idx === 0,
+      })}
+    >
       {images.map((image, index) => (
-        <Image
+        <img
           key={index}
           src={image.src}
           alt={image.alt}
-          className="object-contain max-w-full aspect-[3.14] w-[300px]"
-          width={300}
-          height={95}
+          className="inline-block"
+          width={image.width || 370}
+          height={300}
         />
       ))}
     </div>

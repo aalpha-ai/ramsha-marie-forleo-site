@@ -23,8 +23,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
   highlightColor,
 }) => {
   return (
-    <div className="flex flex-col grow shrink items-center min-w-[240px] w-[333px]">
-      <div className="flex flex-col flex-1 items-center px-8 pt-11 pb-20 bg-white rounded-3xl border border-gray-200 border-solid shadow-sm max-w-[1000px] w-[417.6px] max-md:px-5">
+    <div className="flex flex-col grow shrink items-center max-w-lg ">
+      <div className="flex flex-col flex-1 items-center px-8 pt-11 pb-20 bg-white rounded-3xl border border-gray-200 border-solid shadow-sm max-w-[1000px]  max-md:px-5">
         <div className="flex flex-col pb-8 text-xs tracking-normal leading-5 text-neutral-500">
           <div
             className={`flex flex-col justify-center items-center px-2.5 py-1 ${highlightColor} rounded-md`}
@@ -39,8 +39,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
           {price}
           <span className="text-2xl">{period}</span>
         </div>
-        <div className="flex flex-col self-stretch pb-2.5 mt-10 mr-5 ml-5 text-2xl font-bold tracking-wide leading-6 text-center text-white min-w-[275px] max-md:mx-2.5">
-          <button className="px-24 py-5 bg-green-500 min-w-[275px] rounded-[200px] max-md:px-5">
+        <div className="flex flex-col self-stretch pb-2.5 mt-10 mr-5 ml-5 text-2xl font-bold tracking-wide leading-6 text-center text-white max-md:mx-2.5">
+          <button className="px-24 py-5 bg-green-500 rounded-[200px] max-md:px-5">
             {buttonText}
           </button>
         </div>

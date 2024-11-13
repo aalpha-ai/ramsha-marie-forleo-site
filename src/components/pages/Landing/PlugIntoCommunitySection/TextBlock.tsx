@@ -30,15 +30,14 @@ export const TextBlock: React.FC<TextBlockProps> = () => {
   ];
 
   return (
-    <div className="flex flex-col grow shrink items-center bg-stone-50 leading-[54px] min-w-[240px] text-neutral-800 w-[497px] max-md:max-w-full">
-      <div className="flex flex-col px-12 py-20 max-w-full w-[585px] max-md:px-5">
+    <div className="flex flex-col grow shrink items-center bg-stone-50 leading-[54px] min-w-[240px] text-neutral-800 max-md:max-w-full">
+      <div className="flex flex-col px-12 py-20 max-w-full max-md:px-5">
         <h2 className="flex flex-col pt-2.5 pb-3.5 text-4xl max-md:max-w-full">
           Plug into our community. <br /> Amplify your joy. <br /> Fast-track
           your success.
         </h2>
-        <h3 className="flex flex-col pt-2.5 pb-3.5 text-3xl italic max-md:max-w-full">
-          Have a <span className="italic">damn good time</span> along <br /> the
-          way.
+        <h3 className="pt-2.5 pb-3.5 text-3xl max-md:max-w-full">
+          Have a <span className="italic">damn good time</span> along the way.
         </h3>
         <div className="flex flex-col pt-5 text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">
           {paragraphs.map((paragraph, index) => (

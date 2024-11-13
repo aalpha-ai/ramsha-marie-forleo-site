@@ -4,7 +4,7 @@
 import React from "react";
 import { TextContainer } from "./TextContainer";
 import { Heading } from "./Heading";
-import Image from "next/image";
+import BlurFade from "@/components/magicui/blur-fade";
 
 interface DreamClubImageSectionProps {
   imageSrc: string;
@@ -14,19 +14,22 @@ const DreamClubImageSection: React.FC<DreamClubImageSectionProps> = ({
   imageSrc,
 }) => {
   return (
-    <section className="flex flex-wrap justify-center text-base font-light leading-7 text-black">
-      <Image
-        src={imageSrc}
-        alt="Dream Club visual representation"
-        width={364}
-        height={173}
-        className="object-contain grow shrink aspect-[0.47] min-w-[240px] max-md:max-w-full"
-      />
-      <div className="flex flex-col grow shrink justify-center items-start py-20 max-w-[1100px] min-w-[240px] w-[478px] max-md:max-w-full">
-        <div className="flex flex-col p-10 rounded-2xl border border-black border-solid bg-stone-50 min-h-[799px] max-md:px-5 max-md:max-w-full">
-          <Heading />
-          <TextContainer />
-        </div>
+    <section className="grid md:grid-cols-[1fr_1.25fr] text-base font-light leading-7 text-black">
+      <div>
+        <img
+          loading="lazy"
+          src={imageSrc}
+          alt="Dream Club visual representation"
+          className="object-cover w-full h-full max-md:max-h-[400px] lg:max-h-[825px] max-md:max-w-full"
+        />
+      </div>
+      <div className="flex flex-col bg-landing-red-pattern grow shrink justify-center items-start py-16 md:py-20 max-md:px-5 max-md:max-w-full">
+        <BlurFade>
+          <div className="flex flex-col relative md:right-24 p-10 rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
+            <Heading />
+            <TextContainer />
+          </div>
+        </BlurFade>
       </div>
     </section>
   );

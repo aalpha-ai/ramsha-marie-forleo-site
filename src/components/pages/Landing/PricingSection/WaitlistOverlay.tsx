@@ -5,21 +5,19 @@ import React from "react";
 
 const WaitlistOverlay: React.FC = () => {
   return (
-    <div className="flex absolute inset-0 z-0 flex-col py-80 w-full text-center text-orange-50 bg-neutral-900 bg-opacity-80 max-md:py-24 max-md:max-w-full">
-      <div className="flex flex-col items-center px-72 mb-0 w-full max-md:px-5 max-md:mb-2.5 max-md:max-w-full">
-        <div className="flex flex-col pt-6 max-w-full w-[452px]">
-          <h2 className="px-28 w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full">
-            Season 1 is Sold Out!
-          </h2>
-          <h3 className="mt-3 w-full text-4xl leading-[62.4px] max-md:max-w-full">
-            Season 2 Coming Soon!
-          </h3>
-          <div className="flex flex-col pt-2 mt-3 w-full text-base font-bold leading-5 text-black uppercase tracking-[2.88px] max-md:max-w-full">
-            <div className="flex flex-col px-24 w-full max-md:px-5 max-md:max-w-full">
-              <button className="flex-1 shrink px-8 py-5 w-full bg-amber-300 rounded-[100px] max-md:px-5">
-                Join the Waitlist
-              </button>
-            </div>
+    <div className="h-full absolute inset-0 z-0 py-80 w-full text-center text-orange-50 bg-neutral-900 bg-opacity-80 max-md:py-24 max-md:max-w-full">
+      <div className="flex flex-col justify-center items-center h-full mb-0 w-full max-md:px-5 max-md:mb-2.5 max-md:max-w-full max-w-md mx-auto">
+        <h2 className=" w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full">
+          Season 1 is Sold Out!
+        </h2>
+        <h3 className="mt-3 w-full text-4xl leading-[62.4px] max-md:max-w-full">
+          Season 2 Coming Soon!
+        </h3>
+        <div className="flex flex-col pt-2 mt-3 w-full text-base font-bold leading-5 text-black uppercase tracking-[2.88px] max-md:max-w-full">
+          <div className="flex flex-col px-24 w-full max-md:px-5 max-md:max-w-full">
+            <button className="flex-1 shrink px-8 py-5 w-full bg-amber-300 rounded-[100px] max-md:px-5">
+              Join the Waitlist
+            </button>
           </div>
         </div>
       </div>
