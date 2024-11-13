@@ -13,16 +13,16 @@ export const NotForYouItem: React.FC<NotForYouItemProps> = ({
   content,
 }) => {
   return (
-    <div className="flex flex-wrap items-start mt-5 w-full max-md:max-w-full">
-      <div className="flex flex-col items-start pt-1 pr-2.5 max-w-[785px] w-[29px]">
+    <div className="flex items-start gap-2.5 mt-5 w-full max-md:max-w-full">
+      <div className=" h-5 w-5">
         <img
           loading="lazy"
           src={imageUrl}
           alt=""
-          className="object-contain aspect-square w-[19px]"
+          className="w-full object-contain"
         />
       </div>
-      <div className="pr-8 text-base font-light tracking-normal leading-6 text-black min-w-[240px] max-md:max-w-full">
+      <div className="flex-1 text-base font-light tracking-normal leading-6 text-black min-w-[240px] max-md:max-w-full">
         {content}
       </div>
     </div>

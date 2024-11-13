@@ -7,7 +7,7 @@ export const TextContainer: React.FC = () => {
   const paragraphs = [
     {
       text: "Taking care of yourself mentally, emotionally, and physically is critical to building a successful business and living an extraordinary life.",
-      isItalic: true,
+      isItalic: false,
     },
     {
       text: "Because let's be real: running a business (and managing life) isn't all rainbows and unicorns.",
@@ -33,10 +33,10 @@ export const TextContainer: React.FC = () => {
               ? paragraph.isItalic
                 ? "italic"
                 : paragraph.isBold
-                ? "font-bold"
-                : paragraph.isUnderlined
-                ? "underline decoration-auto decoration-solid underline-offset-auto"
-                : ""
+                  ? "font-bold"
+                  : paragraph.isUnderlined
+                    ? "underline decoration-auto decoration-solid underline-offset-auto"
+                    : ""
               : ""
           }`}
         >

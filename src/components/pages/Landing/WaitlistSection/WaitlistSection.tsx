@@ -9,7 +9,7 @@ import WaitlistButton from "./WaitlistButton";
 const WaitlistSection: React.FC = () => {
   return (
     <section className="bg-black flex justify-center items-center py-56 pr-36 pl-36 text-center min-h-[800px] max-md:px-5 max-md:py-24">
-      <div className="flex flex-col items-center self-stretch px-14 py-16 my-auto max-w-[900px] min-w-[240px] w-[735px] max-md:px-5">
+      <div className="flex flex-col items-center self-stretch px-14 py-16 my-auto max-md:px-5">
         <Logo />
         <Heading />
         <WaitlistButton />

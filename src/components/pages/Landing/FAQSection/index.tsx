@@ -45,8 +45,8 @@ const FAQSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center bg-stone-50">
       <div className="flex flex-col px-14 pt-20 pb-24 w-full max-md:px-5 max-md:max-w-full">
-        <h2 className="self-center pt-4 pb-6 max-w-full text-4xl text-center leading-[54px] text-neutral-800 w-[775px]">
-          <span className="px-52 w-full max-md:px-5 max-md:max-w-full">
+        <h2 className=" pt-4 pb-6 max-w-full text-4xl text-center leading-[54px] text-neutral-800">
+          <span className="w-full max-md:px-5 max-md:max-w-full">
             Questions? Ask Away!
           </span>
         </h2>

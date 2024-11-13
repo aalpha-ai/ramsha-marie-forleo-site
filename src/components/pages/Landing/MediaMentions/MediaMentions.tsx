@@ -14,10 +14,10 @@ interface MediaMentionsProps {
 const MediaMentions: React.FC<MediaMentionsProps> = ({ logos }) => {
   return (
     <section className="flex flex-col gap-5 px-12 pt-14 pb-16 bg-neutral-800 max-md:px-5">
-      <h2 className="px-80 w-full text-sm font-bold tracking-widest leading-6 text-center text-orange-50 uppercase max-md:px-5 max-md:max-w-full">
+      <h2 className="w-full text-sm font-bold tracking-widest leading-6 text-center text-orange-50 uppercase max-md:px-5 max-md:max-w-full">
         You Might Have Seen Me On
       </h2>
-      <div className="flex flex-wrap gap-10 items-center mt-5 max-w-full w-[922px]">
+      <div className="grid grid-cols-3 md:grid-cols-9 gap-10 items-center self-center mt-7 w-full max-w-[1200px]">
         {logos.map((logo, index) => (
           <MediaLogo key={index} src={logo.src} alt={logo.alt} />
         ))}

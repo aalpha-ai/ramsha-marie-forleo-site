@@ -10,6 +10,7 @@ interface SectionContentProps {
   additionalInfo?: string;
   imageSrc: string;
   imageAlt: string;
+  children: React.ReactNode;
 }
 
 export const SectionContent: React.FC<SectionContentProps> = ({
@@ -18,34 +19,36 @@ export const SectionContent: React.FC<SectionContentProps> = ({
   content,
   additionalInfo,
   imageSrc,
+  children,
   imageAlt,
 }) => {
   return (
-    <>
-      <div className="flex flex-col grow shrink justify-center items-center self-start py-6 max-w-[900px] min-h-[638px] min-w-[240px] w-[318px]">
-        <div className="flex flex-col pb-2 max-w-full text-xl font-light tracking-wide leading-8 text-neutral-800 w-[397px]">
-          <div className="flex flex-col items-center px-5">
+    <div className="grid md:grid-cols-2 items-center p-4 md:p-10 gap-10">
+      <div className="max-md:px-3">
+        <div className="flex flex-col max-w-full text-xl font-light tracking-wide leading-8 text-neutral-800 ">
+          <div className="flex flex-col items-center ">
             <h3 className="text-2xl font-bold">{title}</h3>
             {subtitle && <p>{subtitle}</p>}
           </div>
         </div>
-        <div className="flex flex-col pt-2 max-w-full text-base font-light tracking-normal w-[391px]">
+        <div className="flex flex-col max-w-full text-base font-light tracking-normal ">
           <div className="flex flex-col w-full">
             <p className="w-full italic leading-7">{content}</p>
             {additionalInfo && (
-              <div className="flex flex-col items-center px-2.5 mt-4 w-full leading-6">
+              <div className="flex flex-col items-center  mt-4 w-full leading-6">
                 <p className="italic">{additionalInfo}</p>
               </div>
             )}
           </div>
         </div>
+        {children}
       </div>
       <img
         loading="lazy"
         src={imageSrc}
         alt={imageAlt}
-        className="object-contain grow shrink aspect-[0.62] min-w-[240px] w-[317px]"
+        className="object-cover w-full max-h-[593px]"
       />
-    </>
+    </div>
   );
 };

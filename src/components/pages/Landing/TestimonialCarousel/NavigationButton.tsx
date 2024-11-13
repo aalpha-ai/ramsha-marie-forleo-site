@@ -10,7 +10,7 @@ interface NavigationButtonProps {
 const NavigationButton: React.FC<NavigationButtonProps> = ({ onClick }) => {
   return (
     <button
-      className="flex overflow-hidden absolute right-0 bottom-24 z-0 flex-col justify-center items-center pt-1.5 pr-1 pl-1 w-20 left-[835px] top-[361px]"
+      className="flex overflow-hidden  z-0 flex-col justify-center items-center pt-1.5 pr-1 pl-1 w-20 left-[835px] top-[361px]"
       aria-label="Next slide"
       onClick={onClick}
     >

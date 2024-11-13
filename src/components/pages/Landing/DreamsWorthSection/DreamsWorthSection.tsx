@@ -20,15 +20,15 @@ export const DreamsWorthSection: React.FC<DreamsWorthSectionProps> = ({
   conclusion,
 }) => {
   return (
-    <section className="flex flex-wrap justify-center bg-black">
+    <section className="grid md:grid-cols-[.75fr_1fr] bg-black">
       <img
         loading="lazy"
         src={imageSrc}
         alt=""
-        className="object-contain grow shrink aspect-[0.3] min-w-[240px] w-[351px] max-md:max-w-full"
+        className="object-cover w-full h-full max-md:max-w-full max-md:max-h-[400px] lg:max-h-[1480px] xl:max-h-[1160px]"
       />
-      <div className="flex flex-col grow shrink items-center min-w-[240px] w-[497px] max-md:max-w-full">
-        <div className="flex flex-col px-12 py-20 max-w-full w-[585px] max-md:px-5">
+      <div className="max-md:max-w-full">
+        <div className="h-full px-12 py-20 max-w-full max-md:px-5">
           <header className="flex flex-col pt-2.5 pb-4 max-md:max-w-full">
             <h2 className="w-full text-4xl text-orange-50 leading-[54px] max-md:max-w-full">
               {title}

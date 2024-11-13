@@ -13,15 +13,15 @@ const DreamClubImageSection: React.FC<DreamClubImageSectionProps> = ({
   imageSrc,
 }) => {
   return (
-    <section className="flex flex-wrap justify-center text-base font-light leading-7 text-black">
+    <section className="grid md:grid-cols-[1fr_1.25fr] text-base font-light leading-7 text-black">
       <img
         loading="lazy"
         src={imageSrc}
         alt="Dream Club visual representation"
-        className="object-contain grow shrink aspect-[0.47] min-w-[240px] w-[364px] max-md:max-w-full"
+        className="object-cover w-full max-h-[400px] md:max-h-[825px] max-md:max-w-full"
       />
-      <div className="flex flex-col grow shrink justify-center items-start py-20 max-w-[1100px] min-w-[240px] w-[478px] max-md:max-w-full">
-        <div className="flex flex-col p-10 rounded-2xl border border-black border-solid bg-stone-50 min-h-[799px] max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col grow shrink justify-center items-start py-16 md:py-20 max-md:px-5 max-md:max-w-full">
+        <div className="flex flex-col relative md:right-24 p-10 rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
           <Heading />
           <TextContainer />
         </div>

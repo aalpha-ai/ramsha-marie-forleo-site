@@ -41,7 +41,7 @@ const ContinuousEvolution: React.FC = () => {
               <span className="text-orange-50">.</span>
             </h4>
           </div>
-          <div className="flex flex-col grow shrink justify-center items-end pt-11 pb-12 min-w-[240px] w-[343px]">
+          <div className="flex flex-col grow shrink justify-center items-end pt-11 pb-12 w-full max-w-[388px]">
             <div className="flex max-w-full bg-white min-h-[1px] w-[388px]" />
           </div>
           <JoinWaitlist />

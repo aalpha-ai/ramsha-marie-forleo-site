@@ -14,7 +14,7 @@ const MediaLogo: React.FC<MediaLogoProps> = ({ src, alt }) => {
       loading="lazy"
       src={src}
       alt={alt}
-      className="object-contain shrink-0 self-stretch my-auto aspect-[3.86] max-w-[922px] w-[58px]"
+      className="object-contain flex-1 h-20 w-full"
     />
   );
 };
