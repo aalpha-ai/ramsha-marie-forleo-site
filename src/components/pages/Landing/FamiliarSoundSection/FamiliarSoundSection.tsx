@@ -14,6 +14,7 @@ const imageData: ImageData[] = [
     {
       src: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/0752d7cbff9a11f15e10354512d17919c9b0872a155cd36097831f3904bb7adc?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
       alt: "Familiar sound illustration 2",
+      width: 288,
     },
     {
       src: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/124995420c11e550856d8caa8bd00c8c1ccfdf05e6b2c7f0c219c0798cf210b0?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
@@ -46,26 +47,29 @@ const imageData: ImageData[] = [
     {
       src: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/655b22c9a53281a0349fe4f1008c77816b956915106f4741b76408a7ef25908a?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
       alt: "Familiar sound illustration 9",
+      width: 293,
     },
   ],
 ];
 
 const FamiliarSoundSection: React.FC = () => {
   return (
-    <section className="flex flex-col max-w-[918px]">
+    <section className="flex flex-col max-w-6xl mx-auto lg:px-14 md:px-11 py-24 px-5">
       <h2 className="flex flex-col pt-2.5 pb-7 text-4xl text-center leading-[62.4px] text-neutral-800 max-md:max-w-full">
         <span className="pr-52 pl-52 w-full max-md:px-5 max-md:max-w-full">
           Does this sound familiar?
         </span>
       </h2>
-      <div className="flex z-10 flex-wrap gap-1.5 justify-center p-1 max-md:max-w-full">
+      <div className="grid grid-cols-3 gap-1.5 justify-center p-1 max-md:max-w-full">
         {imageData.map((group, index) => (
-          <ImageGroup key={index} images={group} />
+          <ImageGroup key={index} idx={index} images={group} />
         ))}
       </div>
       <h4 className="px-64 mt-7 w-full text-2xl font-light tracking-wide leading-8 text-center text-neutral-800 max-md:px-5 max-md:max-w-full">
         <span className="text-neutral-800">If you can relate, </span>
-        <strong className="font-bold text-neutral-800">you're not alone</strong>
+        <strong className="font-bold text-neutral-800">
+          you&apos;re not alone
+        </strong>
         <span className="text-neutral-800">.</span>
       </h4>
       <p className="px-24 mt-2 pb-4 w-full text-base font-light tracking-normal leading-7 text-center text-black italic max-md:px-5 max-md:max-w-full">

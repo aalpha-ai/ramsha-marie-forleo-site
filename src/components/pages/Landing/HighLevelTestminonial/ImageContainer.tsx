@@ -10,13 +10,11 @@ interface ImageContainerProps {
 
 export const ImageContainer: React.FC<ImageContainerProps> = ({ src, alt }) => {
   return (
-    <div className="flex flex-col grow shrink justify-center items-center py-5 my-auto max-w-[900px] min-h-[692px] min-w-[240px] w-[270px]">
-      <img
-        loading="lazy"
-        src={src}
-        alt={alt}
-        className="object-contain max-w-full aspect-[0.52] w-[338px]"
-      />
-    </div>
+    <img
+      loading="lazy"
+      src={src}
+      alt={alt}
+      className="object-contain w-full max-h-[822px] max-w-96"
+    />
   );
 };

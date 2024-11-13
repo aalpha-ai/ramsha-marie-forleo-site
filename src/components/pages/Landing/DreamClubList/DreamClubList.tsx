@@ -44,51 +44,38 @@ const listItems: ListItemProps[] = [
 
 const DreamClubList: React.FC<DreamClubListProps> = ({ imageSrc }) => {
   return (
-    <section className="flex flex-wrap justify-center">
+    <section className="grid grid-cols-[.75fr_1fr] max-md:grid-cols-1 justify-center">
       <img
         loading="lazy"
         src={imageSrc}
         alt="Dream Club visual representation"
-        className="object-contain grow shrink aspect-[0.44] min-w-[240px] w-[351px] max-md:max-w-full"
+        className="object-cover object-right  h-full w-full max-md:max-h-[300px] xl:max-h-[788px]  max-md:max-w-full"
       />
-      <div className="flex flex-col grow shrink items-center bg-stone-50 min-w-[240px] w-[497px] max-md:max-w-full">
-        <div className="flex flex-col px-12 py-20 max-w-full w-[585px] max-md:px-5">
-          <div className="flex flex-col pt-5 pb-4 text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">
-            <h4 className="self-end w-full text-2xl italic font-light tracking-wide leading-8 text-neutral-800 max-md:max-w-full">
-              <span className="text-neutral-800">
-                Dream Club is a profoundly positive place{" "}
-              </span>
-              <br />
-              <span className="text-neutral-800">where you can </span>
+      <div className="flex bg-stone-50 py-24 max-md:max-w-full">
+        <div className="flex flex-col justify-center gap-4 max-w-full px-10 max-md:px-5">
+          <div className="flex flex-col gap-2 text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">
+            <h4 className=" w-full text-2xl font-light tracking-wide leading-8 text-neutral-800 max-md:max-w-full">
+              Dream Club is a profoundly positive place where you can
               <span className="font-bold text-neutral-800">
                 {" "}
                 achieve your BIG goals{" "}
               </span>
-              <span className="text-neutral-800"> in</span>
-              <br />
-              <span className="text-neutral-800">business and life, </span>
-              <span className="italic text-neutral-800">without </span>
-              <span className="text-neutral-800">sacrificing your</span>
-              <br />
-              <span className="text-neutral-800">joy or health.</span>
+              in business and life, <span className="italic">without</span>{" "}
+              sacrificing your joy or health.
             </h4>
-            <p className="mt-2 w-full max-md:max-w-full">
-              You're invited to join me, Team Forleo, and my inner circle of
-              <br />
-              colleagues, friends, and experts as we all build forward from
-              <br />
-              where we are today, to where we want to be. Together, we'll
-              <br />
+            <p className=" w-full max-md:max-w-full">
+              You&apos;re invited to join me, Team Forleo, and my inner circle
+              of colleagues, friends, and experts as we all build forward from
+              where we are today, to where we want to be. Together, we&apos;ll
               hit new levels of wealth, joy, and freedom.
             </p>
-            <p className="pt-2 mt-2 w-full max-md:max-w-full">
-              Dream Club provides the mindsets, strategies, and support
-              <br />
-              you need to create…
+            <p className=" w-full max-md:max-w-full">
+              Dream Club provides the mindsets, strategies, and support you need
+              to create…
             </p>
           </div>
-          <div className="flex flex-col pb-2.5 max-md:max-w-full">
-            <ul className="flex flex-col pb-4 w-full max-md:max-w-full">
+          <div className="flex flex-col max-md:max-w-full">
+            <ul className="flex flex-col w-full max-md:max-w-full">
               {listItems.map((item, index) => (
                 <ListItem
                   key={index}
@@ -99,14 +86,9 @@ const DreamClubList: React.FC<DreamClubListProps> = ({ imageSrc }) => {
             </ul>
           </div>
           <div className="flex flex-col pb-4 text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">
-            <p className="w-full italic max-md:max-w-full">
-              <span className="text-black">
-                So you can enjoy a rich and adventure-filled life{" "}
-              </span>
-              <span className="italic text-black">now</span>
-              <span className="text-black"> — not</span>
-              <br />
-              <span className="text-black">"someday."</span>
+            <p className="w-full max-md:max-w-full">
+              So you can enjoy a rich and adventure-filled life{" "}
+              <span className="italic">now</span> — not &quot;someday.&quot;
             </p>
           </div>
         </div>

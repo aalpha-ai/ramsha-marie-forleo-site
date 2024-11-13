@@ -7,9 +7,11 @@ import { ImageBlock } from "./ImageBlock";
 
 interface PlugIntoCommunitySectionProps {}
 
-const PlugIntoCommunitySection: React.FC<PlugIntoCommunitySectionProps> = () => {
+const PlugIntoCommunitySection: React.FC<
+  PlugIntoCommunitySectionProps
+> = () => {
   return (
-    <section className="flex flex-wrap justify-center">
+    <section className="grid md:grid-cols-[1fr_.75fr] ">
       <TextBlock />
       <ImageBlock />
     </section>
