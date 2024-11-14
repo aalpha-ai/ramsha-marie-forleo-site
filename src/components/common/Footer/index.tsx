@@ -10,7 +10,7 @@ import BottomBar from "./BottomBar";
 const Footer: React.FC = () => {
   return (
     <footer className="flex flex-col items-center bg-black ">
-      <div className="flex flex-col py-20 w-full max-w-[1140px] max-lg:px-5 ">
+      <div className="flex flex-col xl:mx-[120px] xl:px-[40px] xl:pt-[96px] xl:pb-[12px] lg:px-[54px] lg:pt-[82px] lg:pb-[86px] md:px-[40px] md:pt-[80px] md:pb-[72px] px-[21px] pt-[64px] pb-[56px] w-full">
         <div className="flex items-center self-start">
           <img
             loading="lazy"

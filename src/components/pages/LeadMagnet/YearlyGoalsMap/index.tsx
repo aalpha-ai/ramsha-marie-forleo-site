@@ -8,15 +8,15 @@ import ImageSection from "./ImageSection";
 
 const YearlyGoalsMap: React.FC = () => {
   return (
-    <main className="flex flex-col items-center px-2.5 pt-14 pb-16 bg-white border-red-200 border-solid border-[10px]">
-      <div className="flex flex-wrap items-start px-2.5 pb-8 max-w-full w-[1004px]">
-        <section className="flex flex-col flex-1 shrink px-4 pt-4 text-black basis-0 min-h-[1px] min-w-[240px] max-md:max-w-full">
+    <section className="flex flex-col items-center bg-white border-red-200 border-solid border-[10px] xl:px-[10px] xl:pt-[56px] xl:pb-[54px] px-[0px] pt-[45px] pb-[55px]">
+      <div className="flex lg:flex-row flex-col items-start px-2.5 pb-8 max-w-full">
+        <section className="flex flex-col flex-1 shrink pt-4 text-black">
           <Header />
           <Form />
         </section>
         <ImageSection />
       </div>
-    </main>
+    </section>
   );
 };
 

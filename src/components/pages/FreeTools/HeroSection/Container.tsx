@@ -9,7 +9,7 @@ interface ContainerProps {
 
 export const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
-    <div className="flex flex-col px-14 pt-20 pb-28 w-full max-md:px-5 max-md:pb-24 max-md:max-w-full">
+    <div className="flex flex-col xl:mx-[120px] xl:px-[40px] xl:pt-[96px] xl:pb-[112px] lg:px-[54px] lg:pt-[81px] lg:pb-[86px] md:px-[40px] md:pt-[80px] md:pb-[72px] px-[21px] pt-[64px] pb-[56px]">
       <div className="flex flex-col w-full max-md:max-w-full">{children}</div>
     </div>
   );

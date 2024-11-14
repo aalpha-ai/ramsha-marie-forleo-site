@@ -8,8 +8,8 @@ const HeroSection: React.FC = () => {
   const title = "Free Tools & Resources";
   const description = [
     "Get instant access to my favorite tools to help you create a business and life you love. Learn how to start and grow",
-    "your dream business, set better boundaries, reach your most ambitious goals, and eliminate stress FAST. Your",
-    "happiness and joyful contribution in this world do make a positive difference — let me help you get there!",
+    " your dream business, set better boundaries, reach your most ambitious goals, and eliminate stress FAST. Your",
+    " happiness and joyful contribution in this world do make a positive difference — let me help you get there!",
   ];
 
   return <FreeToolsSection title={title} description={description} />;

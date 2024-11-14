@@ -19,36 +19,40 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
   ctaLink,
 }) => {
   return (
-    <article className="flex flex-col grow shrink pb-2 min-w-[240px] w-[212px]">
-      <div className="flex items-center">
+    <div className="flex flex-col pb-2 h-full">
+      <div className="flex justify-center items-center w-full md:h-[265px]">
         <img
           loading="lazy"
           src={imageSrc}
           alt={title}
-          className="object-contain self-stretch my-auto aspect-square max-w-[265px] min-w-[240px] w-[265px]"
+          className="object-cover aspect-square w-full md:max-w-[265px] md:min-w-[240px] md:w-[265px]"
         />
       </div>
-      <h2 className="flex justify-center items-start pt-5 pb-2 text-lg tracking-wide leading-7 text-neutral-800">
-        <span className="flex-1 shrink w-full min-w-[240px]">{title}</span>
-      </h2>
-      <p className="pb-px text-xs tracking-normal leading-5 text-black">
-        {description}
-      </p>
-      {ctaLink ? (
-        <a
-          href={ctaLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="overflow-hidden self-start px-4 py-2.5 mt-4 text-xs font-extrabold tracking-widest leading-4 text-center text-black uppercase rounded-3xl bg-white bg-opacity-0"
-        >
-          {ctaText}
-        </a>
-      ) : (
-        <button className="overflow-hidden self-start px-4 py-2.5 mt-4 text-xs font-extrabold tracking-widest leading-4 text-center text-black uppercase rounded-3xl bg-white bg-opacity-0">
-          {ctaText}
-        </button>
-      )}
-    </article>
+      <div className="flex flex-col flex-1 justify-between md:px-6 lg:px-2">
+        <div>
+          <h2 className="flex justify-center items-start pt-5 pb-2 text-lg tracking-wide leading-7 text-neutral-800 min-h-[64px]">
+            <span className="flex-1 shrink w-full min-w-[240px]">{title}</span>
+          </h2>
+          <p className="pb-px text-xs tracking-normal leading-5 text-black min-h-[48px]">
+            {description}
+          </p>
+        </div>
+        {ctaLink ? (
+          <a
+            href={ctaLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 w-full md:w-auto md:self-start px-8 py-3 text-xs font-extrabold tracking-widest leading-4 text-center text-black uppercase border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors"
+          >
+            {ctaText}
+          </a>
+        ) : (
+          <button className="mt-4 w-full md:w-auto md:self-start px-8 py-3 text-xs font-extrabold tracking-widest leading-4 text-center text-black uppercase border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors">
+            {ctaText}
+          </button>
+        )}
+      </div>
+    </div>
   );
 };
 

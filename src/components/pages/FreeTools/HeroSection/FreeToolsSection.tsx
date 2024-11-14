@@ -16,7 +16,7 @@ export const FreeToolsSection: React.FC<FreeToolsSectionProps> = ({
   description,
 }) => {
   return (
-    <section className="flex overflow-hidden flex-col items-center text-center bg-stone-100">
+    <section className="flex flex-col items-center text-center bg-stone-100 w-full">
       <Container>
         <Heading>{title}</Heading>
         <Description lines={description} />
