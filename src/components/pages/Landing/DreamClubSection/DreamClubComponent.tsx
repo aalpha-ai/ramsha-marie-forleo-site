@@ -30,14 +30,20 @@ const featureCardsData: FeatureCardProps[] = [
 
 const DreamClubComponent: React.FC = () => {
   return (
-    <main className="flex flex-col text-center max-w-5xl.5 mx-auto md:px-10 px-5 ">
-      <Header />
-      <section className="flex max-md:flex-col gap-5 p-5">
-        {featureCardsData.map((card, index) => (
-          <FeatureCard key={index} title={card.title} content={card.content} />
-        ))}
-      </section>
-    </main>
+    <div className="bg-landing-stone-pattern">
+      <main className="flex flex-col text-center max-w-5xl.5 mx-auto md:px-10 px-5 ">
+        <Header />
+        <section className="flex max-md:flex-col gap-5 p-5">
+          {featureCardsData.map((card, index) => (
+            <FeatureCard
+              key={index}
+              title={card.title}
+              content={card.content}
+            />
+          ))}
+        </section>
+      </main>
+    </div>
   );
 };
 

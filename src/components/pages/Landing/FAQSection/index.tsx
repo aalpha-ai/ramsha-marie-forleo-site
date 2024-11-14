@@ -43,7 +43,7 @@ const faqData: FAQData[] = [
 
 const FAQSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center bg-stone-50">
+    <section className="flex flex-col items-center ">
       <div className="flex flex-col px-14 pt-20 pb-24 w-full max-md:px-5 max-md:max-w-full">
         <h2 className=" pt-4 pb-6 max-w-full text-4xl text-center leading-[54px] text-neutral-800">
           <span className="w-full max-md:px-5 max-md:max-w-full">
@@ -51,7 +51,7 @@ const FAQSection: React.FC = () => {
           </span>
         </h2>
         <div className="flex flex-col items-center w-full min-h-[320px] max-md:max-w-full">
-          <div className="flex flex-col gap-2.5 w-full bg-stone-50 max-w-[1000px] max-md:max-w-full">
+          <div className="flex flex-col gap-2.5 w-full max-w-[1000px] max-md:max-w-full">
             {faqData.map((item) => (
               <FAQItem key={item.id} question={item.question} />
             ))}

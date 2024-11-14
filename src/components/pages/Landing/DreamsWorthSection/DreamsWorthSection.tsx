@@ -20,7 +20,7 @@ export const DreamsWorthSection: React.FC<DreamsWorthSectionProps> = ({
   conclusion,
 }) => {
   return (
-    <section className="grid md:grid-cols-[.75fr_1fr] bg-black">
+    <section className="grid md:grid-cols-[.75fr_1fr] bg-landing-neutral-pattern">
       <img
         loading="lazy"
         src={imageSrc}

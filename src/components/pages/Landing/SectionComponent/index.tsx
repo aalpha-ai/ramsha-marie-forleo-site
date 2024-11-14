@@ -14,7 +14,7 @@ interface SectionComponentProps {}
 
 const SectionComponent: React.FC<SectionComponentProps> = () => {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col bg-landing-stone-pattern">
       <Container>
         <BackgroundBorder>
           <Heading />

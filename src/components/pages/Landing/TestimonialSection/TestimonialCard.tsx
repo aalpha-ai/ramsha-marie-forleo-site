@@ -24,11 +24,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           className="object-contain w-[110px] max-md:mr-0"
         />
       </div>
-      <div className="flex relative z-10 flex-col py-5 pr-7 pl-9 rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
+      <div className="flex relative z-10 flex-col py-5 pr-7 pl-9 rounded-2xl border border-black border-solid bg-gray-50 max-md:px-5 max-md:max-w-full">
         <div className="flex flex-col w-full tracking-normal leading-6 text-black   max-md:max-w-full">
           <p className="text-base font-light">{quote}</p>
         </div>
-        <div className="flex flex-col self-start pt-4 text-sm font-bold tracking-widest leading-6 text-center uppercase text-stone-400">
+        <div className="flex flex-col self-start pt-4 text-sm font-bold tracking-widest leading-6 text-center uppercase text-red-600">
           <p>{author}</p>
         </div>
       </div>

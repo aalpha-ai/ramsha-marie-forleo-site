@@ -8,7 +8,7 @@ import DreamClubSection from "./DreamClubSection";
 import DreamClubList from "./DreamClubList";
 import TestimonialSection from "./TestimonialSection";
 import DreamClub from "./DreamClub";
-import DreamClubImageSection from './DreamClubImageSection';
+import DreamClubImageSection from "./DreamClubImageSection";
 import HighLevelTestminonial from "./HighLevelTestminonial";
 import ImageSection from "./ImageSection";
 import SectionComponent from "./SectionComponent";
@@ -25,7 +25,7 @@ import WaitlistSection from "./WaitlistSection/WaitlistSection";
 
 export default function Component() {
   return (
-    <div className="[&_*]:transition-all [&_*]:duration-500 ">
+    <div className="[&_*]:transition-all [&_*]:duration-500 bg-gray-50">
       <Header />
       <WaitlistSection />
       <FamiliarSoundSection />

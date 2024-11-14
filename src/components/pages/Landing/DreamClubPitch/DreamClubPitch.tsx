@@ -15,7 +15,7 @@ const DreamClubPitch: React.FC<DreamClubPitchProps> = ({
   notForYouItems,
 }) => {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center bg-landing-stone-pattern">
       <div className="flex flex-col px-14 py-20 w-full max-md:px-5 max-md:max-w-full">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="w-full text-5xl leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full">
