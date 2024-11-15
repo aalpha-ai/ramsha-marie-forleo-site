@@ -10,7 +10,11 @@ interface NavItem {
   hasDropdown?: boolean;
 }
 
-const navItems: NavItem[] = [
+interface NavigationProps {
+  isMobile?: boolean;
+}
+
+export const navItems: NavItem[] = [
   { label: "Blog" },
   { label: "Work With Me" },
   { label: "In The Press" },
@@ -22,15 +26,12 @@ const navItems: NavItem[] = [
   // { label: "More", hasDropdown: true },
 ];
 
-const Navigation: React.FC = () => {
+const Navigation: React.FC<NavigationProps> = ({ isMobile }) => {
   return (
-    <nav className="flex flex-wrap items-center self-stretch my-auto min-w-[320px] max-md:max-w-full">
-      {/* <div className="flex text-base font-semibold leading-5  text-neutral-800 w-full"> */}
-      <div className="flex text-base font-semibold leading-5  text-neutral-800 w-full">
-        {navItems.map((item, index) => (
-          <NavigationItem key={index} {...item} />
-        ))}
-      </div>
+    <nav className={`text-[16px] font-[600] ${isMobile ? 'flex flex-col w-full' : 'flex items-center gap-8'}`}>
+      {navItems.map((item, index) => (
+        <NavigationItem key={index} {...item} />
+      ))}
     </nav>
   );
 };
