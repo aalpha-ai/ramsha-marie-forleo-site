@@ -7,7 +7,7 @@ import ImageComponent from "./ImageComponent";
 const MainComponent: React.FC = () => {
   return (
     <main>
-      <section>
+      <section className="relative -mb-32">
         <ImageComponent
           src="/hero-background.svg"
           alt="Main content image"

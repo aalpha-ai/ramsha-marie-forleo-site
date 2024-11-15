@@ -17,20 +17,20 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({
   description,
 }) => {
   return (
-    <section className="flex flex-col items-center bg-[#ECE2D7]">
+    <section className="flex flex-col items-center bg-[#ECE2D7] pb-20">
       <div className="flex flex-col bg-[#ECE2D7]">
         <BlurFade>
           <div className="flex flex-wrap gap-5 justify-center w-full">
-            <div className="relative -top-32">
+            <div className="relative">
               <div className="grid grid-col md:grid-cols-3 items-start px-5 relative">
-                <div className="col-span-1 relative z-0">
+                <div className="col-span-1 relative">
                   <ImageComponent
                     src="/hero-device.svg"
                     alt="Podcast cover image"
-                    className="relative max-md:hidden left-8 object-contain w-full max-w-96"
+                    className="absolute max-md:hidden left-8 lg:-top-32 object-contain w-full max-w-96 z-20"
                   />
                 </div>
-                <div className="relative z-10 h-full md:h-[500px] flex flex-col col-span-2 mt-8 px-9 pt-16 pb-24 md:pb-32 w-full text-center bg-white rounded-3xl border border-black border-solid max-w-[760px] max-md:px-5 md:mb-44">
+                <div className="relative z-10 h-full md:h-[500px] flex flex-col col-span-2 mt-8 px-9 pt-16 pb-24 md:pb-32 w-full text-center bg-white rounded-3xl border border-black border-solid max-w-[760px] max-md:px-5">
                   <PodcastInfo title={title} description={description} />
                   <ImageComponent
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/fd81bb596394a17a0566bd8514d403f35b741d16f1d850de00dd82f97f4ec058?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"

@@ -14,7 +14,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt }) => {
       loading="lazy"
       src={src}
       alt={alt}
-      className="object-contain w-full aspect-[1.78] max-md:max-w-full"
+      className="object-cover w-full h-[250px] md:h-[438px]"
     />
   );
 };
