@@ -7,35 +7,34 @@ import Image from "next/image";
 
 const imageData = [
   [
-    { src: "/gridImages/1.png", width: "w-1/4" },
-    { src: "/gridImages/2.png", width: "w-1/3" },
-    { src: "/gridImages/3.png", width: "w-col-5" },
+    { src: "/gridImages/image41.png", width: "w-[295px]" },
+    // { src: "/gridImages/image3.png", width: "w-[420px]" },
+    { src: "/gridImages/image6.png", width: "w-[360px]" },
+    { src: "/gridImages/image7.png", width: "w-[770px]" },
   ],
   [
-    { src: "/gridImages/4.png", width: "w-1/3" },
-    { src: "/gridImages/5.png", width: "w-col-5" },
-    { src: "/gridImages/6.png", width: "w-1/4" },
+    { src: "/gridImages/image8.png", width: "w-[610px]" },
+    { src: "/gridImages/image10.png", width: "w-[570px]" },
+    { src: "/gridImages/image23.png", width: "w-[570px]" },
   ],
   [
-    { src: "/gridImages/7.png", width: "w-1/4" },
-    { src: "/gridImages/8.png", width: "w-col-5" },
-    { src: "/gridImages/9.png", width: "w-1/3" },
+    { src: "/gridImages/image24.png", width: "w-[800px]" },
+    { src: "/gridImages/image25.png", width: "w-[720px]" },
+    { src: "/gridImages/image6.png", width: "w-[320px]" },
   ],
   [
-    { src: "/gridImages/10.png", width: "w-1/4" },
-    { src: "/gridImages/11.png", width: "w-1/4" },
-    { src: "/gridImages/12.png", width: "w-1/4" },
-    { src: "/gridImages/13.png", width: "w-1/4" },
+    { src: "/gridImages/image28.png", width: "w-[520px]" },
+    { src: "/gridImages/image30.png", width: "w-[770px]" },
+    { src: "/gridImages/image31.png", width: "w-[300px]" },
   ],
   [
-    { src: "/gridImages/14.png", width: "w-1/2" },
-    { src: "/gridImages/15.png", width: "w-1/2" },
+    { src: "/gridImages/image32.png", width: "w-[620px]" },
+    { src: "/gridImages/image36.png", width: "w-[1090px]" },
   ],
-  [
-    { src: "/gridImages/16.png", width: "w-1/3" },
-    { src: "/gridImages/17.png", width: "w-1/3" },
-    { src: "/gridImages/18.png", width: "w-1/3" },
-  ],
+  // [
+  //   { src: "/gridImages/image39.png", width: "w-[620px]" },
+  //   { src: "/gridImages/image41.png", width: "w-[350px]" },
+  // ],
 ];
 
 export default function ImageGallery() {
@@ -59,7 +58,7 @@ export default function ImageGallery() {
                   className="w-full object-contain h-full "
                   alt="One"
                 />
-                <div className="absolute z-20 bottom-0 p-10 space-y-10 bg-gallery-card-pattern w-full opacity-0 group-hover:opacity-100">
+                {/* <div className="absolute z-20 bottom-0 p-10 space-y-10 bg-gallery-card-pattern w-full opacity-0 group-hover:opacity-100">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/94ee757f1db37c983507b059bd07c87a767cef8c19ffbf9eec5262fbee82895c?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
                     alt=""
@@ -68,7 +67,7 @@ export default function ImageGallery() {
                   <h5 className="text-white">
                     Super Soul Sessions:&nbsp;Everything is Figureoutable
                   </h5>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

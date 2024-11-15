@@ -49,7 +49,8 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
         <div className="flex flex-col sm:flex-row justify-center items-start w-full bg-stone-100 max-md:max-w-full">
           <img
             loading="lazy"
-            src="/carousel.png"
+            // src="/carousel.png"
+            src="/gridImages/image39.png"
             alt="Student success story background"
             className="object-cover h-full w-full md:w-[450px] lg:w-[650px]"
           />
