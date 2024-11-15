@@ -15,7 +15,7 @@ import Footer from "@/components/common/Footer";
 
 export default function Component() {
   return (
-    <div className="[&_*]:transition-all [&_*]:duration-500 ">
+    <div className="">
       <Header />
       <HeroSection />
       <LearnAnything />
