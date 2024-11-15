@@ -34,7 +34,7 @@ const Header: React.FC = () => {
               {/* Top Banner */}
               <div className="flex justify-center md:justify-between items-center px-6 py-4 bg-[#F8E7E7]">
                 <div className="flex items-center gap-1 hidden md:flex">
-                  <span className="text-base">How To Get Anything You Want</span>
+                  <span className="text-base">How to Get Your Prayers Answered Instantly</span>
                   <span className="px-2">→</span>
                 </div>
                 <FreeTrainingButton />

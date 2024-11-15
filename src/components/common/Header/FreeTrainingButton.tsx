@@ -18,7 +18,7 @@ const FreeTrainingButton: React.FC<FreeTrainingButtonProps> = ({ className = '' 
     //     Free Training
     //   </a>
     // </button>
-    <button className={`w-full md:w-[150px] whitespace-nowrap px-6 pt-2.5 pb-3 text-base font-bold  text-center text-white capitalize bg-[#994A25] rounded-3xl shadow-button cursor-pointer hover:shadow-button-hover max-md:px-5 ${className}`}>
+    <button className={`w-full md:w-[250px] whitespace-nowrap px-6 pt-2.5 pb-3 text-base font-bold  text-center text-white capitalize bg-[#994A25] rounded-3xl shadow-button cursor-pointer hover:shadow-button-hover max-md:px-5 ${className}`}>
       <a
         href="https://www.marieforleo.com/how-to-get-anything-you-want"
         target="_blank"

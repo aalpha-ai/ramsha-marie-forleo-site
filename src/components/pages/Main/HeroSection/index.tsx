@@ -7,10 +7,9 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative flex flex-col justify-center items-start bg-black w-full h-screen max-h-[810px]">
+    <section className="relative flex flex-col justify-center items-start bg-black w-full h-[100dvh] max-h-[810px]">
       <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full h-full">
         <img
-          loading="lazy"
           src="/hero.svg"
           alt="Background image"
           className="object-cover w-full h-full max-md:object-cover"
