@@ -11,18 +11,39 @@ const HeroSection: React.FC = () => {
   useEffect(() => {
     const setHeight = () => {
       const vh = window.innerHeight;
-      document.documentElement.style.setProperty('--hero-height', `${vh}px`);
+      const height = Math.min(vh, 810);
+      document.documentElement.style.setProperty('--hero-height', `${height}px`);
     };
     
     setHeight();
-    window.addEventListener('resize', setHeight);
-    return () => window.removeEventListener('resize', setHeight);
+    
+    // Lock the height after initial set
+    document.body.style.overflow = 'hidden';
+    setHeight();
+    
+    setTimeout(() => {
+      document.body.style.overflow = '';
+    }, 100);
+    
+    const handleResize = () => {
+      document.body.style.overflow = 'hidden';
+      setHeight();
+      setTimeout(() => {
+        document.body.style.overflow = '';
+      }, 100);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
     <section 
-      className="relative flex flex-col justify-center items-start bg-black w-full"
-      style={{ height: 'var(--hero-height, 100vh)', maxHeight: '810px' }}
+      className="relative flex flex-col justify-center items-start bg-black w-full overflow-hidden"
+      style={{ 
+        height: 'var(--hero-height, 100vh)', 
+        maxHeight: '810px',
+      }}
     >
       <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full h-full">
         <img
