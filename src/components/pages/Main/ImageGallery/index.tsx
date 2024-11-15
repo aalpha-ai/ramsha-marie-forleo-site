@@ -4,72 +4,54 @@
 import React from "react";
 // import { ImageItem } from "./ImageItem";
 import Image from "next/image";
+import BlurFade from "@/components/magicui/blur-fade";
 
 const imageData = [
   [
-    { src: "/gridImages/image41.png", width: "w-[295px]" },
-    // { src: "/gridImages/image3.png", width: "w-[420px]" },
-    { src: "/gridImages/image6.png", width: "w-[360px]" },
-    { src: "/gridImages/image7.png", width: "w-[770px]" },
+    { src: "/gridImages/image41.png" },
+    { src: "/gridImages/image6.png" },
+    { src: "/gridImages/image7.png" },
   ],
   [
-    { src: "/gridImages/image8.png", width: "w-[610px]" },
-    { src: "/gridImages/image10.png", width: "w-[570px]" },
-    { src: "/gridImages/image23.png", width: "w-[570px]" },
+    { src: "/gridImages/image8.png" },
+    { src: "/gridImages/image23.png" },
   ],
   [
-    { src: "/gridImages/image24.png", width: "w-[800px]" },
-    { src: "/gridImages/image25.png", width: "w-[720px]" },
-    { src: "/gridImages/image6.png", width: "w-[320px]" },
+    { src: "/gridImages/image24.png" },
+    { src: "/gridImages/image25.png" },
+    { src: "/gridImages/image6.png" },
   ],
   [
-    { src: "/gridImages/image28.png", width: "w-[520px]" },
-    { src: "/gridImages/image30.png", width: "w-[770px]" },
-    { src: "/gridImages/image31.png", width: "w-[300px]" },
+    { src: "/gridImages/image28.png" },
+    { src: "/gridImages/image31.png" },
+    { src: "/gridImages/image10.png" },
   ],
   [
-    { src: "/gridImages/image32.png", width: "w-[620px]" },
-    { src: "/gridImages/image36.png", width: "w-[1090px]" },
+    { src: "/gridImages/image32.png" },
+    { src: "/gridImages/image36.png" },
   ],
-  // [
-  //   { src: "/gridImages/image39.png", width: "w-[620px]" },
-  //   { src: "/gridImages/image41.png", width: "w-[350px]" },
-  // ],
 ];
 
 export default function ImageGallery() {
   return (
-    <section className="">
+    <section className="w-full px-4 max-w-[2000px] mx-auto">
       {imageData.map((item, idx) => (
         <div
           key={idx + "root"}
-          className="flex max-md:flex-col max-md:justify-start md:items-stretch max-md:gap-7 pb-7"
+          className="flex max-md:flex-col gap-5 mb-5"
         >
           {item.map((image, index) => (
-            <div
-              key={index}
-              className={`${image.width} relative group cursor-pointer px-2.5 h-full max-md:w-full`}
-            >
-              <div className="relative">
+            <BlurFade key={index} inViewMargin="-200px">
+              <div className="relative md:flex-1">
                 <Image
                   src={image.src}
-                  height={300}
-                  width={300}
-                  className="w-full object-contain h-full "
-                  alt="One"
+                  width={500}
+                  height={400}
+                  className="w-full md:h-[300px] lg:h-[400px] xl:h-[500px] object-cover rounded-sm transition-transform hover:scale-[1.02] duration-300"
+                  alt="Gallery image"
                 />
-                {/* <div className="absolute z-20 bottom-0 p-10 space-y-10 bg-gallery-card-pattern w-full opacity-0 group-hover:opacity-100">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/94ee757f1db37c983507b059bd07c87a767cef8c19ffbf9eec5262fbee82895c?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
-                    alt=""
-                    className="h-10 w-10 object-contain"
-                  />
-                  <h5 className="text-white">
-                    Super Soul Sessions:&nbsp;Everything is Figureoutable
-                  </h5>
-                </div> */}
               </div>
-            </div>
+            </BlurFade>
           ))}
         </div>
       ))}

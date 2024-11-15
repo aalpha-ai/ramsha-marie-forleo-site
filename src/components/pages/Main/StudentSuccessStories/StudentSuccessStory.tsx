@@ -35,7 +35,7 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
   };
 
   return (
-    <section className="flex overflow-hidden flex-col items-center pt-10 md:py-16 bg-white max-md:px-5 max-sm:px-0">
+    <section className="flex overflow-hidden flex-col items-center pt-10 md:py-10 bg-white max-md:px-5 max-sm:px-0">
       <header className="flex flex-col pt-6 pb-5 md:pb-10 max-w-full text-center text-neutral-800 ">
         <h2 className="pb-px w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full">
           Our clients win
