@@ -16,27 +16,24 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
   author,
 }) => {
   return (
-    <div className="flex inset-y-0 right-0 z-0 flex-col self-start px-12 pt-16 pb-48 bg-stone-100 max-md:px-5 max-md:pb-24 max-md:max-w-full">
-      <div className="inline-flex px-2 py-3 text-xs font-medium tracking-[2.24px] uppercase bg-white rounded-md h-[40px] items-center justify-center w-[150px] whitespace-nowrap">
+    <div className="flex flex-col px-5 md:px-12 pb-20 md:pb-8 pt-8 md:pt-10 lg:pt-16">
+      <div className="inline-flex px-4 py-2 text-xs font-medium tracking-[2.24px] uppercase bg-white rounded-full h-[32px] items-center justify-center w-fit whitespace-nowrap">
         {category}
       </div>
-      <blockquote className="pb-px mt-5 text-lg font-[700] tracking-normal leading-9 text-black max-md:max-w-full">
+      <blockquote className="mt-6 text-[20px] md:text-[16px] font-[400] leading-[1.6] tracking-normal text-black">
         {testimonial}
       </blockquote>
-      <span className="pb-px mt-2 text-xs font-extrabold tracking-widest leading-4 uppercase text-neutral-500 max-md:max-w-full">
+      <span className="mt-4 text-xs font-bold tracking-widest uppercase text-neutral-500">
         {author}
       </span>
-      <button
-        className="px-24 pt-2.5 pb-3 mt-5 text-base tracking-wide leading-6 text-center text-white capitalize rounded-[100px] bg-[#1C1C1C] w-full md:w-[300px] max-md:px-5 shadow-none hover:shadow-none hover:bg-black/90 font-[700]"
+      <a
+        href="https://www.marieforleo.com/success-stories"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-6 px-8 py-4 text-base font-bold tracking-wide text-center text-white bg-black rounded-full hover:bg-black/90 w-full md:w-[200px] lg:w-[300px]"
       >
-        <a
-          href="https://www.marieforleo.com/success-stories"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Get Inspired
-        </a>
-      </button>
+        Get Inspired
+      </a>
     </div>
   );
 };

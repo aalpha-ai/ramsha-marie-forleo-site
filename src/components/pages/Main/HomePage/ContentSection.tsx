@@ -32,37 +32,37 @@ const ContentSection: React.FC<ContentSectionProps> = ({
 }) => {
   return (
     <section 
-      className="flex flex-col items-center w-full py-11 px-10 lg:py-24 lg:px-7"
+      className="flex flex-col items-center w-full py-11 px-5 lg:py-24 lg:px-7"
       style={{ backgroundColor: backgroundColor }}
     >
       <div className="flex flex-col w-full max-w-5xl.5">
         <BlurFade>
-          <div className="flex flex-row w-full">
+          <div className="flex flex-col md:flex-row w-full md:items-center md:gap-8">
             <div
-              className={`flex flex-col ${textContainerClassName} shrink text-neutral-800 w-1/2`}
+              className={`flex flex-col ${textContainerClassName} text-neutral-800 md:w-1/2 w-full order-2 md:order-1`}
             >
               <div className="z-10 pb-px text-xs font-[700] leading-5 uppercase tracking-[2.16px]">
                 {subtitle}
               </div>
-              <h2 className="mt-6 text-4xl lg:text-[40px] leading-[62.4px] font-ivy-presto font-[700] lg:w-[412px]">
+              <h2 className="mt-6 text-[32px] md:text-[42px] lg:text-[40px] leading-[1.3] md:leading-[1.2] font-ivy-presto font-[700]">
                 {title}
               </h2>
-              <p className="pb-px mt-5 text-lg tracking-normal leading-9 text-black font-[600] lg:w-[412px]">
+              <p className="pb-px mt-5 text-lg tracking-normal leading-[1.6] md:leading-8 text-black font-[600]">
                 {description}
               </p>
               <a
                 href={buttonLink}
-                className="overflow-hidden z-10 px-24 pt-2.5 pb-3 mt-6 max-w-full text-base font-bold tracking-wide leading-6 text-center text-white capitalize rounded-3xl bg-[#994A25] w-full md:w-fit max-md:px-5 shadow-button hover:shadow-button-hover font-[700]"
+                className="overflow-hidden z-10 px-6 md:px-16 py-4 md:py-4 mt-6 text-base font-bold tracking-wide leading-6 text-center text-white capitalize rounded-full bg-[#994A25] w-full md:w-fit shadow-button hover:shadow-button-hover font-[700]"
               >
                 {buttonText}
               </a>
             </div>
-            <div className={`${imageContainerClassName} pt-[45px] w-1/2 flex justify-end items-start`}>
+            <div className={`${imageContainerClassName} md:w-1/2 w-full flex justify-center md:justify-end items-start order-1 md:order-2 mb-8 md:mb-0`}>
               <img
                 loading="lazy"
                 src={imageSrc}
                 alt={imageAlt}
-                className="object-contain w-full lg:max-w-[395px]"
+                className="object-contain w-full max-w-[335px] md:max-w-none md:w-full"
               />
             </div>
           </div>

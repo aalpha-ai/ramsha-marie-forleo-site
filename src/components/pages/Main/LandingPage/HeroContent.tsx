@@ -8,7 +8,7 @@ const HeroContent: React.FC = () => {
   return (
     <div className="flex flex-col max-md:ml-0 max-md:w-full lg:pt-20">
       <div className="flex flex-col text-neutral-800 max-md:mt-2.5 max-md:max-w-full">
-        <h2 className="md:w-[180px] mt-4 md:text-[86px] lg:text-9xl font-ivy-presto uppercase lg:tracking-wider lg:leading-[129.2px] lg:leading-14">
+        <h2 className="md:w-[180px] mt-4 text-[80px] md:text-[86px] lg:text-9xl font-ivy-presto uppercase lg:tracking-wider lg:leading-[129.2px] lg:leading-14">
           MEET RAMSHA
         </h2>
         <p className="pb-px mt-5 text-lg tracking-normal leading-9 text-black lg:w-[512px] font-[500]">
