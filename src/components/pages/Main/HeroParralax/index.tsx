@@ -13,7 +13,7 @@ const HeroParralax: React.FC = () => {
         bg-no-repeat 
         w-full 
         min-h-[600px]
-        bg-fixed
+        md:bg-fixed
       " 
     />
   );
