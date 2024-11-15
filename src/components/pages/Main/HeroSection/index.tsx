@@ -4,16 +4,19 @@
 import React from "react";
 import VideoButton from "./VideoButton";
 import BlurFade from "@/components/magicui/blur-fade";
+import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   return (
     <BlurFade inViewMargin="-200px">
       <section className="bg-stone-50 relative flex flex-col justify-center items-start bg-black w-full max-md:h-[600px] md:h-screen max-h-[810px]">
         <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full h-full">
-          <img
+          <Image
             src="/hero.svg"
             alt="Background image"
             className="object-cover w-full h-full max-md:object-cover"
+            width={500}
+            height={500}
           />
         </div>
 
