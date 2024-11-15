@@ -11,12 +11,12 @@ const LearnAnything: React.FC = () => {
     <main className="bg-stone-50 md:px-10 lg:px-0">
         <section className="flex flex-col md:flex-row py-20 lg:max-w-[1000px] mx-auto max-md:px-5">
           <BlurFade inViewMargin="-200px">
-            <div className="w-full md:w-1/2">
+            <div className="w-full">
               <LearnHeader />
             </div>
           </BlurFade>
           <BlurFade inViewMargin="-200px">
-            <div className="w-full md:w-1/2 flex justify-end items-center">
+            <div className="w-full flex justify-center items-center">
               <LearnImage />
             </div>
           </BlurFade>

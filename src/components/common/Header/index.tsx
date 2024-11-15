@@ -11,7 +11,7 @@ import { AlignJustify } from "lucide-react";
 
 const Header: React.FC = () => {
   return (
-    <header className="flex flex-col pb-px bg-white border-b border-solid border-b-zinc-400 w-full max-lg:py-5">
+    <header className="sticky top-0 z-50 flex flex-col pb-px bg-white border-b border-solid border-b-zinc-400 w-full max-lg:py-5">
       <div className="grid grid-cols-8 items-center px-7 w-full max-md:px-5 max-md:max-w-full">
         {/* Desktop Navigation */}
         <div className="col-start-2 lg:col-start-3 col-span-4 flex justify-center items-center max-lg:hidden">
@@ -27,7 +27,10 @@ const Header: React.FC = () => {
             <SheetTrigger>
               <AlignJustify className="h-6 w-6" />
             </SheetTrigger>
-            <SheetContent side="right" className="w-full sm:max-w-[400px] md:max-w-[500px] p-0 bg-[#FDF7F4]">
+            <SheetContent 
+              side="right" 
+              className="w-full p-0 bg-[#FDF7F4] mt-[65px]"
+            >
               {/* Top Banner */}
               <div className="flex justify-center md:justify-between items-center px-6 py-4 bg-[#F8E7E7]">
                 <div className="flex items-center gap-1 hidden md:flex">
@@ -35,25 +38,10 @@ const Header: React.FC = () => {
                   <span className="px-2">→</span>
                 </div>
                 <FreeTrainingButton />
-                {/* <button className="text-sm px-6 py-2 bg-[#E9F5A1] rounded-full border border-black shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                  Free Training!
-                </button> */}
               </div>
 
               {/* Navigation Menu */}
               <div className="px-6 py-6">
-                {/* Courses Section */}
-                {/* <div className="border-b border-[#00000033]">
-                  <div className="flex justify-between items-center py-3">
-                    <h2 className="text-base font-medium">Courses</h2>
-                    <div className="flex">
-                      <span className="rotate-[45deg] text-lg">⟍</span>
-                      <span className="rotate-[-45deg] text-lg ml-[-3px]">⟍</span>
-                    </div>
-                  </div>
-                </div> */}
-
-                {/* Main Navigation Links */}
                 <nav className="flex flex-col">
                   {navItems.map((item) => (
                     <a
@@ -65,24 +53,6 @@ const Header: React.FC = () => {
                     </a>
                   ))}
                 </nav>
-
-                {/* More Section */}
-                {/* <div className="border-b border-[#00000033]">
-                  <div className="flex justify-between items-center py-3">
-                    <h2 className="text-base font-medium">More</h2>
-                    <div className="flex">
-                      <span className="rotate-[45deg] text-lg">⟍</span>
-                      <span className="rotate-[-45deg] text-lg ml-[-3px]">⟍</span>
-                    </div>
-                  </div>
-                </div> */}
-
-                {/* Program Login Button */}
-                {/* <div className="mt-6">
-                  <button className="w-full border border-black rounded-full py-3 px-6 text-center text-base font-medium">
-                    Program Login
-                  </button>
-                </div> */}
               </div>
             </SheetContent>
           </Sheet>

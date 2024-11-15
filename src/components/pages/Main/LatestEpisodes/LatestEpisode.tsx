@@ -48,7 +48,7 @@ const episodes: Episode[] = [
 const LatestEpisodes: React.FC = () => {
   return (
     <section className="bg-[#ECE2D7] ">
-      <section className="flex flex-col grow shrink items-center pb-12 w-3/5 ml-auto mr-[80px]">
+      <section className="flex flex-col grow shrink items-center pt-10 pb-12 w-3/5 ml-auto mr-[80px]">
         <h2 className="pt-6 pb-3 text-xs font-extrabold leading-5 uppercase text-neutral-800 tracking-[2.16px]">
           KEYNOTE SPEAKER TOPICS
         </h2>
