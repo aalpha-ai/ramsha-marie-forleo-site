@@ -46,14 +46,14 @@ const mediaLogos: MediaLogoData[] = [
 
 const MediaLogos: React.FC = () => {
   return (
-    <section className="flex flex-col items-center gap-6 px-20 pt-10 md:pb-14 lg:pt-20 lg:pb-32 bg-[#994A25] w-full max-md:px-5 max-md:pb-24">
+    <section className="flex flex-col items-center gap-6 px-20 lg:px-2 pt-10 md:pb-14 lg:pt-20 lg:pb-32 bg-[#994A25] w-full max-md:px-5 max-md:pb-24">
       <BlurFade>
         <h2 className="pb-px w-full text-xs font-extrabold leading-5 text-center text-white uppercase  tracking-[2.16px] max-md:max-w-full">
           You Might Have Seen Me On
         </h2>
       </BlurFade>
       <BlurFade>
-        <div className="flex flex-wrap md:flex-row gap-x-6 lg:gap-x-12 justify-center">
+        <div className="flex flex-wrap md:flex-nowrap md:flex-row gap-x-6 lg:gap-x-12 justify-center">
           {mediaLogos.map((logo, index) => (
             <MediaLogo key={index} {...logo} />
           ))}
