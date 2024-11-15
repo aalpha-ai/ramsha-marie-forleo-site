@@ -46,7 +46,6 @@ const BookSection: React.FC<BookSectionProps> = ({ imageSrc }) => {
   return (
     <section className="flex flex-wrap justify-center">
       <img
-        loading="lazy"
         src={imageSrc}
         alt="Decorative image"
         className="object-contain grow shrink aspect-[0.45] min-w-[240px] w-[364px] max-md:max-w-full"

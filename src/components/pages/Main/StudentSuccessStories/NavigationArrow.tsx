@@ -24,7 +24,7 @@ const NavigationArrow: React.FC<NavigationArrowProps> = ({
       onClick={onClick}
     >
       <img
-        loading="lazy"
+        
         src={imageSrc}
         alt={`${direction} navigation arrow`}
         className="object-contain w-10 aspect-[0.98]"

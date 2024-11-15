@@ -41,7 +41,6 @@ export const SectionContent: React.FC<SectionContentProps> = ({
         </div>
       </div>
       <img
-        loading="lazy"
         src={imageSrc}
         alt={imageAlt}
         className="object-contain grow shrink aspect-[0.62] min-w-[240px] w-[317px]"

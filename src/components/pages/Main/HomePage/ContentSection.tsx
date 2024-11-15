@@ -59,7 +59,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
             </div>
             <div className={`${imageContainerClassName} md:w-1/2 w-full flex justify-center md:justify-end items-start order-1 md:order-2 mb-8 md:mb-0`}>
               <img
-                loading="lazy"
+                
                 src={imageSrc}
                 alt={imageAlt}
                 className="object-contain w-full max-w-[335px] md:max-w-none md:w-full"

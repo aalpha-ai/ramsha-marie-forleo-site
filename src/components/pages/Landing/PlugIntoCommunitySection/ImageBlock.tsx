@@ -9,7 +9,7 @@ export const ImageBlock: React.FC<ImageBlockProps> = () => {
   return (
     <div className="flex flex-col grow shrink justify-center items-end pt-80 pb-96 bg-stone-50 min-w-[240px] w-[351px] max-md:py-24 max-md:max-w-full">
       <img
-        loading="lazy"
+        
         src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/2c36abb069d27807a6f870dad1080e03b4f6c7057b885c8c728a0d69eb402de5?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
         alt="Dream Club visual representation"
         className="object-contain max-w-full aspect-[1.78] w-[439px]"

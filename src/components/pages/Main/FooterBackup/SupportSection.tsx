@@ -10,7 +10,7 @@ const SupportSection: React.FC = () => {
         <div className="flex overflow-hidden items-start self-stretch my-auto">
           <div className="flex overflow-hidden flex-col justify-center items-center min-h-[31px] w-[27px]">
             <img
-              loading="lazy"
+              
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/aff7fbcea89077a1a5c3ed193547eeacc01fd5eae12e539591ad59eda8a78bd3?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
               alt=""
               className="object-contain w-full aspect-[0.87]"

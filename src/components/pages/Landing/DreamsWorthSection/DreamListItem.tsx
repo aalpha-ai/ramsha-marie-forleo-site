@@ -18,7 +18,7 @@ export const DreamListItem: React.FC<DreamListItemProps> = ({
     <li className="flex items-start mt-4 w-full max-md:max-w-full">
       <div className="flex flex-col items-start pt-1.5 pr-2.5 max-w-[486px] w-[30px]">
         <img
-          loading="lazy"
+          
           src={iconSrc}
           alt=""
           className="object-contain w-5 aspect-[1.25]"

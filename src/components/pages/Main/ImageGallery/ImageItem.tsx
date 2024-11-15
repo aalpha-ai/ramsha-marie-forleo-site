@@ -11,7 +11,7 @@ type ImageItemProps = {
 export function ImageItem({ src, className = "" }: ImageItemProps) {
   return (
     <img
-      loading="lazy"
+      
       src={src}
       className={`object-contain w-full  max-md:max-w-full ${className}`}
     />

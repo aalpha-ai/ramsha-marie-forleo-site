@@ -13,7 +13,6 @@ const Footer: React.FC = () => {
       <div className="flex flex-col xl:mx-[120px] xl:px-[40px] xl:pt-[96px] xl:pb-[12px] lg:px-[54px] lg:pt-[82px] lg:pb-[86px] md:px-[40px] md:pt-[80px] md:pb-[72px] px-[21px] pt-[64px] pb-[56px] w-full">
         <div className="flex items-center self-start">
           <img
-            loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e3dbabc984bf7a46dd6d417877c04afea8b7820a34d9c4c8949f8026548bbd8f?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
             alt="Company logo"
             className="object-contain self-stretch my-auto aspect-[9.9] max-w-[1100px] min-w-[240px] w-[307px]"

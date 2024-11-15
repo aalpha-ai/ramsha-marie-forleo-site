@@ -18,7 +18,7 @@ export const ListItem: React.FC<ListItemProps> = ({
     <li className="flex flex-wrap items-start mt-5 w-full max-md:max-w-full">
       <div className="flex flex-col items-start pt-px pr-2 w-7 max-w-[514px]">
         <img
-          loading="lazy"
+          
           src={icon}
           alt=""
           className="object-contain aspect-square w-[21px]"

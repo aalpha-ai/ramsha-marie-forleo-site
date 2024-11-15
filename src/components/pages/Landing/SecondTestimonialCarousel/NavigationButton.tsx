@@ -15,7 +15,7 @@ const NavigationButton: React.FC<NavigationButtonProps> = ({ onClick }) => {
       onClick={onClick}
     >
       <img
-        loading="lazy"
+        
         src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/69b11d1cc68872aaceaf3c7d036cf985e891e48f6c6f2ce879814a6016cc7fc7?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
         alt=""
         className="object-contain w-full aspect-[4.57]"

@@ -6,7 +6,7 @@ import React from "react";
 export const LearnImage: React.FC = () => {
   return (
     <img
-      loading="lazy"
+      
       src="/cta-image-2.svg"
       className="object-contain lg:w-1/2"
       alt="Learn Anything illustration"

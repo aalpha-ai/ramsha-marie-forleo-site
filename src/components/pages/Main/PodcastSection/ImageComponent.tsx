@@ -14,7 +14,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
   alt,
   className,
 }) => {
-  return <img loading="lazy" src={src} alt={alt} className={className} />;
+  return <img  src={src} alt={alt} className={className} />;
 };
 
 export default ImageComponent;

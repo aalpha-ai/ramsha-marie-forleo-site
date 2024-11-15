@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     <header className="flex flex-col items-center px-16 text-base tracking-normal leading-7 text-black max-md:px-5 max-md:max-w-full">
       <div className="flex flex-col pt-8 pb-4 max-w-full w-[775px]">
         <img 
-          loading="lazy" 
+           
           src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/bc4dbb5c559fd9cad20d7b36ec14589d9edba8776b4987fbab409c73bb655eaa?apiKey=48a1608e30b648c89bd5ed134a49b3b8&" 
           alt="Dream Club visual representation" 
           className="object-contain mr-8 ml-8 aspect-[9.9] max-w-[710px] w-[710px] max-md:mr-2.5 max-md:max-w-full" 

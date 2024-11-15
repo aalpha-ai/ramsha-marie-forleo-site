@@ -46,7 +46,6 @@ const DreamClubList: React.FC<DreamClubListProps> = ({ imageSrc }) => {
   return (
     <section className="flex flex-wrap justify-center">
       <img
-        loading="lazy"
         src={imageSrc}
         alt="Dream Club visual representation"
         className="object-contain grow shrink aspect-[0.44] min-w-[240px] w-[351px] max-md:max-w-full"

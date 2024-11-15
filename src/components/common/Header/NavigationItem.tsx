@@ -19,7 +19,6 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
       <div className="self-stretch my-auto whitespace-nowrap">{label}</div>
       {hasDropdown && (
         <img
-          loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/1eb985a1a19eeef1a6df0fb36d33d3c683aed99014a61c7da29e8adf1e3d8d6a?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
           alt=""
           className="object-contain shrink-0 self-stretch my-auto aspect-[3.16] max-w-[121px] w-[19px]"

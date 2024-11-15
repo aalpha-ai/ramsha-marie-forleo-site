@@ -16,7 +16,7 @@ export const NotForYouItem: React.FC<NotForYouItemProps> = ({
     <div className="flex flex-wrap items-start mt-5 w-full max-md:max-w-full">
       <div className="flex flex-col items-start pt-1 pr-2.5 max-w-[785px] w-[29px]">
         <img
-          loading="lazy"
+          
           src={imageUrl}
           alt=""
           className="object-contain aspect-square w-[19px]"

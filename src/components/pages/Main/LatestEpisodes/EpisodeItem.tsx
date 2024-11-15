@@ -30,7 +30,7 @@ const EpisodeItem: React.FC<EpisodeItemProps> = ({
         </div>
         <div className="max-md:hidden">
           <img
-            loading="lazy"
+            
             src={imageSrc}
             alt=""
             className="object-contain aspect-square w-full h-full"

@@ -18,7 +18,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     <div className="flex flex-wrap justify-center p-5 max-md:max-w-full">
       <div className="flex flex-col justify-center items-end px-8 py-2.5 w-[152px]">
         <img
-          loading="lazy"
+          
           src={imageSrc}
           alt={`${author}'s profile`}
           className="object-contain aspect-square w-[110px] max-md:mr-0"

@@ -46,7 +46,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <SecurePayment />
         <div className="flex flex-col self-stretch pt-5">
           <img
-            loading="lazy"
+            
             src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/18e8dc230da1ba7dcd86b152badac1f130fbf0034ab6e77a6fdb247d2e95d6d5?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
             alt=""
             className="object-contain w-full aspect-[9.8]"

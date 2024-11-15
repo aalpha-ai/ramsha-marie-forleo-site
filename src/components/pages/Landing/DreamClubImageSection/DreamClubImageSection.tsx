@@ -15,7 +15,6 @@ const DreamClubImageSection: React.FC<DreamClubImageSectionProps> = ({
   return (
     <section className="flex flex-wrap justify-center text-base font-light leading-7 text-black">
       <img
-        loading="lazy"
         src={imageSrc}
         alt="Dream Club visual representation"
         className="object-contain grow shrink aspect-[0.47] min-w-[240px] w-[364px] max-md:max-w-full"

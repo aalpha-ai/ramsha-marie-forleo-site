@@ -11,7 +11,7 @@ interface MediaLogoProps {
 const MediaLogo: React.FC<MediaLogoProps> = ({ src, alt }) => {
   return (
     <img
-      loading="lazy"
+      
       src={src}
       alt={alt}
       className="object-contain shrink-0 self-stretch my-auto aspect-[3.86] max-w-[922px] w-[58px]"

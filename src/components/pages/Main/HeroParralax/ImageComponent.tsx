@@ -11,7 +11,7 @@ interface ImageComponentProps {
 const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt }) => {
   return (
     <img
-      loading="lazy"
+      
       src={src}
       alt={alt}
       className="object-contain w-full aspect-[2.4]"

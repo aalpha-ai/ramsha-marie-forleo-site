@@ -22,7 +22,7 @@ export const DreamsWorthSection: React.FC<DreamsWorthSectionProps> = ({
   return (
     <section className="flex flex-wrap justify-center bg-black">
       <img
-        loading="lazy"
+        
         src={imageSrc}
         alt=""
         className="object-contain grow shrink aspect-[0.3] min-w-[240px] w-[351px] max-md:max-w-full"

@@ -11,7 +11,7 @@ interface ImageComponentProps {
 const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt }) => {
   return (
     <img
-      loading="lazy"
+      
       src={src}
       alt={alt}
       className="object-cover w-full h-[250px] md:h-[438px]"

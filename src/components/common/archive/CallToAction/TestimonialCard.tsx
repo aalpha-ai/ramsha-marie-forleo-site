@@ -33,7 +33,6 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             <Image
               height={80}
               width={80}
-              loading="lazy"
               src={imageSrc}
               alt={`${name}'s profile`}
               className="object-contain shrink-0 self-stretch my-auto w-20 aspect-square rounded-[40px]"

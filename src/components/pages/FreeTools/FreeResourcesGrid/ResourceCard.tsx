@@ -22,7 +22,6 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
     <div className="flex flex-col pb-2 h-full">
       <div className="flex justify-center items-center w-full md:h-[265px]">
         <img
-          loading="lazy"
           src={imageSrc}
           alt={title}
           className="object-cover aspect-square w-full md:max-w-[265px] md:min-w-[240px] md:w-[265px]"

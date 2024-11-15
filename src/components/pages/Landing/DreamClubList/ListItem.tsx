@@ -13,7 +13,7 @@ const ListItem: React.FC<ListItemProps> = ({ imageSrc, text }) => {
     <li className="flex items-start mt-4 w-full max-md:max-w-full">
       <div className="flex flex-col items-start pt-2 pr-4 max-w-[491px] w-[61px]">
         <img
-          loading="lazy"
+          
           src={imageSrc}
           alt=""
           className="object-contain aspect-[4.61] w-[46px]"

@@ -49,7 +49,6 @@ const CompanyLinks: React.FC = () => {
           <div className="flex overflow-hidden items-start self-stretch my-auto">
             <div className="flex overflow-hidden flex-col justify-center items-center min-h-[31px] w-[27px]">
               <img
-                loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/77f3edd69595841b37b1fda1a4f4d346a1ffb9af5a11c28d98d96fe804bce9c8?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
                 alt="Help icon"
                 className="object-contain w-full aspect-[0.87]"

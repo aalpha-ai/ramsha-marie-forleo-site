@@ -26,7 +26,7 @@ const QuizCard: React.FC<QuizCardProps> = ({
       <section className="relative flex items-center gap-16 py-16 px-[14px] lg:px-16 w-full bg-rose-50 max-md:flex-col max-md:px-6">
         <div className="w-[220px] lg:w-1/3">
           <img
-            loading="lazy"
+            
             src={imageSrc}
             alt=""
             className="w-full object-cover"

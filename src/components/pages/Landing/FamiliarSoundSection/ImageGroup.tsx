@@ -14,7 +14,7 @@ const ImageGroup: React.FC<ImageGroupProps> = ({ images }) => {
       {images.map((image, index) => (
         <img
           key={index}
-          loading="lazy"
+          
           src={image.src}
           alt={image.alt}
           className="object-contain max-w-full aspect-[3.14] w-[300px]"

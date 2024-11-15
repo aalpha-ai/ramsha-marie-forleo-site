@@ -8,7 +8,7 @@ const HeroImage: React.FC = () => {
     // <div className="lg:-mt-28 relative z-10">
     //   <div className="flex flex-col grow justify-center items-start ">
     //     <img
-    //       loading="lazy"
+    //       
     //       src="/hero-2.svg"
     //       alt="Marie's portrait"
     //       className="relative z-10 max-lg:w-full h-full max-w-xl bottom-0"
@@ -16,7 +16,7 @@ const HeroImage: React.FC = () => {
     //   </div>
     // </div>
     <img
-      loading="lazy"
+      
       src="/hero-2.svg"
       alt="Ramsha's portrait"
       className="w-full h-full"

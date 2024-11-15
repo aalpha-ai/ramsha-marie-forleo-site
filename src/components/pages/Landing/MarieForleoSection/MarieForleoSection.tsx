@@ -51,7 +51,7 @@ export const MarieForleoSection: React.FC<MarieForleoSectionProps> = ({
         </div>
       </div>
       <img
-        loading="lazy"
+        
         src={imageSrc}
         alt="Marie Forleo"
         className="object-contain grow shrink aspect-[0.45] min-w-[240px] w-[351px] max-md:max-w-full"
