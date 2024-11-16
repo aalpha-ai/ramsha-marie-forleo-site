@@ -4,6 +4,7 @@
 import React from "react";
 import { TextBlock } from "./TextBlock";
 import { Heading } from "./Heading";
+import Image from 'next/image';
 
 interface BookSectionProps {
   imageSrc: string;
@@ -45,10 +46,12 @@ const BookSection: React.FC<BookSectionProps> = ({ imageSrc }) => {
 
   return (
     <section className="flex flex-wrap justify-center">
-      <img
+      <Image
         src={imageSrc}
         alt="Decorative image"
         className="object-contain grow shrink aspect-[0.45] min-w-[240px] w-[364px] max-md:max-w-full"
+        width={364}
+        height={162}
       />
       <div className="flex flex-col grow shrink justify-center items-start py-20 max-w-[1100px] min-w-[240px] w-[478px] max-md:max-w-full">
         <div className="flex flex-col p-10 rounded-2xl border border-black border-solid bg-stone-50 min-h-[836px] max-md:px-5 max-md:max-w-full">

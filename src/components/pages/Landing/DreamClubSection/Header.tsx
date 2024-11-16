@@ -1,14 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
     <header className="flex flex-col items-center px-16 text-base tracking-normal leading-7 text-black max-md:px-5 max-md:max-w-full">
       <div className="flex flex-col pt-8 pb-4 max-w-full w-[775px]">
-        <img 
-           
+        <Image
           src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/bc4dbb5c559fd9cad20d7b36ec14589d9edba8776b4987fbab409c73bb655eaa?apiKey=48a1608e30b648c89bd5ed134a49b3b8&" 
           alt="Dream Club visual representation" 
           className="object-contain mr-8 ml-8 aspect-[9.9] max-w-[710px] w-[710px] max-md:mr-2.5 max-md:max-w-full" 
+          width={710}
+          height={72}
         />
         <h1 className="px-40 mt-11 text-2xl font-bold tracking-wide leading-8 text-neutral-800 max-md:px-5 max-md:mt-10 max-md:max-w-full">
           <span className="text-neutral-800">Coaching</span>

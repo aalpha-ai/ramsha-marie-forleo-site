@@ -4,6 +4,7 @@
 import React from "react";
 import { TextBlock } from "./TextBlock";
 import { StrongText } from "./StrongText";
+import Image from "next/image";
 
 interface MarieForleoSectionProps {
   headingText: string[];
@@ -50,11 +51,12 @@ export const MarieForleoSection: React.FC<MarieForleoSectionProps> = ({
           </div>
         </div>
       </div>
-      <img
-        
+      <Image
         src={imageSrc}
         alt="Marie Forleo"
         className="object-contain grow shrink aspect-[0.45] min-w-[240px] w-[351px] max-md:max-w-full"
+        width={351}
+        height={497}
       />
     </section>
   );

@@ -3,6 +3,7 @@
  */
 import React from "react";
 import { ImageData } from "./types";
+import Image from "next/image";
 
 interface ImageGroupProps {
   images: ImageData;
@@ -12,12 +13,13 @@ const ImageGroup: React.FC<ImageGroupProps> = ({ images }) => {
   return (
     <div className="flex flex-col grow shrink min-w-[240px] w-[239px]">
       {images.map((image, index) => (
-        <img
+        <Image
           key={index}
-          
           src={image.src}
           alt={image.alt}
           className="object-contain max-w-full aspect-[3.14] w-[300px]"
+          width={300}
+          height={95}
         />
       ))}
     </div>

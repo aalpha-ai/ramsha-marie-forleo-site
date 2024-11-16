@@ -3,6 +3,7 @@
  */
 import React from "react";
 import { DreamListItem, DreamListItemProps } from "./DreamListItem";
+import Image from "next/image";
 
 interface DreamsWorthSectionProps {
   title: string;
@@ -21,11 +22,12 @@ export const DreamsWorthSection: React.FC<DreamsWorthSectionProps> = ({
 }) => {
   return (
     <section className="flex flex-wrap justify-center bg-black">
-      <img
-        
+      <Image
         src={imageSrc}
         alt=""
         className="object-contain grow shrink aspect-[0.3] min-w-[240px] w-[351px] max-md:max-w-full"
+        width={351}
+        height={117}
       />
       <div className="flex flex-col grow shrink items-center min-w-[240px] w-[497px] max-md:max-w-full">
         <div className="flex flex-col px-12 py-20 max-w-full w-[585px] max-md:px-5">
