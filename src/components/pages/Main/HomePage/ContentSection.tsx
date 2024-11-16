@@ -3,6 +3,7 @@
  */
 import BlurFade from "@/components/magicui/blur-fade";
 import React from "react";
+import Image from "next/image";
 
 type ContentSectionProps = {
   title: any;
@@ -58,11 +59,12 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               </a>
             </div>
             <div className={`${imageContainerClassName} md:w-1/2 w-full flex justify-center md:justify-end items-start order-1 md:order-2 mb-8 md:mb-0`}>
-              <img
-                
+              <Image
                 src={imageSrc}
                 alt={imageAlt}
                 className="object-contain w-full max-w-[335px] md:max-w-none md:w-full"
+                width={335}
+                height={140}
               />
             </div>
           </div>

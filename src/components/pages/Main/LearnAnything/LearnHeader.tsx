@@ -5,7 +5,7 @@ import React from "react";
 import SubscriptionForm from "./Form/SubscriptionForm";
 export const LearnHeader: React.FC = () => {
   return (
-    <header className="flex flex-col grow gap-5 shrink px-4 lg:px-8 pt-2.5 pb-8 tracking-normal leading-9 text-center text-black md:w-[480px] lg:w-[570px]">
+    <header className="flex flex-col grow gap-5 shrink px-4 lg:px-8 pt-2.5 pb-8 tracking-normal leading-9 text-center text-black md:w-[480px] lg:w-[570px] xl:w-full">
       <h1 className="text-xl lg:text-[32px] font-ivy-presto tracking-wider md:leading-[24px] lg:leading-[48.6px] text-neutral-800 max-md:px-5 mx-auto">
         <span className="text-neutral-800 font-[600]">Learn How to Get Your Prayers Answered </span>
         <span className="italic text-neutral-800">Instantly</span>

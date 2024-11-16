@@ -6,6 +6,7 @@
 import React, { useState } from "react";
 import SuccessStory from "./SuccessStory";
 import NavigationArrow from "./NavigationArrow";
+import Image from "next/image";
 
 interface Story {
   category: string;
@@ -45,14 +46,13 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
         </h3>
       </header>
       <main className="flex flex-col pt-8 pb-9 max-w-full">
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 relative justify-center items-start w-full bg-stone-100 max-md:max-w-full"> */}
         <div className="flex flex-col sm:flex-row justify-center items-start w-full bg-stone-100 max-md:max-w-full">
-          <img
-            
-            // src="/carousel.png"
+          <Image
             src="/gridImages/image39.png"
             alt="Student success story background"
             className="object-cover h-full w-full md:w-[450px] lg:w-[650px]"
+            width={650}
+            height={450}
           />
           <SuccessStory
             category={stories[currentStoryIndex].category}
