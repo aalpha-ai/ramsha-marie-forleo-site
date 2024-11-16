@@ -45,7 +45,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               <div className="z-10 pb-px text-xs font-[700] leading-5 uppercase tracking-[2.16px]">
                 {subtitle}
               </div>
-              <h2 className="mt-6 text-[32px] md:text-[42px] lg:text-[40px] leading-[1.3] md:leading-[1.2] font-ivy-presto font-[700]">
+              <h2 className="mt-6 text-[32px] md:text-[42px] lg:text-[40px] leading-[1.3] md:leading-[1.2] font-caslon font-[700]">
                 {title}
               </h2>
               <p className="pb-px mt-5 text-lg tracking-normal leading-[1.6] md:leading-8 text-black font-[600]">

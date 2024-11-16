@@ -41,7 +41,7 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
         <h2 className="pb-px w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full">
           Our clients win
         </h2>
-        <h3 className="mt-3 w-[358px] md:w-full text-4xl lg:text-5xl md:tracking-wider md:leading-[62.4px] max-md:max-w-full font-ivy-presto">
+        <h3 className="mt-3 w-[358px] md:w-full text-4xl lg:text-5xl md:tracking-wider md:leading-[62.4px] max-md:max-w-full font-caslon">
           Will You Be The Next Success Story?
         </h3>
       </header>

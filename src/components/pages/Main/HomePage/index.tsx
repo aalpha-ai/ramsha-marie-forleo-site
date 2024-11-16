@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
     <div className="bg-white p-2 md:p-4 lg:p-7 grid gap-2 md:gap-7">
       <ContentSection
         title={
-          <div className="font-serif">
+          <div className="font-caslon">
             Attract Your Soulmate Husband the <span className="italic font-[300]">Halal</span>{' '}Way.
           </div>
         }
@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
       />
       <ContentSection
         title={
-          <div className="font-serif">
+          <div className="font-caslon">
             SUBMISSION, THE THEORY OF EVERYTHING
           </div>
         }

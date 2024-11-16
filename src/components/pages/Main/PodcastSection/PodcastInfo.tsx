@@ -11,7 +11,7 @@ interface PodcastInfoProps {
 const PodcastInfo: React.FC<PodcastInfoProps> = ({ title, description }) => {
   return (
     <>
-      <h2 className="text-4xl tracking-wider leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full font-ivy-presto font-[700]">
+      <h2 className="text-4xl tracking-wider leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full font-caslon font-[700]">
         {title}
       </h2>
       <p className="mt-7 text-base tracking-normal leading-8 text-black max-md:max-w-full">

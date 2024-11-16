@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
+        "caslon": ["var(--font-caslon)"],
         "ivy-presto": ["var(--font-ivy-presto)"],
         "area-normal": ["var(--font-area-normal)"],
         "area-extended": ["var(--font-area-extended)"],

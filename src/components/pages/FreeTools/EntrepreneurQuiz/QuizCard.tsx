@@ -39,7 +39,7 @@ const QuizCard: React.FC<QuizCardProps> = ({
           <h2 className="text-sm font-extrabold uppercase tracking-[2.16px] text-neutral-800 text-center md:text-left">
             Free Quiz
           </h2>
-          <h3 className="mt-4 text-[27px] md:text-[21px] lg:text-[36px] xl:text-[40px] leading-[1.2] tracking-wide font-[600] font-ivy-presto text-center md:text-left">
+          <h3 className="mt-4 text-[27px] md:text-[21px] lg:text-[36px] xl:text-[40px] leading-[1.2] tracking-wide font-[600] font-caslon text-center md:text-left">
             {title}
           </h3>
           <p className="mt-6 md:text-[16px] text-lg leading-relaxed text-neutral-800 text-center md:text-left">

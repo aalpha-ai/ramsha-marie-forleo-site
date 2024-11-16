@@ -24,7 +24,7 @@ const SubscriptionForm: React.FC = () => {
         />
       </div>
       <SubmitButton text="GET INSTANT ACCESS" />
-      {/* <FormDisclaimer /> */}
+      <FormDisclaimer />
     </form>
   );
 };

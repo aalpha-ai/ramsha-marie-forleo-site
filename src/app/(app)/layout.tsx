@@ -14,6 +14,11 @@ const ivyPresto = localFont({
   variable: "--font-ivy-presto",
 });
 
+const caslon = localFont({
+  src: "../../fonts/Caslon/F37Caslon-SemiBoldDisplay.otf",
+  variable: "--font-caslon",
+});
+
 const areaExtended = localFont({
   src: "../../fonts/Area_Extended_SemiBold.otf",
   variable: "--font-area-extended",
@@ -42,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${ivyPresto.variable} ${areaExtended.variable} ${areaNormal.variable} ${gotham.variable} ${inter.className} antialiased custom`}
+        className={`${inter.variable} ${ivyPresto.variable} ${caslon.variable} ${areaExtended.variable} ${areaNormal.variable} ${gotham.variable} ${inter.className} antialiased custom`}
       >
         <main>{children}</main>
       </body>
