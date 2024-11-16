@@ -18,7 +18,7 @@ const companyLinks: LinkItem[] = [
 
 const CompanyLinks: React.FC = () => {
   return (
-    <section className="flex flex-col grow shrink pt-6 pb-16 text-[#F8E8D8]">
+    <section className="flex flex-col grow shrink pt-6 pb-16 text-ramsha-accent">
       <h2 className="text-xs font-extrabold leading-5 uppercase whitespace-nowrap tracking-[2.16px]">
         Company
       </h2>

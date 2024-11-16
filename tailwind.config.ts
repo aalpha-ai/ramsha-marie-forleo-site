@@ -65,6 +65,11 @@ const config: Config = {
         zinc: {
           800: "hsl(var(--zinc-800))",
         },
+        ramsha: {
+          accent: "#f8e8d8",
+          primary: "#0A4049",
+          tertiary: "#e09453",
+        },
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

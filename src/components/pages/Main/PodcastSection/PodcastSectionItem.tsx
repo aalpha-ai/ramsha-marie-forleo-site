@@ -17,8 +17,8 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({
   description,
 }) => {
   return (
-    <section className="flex flex-col items-center bg-[#ECE2D7] pb-20">
-      <div className="flex flex-col bg-[#ECE2D7]">
+    <section className="flex flex-col items-center bg-ramsha-accent pb-20">
+      <div className="flex flex-col">
         <BlurFade>
           <div className="flex flex-wrap gap-5 justify-center w-full">
             <div className="relative">

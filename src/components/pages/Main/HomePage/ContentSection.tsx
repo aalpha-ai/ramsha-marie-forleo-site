@@ -53,7 +53,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               </p>
               <a
                 href={buttonLink}
-                className="overflow-hidden z-10 px-6 md:px-16 py-4 md:py-4 mt-6 text-base font-bold tracking-wide leading-6 text-center text-white capitalize rounded-full bg-[#994A25] w-full md:w-fit shadow-button hover:shadow-button-hover font-[700]"
+                className="overflow-hidden z-10 px-6 md:px-16 py-4 md:py-4 mt-6 text-base font-bold tracking-wide leading-6 text-center text-white capitalize rounded-full bg-ramsha-tertiary w-full md:w-fit shadow-button hover:shadow-button-hover font-[700]"
               >
                 {buttonText}
               </a>

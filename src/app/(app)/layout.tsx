@@ -40,8 +40,8 @@ const gotham = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Coaching Template",
-  description: "Coaching Template",
+  title: "Glowing Femme",
+  description: "Glowing Femme",
 };
 
 export default function RootLayout({

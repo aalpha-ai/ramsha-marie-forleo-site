@@ -32,27 +32,29 @@ const imageData = [
 
 export default function ImageGallery() {
   return (
-    <section className="w-full px-4 max-w-[1600px] mx-auto">
-      {imageData.map((item, idx) => (
-        <div
-          key={idx + "root"}
-          className="flex max-md:flex-col gap-5 mb-5"
-        >
-          {item.map((image, index) => (
-            <BlurFade key={index} inViewMargin="-200px">
-              <div className="relative md:flex-1">
-                <Image
-                  src={image.src}
-                  width={500}
-                  height={400}
-                  className="w-full md:h-[350px] lg:h-[450px] xl:h-[650px] object-cover rounded-sm transition-transform hover:scale-[1.02] duration-300"
-                  alt="Gallery image"
-                />
-              </div>
-            </BlurFade>
-          ))}
-        </div>
-      ))}
+    <section className="bg-white">
+      <div className="w-full px-4 max-w-[1600px] mx-auto bg-white">
+        {imageData.map((item, idx) => (
+          <div
+            key={idx + "root"}
+            className="flex max-md:flex-col gap-5 pb-5"
+          >
+            {item.map((image, index) => (
+              <BlurFade key={index} inViewMargin="-200px">
+                <div className="relative md:flex-1">
+                  <Image
+                    src={image.src}
+                    width={500}
+                    height={400}
+                    className="w-full md:h-[350px] lg:h-[450px] xl:h-[650px] object-cover rounded-sm transition-transform hover:scale-[1.02] duration-300"
+                    alt="Gallery image"
+                  />
+                </div>
+              </BlurFade>
+            ))}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

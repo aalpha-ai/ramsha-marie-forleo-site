@@ -16,7 +16,7 @@ const courseLinks: CourseLink[] = [
 
 const CoursesAndBooks: React.FC = () => {
   return (
-    <section className="flex flex-col grow shrink pt-6 text-sm tracking-wide leading-7 text-[#F8E8D8]">
+    <section className="flex flex-col grow shrink pt-6 text-sm tracking-wide leading-7 text-ramsha-accent">
       <h2 className="text-xs font-extrabold leading-5 uppercase tracking-[2.16px]">
         Courses & Books
       </h2>

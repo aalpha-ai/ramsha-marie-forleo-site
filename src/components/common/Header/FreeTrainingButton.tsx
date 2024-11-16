@@ -9,7 +9,7 @@ interface FreeTrainingButtonProps {
 
 const FreeTrainingButton: React.FC<FreeTrainingButtonProps> = ({ className = '' }) => {
   return (
-    <button className={`w-full md:w-[250px] whitespace-nowrap px-6 pt-2.5 pb-3 text-base font-bold text-center text-[#F8E8D8] capitalize bg-[#e09453] rounded-3xl shadow-button cursor-pointer hover:shadow-button-hover max-md:px-5 ${className}`}>
+    <button className={`w-full md:w-[250px] whitespace-nowrap px-6 pt-2.5 pb-3 text-base font-bold text-center text-ramsha-accent capitalize bg-ramsha-tertiary rounded-3xl shadow-button cursor-pointer hover:shadow-button-hover max-md:px-5 ${className}`}>
       <a
         href="https://www.marieforleo.com/how-to-get-anything-you-want"
         target="_blank"

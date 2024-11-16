@@ -46,7 +46,7 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
         </h3>
       </header>
       <main className="flex flex-col pt-8 pb-9 max-w-full">
-        <div className="flex flex-col sm:flex-row justify-center items-start w-full bg-stone-100 max-md:max-w-full">
+        <div className="flex flex-col sm:flex-row justify-center items-start w-full bg-ramsha-accent max-md:max-w-full">
           <Image
             src="/gridImages/image39.png"
             alt="Student success story background"

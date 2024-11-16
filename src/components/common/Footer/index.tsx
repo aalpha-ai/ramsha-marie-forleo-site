@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col items-center bg-[#0A4049]">
+    <footer className="flex flex-col items-center bg-ramsha-primary">
       <div className="flex flex-col xl:mx-[120px] xl:px-[40px] xl:pt-[96px] xl:pb-[12px] lg:px-[54px] lg:pt-[82px] lg:pb-[86px] md:px-[40px] md:pt-[80px] md:pb-[72px] px-[21px] pt-[64px] pb-[56px] w-full">
         <div className="flex items-center self-start">
           {/* <Image
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             sizes="(max-width: 768px) 240px, 307px"
             quality={90}
           /> */}
-          <h1 className="uppercase text-4xl font-seasons text-[#e09453]">
+          <h1 className="uppercase text-4xl font-seasons text-ramsha-tertiary">
             Glowing Femme
           </h1>
         </div>

@@ -23,7 +23,7 @@ const HeroContent: React.FC = () => {
           here to let go & let God ease our missions for us as
           we take over the world.
         </p>
-        <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-bold tracking-wide leading-6 text-center text-white capitalize bg-[#082F2E] rounded-3xl  lg:w-[300px] max-md:px-5 hover:bg-white">
+        <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-[700] tracking-wide leading-6 text-center text-white capitalize bg-ramsha-primary rounded-3xl lg:w-[300px] max-md:px-5 hover:bg-white">
           <a
             href="https://www.marieforleo.com/about"
             target="_blank"
