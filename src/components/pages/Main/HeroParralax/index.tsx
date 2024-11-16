@@ -9,11 +9,13 @@ const HeroParralax: React.FC = () => {
       className="
         bg-[url('/gridImages/image30.png')] 
         bg-cover 
-        bg-[50%_100%] 
         bg-no-repeat 
         w-full 
-        min-h-[600px]
+        min-h-[300px]
+        md:min-h-[600px]
+        lg:min-h-[600px]
         md:bg-fixed
+        lg:bg-[50%_30%]
       " 
     />
   );
