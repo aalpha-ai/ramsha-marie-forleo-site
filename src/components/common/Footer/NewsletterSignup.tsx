@@ -5,18 +5,18 @@ import React from "react";
 
 const NewsletterSignup: React.FC = () => {
   return (
-    <section className="flex flex-col grow shrink pt-6 text-xs text-white min-h-[1px] max-md:max-w-full">
+    <section className="flex flex-col grow shrink pt-6 text-xs min-h-[1px] max-md:max-w-full text-[#F8E8D8]">
       <h2 className="font-extrabold leading-5 uppercase tracking-[2.16px]">
-        Become an MF Insider
+        Join Glowing Femme
       </h2>
       <p className="mt-3 tracking-normal leading-5">
-        Sign up for exclusive content, emails & things Marie doesn&apos;t <br />{" "}
+        Sign up for exclusive content, emails & things Ramsha doesn&apos;t <br />{" "}
         share anywhere else.
       </p>
-      <form className="flex flex-col mt-4 w-full text-base text-black bg-black bg-opacity-20 min-h-[253px]">
+      <form className="flex flex-col mt-4 w-full text-base min-h-[253px]">
         <div className="flex justify-center w-full rounded-sm">
           <div className="flex flex-col flex-1 shrink justify-center w-full basis-0 min-h-[120px] min-w-[240px]">
-            <div className="flex justify-center w-full">
+            <div className="text-black flex justify-center w-full">
               <div className="flex flex-1 shrink items-start pb-1.5 basis-0 min-w-[240px] size-full">
                 <div className="flex overflow-hidden flex-col flex-1 shrink pt-3 pr-px pb-5 pl-4 w-full bg-white basis-0 min-h-[50px] min-w-[240px]">
                   <label htmlFor="firstName" className="sr-only">
@@ -31,7 +31,7 @@ const NewsletterSignup: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center w-full">
+            <div className="text-black flex justify-center w-full">
               <div className="flex flex-1 shrink items-start py-1.5 basis-0 min-w-[240px] size-full">
                 <div className="flex overflow-hidden flex-col flex-1 shrink pt-3 pr-px pb-5 pl-4 w-full bg-white basis-0 min-h-[50px] min-w-[240px]">
                   <label htmlFor="email" className="sr-only">
@@ -46,42 +46,33 @@ const NewsletterSignup: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center w-full leading-4 text-center tracking-[2px]">
-              <div className="flex flex-1 shrink items-end py-1.5 basis-0 min-w-[240px] size-full">
+            <div className="text-black flex justify-center w-full leading-4 text-center tracking-[2px]">
+              <div className="flex flex-1 shrink items-center py-1.5 basis-0 min-w-[240px] size-full">
                 <button
                   type="submit"
-                  className="flex-1 shrink px-32 py-4 w-full bg-stone-300 min-h-[50px] min-w-[240px] rounded-[60px] max-md:px-5"
+                  className="flex justify-center items-center whitespace-nowrap px-32 py-4 w-full bg-[#F8E8D8] min-h-[50px] min-w-[240px] rounded-[60px] max-md:px-5"
                 >
                   LET&apos;S DO IT
                 </button>
               </div>
             </div>
-            <div className="flex justify-center pt-1.5 w-full text-xs tracking-normal leading-5 text-white">
+            <div className="flex justify-center pt-1.5 w-full text-xs tracking-normal leading-5">
               <div className="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px]">
                 <div className="flex flex-col justify-center py-px w-full">
                   <div className="flex flex-col py-0.5 w-full max-w-[385px]">
                     <p className="max-md:mr-2.5">
-                      By entering your info, you&apos;ll become an MF Insider –
-                      with FREE access to exclusive insights, private Q+As, and
-                      inspiring episodes of MarieTV, delivered with 💜 to your
-                      inbox. (Unsub anytime in a click.) You also agree to our
-                    </p>
-                    <div className="flex items-start">
-                      <div className="flex flex-col py-1 w-96 min-w-[240px]">
-                        <a href="#" className="self-end underline">
-                          Terms
-                        </a>
-                        <a href="#" className="self-start mt-2 underline">
-                          of Use
-                        </a>
-                      </div>
-                    </div>
-                    <div className="flex z-10 flex-col py-1 mt-0 ml-8 w-[95px] max-md:ml-2.5">
-                      <span className="self-start mt-1.5">and</span>
-                      <a href="#" className="z-10 self-end mt-0 underline">
-                        Privacy Policy.
+                      By entering your email, you'll agree to join Glowing Femme
+                      for FREE access to exclusive insights and offers delivered with love to your inbox.
+                      (Unsub anytime in a click.) You also agree to our{" "}
+                      <a href="https://docs.google.com/document/d/11aSDsm20CGj6T9j600WB-j0bTqFo3ON_/edit?usp=sharing&ouid=104775443079130282686&rtpof=true&sd=true" className="underline">
+                        Terms of Use
+                      </a>{" "}
+                      and{" "}
+                      <a href="https://docs.google.com/document/d/1NX_pfSdmWr6l8_oqT6nJErocC4Y--Ru4qUaW6dk6EVw/edit?usp=sharing" className="self-stretch underline">
+                        Privacy Policy
                       </a>
-                    </div>
+                      .
+                    </p>
                   </div>
                 </div>
               </div>

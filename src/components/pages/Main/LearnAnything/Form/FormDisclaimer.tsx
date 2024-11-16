@@ -21,8 +21,9 @@ const FormDisclaimer: React.FC = () => {
             </a>{" "}
             and{" "}
             <a href="https://docs.google.com/document/d/1NX_pfSdmWr6l8_oqT6nJErocC4Y--Ru4qUaW6dk6EVw/edit?usp=sharing" className="self-stretch underline text-orange-700">
-              Privacy Policy.
+              Privacy Policy
             </a>
+            .
           </p>
         </div>
       </div>

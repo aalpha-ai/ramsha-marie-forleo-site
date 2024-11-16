@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         inter: ["var(--font-inter)"],
         "caslon": ["var(--font-caslon)"],
+        "seasons": ["var(--font-seasons)"],
         "ivy-presto": ["var(--font-ivy-presto)"],
         "area-normal": ["var(--font-area-normal)"],
         "area-extended": ["var(--font-area-extended)"],

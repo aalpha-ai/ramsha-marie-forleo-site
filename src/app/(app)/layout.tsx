@@ -19,6 +19,11 @@ const caslon = localFont({
   variable: "--font-caslon",
 });
 
+const seasons = localFont({
+  src: "../../fonts/Seasons/Fontspring-DEMO-theseasons-reg.otf",
+  variable: "--font-seasons",
+});
+
 const areaExtended = localFont({
   src: "../../fonts/Area_Extended_SemiBold.otf",
   variable: "--font-area-extended",
@@ -47,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${ivyPresto.variable} ${caslon.variable} ${areaExtended.variable} ${areaNormal.variable} ${gotham.variable} ${inter.className} antialiased custom`}
+        className={`${inter.variable} ${ivyPresto.variable} ${seasons.variable} ${caslon.variable} ${areaExtended.variable} ${areaNormal.variable} ${gotham.variable} ${inter.className} antialiased custom`}
       >
         <main>{children}</main>
       </body>

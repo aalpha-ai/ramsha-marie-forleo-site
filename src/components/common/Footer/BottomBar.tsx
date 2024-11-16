@@ -11,17 +11,14 @@ interface FooterLink {
 const footerLinks: FooterLink[] = [
   { text: "Terms" },
   { text: "Privacy", href: "https://www.marieforleo.com/privacy" },
-  { text: "Cookie Policy", href: "https://www.marieforleo.com/cookie-policy" },
-  { text: "Support", href: "https://www.marieforleo.com/support" },
-  { text: "Cookies Settings" },
 ];
 
 const BottomBar: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center pt-4 mt-10 w-full text-xs font-bold tracking-widest leading-3 text-right text-white uppercase border-t border-solid border-t-stone-300 max-md:max-w-full">
-      <div className="flex flex-wrap items-start w-full max-md:max-w-full">
-        <nav className="flex flex-wrap grow shrink gap-3 items-start px-2.5 py-1 min-h-[1px] min-w-[240px] w-[506px] max-md:max-w-full">
-          <ul className="flex flex-wrap gap-3">
+    <div className="flex flex-col justify-center pt-4 mt-10 w-full text-xs font-bold tracking-widest leading-3 text-right text-[#F8E8D8] uppercase border-t border-t-stone-300">
+      <div className="flex justify-between items-center w-full">
+        <nav className="flex gap-3">
+          <ul className="flex gap-3">
             {footerLinks.map((link, index) => (
               <li key={index} className="py-px whitespace-nowrap">
                 {link.href ? (
@@ -35,9 +32,7 @@ const BottomBar: React.FC = () => {
             ))}
           </ul>
         </nav>
-        <div className="flex flex-col grow shrink px-2.5 min-h-[1px] min-w-[240px] w-[338px] max-md:max-w-full">
-          <p className="w-full">© 2024 Marie Forleo International</p>
-        </div>
+        <p className="w-full text-right">© 2024 Glowing Femme</p>
       </div>
     </div>
   );

@@ -10,27 +10,13 @@ interface CourseLink {
 }
 
 const courseLinks: CourseLink[] = [
-  { text: "Dream Club", href: "https://www.marieforleo.com/dreamclub" },
-  {
-    text: "B-School",
-    href: "https://www.marieforleo.com/bschool",
-    subItems: ["B-School Reviews"],
-  },
-  { text: "The Copy Cure", href: "https://www.marieforleo.com/the-copy-cure" },
-  { text: "Time Genius", href: "https://www.marieforleo.com/time-genius" },
-  {
-    text: "How to Get Anything You Want",
-    href: "https://www.marieforleo.com/how-to-get-anything-you-want",
-  },
-  {
-    text: "Everything Is Figureoutable",
-    href: "http://everythingisfigureoutable.com/",
-  },
+  { text: "Theory of Everything", href: "https://www.amazon.com/Submission-Theory-Everything-Dr-Peace-ebook/dp/B08BR4X6P1" },
+  { text: "Awakened Femme", href: "#" },
 ];
 
 const CoursesAndBooks: React.FC = () => {
   return (
-    <section className="flex flex-col grow shrink pt-6 text-sm tracking-wide leading-7 text-white ">
+    <section className="flex flex-col grow shrink pt-6 text-sm tracking-wide leading-7 text-[#F8E8D8]">
       <h2 className="text-xs font-extrabold leading-5 uppercase tracking-[2.16px]">
         Courses & Books
       </h2>
