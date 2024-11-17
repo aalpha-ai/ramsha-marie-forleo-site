@@ -9,7 +9,7 @@ interface FooterLink {
 }
 
 const footerLinks: FooterLink[] = [
-  { text: "Terms" },
+  { text: "Terms", href: "/terms" },
   { text: "Privacy", href: "https://www.marieforleo.com/privacy" },
 ];
 

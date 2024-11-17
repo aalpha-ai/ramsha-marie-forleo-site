@@ -16,7 +16,7 @@ const FormDisclaimer: React.FC = () => {
             access to exclusive insights, private Q+As, and inspiring episodes
             of MarieTV, delivered with 💜 to your inbox. (Unsub anytime in a
             click.) You also agree to our{" "} */}
-            <a href="https://docs.google.com/document/d/11aSDsm20CGj6T9j600WB-j0bTqFo3ON_/edit?usp=sharing&ouid=104775443079130282686&rtpof=true&sd=true" className="text-orange-700 underline">
+            <a href="/terms" className="text-orange-700 underline">
               Terms of Use
             </a>{" "}
             and{" "}

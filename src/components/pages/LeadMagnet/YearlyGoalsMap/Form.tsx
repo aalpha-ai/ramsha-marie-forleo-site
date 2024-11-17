@@ -53,7 +53,7 @@ const Form: React.FC = () => {
           <span>
             You also agree to our &nbsp;
           </span>
-          <a href="#" className="underline">
+          <a href="/terms" className="underline">
             Terms of Use
           </a>
           <span> and </span>

@@ -8,14 +8,17 @@ import FreeTrainingButton from "./FreeTrainingButton";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { AlignJustify } from "lucide-react";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
     <header className="bg-ramsha-primary sticky top-0 z-50 flex flex-col pb-px border-b border-solid border-b-zinc-400 w-full max-lg:py-5">
       <div className="grid grid-cols-8 items-center px-7 w-full max-md:px-5 max-md:max-w-full">
-        <h1 className="uppercase text-2xl font-seasons text-ramsha-tertiary whitespace-nowrap">
-          Glowing Femme
-        </h1>
+        <Link href="/">
+          <h1 className="uppercase text-2xl font-seasons text-ramsha-tertiary whitespace-nowrap">
+            Glowing Femme
+          </h1>
+        </Link>
         {/* Desktop Navigation */}
         <div className="text-ramsha-accent col-start-2 lg:col-start-3 col-span-4 flex justify-center items-center max-lg:hidden">
           <Navigation />
