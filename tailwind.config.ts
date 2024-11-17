@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
+        "montserrat": ["var(--font-montserrat)"],
         "caslon": ["var(--font-caslon)"],
         "seasons": ["var(--font-seasons)"],
         "ivy-presto": ["var(--font-ivy-presto)"],
