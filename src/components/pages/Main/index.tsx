@@ -7,11 +7,13 @@ import LandingPage from "./LandingPage";
 import HomePage from "./HomePage";
 import HeroImage from "./HeroImage";
 import PodcastSection from "./PodcastSection";
-import LatestEpisodes from "./LatestEpisodes/LatestEpisode";
 import StudentSuccessStories from "./StudentSuccessStories";
 import ImageGallery from "./ImageGallery";
 import HeroParralax from "./HeroParralax";
 import Footer from "@/components/common/Footer";
+import LatestEpisodes from "./LatestEpisodes";
+import CorporateBooking from "./CorporateBooking";
+import RichReciever from "./RichReceiver";
 
 export default function Component() {
   return (
@@ -24,7 +26,9 @@ export default function Component() {
       <HomePage />
       <HeroImage />
       <PodcastSection />
-      <LatestEpisodes />
+      {/* <LatestEpisodes /> */}
+      <CorporateBooking />
+      <RichReciever />
       <StudentSuccessStories />
       <ImageGallery />
       <HeroParralax />

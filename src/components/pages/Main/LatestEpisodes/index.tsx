@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const LatestEpisodesWrapper: React.FC = () => {
   return (
-    <main className="flex flex-col items-center bg-red-100 ">
+    <main className="flex flex-col items-center bg-ramsha-accent">
       <div className="flex flex-col w-full max-md:px-5 max-w-7xl lg:max-w-[1400px]">
         <BlurFade>
           <div className="grid grid-cols-3 gap-5 justify-center px-5 pt-5 w-full max-md:max-w-full">

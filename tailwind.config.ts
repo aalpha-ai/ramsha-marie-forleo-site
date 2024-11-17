@@ -68,6 +68,7 @@ const config: Config = {
         ramsha: {
           accent: "#f8e8d8",
           primary: "#0A4049",
+          secondary: "#216974",
           tertiary: "#e09453",
         },
 
