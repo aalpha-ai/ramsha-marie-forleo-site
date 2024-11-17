@@ -10,7 +10,7 @@ interface LinkItem {
 
 const legalLinks: LinkItem[] = [
   { text: "Terms", href: "/terms" },
-  { text: "Privacy", href: "https://www.marieforleo.com/privacy" },
+  { text: "Privacy", href: "/privacy" },
   { text: "Cookie Policy", href: "https://www.marieforleo.com/cookie-policy" },
   { text: "Support", href: "https://www.marieforleo.com/support" },
 ];

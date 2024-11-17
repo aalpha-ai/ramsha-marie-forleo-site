@@ -57,7 +57,7 @@ const Form: React.FC = () => {
             Terms of Use
           </a>
           <span> and </span>
-          <a href="#" className="underline">
+          <a href="/privacy" className="underline">
             Privacy Policy
           </a>
           <span>
