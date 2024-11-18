@@ -13,7 +13,7 @@ const config: Config = {
         inter: ["var(--font-inter)"],
         "montserrat": ["var(--font-montserrat)"],
         "caslon": ["var(--font-caslon)"],
-        "seasons": ["var(--font-seasons)"],
+        "seasons": ["var(--font-seasons)", "serif"],
         "ivy-presto": ["var(--font-ivy-presto)"],
         "area-normal": ["var(--font-area-normal)"],
         "area-extended": ["var(--font-area-extended)"],

@@ -18,26 +18,36 @@ const montserrat = Montserrat({
 const ivyPresto = localFont({
   src: "../../fonts/Ivy-Presto-Headline-Light.otf",
   variable: "--font-ivy-presto",
+  display: 'swap',
+  preload: true,
 });
 
 const caslon = localFont({
   src: "../../fonts/Caslon/F37Caslon-SemiBoldDisplay.otf",
   variable: "--font-caslon",
+  display: 'swap',
+  preload: true,
 });
 
 const seasons = localFont({
   src: "../../fonts/Seasons/Fontspring-DEMO-theseasons-reg.otf",
   variable: "--font-seasons",
+  display: 'swap',
+  preload: true,
 });
 
 const areaExtended = localFont({
   src: "../../fonts/Area_Extended_SemiBold.otf",
   variable: "--font-area-extended",
+  display: 'swap',
+  preload: true,
 });
 
 const areaNormal = localFont({
   src: "../../fonts/Area_Normal_Regular.otf",
   variable: "--font-area-normal",
+  display: 'swap',
+  preload: true,
 });
 
 const gotham = localFont({
@@ -57,6 +67,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/Seasons/Fontspring-DEMO-theseasons-reg.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={`${inter.variable} ${montserrat.variable} ${ivyPresto.variable} ${seasons.variable} ${caslon.variable} ${areaExtended.variable} ${areaNormal.variable} ${gotham.variable} ${inter.className} antialiased custom`}
       >

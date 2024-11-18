@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     <header className="bg-ramsha-primary sticky top-0 z-50 flex flex-col pb-px border-b border-solid border-b-zinc-400 w-full max-lg:py-5">
       <div className="grid grid-cols-8 items-center px-7 w-full max-md:px-5 max-md:max-w-full">
         <Link href="/">
-          <h1 className="uppercase text-2xl font-seasons text-ramsha-tertiary whitespace-nowrap">
+          <h1 className="uppercase text-2xl font-seasons text-ramsha-tertiary whitespace-nowrap font-display">
             Glowing Femme
           </h1>
         </Link>
