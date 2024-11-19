@@ -10,14 +10,10 @@ const HeroSection: React.FC = () => {
   return (
     <section className="flex flex-col md:flex-row max-lg:px-8 max-md:px-5">
       <div className="w-full md:w-1/2 pb-10">
-        <BlurFade inViewMargin="-200px">
-          <HeroContent />
-        </BlurFade>
+        <HeroContent />
       </div>
       <div className="w-full md:w-1/2">
-        <BlurFade inViewMargin="-200px">
-          <HeroImage />
-        </BlurFade>
+        <HeroImage />
       </div>
     </section>
   );

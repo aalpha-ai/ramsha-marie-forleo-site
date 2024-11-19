@@ -16,9 +16,7 @@ const LearnAnything: React.FC = () => {
           </div>
         </div>
         <div className="md:1/2 lg:w-2/5 flex justify-center items-center">
-          <BlurFade inViewMargin="-200px">
-            <LearnImage />
-          </BlurFade>
+          <LearnImage />
         </div>
       </section>
     </div>
