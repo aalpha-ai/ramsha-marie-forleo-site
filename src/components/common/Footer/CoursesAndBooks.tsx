@@ -11,7 +11,7 @@ interface CourseLink {
 
 const courseLinks: CourseLink[] = [
   { text: "Theory of Everything", href: "https://www.amazon.com/Submission-Theory-Everything-Dr-Peace-ebook/dp/B08BR4X6P1" },
-  { text: "Awakened Femme", href: "#" },
+  { text: "Awakened Feminine", href: "#" },
 ];
 
 const CoursesAndBooks: React.FC = () => {
