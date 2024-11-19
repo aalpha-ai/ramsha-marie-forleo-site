@@ -8,99 +8,53 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const HeroContent: React.FC = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.2
-      }
-    }
-  };
-
-  const titleVariants = {
-    hidden: { 
-      opacity: 0, 
-      x: -50,
-      scale: 0.95
-    },
-    visible: { 
-      opacity: 1, 
-      x: 0,
-      scale: 1,
-      transition: {
-        duration: 0.8,
-        ease: [0.22, 1, 0.36, 1]
-      }
-    }
-  };
-
-  const textVariants = {
-    hidden: { 
-      opacity: 0,
-      y: 30
-    },
-    visible: { 
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }
-  };
-
-  const buttonVariants = {
-    hidden: { 
-      opacity: 0,
-      y: 20,
-      scale: 0.9
-    },
-    visible: { 
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut"
-      }
-    },
-    hover: {
-      scale: 1.05,
-      transition: {
-        duration: 0.2
-      }
-    },
-    tap: {
-      scale: 0.95
-    }
-  };
-
   return (
-    <motion.div 
-      className="flex flex-col max-md:ml-0 max-md:w-full lg:pt-20"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
+    <div className="flex flex-col max-md:ml-0 max-md:w-full lg:pt-20">
       <div className="flex flex-col text-neutral-800 max-md:mt-2.5 max-md:max-w-full">
         <motion.h2 
-          variants={titleVariants}
+          initial={{ 
+            opacity: 0, 
+            x: -50,
+            scale: 0.95
+          }}
+          whileInView={{ 
+            opacity: 1, 
+            x: 0,
+            scale: 1
+          }}
+          transition={{
+            duration: 0.8,
+            ease: [0.22, 1, 0.36, 1]
+          }}
+          viewport={{ once: true }}
           className="md:w-[180px] mt-4 text-[80px] md:text-[86px] lg:text-9xl font-caslon uppercase lg:tracking-wider lg:leading-[129.2px] lg:leading-14"
         >
           MEET RAMSHA
         </motion.h2>
         
         <motion.p 
-          variants={textVariants}
+          initial={{ 
+            opacity: 0,
+            y: 30
+          }}
+          whileInView={{ 
+            opacity: 1,
+            y: 0
+          }}
+          transition={{
+            duration: 0.6,
+            delay: 0.2,
+            ease: "easeOut"
+          }}
+          viewport={{ once: true }}
           className="pb-px mt-5 text-lg tracking-normal leading-9 text-black lg:w-[512px] font-[500]"
         >
           Something tells me you&apos;re a generational trailblazer. 
           You&apos;ve decided that generational healing <motion.span 
             initial={{ textDecorationColor: "transparent" }}
-            animate={{ textDecorationColor: "currentColor" }}
-            transition={{ delay: 1.2, duration: 0.3 }}
+            whileInView={{ textDecorationColor: "currentColor" }}
+            transition={{ delay: 0.8, duration: 0.3 }}
+            viewport={{ once: true }}
             className="underline"
           >begins</motion.span> with you.
           A decade ago, I made the same choice. Now, I&apos;m an 
@@ -109,8 +63,9 @@ const HeroContent: React.FC = () => {
           and honor your womanhood as you achieve massive
           success, with <motion.span 
             initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5, duration: 0.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 0.5 }}
+            viewport={{ once: true }}
             className="italic"
           >pleasure</motion.span>. Let&apos;s show the world what it 
           means to be an empowered Muslim woman. We&apos;re
@@ -119,9 +74,24 @@ const HeroContent: React.FC = () => {
         </motion.p>
 
         <motion.div
-          variants={buttonVariants}
-          whileHover="hover"
-          whileTap="tap"
+          initial={{ 
+            opacity: 0,
+            y: 20,
+            scale: 0.9
+          }}
+          whileInView={{ 
+            opacity: 1,
+            y: 0,
+            scale: 1
+          }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.4,
+            ease: "easeOut"
+          }}
+          viewport={{ once: true }}
         >
           <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-[700] tracking-wide leading-6 text-center text-white capitalize bg-ramsha-primary rounded-3xl lg:w-[300px] max-md:px-5 hover:bg-white hover:text-ramsha-primary transition-all duration-300">
             <a
@@ -134,7 +104,7 @@ const HeroContent: React.FC = () => {
           </Button>
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

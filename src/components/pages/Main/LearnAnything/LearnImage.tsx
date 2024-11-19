@@ -8,29 +8,24 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const LearnImage: React.FC = () => {
-  const imageVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 40,
-      scale: 0.95
-    },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      scale: 1,
-      transition: {
+  return (
+    <motion.div
+      initial={{ 
+        opacity: 0, 
+        y: 40,
+        scale: 0.95
+      }}
+      whileInView={{ 
+        opacity: 1, 
+        y: 0,
+        scale: 1
+      }}
+      transition={{
         duration: 0.8,
         ease: "easeOut",
         delay: 0.2
-      }
-    }
-  };
-
-  return (
-    <motion.div
-      variants={imageVariants}
-      initial="hidden"
-      animate="visible"
+      }}
+      viewport={{ once: true }}
       className="w-full md:w-[500px] lg:w-[300px]"
     >
       <Image

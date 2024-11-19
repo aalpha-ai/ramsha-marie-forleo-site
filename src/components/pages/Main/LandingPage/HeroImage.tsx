@@ -14,7 +14,7 @@ const HeroImage: React.FC = () => {
         y: 20,
         scale: 0.95
       }}
-      animate={{ 
+      whileInView={{ 
         opacity: 1,
         y: 0,
         scale: 1
@@ -24,6 +24,7 @@ const HeroImage: React.FC = () => {
         ease: [0.22, 1, 0.36, 1], // Custom easing for smooth entrance
         delay: 0.2
       }}
+      viewport={{ once: true }}
     >
       <Image
         src="/hero-2.webp"

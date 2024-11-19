@@ -179,9 +179,19 @@ const CorporateBooking = () => {
             Apply to Book
             <ArrowRight className="w-5 h-5 ml-2" />
           </motion.a>
-          <p className="mt-4 text-sm text-gray-400">
+          <motion.p 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ 
+              duration: 0.5,
+              delay: 0.7,
+              ease: "easeOut"
+            }}
+            viewport={{ once: true }}
+            className="mt-4 text-sm text-gray-400"
+          >
             Limited availability for exclusive engagements
-          </p>
+          </motion.p>
         </div>
       </div>
     </section>
