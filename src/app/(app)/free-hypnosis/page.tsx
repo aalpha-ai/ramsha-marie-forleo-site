@@ -1,10 +1,10 @@
 import React from "react";
-import FreeHypnosis from "@/components/pages/FreeHypnosis";
+import FreeHypnosisLeadMagnet from "@/components/pages/FreeHypnosisLeadMagnet";
 
 export default function Page() {
   return (
     <>
-      <FreeHypnosis />
+      <FreeHypnosisLeadMagnet />
     </>
   );
 }

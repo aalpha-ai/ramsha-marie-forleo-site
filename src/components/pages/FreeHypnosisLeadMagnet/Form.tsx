@@ -32,7 +32,7 @@ const Form: React.FC = () => {
       <div className="flex flex-col pt-1.5 mt-1.5 w-full md:text-[18px] text-[16px] text-center text-white uppercase tracking-[2px] max-md:max-w-full">
         <button
           type="submit"
-          className="flex flex-row justify-center items-center px-[25px] py-[15px] bg-orange-600 rounded-[60px] max-md:max-w-full"
+          className="flex flex-row justify-center items-center px-[25px] py-[15px] bg-ramsha-tertiary rounded-[60px] max-md:max-w-full"
         >
           <span className="uppercase self-stretch my-auto font-bold min-[375px]:whitespace-nowrap">
             Get My Free Download
@@ -40,7 +40,7 @@ const Form: React.FC = () => {
           <ChevronsRight />
         </button>
       </div>
-      <div className="flex justify-center pt-1.5 w-full text-xs tracking-normal leading-5 text-center max-md:max-w-full">
+      <div className="flex justify-center pt-1.5 w-full text-xs tracking-normal leading-5 text-left max-md:max-w-full">
         <div className="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px] max-md:max-w-full">
           <div className="flex flex-col px-3 py-1 w-full max-md:max-w-full">
             <p className="text-black max-md:max-w-full">
