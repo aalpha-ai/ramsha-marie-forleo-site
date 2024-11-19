@@ -16,8 +16,10 @@ const MediaLogo: React.FC<MediaLogoProps> = ({ src, alt, className }) => {
       src={src}
       alt={alt}
       className={`object-contain shrink-0 self-stretch my-auto max-w-24 w-full ${className}`}
-      width={96}
-      height={24}
+      width={192}
+      height={48}
+      quality={100}
+      priority={true}
     />
   );
 };

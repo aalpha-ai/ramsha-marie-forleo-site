@@ -46,7 +46,7 @@ const mediaLogos: MediaLogoData[] = [
 
 const MediaLogos: React.FC = () => {
   return (
-    <section className="flex flex-col items-center gap-6 px-20 lg:px-2 pt-10 md:pb-14 lg:pt-20 lg:pb-32 bg-ramsha-tertiary w-full max-md:px-5 max-md:pb-24">
+    <section className="flex flex-col items-center gap-6 bg-ramsha-tertiary w-full md:px-2 py-10">
       <BlurFade>
         <h2 className="pb-px w-full text-xs font-extrabold leading-5 text-center text-white uppercase  tracking-[2.16px] max-md:max-w-full">
           You Might Have Seen Me On
