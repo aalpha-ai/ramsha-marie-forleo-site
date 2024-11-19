@@ -4,6 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { TextBlock } from "./TextBlock";
 import { Button } from "./Button";
+import Link from 'next/link';
 
 export const DreamClub: React.FC = () => {
   return (
@@ -89,16 +90,18 @@ export const DreamClub: React.FC = () => {
           viewport={{ once: true }}
           className="max-w-[388px] mx-auto mb-8"
         >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Button 
-              text="GET ON THE VIP WAITLIST NOW" 
-              className="w-full bg-[#E5B5A7] text-black rounded-full px-8 py-4 font-medium tracking-wider hover:bg-white transition-colors duration-300" 
-            />
-          </motion.div>
+          <Link href="/">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+            >
+              <Button 
+                text="GET ON THE VIP WAITLIST NOW" 
+                className="w-full bg-[#E5B5A7] text-black rounded-full px-8 py-4 font-medium tracking-wider hover:bg-white transition-colors duration-300" 
+              />
+            </motion.div>
+          </Link>
         </motion.div>
 
         <motion.footer 
@@ -115,7 +118,12 @@ export const DreamClub: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               className="cursor-pointer"
             >
-              <TextBlock text="Click here" className="text-[#E5B5A7] hover:text-white transition-colors duration-300" />
+              <Link href="/">
+                <TextBlock 
+                  text="Click here" 
+                  className="text-[#E5B5A7] hover:text-white transition-colors duration-300 cursor-pointer" 
+                />
+              </Link>
             </motion.span>
             <TextBlock text="to join." />
           </div>
