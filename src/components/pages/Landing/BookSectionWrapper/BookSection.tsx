@@ -4,6 +4,7 @@
 import React from "react";
 import { TextBlock } from "./TextBlock";
 import { Heading } from "./Heading";
+import BlurFade from "@/components/magicui/blur-fade";
 
 interface BookSectionProps {
   imageSrc: string;
@@ -52,12 +53,14 @@ const BookSection: React.FC<BookSectionProps> = ({ imageSrc }) => {
         className="object-cover w-full h-full xl:max-h-[825px] max-md:max-w-full"
       />
       <div className="flex flex-col grow shrink justify-center items-start py-20  max-md:px-5 max-md:max-w-full">
-        <div className="flex flex-col p-10 relative md:right-24 rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
-          <Heading />
-          {textBlocks.map((block, index) => (
-            <TextBlock key={index} {...block} />
-          ))}
-        </div>
+        <BlurFade>
+          <div className="flex flex-col p-10 relative md:right-24 rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
+            <Heading />
+            {textBlocks.map((block, index) => (
+              <TextBlock key={index} {...block} />
+            ))}
+          </div>
+        </BlurFade>
       </div>
     </section>
   );

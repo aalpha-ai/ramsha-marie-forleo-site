@@ -37,7 +37,7 @@ const PricingSection: React.FC = () => {
   return (
     <section className="flex relative flex-col items-center bg-stone-50">
       <div className="flex z-0 flex-col self-center px-14 pt-24 pb-20 w-full max-md:px-5 max-md:max-w-full">
-        <h2 className="px-96 w-full text-sm font-bold tracking-widest leading-6 text-center uppercase text-stone-400 max-md:px-5 max-md:max-w-full">
+        <h2 className=" w-full text-sm font-bold tracking-widest leading-6 text-center uppercase text-stone-400 max-md:px-5 max-md:max-w-full">
           Let&apos;s team up!
         </h2>
         <h3 className="px-60 mt-3 w-full text-4xl text-center leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full">

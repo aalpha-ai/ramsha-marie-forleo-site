@@ -3,6 +3,7 @@
  */
 import React from "react";
 import MediaLogo from "./MediaLogo";
+import BlurFade from "@/components/magicui/blur-fade";
 
 interface MediaMentionsProps {
   logos: Array<{
@@ -17,11 +18,13 @@ const MediaMentions: React.FC<MediaMentionsProps> = ({ logos }) => {
       <h2 className="w-full text-sm font-bold tracking-widest leading-6 text-center text-orange-50 uppercase max-md:px-5 max-md:max-w-full">
         You Might Have Seen Me On
       </h2>
-      <div className="grid grid-cols-3 md:grid-cols-9 gap-10 items-center self-center mt-7 w-full max-w-[1200px]">
-        {logos.map((logo, index) => (
-          <MediaLogo key={index} src={logo.src} alt={logo.alt} />
-        ))}
-      </div>
+      <BlurFade>
+        <div className="grid grid-cols-3 md:grid-cols-9 gap-10 items-center self-center mt-7 w-full max-w-[1200px] mx-auto">
+          {logos.map((logo, index) => (
+            <MediaLogo key={index} src={logo.src} alt={logo.alt} />
+          ))}
+        </div>
+      </BlurFade>
     </section>
   );
 };

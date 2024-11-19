@@ -4,6 +4,7 @@
 import React from "react";
 import { QuestionItem, QuestionItemProps } from "./QuestionItem";
 import { NotForYouItem, NotForYouItemProps } from "./NotForYouItem";
+import BlurFade from "@/components/magicui/blur-fade";
 
 interface DreamClubPitchProps {
   questions: QuestionItemProps[];
@@ -43,18 +44,21 @@ const DreamClubPitch: React.FC<DreamClubPitchProps> = ({
           </div>
         </div>
         <div className="py-8 w-full max-w-[830px] mx-auto  max-md:max-w-full">
-          <div className="flex flex-col flex-1 px-10 py-8 w-full rounded-2xl border border-black border-solid bg-stone-50  max-md:px-5 max-md:max-w-full">
-            <div className="flex flex-col pb-4 w-full max-md:max-w-full">
-              {questions.map((question, index) => (
-                <QuestionItem key={index} {...question} />
-              ))}
-            </div>
-            <h4 className="flex flex-col pb-2 w-full text-2xl font-bold tracking-wide leading-8 text-center text-neutral-800 max-md:max-w-full">
-              <div className="px-9 max-md:px-5 max-md:max-w-full">
-                If you answered yes to 3 or more, YOU belong in Dream Club.
+          <BlurFade>
+            {" "}
+            <div className="flex flex-col flex-1 px-10 py-8 w-full rounded-2xl border border-black border-solid bg-stone-50  max-md:px-5 max-md:max-w-full">
+              <div className="flex flex-col pb-4 w-full max-md:max-w-full">
+                {questions.map((question, index) => (
+                  <QuestionItem key={index} {...question} />
+                ))}
               </div>
-            </h4>
-          </div>
+              <h4 className="flex flex-col pb-2 w-full text-2xl font-bold tracking-wide leading-8 text-center text-neutral-800 max-md:max-w-full">
+                <div className="px-9 max-md:px-5 max-md:max-w-full">
+                  If you answered yes to 3 or more, YOU belong in Dream Club.
+                </div>
+              </h4>
+            </div>
+          </BlurFade>
         </div>
 
         <div className="flex flex-col items-center self-start pr-16 pl-16 max-md:px-0 max-md:max-w-full max-w-3xl mx-auto">
