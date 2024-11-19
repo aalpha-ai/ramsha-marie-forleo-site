@@ -7,7 +7,7 @@ import Image from "next/image";
 export const LearnImage: React.FC = () => {
   return (
     <Image
-      src="/cta-image-2.svg"
+      src="/cta-image-2.webp"
       className="object-contain w-full md:w-[500px] lg:w-[300px]"
       alt="Learn Anything illustration"
       width={500}

@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
     //   <section className="bg-stone-50 relative flex flex-col justify-center items-start bg-black w-full max-md:h-[600px] md:h-screen max-h-[810px]">
     //     <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full h-full">
     //       <Image
-    //         src="/hero.svg"
+    //         src="/hero.webp"
     //         alt="Background image"
     //         className="object-cover w-full h-full"
     //         width={1920}

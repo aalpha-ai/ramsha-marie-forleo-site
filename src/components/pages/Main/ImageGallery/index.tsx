@@ -7,26 +7,26 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 const imageData = [
   [
-    { src: "/gridImages/image7.png" },
-    { src: "/gridImages/image36.png" },
+    { src: "/gridImages/image7.webp" },
+    { src: "/gridImages/image36.webp" },
   ],
   [
-    { src: "/gridImages/image8.png" },
-    { src: "/gridImages/image23.png" },
+    { src: "/gridImages/image8.webp" },
+    { src: "/gridImages/image23.webp" },
   ],
   [
-    { src: "/gridImages/image24.png" },
-    { src: "/gridImages/image25.png" },
+    { src: "/gridImages/image24.webp" },
+    { src: "/gridImages/image25.webp" },
   ],
   [
-    { src: "/gridImages/image28.png" },
-    { src: "/gridImages/image31.png" },
-    { src: "/gridImages/image10.png" },
+    { src: "/gridImages/image28.webp" },
+    { src: "/gridImages/image31.webp" },
+    { src: "/gridImages/image10.webp" },
   ],
   [
-    { src: "/gridImages/image32.png" },
-    { src: "/gridImages/image41.png" },
-    { src: "/gridImages/image6.png" },
+    { src: "/gridImages/image32.webp" },
+    { src: "/gridImages/image41.webp" },
+    { src: "/gridImages/image6.webp" },
   ],
 ];
 

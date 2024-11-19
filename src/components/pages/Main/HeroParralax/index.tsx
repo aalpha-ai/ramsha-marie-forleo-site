@@ -7,7 +7,7 @@ const HeroParralax: React.FC = () => {
   return (
     <div 
       className="
-        bg-[url('/gridImages/image30.png')] 
+        bg-[url('/gridImages/image30.webp')] 
         bg-cover 
         bg-no-repeat 
         w-full 

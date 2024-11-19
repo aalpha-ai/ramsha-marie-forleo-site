@@ -25,7 +25,7 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({
               <div className="grid grid-col md:grid-cols-3 items-start px-5 relative">
                 <div className="col-span-1 relative">
                   <ImageComponent
-                    src="/hero-device.svg"
+                    src="/hero-device.webp"
                     alt="Podcast cover image"
                     className="absolute max-md:hidden left-8 lg:-top-32 object-contain w-full max-w-96 z-20"
                   />

@@ -10,14 +10,14 @@ const HeroImage: React.FC = () => {
     //   <div className="flex flex-col grow justify-center items-start ">
     //     <img
     //       
-    //       src="/hero-2.svg"
+    //       src="/hero-2.webp"
     //       alt="Marie's portrait"
     //       className="relative z-10 max-lg:w-full h-full max-w-xl bottom-0"
     //     />
     //   </div>
     // </div>
     <Image
-      src="/hero-2.svg"
+      src="/hero-2.webp"
       alt="Ramsha's portrait"
       className="w-full h-full"
       width={500}

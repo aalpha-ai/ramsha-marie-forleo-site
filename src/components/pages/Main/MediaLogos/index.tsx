@@ -13,32 +13,32 @@ type MediaLogoData = {
 
 const mediaLogos: MediaLogoData[] = [
   {
-    src: "/goop.svg",
+    src: "/goop.webp",
     alt: "Media Logo 1",
     className: "aspect-[3.88] w-[89px]",
   },
   {
-    src: "/oprah.svg",
+    src: "/oprah.webp",
     alt: "Media Logo 2",
     className: "aspect-[1.33] w-[89px]",
   },
   {
-    src: "/bazaar.svg",
+    src: "/bazaar.webp",
     alt: "Media Logo 3",
     className: "aspect-[2.54] w-[89px]",
   },
   {
-    src: "/bbc.svg",
+    src: "/bbc.webp",
     alt: "Media Logo 4",
     className: "aspect-[1.33] w-[89px]",
   },
   {
-    src: "/parade.svg",
+    src: "/parade.webp",
     alt: "Media Logo 5",
     className: "aspect-[1.96] w-[88px]",
   },
   {
-    src: "/success-magazine.svg",
+    src: "/success-magazine.webp",
     alt: "Media Logo 6",
     className: "aspect-[4.24] w-[89px]",
   },
