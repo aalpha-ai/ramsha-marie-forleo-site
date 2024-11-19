@@ -14,7 +14,6 @@ const CallToAction: React.FC = () => {
         <Image
           height={40}
           width={1}
-          loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/937a398e5a862563c37deb6924362b2a3cf1fa87a68373e4b025ee02e2f6d798?placeholderIfAbsent=true&apiKey=76b7c825d7b24462a7c58fd618f8eec6"
           alt="dash"
           className="object-contain aspect-[38.46] fill-gray-200 w-[38px]"

@@ -5,7 +5,19 @@ import React from "react";
 
 const HeroParralax: React.FC = () => {
   return (
-    <div className="bg-fixed bg-[url(https://cdn.prod.website-files.com/5f2ae813361eff3ad9282b29/6148a37b672cd95c8f2e8ee4_BFD_Background.jpg)] bg-cover bg-[50%_100%] bg-no-repeat w-full min-h-[600px]" />
+    <div 
+      className="
+        bg-[url('/gridImages/image30.webp')] 
+        bg-cover 
+        bg-no-repeat 
+        w-full 
+        min-h-[300px]
+        md:min-h-[600px]
+        lg:min-h-[600px]
+        md:bg-fixed
+        lg:bg-[50%_30%]
+      " 
+    />
   );
 };
 

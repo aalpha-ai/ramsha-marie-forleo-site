@@ -9,10 +9,10 @@ interface LinkItem {
 }
 
 const legalLinks: LinkItem[] = [
-  { text: "Terms", href: "#" },
-  { text: "Privacy", href: "https://www.marieforleo.com/privacy" },
-  { text: "cookie policy", href: "https://www.marieforleo.com/cookie-policy" },
-  { text: "support", href: "https://www.marieforleo.com/support" },
+  { text: "Terms", href: "/terms" },
+  { text: "Privacy", href: "/privacy" },
+  { text: "Cookie Policy", href: "https://www.marieforleo.com/cookie-policy" },
+  { text: "Support", href: "https://www.marieforleo.com/support" },
 ];
 
 const LegalLinks: React.FC = () => {

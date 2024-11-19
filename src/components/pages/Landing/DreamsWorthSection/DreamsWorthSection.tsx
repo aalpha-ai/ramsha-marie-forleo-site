@@ -3,6 +3,7 @@
  */
 import React from "react";
 import { DreamListItem, DreamListItemProps } from "./DreamListItem";
+import Image from "next/image";
 
 interface DreamsWorthSectionProps {
   title: string;

@@ -18,9 +18,8 @@ const ImageGroup: React.FC<ImageGroupProps> = ({ images, idx }) => {
       })}
     >
       {images.map((image, index) => (
-        <img
+        <Image
           key={index}
-          loading="lazy"
           src={image.src}
           alt={image.alt}
           className="inline-block"

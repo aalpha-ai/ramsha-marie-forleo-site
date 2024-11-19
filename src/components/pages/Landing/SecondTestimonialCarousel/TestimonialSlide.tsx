@@ -23,11 +23,12 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
       <div className="flex justify-between mt-6 w-full max-md:max-w-full">
         <div className="flex flex-wrap items-center w-full min-h-[89px] max-md:max-w-full">
           <div className="flex flex-col items-start self-stretch pr-4 my-auto max-w-[756px] w-[104px]">
-            <img
-              loading="lazy"
+            <Image
               src={image}
               alt={`${author}'s profile`}
               className="object-contain aspect-square max-w-[741.2px] w-[89px]"
+              width={89}
+              height={89}
             />
           </div>
           <h5 className="self-stretch my-auto text-sm font-bold tracking-widest leading-6 uppercase text-neutral-800">

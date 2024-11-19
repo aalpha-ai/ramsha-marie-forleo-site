@@ -4,37 +4,53 @@
 import React from "react";
 import VideoButton from "./VideoButton";
 import BlurFade from "@/components/magicui/blur-fade";
+import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative flex flex-col justify-center items-start bg-black w-full max-[480px]:h-[70vh] max-h-[810px]">
+    // <BlurFade yOffset={10}>
+    //   <section className="bg-stone-50 relative flex flex-col justify-center items-start bg-black w-full max-md:h-[600px] md:h-screen max-h-[810px]">
+    //     <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full h-full">
+    //       <Image
+    //         src="/hero.webp"
+    //         alt="Background image"
+    //         className="object-cover w-full h-full"
+    //         width={1920}
+    //         height={1080}
+    //         priority
+    //         quality={100}
+    //         sizes="100vw"
+    //       />
+    //     </div>
+    //   </section>
+    // </BlurFade>
+    <section className="relative flex flex-col justify-center items-start bg-black w-full">
+      <div className="absolute inset-0 bg-black opacity-50 z-10" />
+      
       <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5f875cd64cb9bdc3802fdbbeb125844db1c975b1965dbb7f2c17a476e93ec28?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
+        <Image
+          src="/hero.webp"
           alt="Background image"
-          className="object-contain w-full aspect-[1.78] max-md:max-w-full"
+          className="object-cover w-full h-full md:object-contain md:aspect-[1.78] max-md:aspect-square"
+          width={1920}
+          height={1080}
+          priority
+          quality={100}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
         />
       </div>
 
-      <div className="absolute basis-full inset-0 z-0 flex flex-col justify-center h-full items-center w-full max-md:max-w-full">
+      <div className="absolute basis-full inset-0 z-20 flex flex-col justify-center h-full items-center w-full">
         <BlurFade className="h-full">
-          <div className="h-full flex items-center justify-center max-lg:max-w-lg.5 max-w-5xl max-md:px-5">
-            <h1 className="text-6xl text-white text-center tracking-normal w-full max-md:px-0 max-md:max-w-full lg:text-9xl md:text-[88px] max-md:leading-[59px] font-ivy-presto">
-              Create a Business and Life You{" "}
-              <span className="italic text-red-200 underline">Love</span>
+          <div className="h-full flex flex-col items-center justify-center w-full max-md:px-5">
+            <h1 className="uppercase text-ramsha-accent text-center tracking-normal w-full max-md:px-0 max-md:max-w-full text-3xl 2xl:text-9xl xl:text-7xl lg:text-5xl md:text-5xl 2xl:leading-[320px] xl:leading-[170px] lg:leading-[120px] md:leading-[100px] leading-[70px] font-montserrat">
+              Let Go Let God
+            </h1>
+            <h1 className="uppercase text-ramsha-accent text-center tracking-normal w-full max-md:px-0 max-md:max-w-full text-3xl 2xl:text-9xl xl:text-7xl lg:text-5xl md:text-5xl 2xl:leading-[320px] xl:leading-[170px] lg:leading-[120px] md:leading-[100px] leading-[70px] font-montserrat">
+              A Global Revolution
             </h1>
           </div>
         </BlurFade>
-        <div className="flex basis-[5%] px-1 md:px-5 lg:px-16  py-5 h-full items-center justify-between w-full self-baseline">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd653a3ff2efef6fb1a9b7c023274555fd29122b07edf8c69748cc5fefbfa517?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
-            alt="Decorative element"
-            className="object-contain w-6 h-4 relative left-1/2 "
-          />
-          <VideoButton />
-        </div>
       </div>
     </section>
   );

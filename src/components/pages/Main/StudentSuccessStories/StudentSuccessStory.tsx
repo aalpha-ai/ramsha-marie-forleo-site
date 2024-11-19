@@ -4,8 +4,10 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import SuccessStory from "./SuccessStory";
 import NavigationArrow from "./NavigationArrow";
+import Image from "next/image";
 
 interface Story {
   category: string;
@@ -35,32 +37,84 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
   };
 
   return (
-    <section className="flex overflow-hidden flex-col items-center  py-20 bg-white max-md:px-5 max-sm:px-0">
-      <header className="flex flex-col pt-6 pb-5 md:pb-10 max-w-full text-center text-neutral-800 ">
-        <h2 className="pb-px w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full">
-          Our students get results
-        </h2>
-        <h3 className="px-28 mt-3 w-full text-4xl lg:text-5xl md:tracking-wider md:leading-[62.4px] max-md:px-5 max-md:max-w-full font-ivy-presto">
+    <section className="flex overflow-hidden flex-col items-center pt-10 md:py-10 bg-white w-full">
+      <motion.header 
+        className="flex flex-col pt-6 pb-5 md:pb-10 w-full text-center text-neutral-800 px-5"
+      >
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="pb-px w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full"
+        >
+          Our clients win
+        </motion.h2>
+        
+        <motion.h3 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ 
+            duration: 0.7,
+            delay: 0.2,
+            ease: [0.22, 1, 0.36, 1]
+          }}
+          viewport={{ once: true }}
+          className="mt-3 w-[358px] md:w-full text-4xl lg:text-5xl md:tracking-wider md:leading-[62.4px] max-md:max-w-full font-caslon"
+        >
           Will You Be The Next Success Story?
-        </h3>
-      </header>
-      <main className="flex flex-col pt-8 pb-9 max-w-full w-[1200px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 relative justify-center items-start w-full bg-stone-100 max-md:max-w-full">
-          <img
-            loading="lazy"
-            src="/carousel.png"
-            alt="Student success story background"
-            className="object-cover h-full w-full"
-          />
-          <SuccessStory
-            category={stories[currentStoryIndex].category}
-            testimonial={stories[currentStoryIndex].testimonial}
-            author={stories[currentStoryIndex].author}
-          />
-          <NavigationArrow direction="left" onClick={handlePrevStory} />
-          <NavigationArrow direction="right" onClick={handleNextStory} />
+        </motion.h3>
+      </motion.header>
+
+      <motion.main 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ 
+          duration: 0.8,
+          delay: 0.3,
+          ease: "easeOut"
+        }}
+        viewport={{ once: true }}
+        className="flex flex-col pt-8 pb-9 w-full"
+      >
+        <div className="flex flex-col sm:flex-row justify-center items-start w-full bg-ramsha-accent">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ 
+              duration: 0.6,
+              delay: 0.4
+            }}
+            viewport={{ once: true }}
+            className="w-full"
+          >
+            <Image
+              src="/gridImages/image39.webp"
+              alt="Student success story background"
+              className="object-cover h-full w-full md:w-[450px] lg:w-[650px]"
+              width={650}
+              height={450}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ 
+              duration: 0.6,
+              delay: 0.5
+            }}
+            viewport={{ once: true }}
+            className="w-full"
+          >
+            <SuccessStory
+              category={stories[currentStoryIndex].category}
+              testimonial={stories[currentStoryIndex].testimonial}
+              author={stories[currentStoryIndex].author}
+            />
+          </motion.div>
         </div>
-      </main>
+      </motion.main>
     </section>
   );
 };

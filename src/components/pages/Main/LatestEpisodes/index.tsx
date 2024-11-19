@@ -4,18 +4,20 @@
 import React from "react";
 import LatestEpisodes from "./LatestEpisode";
 import BlurFade from "@/components/magicui/blur-fade";
+import Image from "next/image";
 
 const LatestEpisodesWrapper: React.FC = () => {
   return (
-    <main className="flex flex-col items-center bg-red-100 ">
+    <main className="flex flex-col items-center bg-ramsha-accent">
       <div className="flex flex-col w-full max-md:px-5 max-w-7xl lg:max-w-[1400px]">
         <BlurFade>
           <div className="grid grid-cols-3 gap-5 justify-center px-5 pt-5 w-full max-md:max-w-full">
-            <img
-              loading="lazy"
+            <Image
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/22849bc68bee22d0f37ec5d7ea186d92812c4217dcca6a025f7d8ec08a2a1949?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
               alt=""
               className="object-contain w-full max-w-md max-md:hidden"
+              width={500}
+              height={300}
             />
 
             <div className="col-span-full md:col-span-2">

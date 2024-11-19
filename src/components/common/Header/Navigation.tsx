@@ -10,23 +10,28 @@ interface NavItem {
   hasDropdown?: boolean;
 }
 
-const navItems: NavItem[] = [
+interface NavigationProps {
+  isMobile?: boolean;
+}
+
+export const navItems: NavItem[] = [
   { label: "Blog" },
-  { label: "Courses", hasDropdown: true },
-  { label: "MarieTV", href: "https://www.marieforleo.com/marietv" },
-  { label: "Podcast", href: "https://www.marieforleo.com/podcast" },
-  { label: "About", href: "https://www.marieforleo.com/about" },
-  { label: "More", hasDropdown: true },
+  { label: "Work With Me" },
+  { label: "In The Press" },
+  { label: "About" },
+  // { label: "Courses", hasDropdown: true },
+  // { label: "MarieTV", href: "https://www.marieforleo.com/marietv" },
+  // { label: "Podcast", href: "https://www.marieforleo.com/podcast" },
+  // { label: "About", href: "https://www.marieforleo.com/about" },
+  // { label: "More", hasDropdown: true },
 ];
 
-const Navigation: React.FC = () => {
+const Navigation: React.FC<NavigationProps> = ({ isMobile }) => {
   return (
-    <nav className="flex flex-wrap items-center self-stretch my-auto min-w-[320px] max-md:max-w-full">
-      <div className="flex text-base font-semibold leading-5  text-neutral-800 w-[564px] max-md:max-w-full">
-        {navItems.map((item, index) => (
-          <NavigationItem key={index} {...item} />
-        ))}
-      </div>
+    <nav className={`text-[16px] font-[600] ${isMobile ? 'flex flex-col w-full' : 'flex items-center gap-8'}`}>
+      {navItems.map((item, index) => (
+        <NavigationItem key={index} {...item} />
+      ))}
     </nav>
   );
 };

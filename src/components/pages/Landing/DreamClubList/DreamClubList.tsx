@@ -4,6 +4,7 @@
 import React from "react";
 import ListItem from "./ListItem";
 import { ListItemProps } from "./ListItem";
+import Image from "next/image";
 
 interface DreamClubListProps {
   imageSrc: string;

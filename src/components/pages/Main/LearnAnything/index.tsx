@@ -8,20 +8,18 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 const LearnAnything: React.FC = () => {
   return (
-    <main className="flex flex-col items-center bg-stone-50">
-      <BlurFade>
-        <section className="flex flex-col py-20 w-full max-w-[1280px] max-md:px-5 md:py-20 max-md:max-w-full">
-          <div className="grid grid-cols-12">
-            <div className=" col-span-full md:col-span-7">
-              <LearnHeader />
-            </div>
-            <div className=" col-span-full md:col-span-5 flex justify-center">
-              <LearnImage />
-            </div>
+    <div className="bg-ramsha-accent md:px-10 lg:px-0">
+      <section className="flex flex-col md:flex-row py-20 max-md:px-5">
+        <div className="md:1/2 lg:w-3/5 flex justify-center items-center">
+          <div className="w-full">
+            <LearnHeader />
           </div>
-        </section>
-      </BlurFade>
-    </main>
+        </div>
+        <div className="md:1/2 lg:w-2/5 flex justify-center items-center">
+          <LearnImage />
+        </div>
+      </section>
+    </div>
   );
 };
 
