@@ -29,14 +29,14 @@ const HeroSection: React.FC = () => {
       
       <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full">
         <Image
-          src="/hero.svg"
+          src="/hero.webp"
           alt="Background image"
-          className="object-contain w-full aspect-[1.78] max-md:max-w-full"
+          className="object-cover w-full h-full md:object-contain md:aspect-[1.78] max-md:aspect-square"
           width={1920}
           height={1080}
           priority
           quality={100}
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
         />
       </div>
 
