@@ -15,6 +15,8 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt }) => {
       src={src}
       alt={alt}
       className="object-cover object-top w-full max-h-[600px]"
+      height={600}
+      width={200}
     />
   );
 };

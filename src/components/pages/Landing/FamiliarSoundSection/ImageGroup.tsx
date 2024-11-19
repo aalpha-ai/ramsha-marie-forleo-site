@@ -4,6 +4,7 @@
 import React from "react";
 import { ImageData } from "./types";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface ImageGroupProps {
   images: ImageData;
@@ -24,6 +25,7 @@ const ImageGroup: React.FC<ImageGroupProps> = ({ images, idx }) => {
           alt={image.alt}
           className="inline-block"
           width={image.width || 370}
+          height={300}
         />
       ))}
     </div>

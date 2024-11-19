@@ -22,7 +22,6 @@ export const SectionContent: React.FC<SectionContentProps> = ({
   imageSrc,
   children,
   imageAlt,
-  buttonLabel,
 }) => {
   return (
     <div className="grid md:grid-cols-2 items-center p-4 md:p-10 gap-10">
@@ -49,6 +48,8 @@ export const SectionContent: React.FC<SectionContentProps> = ({
         src={imageSrc}
         alt={imageAlt}
         className="object-cover w-full max-h-[593px]"
+        height={593}
+        width={200}
       />
     </div>
   );

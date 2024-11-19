@@ -3,6 +3,7 @@
  */
 import React from "react";
 import NavigationButton from "./NavigationButton";
+import Image from "next/image";
 
 interface TestimonialSlideProps {
   quote: string;

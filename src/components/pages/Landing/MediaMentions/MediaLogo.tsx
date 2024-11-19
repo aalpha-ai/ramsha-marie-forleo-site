@@ -11,7 +11,13 @@ interface MediaLogoProps {
 
 const MediaLogo: React.FC<MediaLogoProps> = ({ src, alt }) => {
   return (
-    <Image src={src} alt={alt} className="object-contain flex-1 h-20 w-full" />
+    <Image
+      src={src}
+      alt={alt}
+      className="object-contain flex-1 h-20 w-full"
+      height={80}
+      width={200}
+    />
   );
 };
 

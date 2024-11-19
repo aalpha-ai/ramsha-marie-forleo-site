@@ -3,6 +3,7 @@
  */
 import React from "react";
 import NavigationButton from "./NavigationButton";
+import Image from "next/image";
 
 interface TestimonialSlideProps {
   quote: string;
@@ -13,7 +14,7 @@ interface TestimonialSlideProps {
 const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
   quote,
   author,
-  image,
+  image: src,
 }) => {
   return (
     <div className="flex flex-col max-w-5xl mx-auto max-md:max-w-full">
@@ -24,7 +25,7 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
         <div className="flex flex-wrap items-center w-full min-h-[89px] max-md:max-w-full">
           <div className="flex flex-col items-start self-stretch pr-4 my-auto max-w-[756px] w-[104px]">
             <Image
-              src={image}
+              src={src}
               alt={`${author}'s profile`}
               className="object-contain aspect-square max-w-[741.2px] w-[89px]"
               width={89}
