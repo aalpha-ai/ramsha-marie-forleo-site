@@ -18,12 +18,12 @@ const companyLinks: LinkItem[] = [
 
 const CompanyLinks: React.FC = () => {
   return (
-    <section className="flex flex-col grow shrink pt-6 pb-16 text-ramsha-accent">
-      <h2 className="text-xs font-extrabold leading-5 uppercase whitespace-nowrap tracking-[2.16px]">
+    <section className="flex flex-col grow shrink pt-6 pb-16 text-white">
+      <h2 className="text-[16px] font-extrabold leading-5 uppercase whitespace-nowrap tracking-[2.16px]">
         Company
       </h2>
       <nav className="mt-3">
-        <ul className="flex flex-col items-start w-full text-sm tracking-wide leading-7">
+        <ul className="flex flex-col items-start w-full text-[16px] tracking-wide leading-7">
           {companyLinks.map((link, index) => (
             <li key={index} className="flex items-start pb-px">
               <a href={link.href} target="_blank" rel="noopener noreferrer">

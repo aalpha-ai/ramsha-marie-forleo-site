@@ -17,7 +17,7 @@ const footerLinks: FooterLink[] = [
 
 const BottomBar: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center pt-4 mt-10 w-full text-[8px] md:text-[9px] lg:text-[10px] xl:text-[12px] font-bold tracking-widest text-ramsha-accent uppercase border-t border-t-stone-300">
+    <div className="flex flex-col justify-center pt-4 mt-10 w-full text-[8px] md:text-[9px] lg:text-[10px] xl:text-[12px] font-bold tracking-widest text-white uppercase border-t border-t-stone-300">
       <div className="flex md:justify-between md:items-center w-full">
         {/* Mobile Layout Container */}
         <div className="flex flex-col items-center gap-4 w-full md:hidden">

@@ -16,8 +16,8 @@ const courseLinks: CourseLink[] = [
 
 const CoursesAndBooks: React.FC = () => {
   return (
-    <section className="flex flex-col grow shrink pt-6 text-sm tracking-wide leading-7 text-ramsha-accent">
-      <h2 className="text-xs font-extrabold leading-5 uppercase tracking-[2.16px]">
+    <section className="flex flex-col grow shrink pt-6 text-[16px] tracking-wide leading-7 text-white">
+      <h2 className="font-extrabold leading-5 uppercase tracking-[2.16px]">
         Courses & Books
       </h2>
       <nav className="mt-3">

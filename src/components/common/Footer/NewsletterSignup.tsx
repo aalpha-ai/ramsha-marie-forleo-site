@@ -5,7 +5,7 @@ import React from "react";
 
 const NewsletterSignup: React.FC = () => {
   return (
-    <section className="flex flex-col grow shrink pt-6 text-xs min-h-[1px] max-md:max-w-full text-ramsha-accent">
+    <section className="flex flex-col grow shrink pt-6 text-[16px] min-h-[1px] max-md:max-w-full text-white">
       <h2 className="font-extrabold leading-5 uppercase tracking-[2.16px]">
         Join Glowing Femme
       </h2>
@@ -52,7 +52,7 @@ const NewsletterSignup: React.FC = () => {
                   type="submit"
                   className="flex justify-center items-center whitespace-nowrap px-32 py-4 w-full bg-ramsha-accent min-h-[50px] min-w-[240px] rounded-[60px] max-md:px-5"
                 >
-                  LET&apos;S DO IT
+                  BISMILLAH
                 </button>
               </div>
             </div>
