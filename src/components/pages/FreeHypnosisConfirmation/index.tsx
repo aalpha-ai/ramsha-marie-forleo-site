@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function Component() {
   return (
     <section className="font-montserrat">
-      <section className="flex flex-col items-center bg-ramsha-accent border-ramsha-accent m-10 border-[10px] xl:px-[10px] xl:pt-[56px] xl:pb-[54px] px-[0px] pt-[45px] pb-[55px] rounded-[30px]">
+      <section className="flex flex-col items-center bg-ramsha-accent border-ramsha-accent m-4 md:m-10 border-[10px] xl:px-[10px] xl:pt-[56px] xl:pb-[54px] px-[0px] pt-[45px] pb-[55px] rounded-[30px]">
         <div className="flex flex-col items-center text-center px-8 pt-16 relative overflow-hidden">
           {/* Floating stars background effect */}
           <motion.div 
