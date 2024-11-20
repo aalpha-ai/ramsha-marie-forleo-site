@@ -7,14 +7,12 @@ import { LearnImage } from "./LearnImage";
 
 const LearnAnything: React.FC = () => {
   return (
-    <div className="bg-ramsha-accent md:px-10 lg:px-0">
+    <div className="bg-ramsha-accent md:px-2 lg:px-0">
       <section className="flex flex-col md:flex-row py-20 max-md:px-5">
-        <div className="md:1/3 lg:w-3/5 flex justify-center items-center">
-          <div className="w-full">
-            <LearnHeader />
-          </div>
+        <div className="w-full lg:w-3/5 flex justify-center items-center">
+          <LearnHeader />
         </div>
-        <div className="md:1/3 lg:w-2/5 flex justify-center items-center">
+        <div className="w-full md:w-[300px] lg:w-2/5 flex justify-center items-center">
           <LearnImage />
         </div>
       </section>

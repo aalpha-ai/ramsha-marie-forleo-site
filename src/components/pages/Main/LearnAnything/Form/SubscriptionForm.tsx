@@ -17,7 +17,7 @@ const SubscriptionForm: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [isSubmitted, setIsSubmitted] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -129,7 +129,7 @@ const SubscriptionForm: React.FC = () => {
       </AnimatePresence>
 
       <div className="flex flex-col gap-3 justify-center w-full text-black max-md:max-w-full">
-        <div className="flex gap-3 justify-center w-full text-black max-md:max-w-full">
+        <div className="flex flex-col md:flex-row gap-3 justify-center w-full text-black max-md:max-w-full">
           <FormInput
             label="First Name"
             type="text"
