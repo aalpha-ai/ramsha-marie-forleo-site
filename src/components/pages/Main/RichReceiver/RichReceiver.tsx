@@ -26,7 +26,7 @@ const RichReceiver = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className="text-5xl font-bold mb-6 bg-clip-text"
+                className="text-5xl font-caslon mb-6 bg-clip-text"
               >
                 Rich Receiver
               </motion.h1>
@@ -58,7 +58,7 @@ const RichReceiver = () => {
                 className="flex items-center gap-4 mb-6"
               >
                 <Sparkles className="w-6 h-6 text-ramsha-tertiary" />
-                <h2 className="text-2xl font-semibold">Transform Your Destiny</h2>
+                <h2 className="text-2xl font-caslon">Transform Your Destiny</h2>
               </motion.div>
 
               <motion.p 
@@ -93,7 +93,7 @@ const RichReceiver = () => {
                     className="bg-white p-6 rounded-xl border border-amber-500/10"
                   >
                     <item.Icon className="w-8 h-8 mb-4 text-ramsha-tertiary" />
-                    <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                    <h3 className="text-xl font-caslon mb-3">{item.title}</h3>
                     <p className="">{item.description}</p>
                   </motion.div>
                 ))}
@@ -115,7 +115,7 @@ const RichReceiver = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.9 }}
                     viewport={{ once: true }}
-                    className="text-2xl font-bold mb-4"
+                    className="text-2xl font-caslon mb-4"
                   >
                     Begin Your Divine Journey
                   </motion.h3>
@@ -127,7 +127,7 @@ const RichReceiver = () => {
                     viewport={{ once: true }}
                     className="text-lg mb-6"
                   >
-                    Access the micro-training now for just $55 and discover the method that's transforming lives worldwide.
+                    Access the micro-training now for just $44 and discover the method that's transforming lives worldwide.
                   </motion.p>
 
                   <motion.div 
@@ -143,7 +143,7 @@ const RichReceiver = () => {
                       href="https://buy.stripe.com/7sIg1O0Ti5qz34scPn"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-ramsha-tertiary rounded-full transition-all duration-300 hover:shadow-xl"
+                      className="inline-flex items-center px-8 py-4 text-lg font-montserrat-bold text-white bg-ramsha-tertiary rounded-full transition-all duration-300 hover:shadow-xl"
                     >
                       <Flame className="w-12 h-12 md:w-6 md:h-6 mr-2" />
                       Claim Rich Receiver Training

@@ -8,22 +8,6 @@ import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   return (
-    // <BlurFade yOffset={10}>
-    //   <section className="bg-stone-50 relative flex flex-col justify-center items-start bg-black w-full max-md:h-[600px] md:h-screen max-h-[810px]">
-    //     <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full h-full">
-    //       <Image
-    //         src="/hero.webp"
-    //         alt="Background image"
-    //         className="object-cover w-full h-full"
-    //         width={1920}
-    //         height={1080}
-    //         priority
-    //         quality={100}
-    //         sizes="100vw"
-    //       />
-    //     </div>
-    //   </section>
-    // </BlurFade>
     <section className="relative flex flex-col justify-center items-start bg-black w-full">
       <div className="absolute inset-0 bg-black opacity-50 z-10" />
       
@@ -42,11 +26,11 @@ const HeroSection: React.FC = () => {
 
       <div className="absolute basis-full inset-0 z-20 flex flex-col h-full items-center w-full">
         <BlurFade className="h-full">
-          <div className="h-full flex flex-col items-center pt-10 xl:pt-14 w-full max-md:px-5 font-montserrat">
-            <h1 className="font-[900] uppercase text-white text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[160px] xl:leading-[80px] lg:leading-[60px] md:leading-[50px] leading-[35px]">
+          <div className="h-full flex flex-col items-center pt-10 xl:pt-14 w-full max-md:px-5 font-montserrat-bold">
+            <h1 className="uppercase text-white text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[160px] xl:leading-[80px] lg:leading-[60px] md:leading-[50px] leading-[35px]">
               Let Go Let God
             </h1>
-            <h1 className="font-[700] uppercase text-white text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[320px] xl:leading-[170px] lg:leading-[120px] md:leading-[100px] leading-[70px]">
+            <h1 className="uppercase text-white text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[320px] xl:leading-[170px] lg:leading-[120px] md:leading-[100px] leading-[70px]">
               A Global Revolution
             </h1>
           </div>

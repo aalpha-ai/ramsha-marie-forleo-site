@@ -47,7 +47,7 @@ const HeroContent: React.FC = () => {
             ease: "easeOut"
           }}
           viewport={{ once: true }}
-          className="pb-px mt-5 text-lg tracking-normal leading-9 text-black lg:w-[512px] font-[500]"
+          className="pb-px mt-5 text-lg tracking-normal leading-9 text-black lg:w-[512px]"
         >
           Something tells me you&apos;re a generational trailblazer. 
           You&apos;ve decided that generational healing <motion.span 
@@ -93,7 +93,7 @@ const HeroContent: React.FC = () => {
           }}
           viewport={{ once: true }}
         >
-          <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-[700] tracking-wide leading-6 text-center text-white capitalize bg-ramsha-primary rounded-3xl lg:w-[300px] max-md:px-5 hover:bg-white hover:text-ramsha-primary transition-all duration-300">
+          <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-montserrat-bold tracking-wide leading-6 text-center text-white capitalize bg-ramsha-primary rounded-3xl lg:w-[300px] max-md:px-5 hover:bg-white hover:text-ramsha-primary transition-all duration-300">
             <a
               href="https://www.marieforleo.com/about"
               target="_blank"

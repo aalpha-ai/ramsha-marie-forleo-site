@@ -22,7 +22,7 @@ const PodcastInfo: React.FC<PodcastInfoProps> = ({ title, description }) => {
           delay: 0.4 // Delay after card animation
         }}
         viewport={{ once: true }}
-        className="text-4xl tracking-wider leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full font-caslon font-[700]"
+        className="text-4xl tracking-wider leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full font-caslon"
       >
         {title}
       </motion.h2>

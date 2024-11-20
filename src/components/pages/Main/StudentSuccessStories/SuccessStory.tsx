@@ -27,7 +27,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
           ease: "easeOut"
         }}
         viewport={{ once: true }}
-        className="inline-flex px-4 py-2 text-xs font-medium tracking-[2.24px] uppercase bg-white rounded-full h-[32px] items-center justify-center w-fit whitespace-nowrap"
+        className="inline-flex px-4 py-2 text-xs tracking-[2.24px] uppercase bg-white rounded-full h-[32px] items-center justify-center w-fit whitespace-nowrap"
       >
         {category}
       </motion.div>
@@ -41,7 +41,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
           ease: [0.22, 1, 0.36, 1]
         }}
         viewport={{ once: true }}
-        className="mt-6 text-[20px] md:text-[16px] font-[400] leading-[1.6] tracking-normal text-black"
+        className="mt-6 text-[20px] md:text-[16px] leading-[1.6] tracking-normal text-black"
       >
         {testimonial}
       </motion.blockquote>
@@ -54,7 +54,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
           delay: 0.3
         }}
         viewport={{ once: true }}
-        className="mt-4 text-xs font-bold tracking-widest uppercase text-neutral-500"
+        className="mt-4 text-xs font-montserrat-bold tracking-widest uppercase text-neutral-500"
       >
         {author}
       </motion.span>
@@ -72,7 +72,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
         href="https://www.marieforleo.com/success-stories"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 px-8 py-4 text-base font-bold tracking-wide text-center text-white bg-ramsha-tertiary rounded-full hover:bg-black/90 w-full md:w-[200px] lg:w-[300px]"
+        className="mt-6 px-8 py-4 text-base font-montserrat-bold tracking-wide text-center text-white bg-ramsha-tertiary rounded-full hover:bg-black/90 w-full md:w-[200px] lg:w-[300px]"
       >
         Get Inspired
       </motion.a>

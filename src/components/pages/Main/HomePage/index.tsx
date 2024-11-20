@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
       <ContentSection
         title={
           <div className="font-caslon">
-            Attract Your Soulmate Husband the <span className="italic font-[300]">Halal</span>{' '}Way.
+            Attract Your Soulmate Husband the <span className="italic">Halal</span>{' '}Way.
           </div>
         }
         subtitle="Featured On International TV"

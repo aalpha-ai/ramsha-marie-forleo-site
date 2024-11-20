@@ -46,7 +46,7 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="pb-px w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full"
+          className="pb-px w-full text-xs leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full"
         >
           Our clients win
         </motion.h2>

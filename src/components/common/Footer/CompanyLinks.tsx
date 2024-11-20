@@ -19,7 +19,7 @@ const companyLinks: LinkItem[] = [
 const CompanyLinks: React.FC = () => {
   return (
     <section className="flex flex-col grow shrink pt-6 pb-16 text-white">
-      <h2 className="text-[16px] font-extrabold leading-5 uppercase whitespace-nowrap tracking-[2.16px]">
+      <h2 className="text-[16px] font-montserrat-bold leading-5 uppercase whitespace-nowrap tracking-[2.16px]">
         Company
       </h2>
       <nav className="mt-3">

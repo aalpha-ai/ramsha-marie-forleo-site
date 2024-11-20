@@ -43,7 +43,7 @@ export const LearnHeader: React.FC = () => {
       >
         <motion.span 
           variants={itemVariants}
-          className="text-neutral-800 font-[600]"
+          className="text-neutral-800"
         >
           Learn How to Get Your Prayers Answered{" "}
         </motion.span>
@@ -65,13 +65,13 @@ export const LearnHeader: React.FC = () => {
           </motion.span>
           <motion.span 
             variants={itemVariants}
-            className="font-bold text-black block"
+            className="text-black block"
           >
             ONE key shift that will put you on speed dial with God,
           </motion.span>
           <motion.span 
             variants={itemVariants}
-            className="italic text-black font-bold block"
+            className="italic text-black block"
           >
             by relaxing your body.
           </motion.span>

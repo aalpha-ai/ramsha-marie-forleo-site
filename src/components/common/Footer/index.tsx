@@ -8,7 +8,6 @@ import NewsletterSignup from "./NewsletterSignup";
 import CompanyLinks from "./CompanyLinks";
 import CoursesAndBooks from "./CoursesAndBooks";
 import BottomBar from "./BottomBar";
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer: React.FC = () => {

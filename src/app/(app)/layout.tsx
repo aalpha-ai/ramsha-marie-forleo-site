@@ -11,8 +11,14 @@ const inter = Inter({
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["100"],
+  weight: ["400"],
   variable: "--font-montserrat",
+});
+
+const montserratBold = Montserrat({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-montserrat-bold",
 });
 
 const ivyPresto = localFont({
@@ -23,7 +29,7 @@ const ivyPresto = localFont({
 });
 
 const caslon = localFont({
-  src: "../../fonts/Caslon/F37Caslon-SemiBoldDisplay.otf",
+  src: "../../fonts/Caslon/F37Caslon-ExtraBoldDisplay.otf",
   variable: "--font-caslon",
   display: 'swap',
   preload: true,
@@ -34,25 +40,6 @@ const seasons = localFont({
   variable: "--font-seasons",
   display: 'swap',
   preload: true,
-});
-
-const areaExtended = localFont({
-  src: "../../fonts/Area_Extended_SemiBold.otf",
-  variable: "--font-area-extended",
-  display: 'swap',
-  preload: true,
-});
-
-const areaNormal = localFont({
-  src: "../../fonts/Area_Normal_Regular.otf",
-  variable: "--font-area-normal",
-  display: 'swap',
-  preload: true,
-});
-
-const gotham = localFont({
-  src: "../../fonts/Gotham-Light.ttf",
-  variable: "--font-gotham",
 });
 
 export const metadata: Metadata = {
@@ -77,7 +64,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${montserrat.variable} ${ivyPresto.variable} ${seasons.variable} ${caslon.variable} ${areaExtended.variable} ${areaNormal.variable} ${gotham.variable} ${inter.className} antialiased custom`}
+        className={`${montserratBold.variable} ${inter.variable} ${montserrat.variable} ${ivyPresto.variable} ${seasons.variable} ${caslon.variable} ${inter.className} antialiased custom`}
       >
         <main>{children}</main>
       </body>

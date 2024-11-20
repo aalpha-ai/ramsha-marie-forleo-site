@@ -11,13 +11,11 @@ const config: Config = {
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
+        "montserrat-bold": ["var(--font-montserrat-bold)"],
         "montserrat": ["var(--font-montserrat)"],
         "caslon": ["var(--font-caslon)"],
         "seasons": ["var(--font-seasons)", "serif"],
         "ivy-presto": ["var(--font-ivy-presto)"],
-        "area-normal": ["var(--font-area-normal)"],
-        "area-extended": ["var(--font-area-extended)"],
-        gotham: ["var(--font-gotham)"],
       },
       colors: {
         background: "hsl(var(--background))",

@@ -48,7 +48,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="z-10 pb-px text-xs font-[700] leading-5 uppercase tracking-[2.16px]"
+              className="z-10 pb-px text-xs font-montserrat-bold leading-5 uppercase tracking-[2.16px]"
             >
               {subtitle}
             </motion.div>
@@ -58,7 +58,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="mt-6 text-[32px] md:text-[42px] lg:text-[40px] leading-[1.3] md:leading-[1.2] font-caslon font-[700]"
+              className="mt-6 text-[32px] md:text-[42px] lg:text-[40px] leading-[1.3] md:leading-[1.2]"
             >
               {title}
             </motion.h2>
@@ -68,7 +68,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="pb-px mt-5 text-lg tracking-normal leading-[1.6] md:leading-8 text-black font-[600]"
+              className="pb-px mt-5 text-lg tracking-normal leading-[1.6] md:leading-8 text-black"
             >
               {description}
             </motion.p>
@@ -81,7 +81,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               whileTap={{ scale: 0.98 }}
               viewport={{ once: true }}
               href={buttonLink}
-              className="overflow-hidden z-10 px-6 md:px-16 py-4 md:py-4 mt-6 text-base font-bold tracking-wide leading-6 text-center text-white capitalize rounded-full bg-ramsha-tertiary w-full md:w-fit shadow-button hover:shadow-button-hover font-[700]"
+              className="overflow-hidden z-10 px-6 md:px-16 py-4 md:py-4 mt-6 text-base font-montserrat-bold tracking-wide leading-6 text-center text-white capitalize rounded-full bg-ramsha-tertiary w-full md:w-fit shadow-button hover:shadow-button-hover"
             >
               {buttonText}
             </motion.a>

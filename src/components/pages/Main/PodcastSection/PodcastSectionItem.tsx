@@ -5,7 +5,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import PodcastInfo from "./PodcastInfo";
-import PodcastListenOn from "./PodcastListenOn";
 import ImageComponent from "./ImageComponent";
 
 interface PodcastSectionProps {
