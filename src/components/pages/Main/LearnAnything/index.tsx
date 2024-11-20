@@ -4,7 +4,6 @@
 import React from "react";
 import { LearnHeader } from "./LearnHeader";
 import { LearnImage } from "./LearnImage";
-import BlurFade from "@/components/magicui/blur-fade";
 
 const LearnAnything: React.FC = () => {
   return (

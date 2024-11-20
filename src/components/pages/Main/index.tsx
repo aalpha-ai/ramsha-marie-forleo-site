@@ -11,7 +11,6 @@ import StudentSuccessStories from "./StudentSuccessStories";
 import ImageGallery from "./ImageGallery";
 import HeroParralax from "./HeroParralax";
 import Footer from "@/components/common/Footer";
-import LatestEpisodes from "./LatestEpisodes";
 import CorporateBooking from "./CorporateBooking";
 import RichReciever from "./RichReceiver";
 
