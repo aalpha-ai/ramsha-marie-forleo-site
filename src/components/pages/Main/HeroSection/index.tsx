@@ -42,11 +42,11 @@ const HeroSection: React.FC = () => {
 
       <div className="absolute basis-full inset-0 z-20 flex flex-col h-full items-center w-full">
         <BlurFade className="h-full">
-          <div className="h-full flex flex-col items-center pt-6 w-full max-md:px-5">
-            <h1 className="font-[900] uppercase text-ramsha-accent text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[160px] xl:leading-[80px] lg:leading-[60px] md:leading-[50px] leading-[35px] font-seasons">
+          <div className="h-full flex flex-col items-center pt-10 xl:pt-14 w-full max-md:px-5 font-montserrat">
+            <h1 className="font-[900] uppercase text-white text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[160px] xl:leading-[80px] lg:leading-[60px] md:leading-[50px] leading-[35px]">
               Let Go Let God
             </h1>
-            <h1 className="font-[700] uppercase text-ramsha-accent text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[320px] xl:leading-[170px] lg:leading-[120px] md:leading-[100px] leading-[70px] font-seasons">
+            <h1 className="font-[700] uppercase text-white text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[320px] xl:leading-[170px] lg:leading-[120px] md:leading-[100px] leading-[70px]">
               A Global Revolution
             </h1>
           </div>

@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="uppercase flex justify-between items-center px-10 py-4 bg-ramsha-primary font-[400] text-ramsha-accent text-xs lg:text-sm w-full">
+    <footer className="uppercase flex justify-between items-center px-10 py-4 bg-ramsha-primary font-[400] text-white text-xs lg:text-sm w-full">
       {/* Left Links */}
       <div className="flex items-center gap-6">
         <motion.a 

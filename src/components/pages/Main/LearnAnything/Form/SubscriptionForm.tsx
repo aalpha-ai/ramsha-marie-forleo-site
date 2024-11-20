@@ -8,7 +8,7 @@ import FormDisclaimer from "./FormDisclaimer";
 
 const SubscriptionForm: React.FC = () => {
   return (
-    <form className="flex flex-col gap-3 justify-center text-base text-ramsha-accent">
+    <form className="flex flex-col gap-3 justify-center text-base text-white">
       <div className="flex gap-3 justify-center w-full text-black max-md:max-w-full">
         <FormInput
           label="First Name"

@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </Link>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 md:gap-5 lg:gap-10 items-start">
+        <div className="flex flex-col gap-8 md:grid md:grid-cols-12 md:gap-5 lg:gap-10 items-start">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -42,38 +42,40 @@ const Footer: React.FC = () => {
               ease: [0.22, 1, 0.36, 1]
             }}
             viewport={{ once: true }}
-            className="md:col-span-5"
+            className="w-full md:col-span-5"
           >
             <NewsletterSignup />
           </motion.div>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ 
-              duration: 0.6,
-              delay: 0.3,
-              ease: [0.22, 1, 0.36, 1]
-            }}
-            viewport={{ once: true }}
-            className="md:col-span-4"
-          >
-            <CompanyLinks />
-          </motion.div>
+          <div className="grid grid-cols-2 gap-4 w-full md:contents">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.6,
+                delay: 0.3,
+                ease: [0.22, 1, 0.36, 1]
+              }}
+              viewport={{ once: true }}
+              className="md:col-span-4"
+            >
+              <CompanyLinks />
+            </motion.div>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ 
-              duration: 0.6,
-              delay: 0.4,
-              ease: [0.22, 1, 0.36, 1]
-            }}
-            viewport={{ once: true }}
-            className="md:col-span-3"
-          >
-            <CoursesAndBooks />
-          </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.6,
+                delay: 0.4,
+                ease: [0.22, 1, 0.36, 1]
+              }}
+              viewport={{ once: true }}
+              className="md:col-span-3"
+            >
+              <CoursesAndBooks />
+            </motion.div>
+          </div>
         </div>
 
         <motion.div

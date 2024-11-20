@@ -27,8 +27,8 @@ export default function Component() {
       <HeroImage />
       <PodcastSection />
       {/* <LatestEpisodes /> */}
-      <CorporateBooking />
       <RichReciever />
+      <CorporateBooking />
       <StudentSuccessStories />
       <ImageGallery />
       <HeroParralax />

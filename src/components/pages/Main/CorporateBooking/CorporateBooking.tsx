@@ -55,7 +55,7 @@ const CorporateBooking = () => {
   };
 
   return (
-    <section className="relative py-20 text-ramsha-accent overflow-hidden">
+    <section className="relative py-20 text-white overflow-hidden">
       {/* Background Pattern */}
       <motion.div
         variants={backgroundVariants}
@@ -124,7 +124,7 @@ const CorporateBooking = () => {
               ease: "easeOut"
             }}
             viewport={{ once: true }}
-            className="text-xl text-ramsha-accent mb-8"
+            className="text-xl text-white mb-8"
           >
             Elevate your next corporate event with impactful insights and actionable strategies
           </motion.p>
@@ -169,7 +169,7 @@ const CorporateBooking = () => {
             href="https://forms.gle/KV7NUaHJiVbQ3Js67"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 text-lg font-semibold text-ramsha-accent bg-ramsha-tertiary to-blue-500 rounded-full hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+            className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-ramsha-tertiary to-blue-500 rounded-full hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
             variants={buttonVariants}
             initial="hidden"
             whileInView="visible"
