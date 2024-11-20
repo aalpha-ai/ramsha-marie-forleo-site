@@ -22,21 +22,21 @@ const montserratBold = Montserrat({
 });
 
 const ivyPresto = localFont({
-  src: "../../fonts/Ivy-Presto-Headline-Light.otf",
+  src: "../fonts/Ivy-Presto-Headline-Light.otf",
   variable: "--font-ivy-presto",
   display: 'swap',
   preload: true,
 });
 
 const caslon = localFont({
-  src: "../../fonts/Caslon/F37Caslon-ExtraBoldDisplay.otf",
+  src: "../fonts/Caslon/F37Caslon-ExtraBoldDisplay.otf",
   variable: "--font-caslon",
   display: 'swap',
   preload: true,
 });
 
 const seasons = localFont({
-  src: "../../fonts/Seasons/Fontspring-DEMO-theseasons-reg.otf",
+  src: "../fonts/Seasons/Fontspring-DEMO-theseasons-reg.otf",
   variable: "--font-seasons",
   display: 'swap',
   preload: true,

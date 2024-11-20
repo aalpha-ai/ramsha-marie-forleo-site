@@ -24,7 +24,7 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({
             <div className="grid grid-col md:grid-cols-3 items-start px-5 relative">
               {/* Device Image Animation */}
               <motion.div 
-                className="col-span-1 relative"
+                className="col-span-1 relative z-20"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ 
@@ -37,7 +37,7 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({
                 <ImageComponent
                   src="/hero-device.webp"
                   alt="Podcast cover image"
-                  className="absolute max-md:hidden left-8 lg:-top-32 object-contain w-full max-w-96 z-20"
+                  className="absolute max-md:hidden left-8 lg:-top-32 object-contain w-full max-w-96"
                 />
               </motion.div>
 
