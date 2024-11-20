@@ -35,7 +35,7 @@ export const LearnHeader: React.FC = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="flex flex-col grow gap-5 shrink px-4 lg:px-8 pt-2.5 pb-8 tracking-normal leading-9 text-center text-black md:w-[480px] lg:w-[570px] xl:w-full"
+      className="flex flex-col grow gap-5 shrink px-4 lg:px-8 pt-2.5 pb-8 tracking-normal leading-9 text-center text-black md:w-[380px] lg:w-[570px] xl:w-full"
     >
       <motion.h1 
         variants={itemVariants}

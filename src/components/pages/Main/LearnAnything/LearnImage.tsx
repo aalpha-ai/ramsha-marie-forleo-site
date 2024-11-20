@@ -26,7 +26,7 @@ export const LearnImage: React.FC = () => {
         delay: 0.2
       }}
       viewport={{ once: true }}
-      className="w-full md:w-[500px] lg:w-[300px]"
+      className="w-full md:w-[300px] lg:w-[300px]"
     >
       <Image
         src="/cta-image-2.webp"
