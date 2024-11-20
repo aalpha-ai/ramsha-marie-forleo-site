@@ -94,10 +94,11 @@ export default function NotFound() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            className="w-full sm:w-auto"
           >
             <Link 
               href="/" 
-              className="group relative flex items-center gap-3 px-8 py-4 bg-[#C68B5F] text-white rounded-full font-medium transition-all duration-300 ease-out overflow-hidden"
+              className="group relative flex items-center justify-center px-8 py-4 bg-[#C68B5F] text-white rounded-full font-medium transition-all duration-300 ease-out overflow-hidden w-full sm:w-auto"
             >
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
@@ -109,21 +110,22 @@ export default function NotFound() {
                   ease: "linear"
                 }}
               />
-              <Home className="w-5 h-5" />
-              <span className="text-[18px] font-bold tracking-wider">Return Home</span>
-              <motion.div
-                animate={{ x: [0, 4, 0] }}
-                transition={{ 
-                  duration: 1.5,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
-              >
-                <ArrowRight className="w-5 h-5" />
-              </motion.div>
+              <div className="flex items-center gap-3 justify-center">
+                <Home className="w-5 h-5" />
+                <span className="text-[18px] font-bold tracking-wider">Return Home</span>
+                <motion.div
+                  animate={{ x: [0, 4, 0] }}
+                  transition={{ 
+                    duration: 1.5,
+                    repeat: Infinity,
+                    repeatType: "reverse"
+                  }}
+                >
+                  <ArrowRight className="w-5 h-5" />
+                </motion.div>
+              </div>
             </Link>
           </motion.div>
-
         </div>
 
         {/* Floating Elements */}
