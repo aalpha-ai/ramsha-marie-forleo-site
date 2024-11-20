@@ -11,7 +11,7 @@ export default function Component() {
       <section className="flex flex-col items-center">
         <DreamClub />
         <HeroSection texts={[
-          { text: "You Do Not Have To Settle for the Status Quo" },
+          { text: "You Do Not Have To Settle For The Status Quo" },
         ]} />
         <DreamClubHero /> 
         <Footer />
