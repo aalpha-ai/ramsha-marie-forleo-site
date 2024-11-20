@@ -62,7 +62,7 @@ const Header: React.FC = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={isLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-ramsha-accent col-span-7 flex justify-center items-center max-lg:hidden"
+          className="text-white col-span-7 flex justify-center items-center max-lg:hidden"
         >
           <Navigation />
         </motion.div>
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <AlignJustify className="h-6 w-6 text-ramsha-accent" />
+                <AlignJustify className="h-6 w-6 text-white" />
               </motion.div>
             </SheetTrigger>
             <SheetContent 
