@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="uppercase flex justify-between items-center px-10 py-4 bg-ramsha-primary font-[400] text-white text-xs lg:text-sm w-full">
-      {/* Left Links */}
+    <footer className="tracking-widest uppercase flex flex-col md:flex-row md:justify-between items-center px-10 py-8 md:py-4 bg-ramsha-primary text-white text-[12px] md:text-[9px] lg:text-[10px] xl:text-[12px] w-full space-y-6 md:space-y-0">
+      {/* Links - Top on mobile, Left on desktop */}
       <div className="flex items-center gap-6">
         <motion.a 
           initial={{ opacity: 0, y: 10 }}
@@ -21,7 +21,6 @@ const Footer: React.FC = () => {
           }}
           viewport={{ once: true }}
           href="/terms"
-          className="tracking-wider"
         >
           TERMS & CONDITIONS
         </motion.a>
@@ -37,13 +36,12 @@ const Footer: React.FC = () => {
           }}
           viewport={{ once: true }}
           href="/privacy"
-          className="tracking-wider"
         >
           PRIVACY POLICY
         </motion.a>
       </div>
 
-      {/* Center Copyright */}
+      {/* Copyright - Middle */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -52,12 +50,12 @@ const Footer: React.FC = () => {
           ease: "easeOut"
         }}
         viewport={{ once: true }}
-        className="absolute left-1/2 -translate-x-1/2"
+        className="md:flex-1 text-center whitespace-nowrap"
       >
-        © {currentYear} GLOWING FEMME ALL RIGHTS RESERVED.
+        © {currentYear} GLOWING FEMME ALL RIGHTS RESERVED
       </motion.div>
 
-      {/* Right Credits */}
+      {/* Credits - Bottom on mobile, Right on desktop */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +65,7 @@ const Footer: React.FC = () => {
           ease: "easeOut"
         }}
         viewport={{ once: true }}
-        className="flex items-center gap-2"
+        className="flex items-center gap-2 text-[17px] md:text-[9px] lg:text-[10px] xl:text-[12px]"
       >
         <span>WEBSITE BY</span>
         <Link 

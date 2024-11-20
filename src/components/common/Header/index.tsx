@@ -106,7 +106,7 @@ const Header: React.FC = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.3, delay: 0.1 }}
                 >
-                  <div className="flex items-center gap-1 hidden md:flex">
+                  <div className="flex items-center gap-1 hidden md:flex font-montserrat-bold">
                     <span className="text-base">How to Get Your Prayers Answered Instantly</span>
                     <motion.span 
                       className="px-2"
@@ -125,7 +125,7 @@ const Header: React.FC = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.2, delay: 0.2 }}
                 >
-                  <nav className="flex flex-col">
+                  <nav className="flex flex-col font-montserrat-bold">
                     {navItems.map((item, index) => (
                       <motion.a
                         key={item.label}
