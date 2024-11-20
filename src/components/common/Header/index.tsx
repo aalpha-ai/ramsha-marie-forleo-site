@@ -35,8 +35,8 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-ramsha-primary sticky top-0 z-50 flex flex-col border-b border-zinc-400 w-full max-lg:py-5">
-      <div className="grid grid-cols-8 items-center px-7 w-full max-md:px-5 max-md:max-w-full">
-        <Link href="/">
+      <div className="grid grid-cols-12 items-center px-7 w-full max-md:px-5 max-md:max-w-full">
+        <Link href="/" className="col-span-3">
           <motion.h1 
             key={pathname}
             initial="hidden"
@@ -51,19 +51,18 @@ const Header: React.FC = () => {
               opacity: { duration: 0.6 },
               x: { duration: 0.6 }
             }}
-            className="uppercase text-2xl font-seasons text-ramsha-tertiary whitespace-nowrap font-display opacity-0"
+            className="uppercase text-3xl lg:text-2xl xl:text-3xl font-seasons text-ramsha-tertiary whitespace-nowrap font-display opacity-0"
           >
             Glowing Femme
           </motion.h1>
         </Link>
 
-        {/* Desktop Navigation */}
         <motion.div 
           key={`nav-${pathname}`}
           initial={{ opacity: 0, y: -20 }}
           animate={isLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-ramsha-accent col-start-2 lg:col-start-3 col-span-4 flex justify-center items-center max-lg:hidden"
+          className="text-ramsha-accent col-span-7 flex justify-center items-center max-lg:hidden"
         >
           <Navigation />
         </motion.div>
@@ -73,15 +72,14 @@ const Header: React.FC = () => {
           initial={{ opacity: 0, x: 20 }}
           animate={isLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="col-start-8 flex justify-end items-center max-lg:hidden"
+          className="col-span-1 col-start-12 flex justify-end items-center max-lg:hidden"
         >
           <FreeTrainingButton />
         </motion.div>
 
-        {/* Mobile Menu */}
         <motion.div 
           key={`mobile-${pathname}`}
-          className="lg:hidden col-start-8 flex justify-end"
+          className="lg:hidden col-span-2 col-start-11 flex justify-end"
           initial={{ opacity: 0 }}
           animate={isLoaded ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.3 }}
@@ -104,7 +102,6 @@ const Header: React.FC = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                {/* Top Banner */}
                 <motion.div 
                   className="flex justify-center md:justify-between items-center px-6 py-4 bg-ramsha-accent"
                   initial={{ opacity: 0 }}
@@ -124,7 +121,6 @@ const Header: React.FC = () => {
                   <FreeTrainingButton />
                 </motion.div>
 
-                {/* Navigation Menu */}
                 <motion.div 
                   className="px-6 py-6"
                   initial={{ opacity: 0 }}
