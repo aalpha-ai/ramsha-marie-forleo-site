@@ -4,13 +4,18 @@
 import React from "react";
 import { TextBlock } from "./TextBlock";
 import { ImageBlock } from "./ImageBlock";
+import BlurFade from "@/components/magicui/blur-fade";
 
 interface PlugIntoCommunitySectionProps {}
 
-const PlugIntoCommunitySection: React.FC<PlugIntoCommunitySectionProps> = () => {
+const PlugIntoCommunitySection: React.FC<
+  PlugIntoCommunitySectionProps
+> = () => {
   return (
-    <section className="flex flex-wrap justify-center">
-      <TextBlock />
+    <section className="grid md:grid-cols-[1fr_.75fr] ">
+      <BlurFade>
+        <TextBlock />
+      </BlurFade>
       <ImageBlock />
     </section>
   );

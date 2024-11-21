@@ -16,17 +16,16 @@ export const ListItem: React.FC<ListItemProps> = ({
   description,
 }) => {
   return (
-    <li className="flex flex-wrap items-start mt-5 w-full max-md:max-w-full">
-      <div className="flex flex-col items-start pt-px pr-2 w-7 max-w-[514px]">
-        <Image
+    <li className="flex items-start gap-2 w-full max-md:max-w-full">
+      <div className="w-5 h-5">
+        <img
+          loading="lazy"
           src={icon}
           alt=""
-          className="object-contain aspect-square w-[21px]"
-          width={21}
-          height={21}
+          className="object-contain w-5 h-5 "
         />
       </div>
-      <div className="flex-1 pr-2 text-base tracking-normal leading-6 text-black min-w-[240px] max-md:max-w-full">
+      <div className="flex-1">
         <strong className="text-black">{title}</strong>{" "}
         <span className="font-light text-black">{description}</span>
       </div>

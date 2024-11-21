@@ -52,6 +52,51 @@ const listItems: ListItemProps[] = [
       "Yes, this means you're getting rare 'behind-the-scenes' access to my most trusted colleagues, and Team Forleo in a way that no one has ever experienced before.",
   },
 ];
+const listItemsTwo: ListItemProps[] = [
+  {
+    icon: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/d91c0065133a040ec96a1d0f7dbd2113628af32017994c6a42bef5db9d9c0c6d?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+    title: "LIVE Co-Working Sessions:",
+    description:
+      "Work alongside other Dream Clubbers in real-time as we fast-track our goals. Outline your new offer. Call your financial planner. Set that appointment. Clear your junk drawer. Write that sales page. Have the conversation you've been dreading forever (you know the one!).",
+  },
+  {
+    icon: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/be7fa9219f0c607fe4e95f9b9ce3949b1846ce6d200048d634a9e1771f6e840d?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+    title: "Community & Networking:",
+    description:
+      'Making new friends can be hard — but not in Dream Club. Our proprietary tools help you find "your people" and connect with like-minded friends and colleagues in real life.',
+  },
+  {
+    icon: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/c5f03a8dddbaa7f258d289736757f6b53df1f8c6084e385890b8fe4d95b782c0?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+    title: "Tech Office Hours:",
+    description:
+      "Every smart entrepreneur knows that technology decisions can make or break your business. After 22+ years, we've tried a ton of tools and platforms. We'll keep you up to date with the no-BS truth on what's working — and what's just hype.",
+  },
+  {
+    icon: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/047f707cb2df6e68dd14d85960f9881c7e2a3ce0a5af877a0d691750e51adfdc?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+    title: "Throw-Downs With My Personal Dream Team:",
+    description:
+      "I'm fortunate to have some of the world's most renowned experts, marketers, and in-demand creators on speed dial. These are the people I call when I want cutting edge strategies about health, business, and growth. Yet another priceless perk, as these experts rarely consult or open their calendars.",
+  },
+  {
+    icon: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/35dc438bb1507a71115b4d561c57a8f4f5afbc3f834aca16f7cc6ad7be179a2b?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+    title: "\"What I'm Lovin' Right Now\":",
+    description:
+      "From olive oil, to bingeable shows, tech recs, music, beauty products, books — everything and anything that's blowing wind up my skirt… I'm sharing my faves with you.",
+  },
+  {
+    icon: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/d91c0065133a040ec96a1d0f7dbd2113628af32017994c6a42bef5db9d9c0c6d?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+    title: "Unlimited Playback:",
+    description:
+      "Can't make a live session? Missed a virtual get together? Don't worry because all live sessions are recorded. Learn on your own schedule throughout your membership.",
+  },
+  {
+    icon: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/be7fa9219f0c607fe4e95f9b9ce3949b1846ce6d200048d634a9e1771f6e840d?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+    title:
+      "PLUS, it's the ONLY place to get ongoing access to Marie, Team Forleo, and our extraordinary community of global creators.",
+    description:
+      "Yes, this means you're getting rare 'behind-the-scenes' access to my most trusted colleagues, and Team Forleo in a way that no one has ever experienced before.",
+  },
+];
 
 const HighLevelTestminonial: React.FC<HighLevelTestminonialProps> = () => {
   return (
@@ -59,30 +104,41 @@ const HighLevelTestminonial: React.FC<HighLevelTestminonialProps> = () => {
       <header className="flex flex-col self-center pt-4 pb-6 max-w-full text-4xl text-center leading-[54px] text-neutral-800 w-[775px]">
         <h2 className="px-28 w-full italic max-md:px-5 max-md:max-w-full">
           <span className="text-neutral-800">
-            What's It Like Inside Dream Club?
+            What&apos;s It Like Inside Dream Club?
           </span>
           <br />
-          <span className="italic text-neutral-800">Here's a Taste…</span>
+          <span className="italic text-neutral-800">Here&apos;s a Taste…</span>
         </h2>
       </header>
-      <div className="flex flex-wrap gap-8 justify-center p-5 mt-8 w-full min-h-[914px] max-md:max-w-full">
-        <ImageContainer
-          src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/c77e04de91102339e35ea3c945cc61b447b2207f2ed34594fdae038be332c6c5?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
-          alt="Dream Club visual representation"
-        />
-      </div>
-      <div className="flex flex-wrap gap-8 justify-center p-5 mt-8 w-full min-h-[1001px] max-md:max-w-full">
-        <div className="flex flex-col grow shrink min-w-[240px] w-[439px] max-md:max-w-full">
-          <ul className="flex flex-col pb-5 w-full max-md:max-w-full">
-            {listItems.map((item, index) => (
-              <ListItem key={index} {...item} />
-            ))}
-          </ul>
+      <div className="space-y-8">
+        <div className="grid md:grid-cols-[.75fr_1fr] gap-10 max-w-5xl.5 mx-auto">
+          <div className="flex items-center justify-center">
+            <ImageContainer
+              src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/c77e04de91102339e35ea3c945cc61b447b2207f2ed34594fdae038be332c6c5?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+              alt="Dream Club visual representation"
+            />
+          </div>
+          <div className=" max-md:max-w-full">
+            <ul className="flex flex-col gap-5 w-full max-md:max-w-full">
+              {listItemsTwo.map((item, index) => (
+                <ListItem key={index} {...item} />
+              ))}
+            </ul>
+          </div>
         </div>
-        <ImageContainer
-          src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/ff6a39f700e6f03b192a9e7d862e7d27aa383890b748dc1c4704d5004ae300a2?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
-          alt="Additional Dream Club visual"
-        />
+        <div className="md:grid md:grid-cols-[1fr_.75fr] flex flex-col-reverse items-center gap-10 max-w-5xl.5 mx-auto">
+          <div className="">
+            <ul className="flex flex-col gap-5 w-full max-md:max-w-full">
+              {listItems.map((item, index) => (
+                <ListItem key={index} {...item} />
+              ))}
+            </ul>
+          </div>
+          <ImageContainer
+            src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/ff6a39f700e6f03b192a9e7d862e7d27aa383890b748dc1c4704d5004ae300a2?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+            alt="Additional Dream Club visual"
+          />
+        </div>
       </div>
     </section>
   );

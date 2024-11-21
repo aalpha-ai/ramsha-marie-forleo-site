@@ -14,9 +14,9 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt }) => {
     <Image
       src={src}
       alt={alt}
-      className="object-contain w-full aspect-[1.71]"
-      width={500}
-      height={293}
+      className="object-cover object-top w-full max-h-[600px]"
+      height={600}
+      width={200}
     />
   );
 };

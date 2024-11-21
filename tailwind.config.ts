@@ -52,6 +52,7 @@ const config: Config = {
           50: "hsl(var(--red-50))",
           100: "hsl(var(--red-100))",
           300: "hsl(var(--red-300))",
+          600: "hsla(12, 48%, 68%, 1)",
         },
         stone: {
           50: "hsl(var(--stone-50))",
@@ -70,7 +71,10 @@ const config: Config = {
           secondary: "#216974",
           tertiary: "#e09453",
         },
-
+        gray: {
+          50: "hsl(var(--gray-50))",
+          900: "hsl(var(--gray-900))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -102,6 +106,15 @@ const config: Config = {
       },
       backgroundImage: {
         "gallery-card-pattern": "linear-gradient(#0000,#000 82%)",
+        "landing-stone-pattern":
+          "linear-gradient(180deg, #F9E5CF 0%, #FDF2E7 100%)",
+        "landing-red-pattern":
+          "radial-gradient(146.09% 137.18% at 100% -4950%, #C57E6D 0%, #D1978A 100%);",
+
+        "landing-neutral-pattern":
+          "linear-gradient(180deg, #000000 0%, #242424 100%)",
+        "landing-stone-dark":
+          "linear-gradient(99.28deg, #D0AF91 0%, #F3DEC6 100%)",
       },
       animation: {
         "bg-shine": "bg-shine 2.1s linear infinite",

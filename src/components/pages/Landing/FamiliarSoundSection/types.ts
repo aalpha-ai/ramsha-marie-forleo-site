@@ -4,4 +4,5 @@
 export type ImageData = Array<{
   src: string;
   alt: string;
+  width?: number;
 }>;

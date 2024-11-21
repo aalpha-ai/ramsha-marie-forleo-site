@@ -6,24 +6,15 @@ import React from "react";
 const Emphasis: React.FC = () => {
   return (
     <div className="flex flex-col pb-1 mt-4 max-md:max-w-full">
-      <p className="text-base italic font-light max-md:max-w-full">
-        <span className="text-black">You've worked </span>
-        <span className="italic text-black">so</span>
-        <span className="text-black">
-          {" "}
+      <p className="text-base text-black font-light max-md:max-w-full">
+        You&apos;ve worked <span className="italic text-black">so</span>{" "}
+        <span className="font-bold ">
           hard to create the best business, health, and relationships possible.
+          Yet, despite your efforts, you&apos;re still just scratching the
+          surface of where you <span className="italic">know</span> you could
+          be.
         </span>
       </p>
-      <div className="flex flex-col py-1 max-w-full w-[809px]">
-        <p className="self-end text-base font-bold">Yet, despite your</p>
-        <p className="self-start mt-3.5 text-base italic font-bold max-md:max-w-full">
-          <span className="text-black">
-            efforts, you're still just scratching the surface of where you{" "}
-          </span>
-          <span className="italic text-black">know</span>
-          <span className="text-black"> you could be.</span>
-        </p>
-      </div>
     </div>
   );
 };
