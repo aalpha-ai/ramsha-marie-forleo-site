@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           viewport={{ once: true }}
           href="/terms"
         >
-          TERMS & CONDITIONS
+          TERMS OF USE
         </motion.a>
 
         <motion.a 

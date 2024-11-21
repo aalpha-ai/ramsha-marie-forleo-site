@@ -85,7 +85,6 @@ export default function NotFound() {
         >
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             While we love a good wellness moment, let's get you back to where you need to be. 
-            Need help finding something specific? Our search is here to guide you.
           </p>
         </motion.div>
 
