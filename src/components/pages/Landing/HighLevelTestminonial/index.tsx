@@ -94,11 +94,11 @@ const HighLevelTestminonial: React.FC<HighLevelTestminonialProps> = () => {
     <section className="flex flex-col px-14 pt-20 pb-20 max-md:px-5">
       <header className="flex flex-col self-center pt-4 pb-6 max-w-full text-4xl text-center leading-[54px] text-neutral-800 w-[775px]">
         <h2 className="px-28 w-full italic max-md:px-5 max-md:max-w-full">
-          <span className="text-neutral-800">
+          <span className="text-neutral-800 font-caslon">
             What Awaits You in The Awakened Feminine?
           </span>
           <br />
-          <span className="italic text-neutral-800">Bismillah, Let's Explore...</span>
+          <span className="italic text-neutral-800 font-caslon">Bismillah, Let's Explore...</span>
         </h2>
       </header>
       <div className="space-y-8">

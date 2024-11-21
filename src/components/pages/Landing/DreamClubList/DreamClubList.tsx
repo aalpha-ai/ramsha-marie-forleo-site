@@ -55,7 +55,7 @@ const DreamClubList: React.FC<DreamClubListProps> = ({ imageSrc }) => {
       <div className="flex bg-stone-50 py-24 max-md:max-w-full">
         <div className="flex flex-col justify-center gap-4 max-w-full px-10 max-md:px-5">
           <div className="flex flex-col gap-2 text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">
-            <h4 className="w-full text-2xl font-light tracking-wide leading-8 text-neutral-800 max-md:max-w-full">
+            <h4 className="font-caslon w-full text-2xl font-light tracking-wide leading-8 text-neutral-800 max-md:max-w-full">
               Bismillah. The Awakened Feminine is a sacred space where you can
               <span className="font-bold text-neutral-800">
                 {" "}

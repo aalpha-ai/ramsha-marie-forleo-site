@@ -7,7 +7,7 @@ const JoinWaitlist: React.FC = () => {
   return (
     <div className="flex flex-col grow shrink justify-center items-end py-4 text-lg font-bold tracking-widest leading-7 text-center text-white uppercase w-[180px]">
       <button className="px-7 py-4 w-full border-2 border-white border-solid bg-neutral-800 bg-opacity-30 max-w-[265px] min-w-[225px] rounded-[200px] max-md:px-5">
-        Join Waitlist
+        Join Sacred Waitlist
       </button>
     </div>
   );

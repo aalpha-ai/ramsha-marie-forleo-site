@@ -28,7 +28,7 @@ export const SectionContent: React.FC<SectionContentProps> = ({
       <div className="max-md:px-3">
         <div className="flex flex-col max-w-full text-xl font-light tracking-wide leading-8 text-neutral-800 ">
           <div className="flex flex-col items-center ">
-            <h3 className="text-2xl font-bold">{title}</h3>
+            <h3 className="text-2xl font-bold font-montserrat-bold">{title}</h3>
             {subtitle && <p>{subtitle}</p>}
           </div>
         </div>

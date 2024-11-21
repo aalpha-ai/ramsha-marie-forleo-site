@@ -32,11 +32,11 @@ export const TextBlock: React.FC<TextBlockProps> = () => {
   return (
     <div className="flex flex-col grow shrink items-center bg-stone-50 leading-[54px] min-w-[240px] text-neutral-800 max-md:max-w-full">
       <div className="flex flex-col px-12 py-20 max-w-full max-md:px-5">
-        <h2 className="flex flex-col pt-2.5 pb-3.5 text-4xl max-md:max-w-full">
+        <h2 className="font-caslon flex flex-col pt-2.5 pb-3.5 text-4xl max-md:max-w-full">
           Join our Sacred Sisterhood. <br /> Awaken your Divine Feminine. <br /> 
           Manifest with Purpose.
         </h2>
-        <h3 className="pt-2.5 pb-3.5 text-3xl max-md:max-w-full">
+        <h3 className="font-montserrat-bold pt-2.5 pb-3.5 text-3xl max-md:max-w-full">
           Experience <span className="italic">spiritual abundance</span> along the way.
         </h3>
         <div className="flex flex-col pt-5 text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">

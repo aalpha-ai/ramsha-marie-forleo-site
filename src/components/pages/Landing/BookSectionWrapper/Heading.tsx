@@ -7,11 +7,11 @@ export const Heading: React.FC = () => {
   return (
     <header className="flex flex-col pt-4 pb-2 w-full text-2xl font-bold tracking-wide leading-8 text-neutral-800 max-md:max-w-full">
       <h2 className="flex flex-col w-full max-md:max-w-full">
-        <strong className="max-md:max-w-full">
+        <strong className="font-caslon max-md:max-w-full">
           If Knowledge Alone Was Enough, <br /> Your Soul Would Already Feel The
           Connection
         </strong>
-        <strong className="underline decoration-auto decoration-solid underline-offset-auto">
+        <strong className="font-caslon underline decoration-auto decoration-solid underline-offset-auto">
           <span className="text-neutral-800">Allah Created You For</span>
           <span className="text-neutral-800">, Bi'ithnillah.</span>
         </strong>

@@ -59,7 +59,7 @@ const FamiliarSoundSection: React.FC = () => {
       <BlurFade>
         <section className="flex flex-col max-w-6xl mx-auto lg:px-14 md:px-11 py-24 px-5">
           <h2 className="flex flex-col pt-2.5 pb-7 text-4xl text-center leading-[62.4px] text-neutral-800 max-md:max-w-full">
-            <span className="pr-52 pl-52 w-full max-md:px-5 max-md:max-w-full">
+            <span className="pr-52 pl-52 w-full max-md:px-5 max-md:max-w-full font-caslon">
               Do You Feel This Divine Calling?
             </span>
           </h2>
