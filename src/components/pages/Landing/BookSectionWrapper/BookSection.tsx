@@ -14,32 +14,32 @@ const BookSection: React.FC<BookSectionProps> = ({ imageSrc }) => {
   const textBlocks = [
     {
       content:
-        "Look, I might buy more books and courses than anyone on the planet 🙈🙈. But the REAL secret to my joy, wealth, and sustainable success (like 23 yrs and counting!) as a multipassionate creator is that I do NOT go at it alone.",
+        "Alhamdulillah, I've been blessed to study with spiritual teachers and healers across the globe 🌙. But the true secret to my spiritual abundance and sustainable success as a Muslim woman is that I never walk this path alone.",
       isItalic: true,
     },
     {
       content:
-        "I surround myself with smart people. Folks way smarter than me. I collaborate. I connect. I stay humble in the position of a lifelong student. My relationships are the core of my heart, my life, and anything good that I'm able to share with the world.",
+        "I surround myself with spiritually aligned sisters. Women who uplift and inspire me. I collaborate with those who understand both deen and dunya. I remain in the beautiful position of a student, always learning, always growing. These sacred connections are the foundation of my heart, my purpose, and every blessing Allah allows me to share with the ummah.",
       isItalic: false,
     },
     {
       content:
-        "You know this already. Who you surround yourself with matters. The energy you plug into on a regular basis has a significant impact on how you think, how you feel, and ultimately — who you become.",
+        "As Muslims, we know this truth deeply. The Prophet ﷺ taught us that we are on the deen of our close companions. The energy and intention you surround yourself with shapes your thoughts, your heart, and ultimately — who Allah guides you to become.",
       isItalic: false,
     },
     {
       content:
-        "If you've read this far, I think you already know that we're your people.",
+        "If you've read this far, ya ukhti (my dear sister), I believe Allah has guided you to your spiritual family.",
       isItalic: true,
       isBold: true,
     },
     {
-      content: "We believe in you. We're here to help you win.",
+      content: "We see your light. We're here to help you shine, bi'ithnillah.",
       isItalic: false,
     },
     {
       content:
-        "Because the world really does need that very special gift that only you have.",
+        "Because the ummah truly needs that unique divine gift that Allah has blessed only you with.",
       isItalic: true,
     },
   ];
@@ -49,10 +49,10 @@ const BookSection: React.FC<BookSectionProps> = ({ imageSrc }) => {
       <img
         loading="lazy"
         src={imageSrc}
-        alt="Decorative image"
+        alt="Ramsha with students"
         className="object-cover w-full h-full xl:max-h-[825px] max-md:max-w-full"
       />
-      <div className="flex flex-col grow shrink justify-center items-start py-20  max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col grow shrink justify-center items-start py-20 max-md:px-5 max-md:max-w-full">
         <BlurFade>
           <div className="flex flex-col p-10 relative md:right-24 rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
             <Heading />

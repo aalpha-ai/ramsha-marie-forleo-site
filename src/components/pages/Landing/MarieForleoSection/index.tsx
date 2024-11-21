@@ -6,27 +6,27 @@ import { MarieForleoSection } from "./MarieForleoSection";
 
 const MarieForleoSectionWrapper: React.FC = () => {
   const headingText = [
-    "What If One Extraordinary",
-    "Opportunity Could Unlock",
-    "The Success, Joy, and",
-    "FREEDOM You Crave?",
+    "What If Your Divine",
+    "Purpose Could Unlock",
+    "The Barakah and",
+    "ABUNDANCE You Seek?",
   ];
 
   const paragraphs = [
-    "Trust me when I say: you do not have to settle for the status quo.",
-    "You can have the business (and life) of your dreams — complete with the wealth, impact, and happiness you desire.",
-    "Most importantly, you can have a damn good time along the way.",
-    "My guess is since you're on this page, you're ready to change that!",
+    "Bismillah sister, your soul is whispering: Allah has written a beautiful path for you.",
+    "You can embody the divine feminine energy that Allah blessed you with — complete with the spiritual abundance, impact, and soul-deep fulfillment written in your Qadr.",
+    "Through sacred healing, tawakkul (divine surrender), and alignment with your fitrah, you'll find the inner peace your heart craves.",
+    "SubhanAllah, if you're reading these words, Allah has guided you here for a reason.",
   ];
 
   const strongText = {
-    regular: "You've barely scratched the surface of your full",
-    italic: "potential... and you know it.",
+    regular: "Your soul carries a wisdom that connects you to",
+    italic: "Allah's infinite mercy... and deep down, you feel it.",
   };
 
   const authorInfo = [
-    "I'm Marie Forleo — founder of B-School, Time Genius, and author of the #1 New York Times Bestseller, Everything is Figureoutable.",
-    "I've inspired tens of millions of people to create a business and life they love. Now, we're taking it to the next level.",
+    "I'm Ramsha Suhail — founder of Awakened Feminine, spiritual guide, and transformational mentor for Muslim women seeking to align with their divine purpose.",
+    "Alhamdulillah, I've helped countless sisters unlock their divine feminine power and create lives of authentic abundance through faith and surrender. Now, it's your turn to rise.",
   ];
 
   const imageSrc =

@@ -15,22 +15,22 @@ const testimonials: Testimonial[] = [
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/1ecdb0af001fec455004ac19dc6383d6c0a8fcfb3d83ce9771a9b8d77aa451f6?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     quote:
-      "I'm still the same person, but I've LEVELED UP SO MUCH. I'm so happy with my life and business I could literally cry.",
-    author: "Celestine F.",
+      "Alhamdulillah, my entire being has transformed. Through this journey with Ramsha, I've discovered a deeper connection with Allah while embracing my divine feminine energy. The peace and abundance flowing through my life now brings tears of gratitude.",
+    author: "Amira S., Dubai",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/e7ec5498ca687178cec2aa1882696ceaeafda0b09b2550234b4923589acac72a?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     quote:
-      "Marie walks the talk. She does what she teaches! Not only do you get awesome tips and learning, you get to watch the Master in Action!",
-    author: "Krista S.",
+      "SubhanAllah, Ramsha embodies everything she teaches. Her program perfectly blends Islamic wisdom with divine feminine practices. The spiritual transformation I've experienced has impacted every aspect of my life - from my relationship with Allah to my business and marriage.",
+    author: "Fatima R., London",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/a35262e4648841219ed0a1388db4ae3ebd000c7854b3f16bc444a4878c9f794b?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     quote:
-      "Marie Forleo and team, you were the catalysts for getting my ass in gear after seven long years of dreaming the entrepreneurial dream.",
-    author: "Callie G.",
+      "After years of struggling with my spiritual identity as a Muslim woman entrepreneur, Awakened Feminine was the answer to my duas. The sisterhood, the healing, and the deep connection to Allah I've found here is worth more than words can express. Mashallah, this program is truly life-changing.",
+    author: "Zainab M., Toronto",
   },
 ];
 

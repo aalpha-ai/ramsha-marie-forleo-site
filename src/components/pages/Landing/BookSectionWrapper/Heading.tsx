@@ -8,14 +8,17 @@ export const Heading: React.FC = () => {
     <header className="flex flex-col pt-4 pb-2 w-full text-2xl font-bold tracking-wide leading-8 text-neutral-800 max-md:max-w-full">
       <h2 className="flex flex-col w-full max-md:max-w-full">
         <strong className="max-md:max-w-full">
-          If Books, Courses, and Podcasts <br /> Were Enough, You'd Have The
-          Results
+          If Knowledge Alone Was Enough, <br /> Your Soul Would Already Feel The
+          Connection
         </strong>
         <strong className="underline decoration-auto decoration-solid underline-offset-auto">
-          <span className="text-neutral-800">You Deserve</span>
-          <span className="text-neutral-800"> By Now.</span>
+          <span className="text-neutral-800">Allah Created You For</span>
+          <span className="text-neutral-800">, Bi'ithnillah.</span>
         </strong>
       </h2>
+      <p className="text-base font-light mt-2 italic">
+        True transformation requires embodiment of both spiritual wisdom and feminine power
+      </p>
     </header>
   );
 };

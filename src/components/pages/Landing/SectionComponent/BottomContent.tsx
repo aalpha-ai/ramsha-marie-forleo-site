@@ -7,82 +7,80 @@ const BottomContent: React.FC = () => {
   return (
     <div className="flex flex-col mt-4 text-base max-md:max-w-full">
       <p className="font-light italic">
-        &quot;But Marie,&quot;{" "}
-        <span className="not-italic text-black"> you might be thinking, </span>
-        &quot;I already have a pretty great life, all things considered. Maybe
-        what I have is good enough.&quot;
+        &quot;But Ramsha,&quot;{" "}
+        <span className="not-italic text-black">you might be thinking,</span>
+        &quot;Alhamdulillah, I'm grateful for my life as it is. Perhaps I should be content with what Allah has given me.&quot;
       </p>
 
       <p className="mt-4 font-light max-md:max-w-full">
-        Well, hold up. Since when has &apos;good enough&apos; ever been a part
-        of your vocabulary? Plus, there&apos;s a MUCH BIGGER cost to settling
-        than you think.
+        My beloved sister, while gratitude (shukr) is beautiful, remember that Allah calls us to manifest our highest potential. There's a profound difference between gratitude and limiting your divine purpose.
       </p>
+
       <p className="mt-4 font-light max-md:max-w-full">
-        Not only will YOU miss out on the joy, connection, intimacy, and freedom
-        that is your birthright. But your partner, friends, family, co-workers,
-        employees, and audience will MISS OUT, too.
+        When you disconnect from your divine feminine essence, you're not just affecting your own spiritual journey. Your family, community, and the entire ummah miss out on the light Allah meant for you to share.
       </p>
+
       <ul className="list-disc ml-10 mt-4 font-light">
-        <li className="w-full  max-md:max-w-full">
-          Your family never gets to take that dream vacation you keep talking
-          about
+        <li className="w-full max-md:max-w-full">
+          Your children miss experiencing a mother fully connected to her spiritual power
         </li>
         <li className="mt-2 w-full text-black max-md:max-w-full">
-          That book idea you&apos;ve had floating around in your head for{" "}
-          <span className="italic text-black">years </span>
-          never makes it to print
+          That divine inspiration to write a book that could guide countless sisters remains
+          <span className="italic text-black"> unmanifested</span>
         </li>
-        <li className="mt-2 w-full text-black  max-md:max-w-full">
-          You keep canceling on your friends to keep up with work, but feel like
-          you&apos;re missing out on <span className="italic ">life</span>
+        <li className="mt-2 w-full text-black max-md:max-w-full">
+          Your spiritual practices feel rushed, leaving your soul yearning for deeper
+          <span className="italic"> connection</span>
         </li>
       </ul>
+
       <p className="mt-4 font-light max-md:max-w-full">
-        The fact that you&apos;re reading this right now means you&apos;re ready
-        for more. More freedom, more abundance, more joy, and way more FUN.
+        SubhanAllah, your presence here is a sign from Allah. You're ready for more spiritual abundance, divine connection, and soul-deep fulfillment.
       </p>
-      <p className="mt-4 font-light max-md:max-w-full">But… how?</p>
+
+      <p className="mt-4 font-light max-md:max-w-full">But how do you begin this sacred journey?</p>
+
       <p className="mt-4 font-bold max-md:max-w-full">You could:</p>
+
       <ul className="flex overflow-hidden flex-col pb-2 pl-10 mt-4 font-light max-md:pl-5 max-md:max-w-full list-disc">
         <li className="w-full text-base max-md:max-w-full">
-          Keep ordering self-help books on Amazon
+          Continue collecting Islamic self-help books without deep implementation
         </li>
         <li className="mt-2 w-full max-md:max-w-full">
-          Hire another VA for $3,000/month to save you a few measly hours
+          Invest in surface-level solutions that don't address your soul's true needs
         </li>
         <li className="mt-2 w-full max-md:max-w-full">
-          Shell out $10,000+ for a luxe retreat to alleviate burnout, only to
-          return home to the same tangled <br />
-          web of competing priorities
+          Attend another general spiritual retreat that doesn't understand your unique journey as a Muslim woman
         </li>
       </ul>
+
       <p className="mt-4 font-light max-md:max-w-full">
-        You can keep trying to piece solutions together on your own.
+        You can continue seeking answers alone on your spiritual path...
       </p>
-      <p className="mt-4  font-light text-black max-md:max-w-full">
-        OR you can join our Dream Team of ambitious, wildly magical creators who
-        are committed to doing business and life
-        <span className="italic "> differently</span>.
+
+      <p className="mt-4 font-light text-black max-md:max-w-full">
+        OR you can join our sacred sisterhood of spiritually aligned Muslimahs who are committed to living their divine purpose
+        <span className="italic"> authentically</span>.
       </p>
+
       <div className="flex flex-col items-center max-w-full font-light text-center max-md:px-5">
         <div className="flex flex-col pt-6 pb-4 w-full">
-          <p className=" text-2xl  tracking-wide leading-8 text-neutral-800 max-md:px-5 max-md:max-w-full max-w-[707px] mx-auto">
-            We&apos;re abundance-minded artists and entrepreneurs who
-            <span className="italic"> refuse </span>
-            to sacrifice our joy, health, or relationships.
+          <p className="text-2xl tracking-wide leading-8 text-neutral-800 max-md:px-5 max-md:max-w-full max-w-[707px] mx-auto">
+            We are divinely guided sisters who
+            <span className="italic"> embrace </span>
+            our feminine power while honoring our deen.
           </p>
           <p className="px-1 mt-2 w-full text-lg tracking-normal leading-8 text-black max-md:max-w-full max-w-3xl mx-auto">
             <span className="text-black">We are </span>
-            <span className="font-bold text-black">multi-passionate</span>
-            <span className="text-black"> artists of life, </span>
-            <span className="font-bold text-black">eager</span>
-            <span className="text-black"> to share possibilities, </span>
-            <span className="font-bold text-black">determined</span>
-            <span className="text-black"> to hit new</span>
+            <span className="font-bold text-black">spiritually aligned</span>
+            <span className="text-black"> women, </span>
+            <span className="font-bold text-black">devoted</span>
+            <span className="text-black"> to our growth, </span>
+            <span className="font-bold text-black">committed</span>
+            <span className="text-black"> to reaching new</span>
             <br />
             <span className="text-black">
-              levels of wealth, freedom, and happiness — together.
+              levels of spiritual abundance and authentic freedom — together, bi'ithnillah.
             </span>
           </p>
         </div>

@@ -14,32 +14,32 @@ const listItems: ListItemProps[] = [
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/de254eda4b272aa4a643d1eaf25f19a0703b0c515d9173c471809f621c1c999e?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-    text: "Financial freedom, personal freedom, and the kind of joy that turns heads",
+    text: "Authentic abundance (rizq) and spiritual freedom that radiates from within, attracting barakah in all areas of your life",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/de254eda4b272aa4a643d1eaf25f19a0703b0c515d9173c471809f621c1c999e?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-    text: "A streamlined path to business growth (no burnout here!)",
+    text: "A divinely guided path to growth that honors your feminine energy (no masculine hustle culture!)",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/de254eda4b272aa4a643d1eaf25f19a0703b0c515d9173c471809f621c1c999e?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-    text: "A strong and healthy body, a loving heart, and a sharp, creative mind",
+    text: "A balanced mind, body, and soul alignment through Islamic principles and somatic healing practices",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/de254eda4b272aa4a643d1eaf25f19a0703b0c515d9173c471809f621c1c999e?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-    text: "Support to stay on track with your most important goals, in business and life",
+    text: "Spiritual sisterhood supporting you in manifesting your divine purpose, both in dunya and akhirah",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/de254eda4b272aa4a643d1eaf25f19a0703b0c515d9173c471809f621c1c999e?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-    text: "A profoundly positive place to connect, share, learn, and grow",
+    text: "A sacred space for deep connection, spiritual growth, and authentic transformation",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/de254eda4b272aa4a643d1eaf25f19a0703b0c515d9173c471809f621c1c999e?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-    text: "Your #DreamTeam of professionals who've got your back",
+    text: "Your soul sisters and spiritual mentors who understand your journey",
   },
 ];
 
@@ -49,30 +49,30 @@ const DreamClubList: React.FC<DreamClubListProps> = ({ imageSrc }) => {
       <img
         loading="lazy"
         src={imageSrc}
-        alt="Dream Club visual representation"
-        className="object-cover object-right  h-full w-full max-md:max-h-[300px] xl:max-h-[788px]  max-md:max-w-full"
+        alt="Awakened Feminine visual representation"
+        className="object-cover object-right h-full w-full max-md:max-h-[300px] xl:max-h-[788px] max-md:max-w-full"
       />
       <div className="flex bg-stone-50 py-24 max-md:max-w-full">
         <div className="flex flex-col justify-center gap-4 max-w-full px-10 max-md:px-5">
           <div className="flex flex-col gap-2 text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">
-            <h4 className=" w-full text-2xl font-light tracking-wide leading-8 text-neutral-800 max-md:max-w-full">
-              Dream Club is a profoundly positive place where you can
+            <h4 className="w-full text-2xl font-light tracking-wide leading-8 text-neutral-800 max-md:max-w-full">
+              Bismillah. The Awakened Feminine is a sacred space where you can
               <span className="font-bold text-neutral-800">
                 {" "}
-                achieve your BIG goals{" "}
+                manifest your divine purpose{" "}
               </span>
-              in business and life, <span className="italic">without</span>{" "}
-              sacrificing your joy or health.
+              and elevate your soul, <span className="italic">while</span>{" "}
+              honoring your feminine essence.
             </h4>
-            <p className=" w-full max-md:max-w-full">
-              You&apos;re invited to join me, Team Forleo, and my inner circle
-              of colleagues, friends, and experts as we all build forward from
-              where we are today, to where we want to be. Together, we&apos;ll
-              hit new levels of wealth, joy, and freedom.
+            <p className="w-full max-md:max-w-full">
+              You're invited to join me, your spiritual sisters, and our circle of 
+              healers and mentors as we journey together from where Allah has placed 
+              us today, to where He has destined us to be. Together, we'll reach new 
+              levels of spiritual abundance, inner peace, and authentic freedom.
             </p>
-            <p className=" w-full max-md:max-w-full">
-              Dream Club provides the mindsets, strategies, and support you need
-              to create…
+            <p className="w-full max-md:max-w-full">
+              The Awakened Feminine provides the spiritual wisdom, healing practices, 
+              and divine support you need to create…
             </p>
           </div>
           <div className="flex flex-col max-md:max-w-full">
@@ -88,8 +88,8 @@ const DreamClubList: React.FC<DreamClubListProps> = ({ imageSrc }) => {
           </div>
           <div className="flex flex-col pb-4 text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">
             <p className="w-full max-md:max-w-full">
-              So you can enjoy a rich and adventure-filled life{" "}
-              <span className="italic">now</span> — not &quot;someday.&quot;
+              So you can embody your highest self and divine purpose{" "}
+              <span className="italic">now</span> — bi'ithnillah (by Allah's permission).
             </p>
           </div>
         </div>

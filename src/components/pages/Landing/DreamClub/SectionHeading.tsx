@@ -6,30 +6,31 @@ import React from "react";
 export const SectionHeading: React.FC = () => {
   return (
     <div className="flex flex-col self-center pt-4 w-full text-center max-w-[775px]">
-      <h2 className="pr-10 pl-10 w-full text-4xl  leading-[54px] text-neutral-800 max-md:px-5 max-md:max-w-full">
-        Dream Club Members Can Expect More Sales, More Profit, and More Freedom.{" "}
+      <h2 className="pr-10 pl-10 w-full text-4xl leading-[54px] text-neutral-800 max-md:px-5 max-md:max-w-full">
+        Awakened Sisters Experience Deep Spiritual Growth, Divine Abundance, and True Freedom.{" "}
         <span className="italic text-neutral-800">
-          But That&apos;s Just The Start…{" "}
+          Alhamdulillah, This is Just the Beginning of Your Journey...{" "}
         </span>
       </h2>
       <div className="flex flex-col pb-4 px-6 mt-8 w-full text-base font-light tracking-normal leading-7 text-black max-md:max-w-full">
-        <p className=" w-full max-md:px-5 max-md:max-w-full">
-          Most memberships drown you with piles of watered-down, pre-recorded
-          content to create &apos;perceived value.&apos; That makes us want to
-          take a (hard) nap.
+        <p className="w-full max-md:px-5 max-md:max-w-full">
+          Many spiritual programs overwhelm you with endless content and rigid practices, 
+          forcing you into masculine energy and disconnecting you from your feminine essence. 
+          SubhanAllah, that's not the path to true transformation.
         </p>
         <p className="mt-4 w-full max-md:px-5 max-md:max-w-full">
-          You&apos;ve already got too much on your plate! Nobody has time to
-          sift through countless videos, audios, worksheets, and trainings.
+          As a Muslimah balancing multiple roles, you need space to breathe, connect, and 
+          grow naturally. Your journey to spiritual awakening shouldn't feel like another 
+          burden on your shoulders.
         </p>
         <p className="mt-4 w-full max-md:px-5 max-md:max-w-full">
-          That&apos;s why in Dream Club,{" "}
+          That's why in Awakened Feminine,{" "}
           <span className="font-bold text-black">
-            our calendar is intentionally s p a c i o u s and results-focused.{" "}
+            we honor divine timing with a sacred rhythm that nurtures your soul's expansion.{" "}
           </span>
         </p>
         <p className="mt-4 w-full max-md:px-5 max-md:max-w-full">
-          Here is just a taste of our monthly masterclasses:
+          Bismillah, here's a glimpse of our transformative spiritual masterclasses:
         </p>
       </div>
     </div>

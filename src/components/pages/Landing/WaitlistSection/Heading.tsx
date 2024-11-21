@@ -6,9 +6,9 @@ import React from "react";
 const Heading: React.FC = () => {
   return (
     <h2 className="mt-6 text-2xl font-light tracking-wide leading-8 text-orange-50 max-md:max-w-full">
-      Don't Settle For The Status Quo. <br />
-      Get The <strong>Wealth</strong>, <strong>Happiness</strong>, And{" "}
-      <strong>Freedom</strong> You Want
+      Release Your Divine Feminine Power. <br />
+      Embrace <strong>Authentic Abundance</strong>, <strong>Inner Peace</strong>, and{" "}
+      <strong>Spiritual Freedom</strong>
     </h2>
   );
 };

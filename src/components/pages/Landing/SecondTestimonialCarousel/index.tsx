@@ -6,10 +6,20 @@ import TestimonialCarousel from './TestimonialCarousel';
 
 const testimonials = [
   {
-    quote: "I love that my daughter is seeing that I'm following my own dreams. As a mother, that's an incredible gift to offer your child.",
-    author: "Erin B.",
+    quote: "Alhamdulillah, my daughter sees me embodying both strength and grace as I follow my divine purpose. As a Muslim mother, showing her how to honor both her deen and her dreams is the greatest legacy I can leave.",
+    author: "Khadija M., Mother & Business Owner",
     image: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/3f697970e938aa88c5d2e80320f1b7fd7bf07a3a676e9063b1e040bf2543ed28?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
   },
+  {
+    quote: "Through this program, I learned that being a mother and pursuing my calling can coexist beautifully. The somatic healing helped me release the guilt and trust that Allah gave me these aspirations for a reason. My children now see what's possible when you align with your spiritual truth.",
+    author: "Aisha R., Mother of Three",
+    image: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/3f697970e938aa88c5d2e80320f1b7fd7bf07a3a676e9063b1e040bf2543ed28?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+  },
+  {
+    quote: "SubhanAllah, watching my daughter witness my transformation has been the most beautiful gift. She's learning that a Muslimah can be both deeply connected to her faith and confidently pursue her dreams - what a powerful lesson for the next generation.",
+    author: "Safiya H., Mother & Creative",
+    image: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/3f697970e938aa88c5d2e80320f1b7fd7bf07a3a676e9063b1e040bf2543ed28?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+  }
 ];
 
 const TestimonialCarouselWrapper: React.FC = () => {

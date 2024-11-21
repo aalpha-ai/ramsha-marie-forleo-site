@@ -4,11 +4,11 @@
 import React from "react";
 
 const listItems = [
-  "Attended all the seminars, conferences, and networking events, only to find they lack lasting impact.",
-  "Poured your heart into countless courses, hired coaches, and gone to therapy, but still aren't where you want to be.",
-  "Experimented with bodywork, diets, and fitness plans that haven't delivered more than a temporary fix.",
-  "Collected shelves full of self-help, business, and personal development books, without learning how to turn knowledge into action.",
-  "Explored everything from mindfulness to micro-dosing in pursuit of wellness, yet still haven't unlocked your full creative and emotional potential.",
+  "Attended countless Islamic conferences and spiritual retreats, yet still feel disconnected from your divine feminine essence and true purpose.",
+  "Invested in various Islamic coaching programs and spiritual guidance, but struggle to bridge the gap between traditional wisdom and modern feminine leadership.",
+  "Tried different approaches to self-care and wellness within Islamic boundaries, but haven't found that deep, lasting connection to your feminine power.",
+  "Filled your library with Islamic self-development books and spiritual guides, yet still feel uncertain about how to embody their wisdom in today's world.",
+  "Explored everything from Islamic meditation to energy healing that's halal, but haven't yet discovered how to fully activate your spiritual gifts while honoring your deen.",
 ];
 
 const List: React.FC = () => {

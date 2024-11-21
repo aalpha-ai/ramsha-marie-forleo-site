@@ -8,16 +8,16 @@ interface StrongTextProps {
   italic: string;
 }
 
-export const StrongText: React.FC<StrongTextProps> = ({ regular }) => (
+export const StrongText: React.FC<StrongTextProps> = ({ regular, italic }) => (
   <div className="flex flex-col pb-1 mt-4 w-full max-md:max-w-full">
-    <p className="text-base ">
-      FACT:
+    <p className="text-base">
+      SubhanAllah,
       <span className="font-bold">
         {" "}
         {regular}
-        <span className="text-black"> potential... and you </span>
-        <span className="italic text-black">know</span>
-        <span className="text-black"> it.</span>
+        <span className="text-black"> {italic} </span>
+        <span className="italic text-black">bi'ithnillah</span>
+        <span className="text-black">.</span>
       </span>
     </p>
   </div>

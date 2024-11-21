@@ -6,19 +6,19 @@ import React from "react";
 export const TextContainer: React.FC = () => {
   const paragraphs = [
     {
-      text: "Taking care of yourself mentally, emotionally, and physically is critical to building a successful business and living an extraordinary life.",
+      text: "Nurturing your mind, body, and soul in alignment with Islamic principles is essential for manifesting your divine purpose and living an extraordinary life blessed by Allah.",
       isItalic: false,
     },
     {
-      text: "Because let's be real: running a business (and managing life) isn't all rainbows and unicorns.",
+      text: "Because let's be real, sister: balancing dunya responsibilities while staying connected to your spiritual essence isn't always easy.",
       isBold: true,
     },
-    "If you don't surround yourself with positive, ambitious people — especially when the shiitake hits the fan —it's impossible to realize your fullest potential.",
-    "Dream Club is not like any other program.",
-    "This is a place of prosperity, possibility and forward movement.",
-    "No politics.\nNo pitching.\nNo rants.",
+    "If you don't surround yourself with spiritually aligned sisters who uplift you — especially during times of trial — it becomes difficult to manifest your highest potential that Allah has written for you.",
+    "The Awakened Feminine is not like any other spiritual program.",
+    "This is a sacred space of divine abundance, spiritual growth, and soul-led transformation.",
+    "No judgment.\nNo ego.\nNo negativity.\nJust pure, sacred sisterhood.",
     {
-      text: "In other words, we're unapologetically optimistic, joyful, and realistically ambitious about whole-life growth and success.",
+      text: "Alhamdulillah, we're authentically devoted to joyful spiritual growth, feminine energy activation, and divinely guided success - in both dunya and akhirah.",
       isUnderlined: true,
     },
   ];

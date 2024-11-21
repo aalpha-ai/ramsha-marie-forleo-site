@@ -10,82 +10,82 @@ const dreamItems = [
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "Ideas are turning into reality left and right. Where's all this synchronicity and energy coming from!? (Not complaining!)",
+      "SubhanAllah, your divine inspirations are manifesting with ease. The alignment between your body, soul, and purpose creates a beautiful flow of barakah!",
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "When a problem comes up — a hiring dilemma, health crisis, relationship struggle, you name it — you know exactly who to call.",
+      "When challenges arise — whether in business, health, or relationships — you're surrounded by a sisterhood that understands both spiritual and practical wisdom.",
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "You're having FUN again! Life is more fun. Business is more fun. Your relationships are more fun. Who knew it could get THIS good!?",
+      "Your relationship with Allah feels more connected than ever. Your nervous system is regulated, your heart is at peace, and you're experiencing joy in ways you never imagined possible, Alhamdulillah!",
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "When you catch your reflection in the mirror, you can't help but think, \"Damn, I'm looking good these days!\"",
+      "When you see your reflection, you recognize the nur (divine light) radiating from within. Your body feels like a trusted friend, not something to fight against.",
     isItalic: true,
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "Saying no has become a breeze. You're so ultra clear on what matters that you spend zero time on projects (or people) that drain you.",
+      "Setting boundaries feels natural and aligned. Your energy is protected for what truly matters - your relationship with Allah, your purpose, and your loved ones.",
     isItalic: true,
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "Strategic planning is on lock. Your calendar includes non-negotiable time to write, play and rest between flagship launches and campaigns.",
+      "Your schedule honors both deen and dunya. You've created sacred time for ibadah, self-care, rest, and inspired action in your business.",
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "You've got an adventure trip planned with your new business besties — because a long weekend in Milan for masterminding, shopping, and gelato never hurt anyone.",
+      "You're planning meaningful gatherings with your soul sisters - because deep spiritual connection combined with joyful sisterhood nourishes both heart and spirit.",
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "Your health is finally dialed — you're up to date on all your tests, sleeping better, eating right, working out consistently, and feeling stronger than you have in years.",
+      "Your body feels like a sanctuary - you're sleeping deeply, eating nourishing foods, moving with joy, and feeling more embodied in your feminine energy than ever before.",
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "Home design goals are happening! Your environment is reflecting the beauty and artistry you've always envisioned. (#AD here we come!)",
+      "Your home has become a haven of peace and beauty, reflecting the harmony you feel within. Every corner supports your spiritual and emotional wellbeing.",
     isItalic: true,
   },
   {
     iconSrc:
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/25a324412ab9c5d4104fa76a1247afada975d8aed2035eb0747c100d6cdafeff?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     content:
-      "Those secret creative goals in your heart…they're FINALLY coming true!",
+      "Those whispers of inspiration Allah placed in your heart... they're blossoming into reality through divine timing and alignment!",
   },
 ];
 
-const DreamClub: React.FC = () => {
+const SomaticHealing: React.FC = () => {
   return (
     <BlurFade>
       <DreamsWorthSection
-        title="What Are Your Dreams Worth to You?"
-        subtitle="Just imagine that…"
+        title="What Is Your Spiritual Transformation Worth?"
+        subtitle="Bi'ithnillah, envision yourself when..."
         imageSrc="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/547b3734f8d5b7bbb2100a6664f362eac09c29197ddcd12c471d64a663601945?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
         dreamItems={dreamItems}
         conclusion={[
-          "What would all of this be worth to you? $10,000… $25,000… $100,000 or more?",
-          "Your investment in Dream Club doesn't come anywhere close to that.",
+          "How would this level of embodied spiritual alignment transform your life?",
+          "Your investment in this sacred container is an investment in your relationship with Allah, yourself, and your divine purpose.",
         ]}
       />
     </BlurFade>
   );
 };
 
-export default DreamClub;
+export default SomaticHealing;

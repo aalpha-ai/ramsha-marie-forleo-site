@@ -13,19 +13,19 @@ interface FeatureCardProps {
 
 const featureCardsData: FeatureCardProps[] = [
   {
-    title: "Feel Connected and Supported",
+    title: "Sacred Sisterhood & Divine Support",
     content:
-      "Join an exclusive collective of entrepreneurs who get it. Say goodbye to loneliness and hello to inspiration, connection, and support!",
+      "Join a blessed circle of spiritually-aligned sisters who understand your journey. Transform loneliness into divine connection through authentic sisterhood and spiritual support, just as the Prophet ﷺ taught us about the power of good company.",
   },
   {
-    title: "Real Strategies, Real Results",
+    title: "Spiritual Wisdom, Transformative Results",
     content:
-      "Get access to the actionable strategies I personally use in business and life. No fluff, just evidence-based tools that work.",
+      "Access deep spiritual practices and proven healing techniques that blend Islamic wisdom with somatic healing. Experience the powerful combination of divine guidance (tawakkul) and practical transformation (amal).",
   },
   {
-    title: "A Focus on the Whole You",
+    title: "Nurture Your Complete Being",
     content:
-      "Success isn't just about making money. It's about creating a life that's joyful, healthy, and rich in every way.",
+      "True success in Islam encompasses dunya and akhirah. Together, we'll nurture your mind, body, and soul to create a life of barakah, inner peace, and authentic abundance, aligned with your highest purpose.",
   },
 ];
 

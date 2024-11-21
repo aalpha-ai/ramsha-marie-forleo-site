@@ -22,15 +22,17 @@ import FAQSection from "./FAQSection";
 import BookSectionWrapper from "./BookSectionWrapper";
 import ContinuousEvolution from "./ContinuousEvolution";
 import WaitlistSection from "./WaitlistSection/WaitlistSection";
+import MediaLogos from "../Main/MediaLogos";
 
 export default function Component() {
   return (
-    <div className="[&_*]:transition-all [&_*]:duration-500 bg-gray-50">
+    <div className="font-montserrat bg-gray-50">
       <Header />
       <WaitlistSection />
       <FamiliarSoundSection />
       <MarieForleoSection />
-      <MediaMentionsSection />
+      {/* <MediaMentionsSection /> */}
+      <MediaLogos />
       <DreamClubSection />
       <DreamClubList />
       <TestimonialSection />

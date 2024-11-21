@@ -7,12 +7,13 @@ const Emphasis: React.FC = () => {
   return (
     <div className="flex flex-col pb-1 mt-4 max-md:max-w-full">
       <p className="text-base text-black font-light max-md:max-w-full">
-        You&apos;ve worked <span className="italic text-black">so</span>{" "}
-        <span className="font-bold ">
-          hard to create the best business, health, and relationships possible.
-          Yet, despite your efforts, you&apos;re still just scratching the
-          surface of where you <span className="italic">know</span> you could
-          be.
+        Alhamdulillah, you've strived <span className="italic text-black">so</span>{" "}
+        <span className="font-bold">
+          sincerely to honor Allah in your business, health, and relationships. 
+          Yet, deep in your heart, you feel a divine calling to something greater - 
+          a level of spiritual abundance and feminine power that you{" "}
+          <span className="italic">know</span> Allah has written for you, 
+          bi'ithnillah.
         </span>
       </p>
     </div>

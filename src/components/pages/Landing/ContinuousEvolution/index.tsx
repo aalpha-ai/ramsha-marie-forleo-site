@@ -12,9 +12,9 @@ interface ContentItem {
 }
 
 const contentItems: ContentItem[] = [
-  { text: "Continuous\nevolution", alignment: "left" },
-  { text: "profoundly\npositive", alignment: "right" },
-  { text: "formless\ninto form", alignment: "left" },
+  { text: "Divine\nAwakening", alignment: "left" },
+  { text: "Spiritual\nAbundance", alignment: "right" },
+  { text: "Sacred\nEmbodiment", alignment: "left" },
 ];
 
 const ContinuousEvolution: React.FC = () => {
@@ -35,13 +35,13 @@ const ContinuousEvolution: React.FC = () => {
             <div className="flex flex-col grow shrink pt-3 pb-4 text-2xl font-light tracking-wide leading-8 text-orange-50 min-w-[240px] w-[246px]">
               <h4 className="pr-1 w-full">
                 <span className="text-orange-50">
-                  Helping you build a richer,
+                  Guiding you to embrace your
                 </span>
                 <br />
                 <span className="font-bold text-orange-50">
-                  more satisfying life
+                  divine feminine power
                 </span>
-                <span className="text-orange-50">.</span>
+                <span className="text-orange-50">, bi'ithnillah.</span>
               </h4>
             </div>
             <div className="flex flex-col grow shrink justify-center items-end pt-11 pb-12 w-full max-w-[388px]">

@@ -8,14 +8,14 @@ const TextContent: React.FC = () => {
     <div className="flex flex-col pt-2 w-full tracking-normal leading-7 text-black max-md:max-w-full">
       <div className="flex flex-col pb-4 w-full max-md:max-w-full">
         <p className="text-base font-light max-md:max-w-full">
-          Maybe you&apos;ve grown accustomed to the daily grind and exhaustion,
-          telling yourself you&apos;re managing just <br />
-          fine. That this is &quot;just how it is.&quot;
+          Perhaps you've accepted the spiritual disconnection and emotional depletion,
+          telling yourself that maintaining your deen while pursuing success is just{" "}
+          <br />difficult by nature. That this struggle is &quot;part of the test.&quot;
         </p>
-        <p className="mt-4 text-base  font-light max-md:max-w-full">
-          But, if you&apos;re like most people, you&apos;ve already spent{" "}
-          <span className="italic text-black">thousands</span> of dollars trying
-          to &quot;get ahead&quot; in business and life. You&apos;ve…
+        <p className="mt-4 text-base font-light max-md:max-w-full">
+          But like many sisters seeking growth, you've already invested{" "}
+          <span className="italic text-black">countless hours and resources</span>{" "}
+          trying to find balance between your spiritual path and worldly success. SubhanAllah, you've...
         </p>
       </div>
     </div>

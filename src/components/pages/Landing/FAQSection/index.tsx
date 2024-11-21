@@ -12,42 +12,59 @@ interface FAQData {
 const faqData: FAQData[] = [
   {
     question:
-      "What if my schedule doesn't line up with your live sessions, will I miss out?",
+      "What if my schedule doesn't align with the live Nervous System Expansion sessions?",
     id: "schedule",
   },
-  { question: "How much is Dream Club?", id: "price" },
   {
-    question: "How much time will I need to invest in Dream Club?",
+    question: "What is the investment for the Somatic Healing program?",
+    id: "price",
+  },
+  {
+    question: "How much time should I dedicate to my transformation journey?",
     id: "time-investment",
   },
   {
-    question: "How long will I have access to Dream Club?",
+    question: "How long will I have access to the program materials and community?",
     id: "access-duration",
   },
-  { question: "What happens after December 1st, 2024?", id: "post-december" },
-  { question: "What's your refund policy?", id: "refund-policy" },
   {
-    question: "I don't have a business yet — can I still join Dream Club?",
-    id: "no-business",
+    question: "Is this program halal? How does it align with Islamic principles?",
+    id: "islamic-alignment",
+  },
+  {
+    question: "What is your refund policy, and how does it work?",
+    id: "refund-policy",
+  },
+  {
+    question: "I'm new to somatic healing and nervous system work — can I still join?",
+    id: "beginner",
   },
   {
     question:
-      "I'm a professional within a team — not a business owner. Can I still join Dream Club?",
+      "I'm a professional or employee, not an entrepreneur. Is this program right for me?",
     id: "professional",
   },
   {
-    question: "I have another question not answered here. How can I ask it?",
+    question: "How do you incorporate Islamic principles into the somatic healing work?",
+    id: "islamic-integration",
+  },
+  {
+    question: "Will there be separate spaces for sisters during group activities?",
+    id: "women-only",
+  },
+  {
+    question: "I have another question not answered here. How can I connect with you?",
     id: "other-questions",
   },
 ];
 
 const FAQSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center ">
+    <section className="flex flex-col items-center">
       <div className="flex flex-col px-14 pt-20 pb-24 w-full max-md:px-5 max-md:max-w-full">
-        <h2 className=" pt-4 pb-6 max-w-full text-4xl text-center leading-[54px] text-neutral-800">
+        <h2 className="pt-4 pb-6 max-w-full text-4xl text-center leading-[54px] text-neutral-800">
           <span className="w-full max-md:px-5 max-md:max-w-full">
-            Questions? Ask Away!
+            Questions About Your Journey? Let's Explore Together
           </span>
         </h2>
         <div className="flex flex-col items-center w-full min-h-[320px] max-md:max-w-full">

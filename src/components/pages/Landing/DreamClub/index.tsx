@@ -7,83 +7,50 @@ import { TestimonialBox } from "./TestimonialBox";
 import { SectionHeading } from "./SectionHeading";
 import { SectionContent } from "./SectionContent";
 
-interface DreamClubSectionProps {}
-
-const DreamClubSection: React.FC<DreamClubSectionProps> = () => {
+const SomaticHealingSection: React.FC = () => {
   const sections = [
     {
-      title:
-        "Mid-Year Reset: The Uncommon Practice That Will Help You Turn 2024 Into Your Best Year Yet!",
-      subtitle: "(Plus, a bonus Dream Club Kick-Off Party!)",
-      content:
-        "January is long gone. Discover why resetting your goals in JUNE is the secret weapon to catapult your success! Grab your gel pens — I'm taking you behind the scenes of my personal process to help you clarify what you want, simplify where you're going, and amplify your money, freedom, and happiness.",
-      additionalInfo:
-        "Includes a celebratory kick-off party and Ask Me Anything jam session!",
-      testimonial:
-        "I feel more alive than I have in 5 years. I feel like I'm reconnecting to my body and strengthening my connection to my soul and prioritizing my joy. THANK YOU.",
-      testimonialAuthor: "Angela L.",
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/5824b0835135add18e300e38bbf31a9719e3e1af8bbaccf6979d6f23a504107e?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-      imageAlt: "Illustration representing mid-year reset concept",
+      title: "Nervous System Expansion: Unlock Your Divine Feminine Through Somatic Healing",
+      subtitle: "(Including Sacred Sister Circle & Energy Work)",
+      content: "Discover how your body holds the key to profound spiritual and emotional transformation. Through gentle somatic practices and nervous system work, we'll release stored tension and trauma, allowing your natural feminine energy to flow freely. Learn how to embody the peace that comes from deep alignment with Allah's wisdom.",
+      additionalInfo: "Includes guided somatic practices and spiritual healing sessions 🤲",
+      testimonial: "SubhanAllah, the nervous system work has transformed my relationship with my body and faith. I feel a deeper connection to Allah and my feminine essence than ever before.",
+      testimonialAuthor: "Noor H., Dubai",
+      imageSrc: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/5824b0835135add18e300e38bbf31a9719e3e1af8bbaccf6979d6f23a504107e?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+      imageAlt: "Somatic healing visualization",
     },
     {
-      title:
-        "The Automated Lead Machine That Saves Us $10,000/mo, Generates 5K + Leads — with an 80% CTR 🤯!",
-      content:
-        "In this behind-the-scenes walkthrough, we'll show you the secret automation tool that brings us thousands of new leads a month… while we sleep. This done-with-you workshop can put leads on autopilot and save you TENS of thousands of dollars. This one workshop alone is worth 10X the investment in Dream Club.",
-      testimonial:
-        "I just closed my biggest deal yet!!! Got a little baby project as well too, but this big one is such a win!!",
-      testimonialAuthor: "Jen T.",
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/49e46e317a28583c1fe12c7e48449f30e350c123f3b3f3b065381c3b572ce691?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-      imageAlt: "Illustration of automated lead generation machine",
+      title: "Embodied Business Success: Integrating Spiritual Wisdom with Feminine Leadership",
+      content: "Learn how to lead your business from a place of embodied wisdom and spiritual alignment. We'll explore how somatic practices can enhance your decision-making, strengthen your boundaries, and help you create success that honors both your faith and feminine nature. Discover how to trust your body's wisdom while maintaining tawakkul (trust in Allah).",
+      testimonial: "Alhamdulillah, I've learned to trust my body's wisdom while staying anchored in my faith. The combination of somatic work and spiritual guidance has transformed my business approach.",
+      testimonialAuthor: "Amira K., London",
+      imageSrc: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/49e46e317a28583c1fe12c7e48449f30e350c123f3b3f3b065381c3b572ce691?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+      imageAlt: "Embodied leadership illustration",
     },
     {
-      title:
-        "Science-Backed Secrets to Look and Feel 10 Years Younger — Yes, Really",
-      subtitle: "(Steal My Personal Routine)",
-      content:
-        "Curious about my exact skincare routine? Want to know my latest and greatest tools, products, rituals, and dos/don'ts on hair, nutrition, working-out… la la la?! I've invested so much time, energy, and cash 🙈 to work with the world's top doctors, nutritionists, facialists, hairstylists, and researchers for decades — and in Dream Club, I'll share the BEST of the best.",
-      additionalInfo: "You're welcome. 😘",
-      testimonial:
-        "I've had international travel on my list for YEARS but never actually pulled the trigger on it. And thanks to Dream Club, I connected with a Dreamer who, surprise – owns a travel company with INCREDIBLE offerings and just paid the deposit for a retreat in France next May!!! Dream Club, you've already exceeded my expectations!!!",
-      testimonialAuthor: "Amelie S.",
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/5500209c889bac6a566ecf1fbb4c91428b553cb586e8a240610b07ddd05f139a?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-      imageAlt: "Illustration of skincare and wellness concepts",
+      title: "Sacred Nervous System Reset: Healing Generational Patterns Through Somatic Work",
+      subtitle: "(Embracing Your Divine Design)",
+      content: "Your nervous system carries both the wisdom and wounds of generations. Through gentle somatic practices and Islamic principles, we'll help you release inherited patterns that no longer serve you. Learn to regulate your nervous system while deepening your spiritual connection, creating space for new patterns aligned with your highest purpose.",
+      additionalInfo: "Bismillah, we begin with intention 💝",
+      testimonial: "The combination of somatic healing and Islamic wisdom has helped me break free from old patterns. My body feels lighter and my soul more connected, Alhamdulillah!",
+      testimonialAuthor: "Zahra M., Malaysia",
+      imageSrc: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/5500209c889bac6a566ecf1fbb4c91428b553cb586e8a240610b07ddd05f139a?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+      imageAlt: "Nervous system healing concepts",
     },
     {
-      title:
-        "Millionaire Marketing Throwdown: The Dead Simple Email and Text Campaign That Generated $1,112,055 — Overnight!",
-      content:
-        "What if you could make more money than most businesses do all year — starting with one email or text? I've tapped a certain marketing legend (and personal friend) to walk you through his emotionally genius campaign that makes millions… for those who know how to do it right. Join us for an epic marketing throwdown and real-time work session that has the power to turn your cash flow into a friggin' tsunami.",
-      testimonial:
-        "I'm stepping onto a global stage! Only 12 Enneagram experts are selected each year for this monthly live session. My goal this year is to stop hiding my light under a bushel. I'm ready to share my vision as my overarching goal is to help families end generational trauma for generations to come!",
-      testimonialAuthor: "Valerie T.",
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/66dfad9d33ef3ae351efc187e6da1655efccc8eaa7e1843360a677b4883cc07a?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-      imageAlt: "Illustration of marketing campaign success",
+      title: "Embodied Abundance: Somatic Practices for Spiritual & Material Wealth",
+      content: "Experience how somatic healing can transform your relationship with abundance. Learn powerful nervous system practices that help you embody the truth that Allah is Al-Razzaq (The Provider). We'll explore how trauma and stress affect your ability to receive, and how to create new neural pathways for abundance through both spiritual and somatic practices.",
+      testimonial: "MashAllah, understanding how my nervous system affects my relationship with rizq has been revolutionary. The somatic practices have helped me embody abundance while staying true to my faith.",
+      testimonialAuthor: "Fatima R., Toronto",
+      imageSrc: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/66dfad9d33ef3ae351efc187e6da1655efccc8eaa7e1843360a677b4883cc07a?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+      imageAlt: "Embodied abundance concept",
     },
     {
-      title:
-        "Strategic Planning Workshop With Marie & Her VP Of Operations: How to Hit Big Revenue Goals, Grow Your Business, and STILL Take Months Off — Using Our One-Page Secret Weapon",
-      content:
-        "I'm going to let you in on a secret…🤫 There are a lot of Big Names who appear cool, calm, and collected. But, behind the curtain — they're stressed out, overstretched, and constantly putting out fires. That's not what running a freedom-rich business is about. In this exclusive workshop, my VP of Operations and I will share our proprietary curveball-proof planning strategy. In one hour, you'll walk away with a clear path to more success and peace-of-mind.",
-      testimonial:
-        "I CAN LEARN business stuff! I am finishing up the process of opening my store on TPT and Etsy… with quirky and whimsical designs and I'm DOING IT!! Biggest lesson: anything is figureoutable.",
-      testimonialAuthor: "Kaci B.",
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/d90791a43158f4d20f7885087198d888ff201f42d05d18bd652d26b61f1d4dc4?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-      imageAlt: "Illustration of strategic planning concepts",
-    },
-    {
-      title: "🔒 LOCKED — Secret for Dream Club Members Only!",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.qui officia deserunt mollit anim id est laborum.",
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/752763e91f9b44e4850032505797dfc20597b9f1c65c57784f93a214592ae4ba?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
-      imageAlt: "Locked content illustration",
-    },
+      title: "🌙 Advanced Integration: For Current Program Members",
+      content: "An exclusive deep-dive into advanced somatic practices and spiritual integration work, available only to sisters currently in the program. Together, we'll explore the depths of feminine embodiment while maintaining strong spiritual foundations.",
+      imageSrc: "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/752763e91f9b44e4850032505797dfc20597b9f1c65c57784f93a214592ae4ba?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
+      imageAlt: "Advanced healing illustration",
+    }
   ];
 
   return (
@@ -114,4 +81,4 @@ const DreamClubSection: React.FC<DreamClubSectionProps> = () => {
   );
 };
 
-export default DreamClubSection;
+export default SomaticHealingSection;
