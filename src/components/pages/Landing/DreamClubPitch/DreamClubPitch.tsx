@@ -4,6 +4,7 @@
 import React from "react";
 import { QuestionItem, QuestionItemProps } from "./QuestionItem";
 import { NotForYouItem, NotForYouItemProps } from "./NotForYouItem";
+import BlurFade from "@/components/magicui/blur-fade";
 
 interface DreamClubPitchProps {
   questions: QuestionItemProps[];
@@ -15,62 +16,60 @@ const DreamClubPitch: React.FC<DreamClubPitchProps> = ({
   notForYouItems,
 }) => {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center bg-landing-stone-pattern">
       <div className="flex flex-col px-14 py-20 w-full max-md:px-5 max-md:max-w-full">
-        <div className="flex flex-col items-center px-16 text-center max-md:px-5 max-md:max-w-full">
-          <div className="flex flex-col pt-2 max-w-full w-[774px]">
-            <h2 className="px-28 w-full text-5xl leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full">
-              Is Dream Club Right for You?
-            </h2>
-            <div className="flex flex-col mt-6 w-full text-base tracking-normal text-black max-md:max-w-full">
-              <p className="px-6 w-full font-light leading-7 max-md:px-5 max-md:max-w-full">
-                We cater to established and emotionally mature founders, CEOs,
-                course and digital creators,
-                <br /> small business owners, coaches, authors, speakers,
-                experts, business minded artists, and
-                <br /> freelancers who are committed to sustainable, whole-life
-                success.
-              </p>
-              <p className="px-2 mt-4 w-full italic font-light leading-6 max-md:max-w-full">
-                <span className="text-black">
-                  You may be wondering if Dream Club is right for{" "}
-                </span>
-                <span className="italic text-black">your</span>
-                <span className="text-black">
-                  {" "}
-                  specific situation. Ask yourself the following{" "}
-                </span>
-                <br />
-                <span className="text-black">questions to help decide.</span>
-              </p>
-            </div>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="w-full text-5xl leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full">
+            Is Dream Club Right for You?
+          </h2>
+          <div className="flex flex-col mt-6 w-full text-base tracking-normal text-black max-md:max-w-full">
+            <p className="w-full font-light leading-7 max-md:px-5 max-md:max-w-full">
+              We cater to established and emotionally mature founders, CEOs,
+              course and digital creators, small business owners, coaches,
+              authors, speakers, experts, business minded artists, and
+              freelancers who are committed to sustainable, whole-life success.
+            </p>
+            <p className="mt-4 w-full italic font-light leading-6 max-md:max-w-full">
+              <span className="text-black">
+                You may be wondering if Dream Club is right for{" "}
+              </span>
+              <span className="italic text-black">your</span>
+              <span className="text-black">
+                {" "}
+                specific situation. Ask yourself the following{" "}
+              </span>
+              <br />
+              <span className="text-black">questions to help decide.</span>
+            </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center self-center py-8 w-full max-w-[830px] min-h-[601px] max-md:max-w-full">
-          <div className="flex flex-col flex-1 px-10 py-8 w-full rounded-2xl border border-black border-solid bg-stone-50 max-w-[830px] max-md:px-5 max-md:max-w-full">
-            <div className="flex flex-col pb-4 w-full max-md:max-w-full">
-              <div className="flex flex-col pb-5 w-full max-md:max-w-full">
+        <div className="py-8 w-full max-w-[830px] mx-auto  max-md:max-w-full">
+          <BlurFade>
+            {" "}
+            <div className="flex flex-col flex-1 px-10 py-8 w-full rounded-2xl border border-black border-solid bg-stone-50  max-md:px-5 max-md:max-w-full">
+              <div className="flex flex-col pb-4 w-full max-md:max-w-full">
                 {questions.map((question, index) => (
                   <QuestionItem key={index} {...question} />
                 ))}
               </div>
+              <h4 className="flex flex-col pb-2 w-full text-2xl font-bold tracking-wide leading-8 text-center text-neutral-800 max-md:max-w-full">
+                <div className="px-9 max-md:px-5 max-md:max-w-full">
+                  If you answered yes to 3 or more, YOU belong in Dream Club.
+                </div>
+              </h4>
             </div>
-            <h4 className="flex flex-col pb-2 w-full text-2xl font-bold tracking-wide leading-8 text-center text-neutral-800 max-md:max-w-full">
-              <div className="px-9 max-md:px-5 max-md:max-w-full">
-                If you answered yes to 3 or more, YOU belong in Dream Club.
-              </div>
-            </h4>
+          </BlurFade>
+        </div>
+
+        <div className="flex flex-col items-center self-start pr-16 pl-16 max-md:px-0 max-md:max-w-full max-w-3xl mx-auto">
+          <div className="flex flex-col self-center pb-4 text-lg font-light tracking-normal leading-8 text-center text-black">
+            <p>
+              <span className="text-black">Dream Club is </span>
+              <span className="font-bold text-black">NOT</span>
+              <span className="text-black"> for you if you&apos;re:</span>
+            </p>
           </div>
-        </div>
-        <div className="flex flex-col self-center pb-4 text-lg font-light tracking-normal leading-8 text-center text-black">
-          <p>
-            <span className="text-black">Dream Club is </span>
-            <span className="font-bold text-black">NOT</span>
-            <span className="text-black"> for you if you're:</span>
-          </p>
-        </div>
-        <div className="flex flex-col items-center self-start pr-16 pl-16 max-md:px-5 max-md:max-w-full">
-          <div className="flex flex-col pb-2 max-w-full w-[761px]">
+          <div className="flex flex-col pb-2 max-w-full ">
             <div className="flex flex-col w-full max-md:max-w-full">
               {notForYouItems.map((item, index) => (
                 <NotForYouItem key={index} {...item} />
@@ -82,7 +81,7 @@ const DreamClubPitch: React.FC<DreamClubPitchProps> = ({
                 {" "}
                 Dream Club is designed to help you stay in action and{" "}
               </span>
-              <br />
+
               <span className="font-light text-neutral-800">
                 {" "}
                 substantially increase your wealth, joy, and freedom.{" "}

@@ -3,6 +3,7 @@
  */
 import React from "react";
 import { DreamsWorthSection } from "./DreamsWorthSection";
+import BlurFade from "@/components/magicui/blur-fade";
 
 const dreamItems = [
   {
@@ -72,16 +73,18 @@ const dreamItems = [
 
 const DreamClub: React.FC = () => {
   return (
-    <DreamsWorthSection
-      title="What Are Your Dreams Worth to You?"
-      subtitle="Just imagine that…"
-      imageSrc="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/547b3734f8d5b7bbb2100a6664f362eac09c29197ddcd12c471d64a663601945?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
-      dreamItems={dreamItems}
-      conclusion={[
-        "What would all of this be worth to you? $10,000… $25,000… $100,000 or more?",
-        "Your investment in Dream Club doesn't come anywhere close to that.",
-      ]}
-    />
+    <BlurFade>
+      <DreamsWorthSection
+        title="What Are Your Dreams Worth to You?"
+        subtitle="Just imagine that…"
+        imageSrc="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/547b3734f8d5b7bbb2100a6664f362eac09c29197ddcd12c471d64a663601945?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+        dreamItems={dreamItems}
+        conclusion={[
+          "What would all of this be worth to you? $10,000… $25,000… $100,000 or more?",
+          "Your investment in Dream Club doesn't come anywhere close to that.",
+        ]}
+      />
+    </BlurFade>
   );
 };
 

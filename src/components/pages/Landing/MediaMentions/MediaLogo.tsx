@@ -14,9 +14,9 @@ const MediaLogo: React.FC<MediaLogoProps> = ({ src, alt }) => {
     <Image
       src={src}
       alt={alt}
-      className="object-contain shrink-0 self-stretch my-auto aspect-[3.86] max-w-[922px] w-[58px]"
-      width={58}
-      height={22}
+      className="object-contain flex-1 h-20 w-full"
+      height={80}
+      width={200}
     />
   );
 };

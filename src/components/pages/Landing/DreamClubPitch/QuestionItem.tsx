@@ -14,17 +14,16 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
   question,
 }) => {
   return (
-    <div className="flex flex-wrap items-start mt-5 w-full max-md:max-w-full">
-      <div className="flex flex-col items-start pt-1 pr-2.5 max-w-[758px] w-[31px]">
-        <Image
+    <div className="flex items-start gap-2.5 mt-5 w-full max-md:max-w-full">
+      <div className=" h-5 w-5">
+        <img
+          loading="lazy"
           src={imageUrl}
           alt=""
-          className="object-contain aspect-[1.17] w-[21px]"
-          width={21}
-          height={18}
+          className="w-full object-contain"
         />
       </div>
-      <div className="text-base font-light tracking-normal leading-6 text-black min-w-[240px]">
+      <div className="flex-1 text-base font-light tracking-normal leading-6 text-black ">
         {question}
       </div>
     </div>

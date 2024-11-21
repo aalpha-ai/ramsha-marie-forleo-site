@@ -36,9 +36,9 @@ const testimonials: Testimonial[] = [
 
 const TestimonialSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center bg-landing-stone-pattern">
       <div className="flex flex-col justify-center items-center p-20 w-full max-md:px-5 max-md:max-w-full">
-        <div className="flex flex-col w-full max-w-[800px] max-md:max-w-full">
+        <div className="flex flex-col w-full max-w-3xl.5 max-md:max-w-full">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={index}

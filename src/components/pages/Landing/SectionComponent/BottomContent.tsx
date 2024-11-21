@@ -6,56 +6,45 @@ import React from "react";
 const BottomContent: React.FC = () => {
   return (
     <div className="flex flex-col mt-4 text-base max-md:max-w-full">
-      <div className="font-light">
-        <span className="text-black">"But Marie,"</span>
-        <span className="text-black"> you might be thinking, </span>
-      </div>
-      <div className="flex flex-col py-1 pr-4 max-w-full font-light w-[816px]">
-        <div className="self-end italic max-md:max-w-full">
-          "I already have a pretty great life, all things considered. Maybe what
-          I
-        </div>
-        <div className="self-start mt-3 italic">have is good enough."</div>
-      </div>
+      <p className="font-light italic">
+        &quot;But Marie,&quot;{" "}
+        <span className="not-italic text-black"> you might be thinking, </span>
+        &quot;I already have a pretty great life, all things considered. Maybe
+        what I have is good enough.&quot;
+      </p>
+
       <p className="mt-4 font-light max-md:max-w-full">
-        Well, hold up. Since when has 'good enough' ever been a part of your
-        vocabulary? Plus, there's a MUCH <br />
-        BIGGER cost to settling than you think.
+        Well, hold up. Since when has &apos;good enough&apos; ever been a part
+        of your vocabulary? Plus, there&apos;s a MUCH BIGGER cost to settling
+        than you think.
       </p>
       <p className="mt-4 font-light max-md:max-w-full">
         Not only will YOU miss out on the joy, connection, intimacy, and freedom
-        that is your birthright. But your <br />
-        partner, friends, family, co-workers, employees, and audience will MISS
-        OUT, too.
+        that is your birthright. But your partner, friends, family, co-workers,
+        employees, and audience will MISS OUT, too.
       </p>
-      <ul className="flex overflow-hidden flex-col pb-2 pl-8 mt-4 font-light max-md:pl-5 max-md:max-w-full">
-        <li className="w-full font-light max-md:max-w-full">
+      <ul className="list-disc ml-10 mt-4 font-light">
+        <li className="w-full  max-md:max-w-full">
           Your family never gets to take that dream vacation you keep talking
           about
         </li>
-        <li className="mt-2 w-full italic max-md:max-w-full">
-          <span className="text-black">
-            That book idea you've had floating around in your head for{" "}
-          </span>
-          <span className="italic text-black">years</span>
-          <span className="text-black"> never makes it to print</span>
+        <li className="mt-2 w-full text-black max-md:max-w-full">
+          That book idea you&apos;ve had floating around in your head for{" "}
+          <span className="italic text-black">years </span>
+          never makes it to print
         </li>
-        <li className="mt-2 w-full italic max-md:max-w-full">
-          <span className="text-black">
-            You keep canceling on your friends to keep up with work, but feel
-            like you're missing out on{" "}
-          </span>
-          <span className="italic text-black">life</span>
+        <li className="mt-2 w-full text-black  max-md:max-w-full">
+          You keep canceling on your friends to keep up with work, but feel like
+          you&apos;re missing out on <span className="italic ">life</span>
         </li>
       </ul>
       <p className="mt-4 font-light max-md:max-w-full">
-        The fact that you're reading this right now means you're ready for more.
-        More freedom, more abundance, <br />
-        more joy, and way more FUN.
+        The fact that you&apos;re reading this right now means you&apos;re ready
+        for more. More freedom, more abundance, more joy, and way more FUN.
       </p>
       <p className="mt-4 font-light max-md:max-w-full">But… how?</p>
       <p className="mt-4 font-bold max-md:max-w-full">You could:</p>
-      <ul className="flex overflow-hidden flex-col pb-2 pl-8 mt-4 font-light max-md:pl-5 max-md:max-w-full">
+      <ul className="flex overflow-hidden flex-col pb-2 pl-10 mt-4 font-light max-md:pl-5 max-md:max-w-full list-disc">
         <li className="w-full text-base max-md:max-w-full">
           Keep ordering self-help books on Amazon
         </li>
@@ -71,30 +60,19 @@ const BottomContent: React.FC = () => {
       <p className="mt-4 font-light max-md:max-w-full">
         You can keep trying to piece solutions together on your own.
       </p>
-      <p className="mt-4 italic font-light max-md:max-w-full">
-        <span className="text-black">
-          OR you can join our Dream Team of ambitious, wildly magical creators
-          who are committed to doing{" "}
-        </span>
-        <br />
-        <span className="text-black">business and life </span>
-        <span className="italic text-black">differently</span>
-        <span className="text-black">.</span>
+      <p className="mt-4  font-light text-black max-md:max-w-full">
+        OR you can join our Dream Team of ambitious, wildly magical creators who
+        are committed to doing business and life
+        <span className="italic "> differently</span>.
       </p>
-      <div className="flex flex-col items-center px-6 max-w-full font-light text-center w-[823px] max-md:px-5">
+      <div className="flex flex-col items-center max-w-full font-light text-center max-md:px-5">
         <div className="flex flex-col pt-6 pb-4 w-full">
-          <p className="self-end px-6 w-full text-2xl italic tracking-wide leading-8 text-neutral-800 max-md:px-5 max-md:max-w-full">
-            <span className="text-neutral-800">
-              We're abundance-minded artists and entrepreneurs who{" "}
-            </span>
-            <span className="italic text-neutral-800">refuse</span>
-            <span className="text-neutral-800"> to</span>
-            <br />
-            <span className="text-neutral-800">
-              sacrifice our joy, health, or relationships.
-            </span>
+          <p className=" text-2xl  tracking-wide leading-8 text-neutral-800 max-md:px-5 max-md:max-w-full max-w-[707px] mx-auto">
+            We&apos;re abundance-minded artists and entrepreneurs who
+            <span className="italic"> refuse </span>
+            to sacrifice our joy, health, or relationships.
           </p>
-          <p className="px-1 mt-2 w-full text-lg tracking-normal leading-8 text-black max-md:max-w-full">
+          <p className="px-1 mt-2 w-full text-lg tracking-normal leading-8 text-black max-md:max-w-full max-w-3xl mx-auto">
             <span className="text-black">We are </span>
             <span className="font-bold text-black">multi-passionate</span>
             <span className="text-black"> artists of life, </span>
