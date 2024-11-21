@@ -64,11 +64,11 @@ const NewsletterSignup: React.FC = () => {
                       By entering your email, you'll agree to join Glowing Femme
                       for FREE access to exclusive insights and offers delivered with love to your inbox.
                       (Unsub anytime in a click.) You also agree to our{" "}
-                      <a href="/terms" className="underline">
+                      <a href="/terms-of-use" className="underline">
                         Terms of Use
                       </a>{" "}
                       and{" "}
-                      <a href="/privacy" className="self-stretch underline">
+                      <a href="/privacy-policy" className="self-stretch underline">
                         Privacy Policy
                       </a>
                       .

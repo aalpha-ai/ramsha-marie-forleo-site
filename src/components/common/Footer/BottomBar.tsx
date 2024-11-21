@@ -11,8 +11,8 @@ interface FooterLink {
 }
 
 const footerLinks: FooterLink[] = [
-  { text: "Terms Of Use", href: "/terms" },
-  { text: "Privacy Policy", href: "/privacy" },
+  { text: "Terms Of Use", href: "/terms-of-use" },
+  { text: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 const BottomBar: React.FC = () => {

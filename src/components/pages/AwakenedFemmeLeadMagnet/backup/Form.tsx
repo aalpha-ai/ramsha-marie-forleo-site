@@ -47,11 +47,11 @@ const Form: React.FC = () => {
               By entering your email, you&apos;ll agree to join Glowing Femme for FREE
               access to exclusive insights and offers delivered with love to your inbox.
               (Unsub anytime in a click.) You also agree to our{" "}
-              <a href="/terms" className="text-orange-700 underline">
+              <a href="/terms-of-use" className="text-orange-700 underline">
                 Terms of Use
               </a>{" "}
               and{" "}
-              <a href="/privacy" className="self-stretch underline text-orange-700">
+              <a href="/privacy-policy" className="self-stretch underline text-orange-700">
                 Privacy Policy
               </a>
               .

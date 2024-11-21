@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             ease: "easeOut"
           }}
           viewport={{ once: true }}
-          href="/terms"
+          href="/terms-of-use"
         >
           TERMS OF USE
         </motion.a>
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             ease: "easeOut"
           }}
           viewport={{ once: true }}
-          href="/privacy"
+          href="/privacy-policy"
         >
           PRIVACY POLICY
         </motion.a>

@@ -9,8 +9,8 @@ import { FooterLink } from "./FooterLinks";
 import Link from 'next/link';
 
 const links = [
-  { href: "/terms", text: "TERMS OF USE" },
-  { href: "/privacy", text: "PRIVACY POLICY" },
+  { href: "/terms-of-use", text: "TERMS OF USE" },
+  { href: "/privacy-policy", text: "PRIVACY POLICY" },
 ];
 
 export const Footer: React.FC = () => {

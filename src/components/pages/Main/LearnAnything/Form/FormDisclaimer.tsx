@@ -16,11 +16,11 @@ const FormDisclaimer: React.FC = () => {
             access to exclusive insights, private Q+As, and inspiring episodes
             of MarieTV, delivered with 💜 to your inbox. (Unsub anytime in a
             click.) You also agree to our{" "} */}
-            <a href="/terms" className="text-orange-700 underline">
+            <a href="/terms-of-use" className="text-orange-700 underline">
               Terms of Use
             </a>{" "}
             and{" "}
-            <a href="/privacy" className="self-stretch underline text-orange-700">
+            <a href="/privacy-policy" className="self-stretch underline text-orange-700">
               Privacy Policy
             </a>
             .

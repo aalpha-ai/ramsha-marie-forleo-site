@@ -53,11 +53,11 @@ const Form: React.FC = () => {
           <span>
             You also agree to our &nbsp;
           </span>
-          <a href="/terms" className="underline">
+          <a href="/terms-of-use" className="underline">
             Terms of Use
           </a>
           <span> and </span>
-          <a href="/privacy" className="underline">
+          <a href="/privacy-policy" className="underline">
             Privacy Policy
           </a>
           <span>
