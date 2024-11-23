@@ -25,7 +25,7 @@ const SubscriptionForm: React.FC = () => {
     setError(null);
 
     try {
-      const response = await fetch('https://free-website-club.vercel.app/api/subscribe', {
+      const response = await fetch('https://automations-blush.vercel.app/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

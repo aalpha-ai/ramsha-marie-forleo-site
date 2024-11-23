@@ -31,7 +31,7 @@ const featureCardsData: FeatureCardProps[] = [
 
 const DreamClubComponent: React.FC = () => {
   return (
-    <div className="bg-landing-stone-pattern">
+    <div className="bg-ramsha-primary text-white">
       <main className="flex flex-col text-center max-w-5xl.5 mx-auto md:px-10 px-5 ">
         <Header />
         <BlurFade>

@@ -45,7 +45,7 @@ const BookSection: React.FC<BookSectionProps> = ({ imageSrc }) => {
   ];
 
   return (
-    <section className="grid md:grid-cols-[1fr_1.25fr] justify-center bg-landing-stone-dark">
+    <section className="grid md:grid-cols-[1fr_1.25fr] justify-center bg-ramsha-primary">
       <img
         loading="lazy"
         src={imageSrc}

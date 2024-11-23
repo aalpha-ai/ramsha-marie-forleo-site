@@ -23,7 +23,7 @@ const DreamClubImageSection: React.FC<DreamClubImageSectionProps> = ({
           className="object-cover w-full h-full max-md:max-h-[400px] lg:max-h-[825px] max-md:max-w-full"
         />
       </div>
-      <div className="flex flex-col bg-landing-red-pattern grow shrink justify-center items-start py-16 md:py-20 max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col bg-ramsha-tertiary grow shrink justify-center items-start py-16 md:py-20 max-md:px-5 max-md:max-w-full">
         <BlurFade>
           <div className="flex flex-col relative md:right-24 p-10 rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
             <Heading />

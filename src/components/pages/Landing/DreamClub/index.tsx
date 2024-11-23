@@ -54,7 +54,7 @@ const SomaticHealingSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center bg-stone-50">
+    <section className="flex flex-col items-center bg-ramsha-primary text-white">
       <div className="flex flex-col md:px-14 pt-20 pb-20 w-full max-md:px-5 max-md:max-w-full">
         <SectionHeading />
         {sections.map((section, index) => (

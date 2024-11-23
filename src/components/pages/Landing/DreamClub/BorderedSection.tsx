@@ -13,7 +13,7 @@ export const BorderedSection: React.FC<BorderedSectionProps> = ({
 }) => {
   return (
     <BlurFade>
-      <div className="flex flex-col mt-20 w-full text-center text-black rounded-2xl border border-black border-solid max-w-5xl.5 mx-auto max-md:mt-10 max-md:max-w-full">
+      <div className="bg-white flex flex-col mt-20 w-full text-center text-black rounded-2xl border border-black border-solid max-w-5xl.5 mx-auto max-md:mt-10 max-md:max-w-full">
         {children}
       </div>
     </BlurFade>
