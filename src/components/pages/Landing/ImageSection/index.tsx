@@ -9,7 +9,7 @@ const MainComponent: React.FC = () => {
     <main>
       <section>
         <ImageComponent
-          src="/ramsha-pics-v2/gf5831.jpeg"
+          src="/ramsha-pics-v2/gf6.jpeg"
           alt="Main content image"
         />
       </section>

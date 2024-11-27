@@ -19,8 +19,18 @@ const contentItems: ContentItem[] = [
 
 const ContinuousEvolution: React.FC = () => {
   return (
-    <section className="flex flex-col items-center bg-black">
-      <div className="flex flex-col px-10 pt-14 pb-5 w-full max-md:px-5 max-md:max-w-full">
+    <section 
+      className="flex flex-col items-center bg-black relative"
+      style={{
+        backgroundImage: "url('/ramsha-pics-v2/glowingfemmej3.jpeg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-50" />
+
+      <div className="flex flex-col px-10 pt-14 pb-5 w-full max-md:px-5 max-md:max-w-full relative z-10">
         {contentItems.map((item, index) => (
           <BlurFade key={index}>
             <Heading
