@@ -10,7 +10,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 const WaitlistSection: React.FC = () => {
   return (
     <section 
-      className="bg-black flex justify-center items-center py-56 pr-36 pl-36 text-center min-h-[800px] max-md:px-5 max-md:py-24 relative"
+      className="bg-black flex flex-col justify-start items-center pt-20 md:pt-0 pb-56 pr-36 pl-36 text-center min-h-[800px] max-md:px-5 max-md:py-24 relative"
       style={{
         backgroundImage: "url('/ramsha-pics-v2/gf33.jpeg')",
         backgroundSize: 'cover',
@@ -21,9 +21,11 @@ const WaitlistSection: React.FC = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50" />
       
       <BlurFade className="relative z-10">
-        <div className="flex flex-col items-center self-stretch px-14 py-16 my-auto max-md:px-5">
+        <div className="flex flex-col items-center self-stretch px-14 py-16 lg:py-0 max-md:px-5">
           <Logo />
           <Heading />
+        </div>
+        <div className="flex flex-col items-center self-stretch px-14 lg:pt-40 max-md:px-5">
           <WaitlistButton />
         </div>
       </BlurFade>
