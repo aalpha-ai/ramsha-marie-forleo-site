@@ -29,8 +29,7 @@ const MarieForleoSectionWrapper: React.FC = () => {
     "Alhamdulillah, I've helped countless sisters unlock their divine feminine power and create lives of authentic abundance through faith and surrender. Now, it's your turn to rise.",
   ];
 
-  const imageSrc =
-    "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/bf41fffa6d7841f3c66665fbfc18c1ef053d51ab59031f4ee705c847a0fcff5f?apiKey=48a1608e30b648c89bd5ed134a49b3b8&";
+  const imageSrc = "/ramsha-pics-v2/gf5924.jpeg";
 
   return (
     <MarieForleoSection

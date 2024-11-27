@@ -11,12 +11,11 @@ interface ImageComponentProps {
 
 const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt }) => {
   return (
-    <Image
+    <img
+      loading="lazy"
       src={src}
       alt={alt}
-      className="object-cover object-top w-full max-h-[600px]"
-      height={600}
-      width={200}
+      className="object-contain w-full max-h-[600px]"
     />
   );
 };

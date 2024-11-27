@@ -9,7 +9,7 @@ const MainComponent: React.FC = () => {
     <main>
       <section>
         <ImageComponent
-          src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/0a4533f8972abe6fa0e554d35991312ca513c6d5edf1f3f7b6ca457681ed5ae5?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+          src="/ramsha-pics-v2/gf5831.jpeg"
           alt="Main content image"
         />
       </section>

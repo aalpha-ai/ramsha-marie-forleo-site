@@ -105,7 +105,7 @@ const HighLevelTestminonial: React.FC<HighLevelTestminonialProps> = () => {
         <div className="grid md:grid-cols-[.75fr_1fr] gap-10 max-w-5xl.5 mx-auto">
           <div className="flex items-center justify-center">
             <ImageContainer
-              src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/c77e04de91102339e35ea3c945cc61b447b2207f2ed34594fdae038be332c6c5?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+              src="/ramsha-pics-v2/gf5956.jpeg"
               alt="Dream Club visual representation"
             />
           </div>
@@ -126,7 +126,7 @@ const HighLevelTestminonial: React.FC<HighLevelTestminonialProps> = () => {
             </ul>
           </div>
           <ImageContainer
-            src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/ff6a39f700e6f03b192a9e7d862e7d27aa383890b748dc1c4704d5004ae300a2?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+            src="/ramsha-pics-v2/gfshoot5.jpeg"
             alt="Additional Dream Club visual"
           />
         </div>
