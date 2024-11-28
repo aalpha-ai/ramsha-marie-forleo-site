@@ -65,7 +65,7 @@ export const DreamClubHero: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="text-4xl font-header text-[#E5B5A7] uppercase tracking-[4px] leading-[54px] mb-8"
+          className="text-4xl font-header text-ramsha-tertiary uppercase tracking-[4px] leading-[54px] mb-8"
         >
           AND IT'S ALL INSIDE OF AWAKENED <br /> FEMININE...
         </motion.h1>
@@ -94,7 +94,7 @@ export const DreamClubHero: React.FC = () => {
           >
             <CTAButton 
               text="GET ON THE VIP WAITLIST NOW" 
-              className="w-full bg-[#E5B5A7] text-white rounded-full px-8 py-4 font-subheader tracking-wider uppercase hover:bg-white transition-all duration-300" 
+              className="w-full bg-ramsha-tertiary hover:bg-tertiary-accent/90 text-white rounded-full px-8 py-4 font-subheader tracking-wider uppercase transition-all duration-300" 
             />
           </motion.div>
         </motion.div>

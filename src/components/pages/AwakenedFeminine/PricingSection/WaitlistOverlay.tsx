@@ -7,18 +7,18 @@ const WaitlistOverlay: React.FC = () => {
   return (
     <div className="h-full absolute inset-0 z-0 py-80 w-full text-center text-orange-50 bg-neutral-900 bg-opacity-80 max-md:py-24 max-md:max-w-full">
       <div className="font-header flex flex-col justify-center items-center h-full mb-0 w-full max-md:px-5 max-md:mb-2.5 max-md:max-w-full max-w-md mx-auto">
-        <h2 className="w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full">
+        <h2 className="font-subheader w-full text-xs font-extrabold leading-5 uppercase tracking-[2.16px] max-md:px-5 max-md:max-w-full">
           Current Cohort Full, Alhamdulillah!
         </h2>
         <h3 className="mt-3 w-full text-4xl leading-[62.4px] max-md:max-w-full">
           Next Journey Begins Soon
         </h3>
-        <p className="mt-2 text-sm">
+        <p className="font-subheader mt-2 text-sm">
           Bi'ithnillah, your transformation awaits
         </p>
         <div className="flex flex-col pt-2 mt-3 w-full text-base font-subheader leading-5 text-black uppercase tracking-[2.88px] max-md:max-w-full">
           <div className="flex flex-col px-24 w-full max-md:px-5 max-md:max-w-full">
-            <button className="flex-1 shrink px-8 py-5 w-full bg-amber-300 rounded-[100px] max-md:px-5">
+            <button className="flex-1 shrink px-8 py-5 w-full bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-[100px] max-md:px-5">
               Join Sacred Waitlist
             </button>
           </div>

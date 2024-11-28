@@ -66,9 +66,9 @@ const config: Config = {
         },
         ramsha: {
           accent: "#f8e8d8",
-          primary: "#0A4049",
+          primary: "#22323B",
           secondary: "#216974",
-          tertiary: "#e09453",
+          tertiary: "#AA6347",
         },
         gray: {
           50: "hsl(var(--gray-50))",

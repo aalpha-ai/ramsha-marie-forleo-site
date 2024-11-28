@@ -159,7 +159,7 @@ const CorporateBooking = () => {
             >
               {card.icon}
               <h3 className="text-3xl font-header mb-2">{card.title}</h3>
-              <p className="text-ramsha-tertiary">{card.description}</p>
+              <p className="">{card.description}</p>
             </motion.div>
           ))}
         </div>

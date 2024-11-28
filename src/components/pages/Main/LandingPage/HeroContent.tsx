@@ -93,7 +93,7 @@ const HeroContent: React.FC = () => {
           }}
           viewport={{ once: true }}
         >
-          <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-subheader tracking-wide leading-6 text-center text-white capitalize bg-ramsha-primary rounded-3xl lg:w-[300px] max-md:px-5 hover:bg-white hover:text-ramsha-primary transition-all duration-300">
+          <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-subheader tracking-wide leading-6 text-center text-white capitalize bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-3xl lg:w-[300px] max-md:px-5 transition-all duration-300">
             <a
               href="https://www.marieforleo.com/about"
               target="_blank"

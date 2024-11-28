@@ -98,7 +98,7 @@ export const DreamClub: React.FC = () => {
             >
               <Button 
                 text="GET ON THE VIP WAITLIST NOW" 
-                className="font-subheader w-full bg-[#E5B5A7] text-white rounded-full px-8 py-4 tracking-wider hover:bg-white transition-colors duration-300" 
+                className="font-subheader w-full bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 text-white rounded-full px-8 py-4 tracking-wider transition-colors duration-300" 
               />
             </motion.div>
           </Link>

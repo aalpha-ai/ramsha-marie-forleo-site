@@ -16,7 +16,7 @@ const SubmitButton: React.FC<SubmitButtonProps> = ({ text, isSubmitting }) => {
       <motion.button
         type="submit"
         disabled={isSubmitting}
-        className="group relative flex items-center justify-center gap-3 px-8 py-6 md:py-4 bg-[#C68B5F] hover:bg-[#C68B5F]/90 rounded-full w-full md:w-auto mx-auto transition-all duration-300 ease-out overflow-hidden"
+        className="group relative flex items-center justify-center gap-3 px-8 py-6 md:py-4 bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-full w-full md:w-auto mx-auto transition-all duration-300 ease-out overflow-hidden"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >

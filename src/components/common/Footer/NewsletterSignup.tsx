@@ -46,11 +46,11 @@ const NewsletterSignup: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="text-black flex justify-center w-full leading-4 text-center tracking-[2px]">
+            <div className="text-white flex justify-center w-full leading-4 text-center tracking-[2px]">
               <div className="flex flex-1 shrink items-center py-1.5 basis-0 min-w-[240px] size-full">
                 <button
                   type="submit"
-                  className="flex font-subheader justify-center items-center whitespace-nowrap px-32 py-4 w-full bg-ramsha-accent min-h-[50px] min-w-[240px] rounded-[60px] max-md:px-5"
+                  className="flex font-subheader justify-center items-center whitespace-nowrap px-32 py-4 w-full bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 min-h-[50px] min-w-[240px] rounded-[60px] max-md:px-5"
                 >
                   BISMILLAH
                 </button>
