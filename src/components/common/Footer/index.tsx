@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 import NewsletterSignup from "./NewsletterSignup";
 import CompanyLinks from "./CompanyLinks";
 import CoursesAndBooks from "./CoursesAndBooks";
-import BottomBar from "./BottomBar";
+import BottomBar from "@/components/common/BottomBar";
 import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
     <footer className="flex flex-col items-center bg-ramsha-primary">
-      <div className="flex flex-col xl:mx-[120px] xl:px-[40px] xl:pt-[96px] xl:pb-[12px] lg:px-[54px] lg:pt-[82px] lg:pb-[40px] md:px-[40px] md:pt-[80px] md:pb-[40px] px-[21px] pt-[64px] pb-[56px] w-full">
+      <div className="flex flex-col xl:mx-[120px] xl:px-[40px] xl:pt-[96px] lg:px-[54px] lg:pt-[82px] md:px-[40px] md:pt-[80px] px-[21px] pt-[64px] w-full">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
