@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       viewport={{ once: true }}
-      className="flex justify-between items-center px-8 py-4 bg-[#0A0A0A] text-white/80 w-full text-xs"
+      className="flex flex-col md:flex-row justify-between items-center px-8 py-4 bg-[#0A0A0A] text-white/80 w-full text-xs space-y-4 md:space-y-0"
     >
       {/* Left Links */}
       <motion.nav 
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.5 }}
         viewport={{ once: true }}
-        className="absolute left-1/2 -translate-x-1/2"
+        className="text-center"
       >
         © {currentYear} GLOWING FEMME ALL RIGHTS RESERVED.
       </motion.div>
