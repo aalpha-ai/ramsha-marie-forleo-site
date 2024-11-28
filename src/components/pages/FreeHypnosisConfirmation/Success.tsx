@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSection from "../FreeHypnosisLeadMagnet/ImageSection";
+import ImageSection from "../FreeHypnosisLead/ImageSection";
 import { motion } from "framer-motion";
 import { Sparkles, Mail, Gift } from 'lucide-react';
 
@@ -36,7 +36,7 @@ const Success: React.FC = () => {
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <motion.span
+            {/* <motion.span
               className="absolute -left-8 top-1/2 -translate-y-1/2"
               animate={{ 
                 scale: [1, 1.2, 1],
@@ -49,7 +49,7 @@ const Success: React.FC = () => {
               }}
             >
               <Sparkles className="w-6 h-6 text-yellow-400" />
-            </motion.span>
+            </motion.span> */}
 
             <span className="bg-gradient-to-r from-ramsha-tertiary via-purple-600 to-ramsha-tertiary bg-clip-text text-transparent">
               Check Your Inbox
@@ -80,7 +80,7 @@ const Success: React.FC = () => {
               transition={{ duration: 0.2 }}
             >
               Free Gift
-              <motion.div
+              {/* <motion.div
                 className="absolute -top-1 -right-4"
                 animate={{ 
                   scale: [1, 1.2, 1],
@@ -93,7 +93,7 @@ const Success: React.FC = () => {
                 }}
               >
                 ✨
-              </motion.div>
+              </motion.div> */}
             </motion.span>
           </motion.h2>
 

@@ -5,10 +5,10 @@ import Details from "./Details";
 
 export default function Component() {
   return (
-    <>
+    <div className="bg-ramsha-accent">
       <Header />
       <Details />
       <Footer />
-    </>
+    </div>
   );
 }

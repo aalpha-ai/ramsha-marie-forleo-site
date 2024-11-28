@@ -188,12 +188,12 @@ const Form: React.FC = () => {
           <div className="flex items-center justify-center gap-3 relative">
             {isSubmitting ? (
               <>
-                <motion.div
+                {/* <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 >
                   <Sparkles className="w-6 h-6 md:w-5 md:h-5" />
-                </motion.div>
+                </motion.div> */}
                 <span className="text-[20px] md:text-[18px] font-bold tracking-wider">
                   Creating Magic...
                 </span>
@@ -202,14 +202,14 @@ const Form: React.FC = () => {
               <>
                 <span className="text-[20px] md:text-[18px] font-bold tracking-wider relative">
                   GET MY FREE DOWNLOAD
-                  <motion.div
+                  {/* <motion.div
                     className="absolute -top-1 -right-4 text-yellow-200"
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5 }}
                   >
                     <Sparkles className="w-4 h-4" />
-                  </motion.div>
+                  </motion.div> */}
                 </span>
                 <motion.div
                   animate={{ 

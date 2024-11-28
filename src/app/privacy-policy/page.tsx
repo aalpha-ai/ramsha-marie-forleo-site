@@ -1,10 +1,10 @@
 import React from 'react';
-import Privacy from '@/components/pages/Privacy';
+import PrivacyPolicy from '@/components/pages/PrivacyPolicy';
 
 export default function Page() {
   return (
     <>
-      <Privacy />
+      <PrivacyPolicy />
     </>
   );
 }

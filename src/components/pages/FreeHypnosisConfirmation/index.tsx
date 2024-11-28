@@ -1,6 +1,6 @@
 import React from "react";
 import Success from "./Success";
-import Footer from "../FreeHypnosisLeadMagnet/Footer";
+import BottomBar from "@/components/common/BottomBar";
 import { motion } from "framer-motion";
 import { Sparkles, Home, Stars } from 'lucide-react';
 import Link from 'next/link';
@@ -11,7 +11,7 @@ export default function Component() {
       <section className="flex flex-col items-center bg-ramsha-accent border-ramsha-accent m-4 md:m-10 border-[10px] xl:px-[10px] xl:pt-[56px] xl:pb-[54px] px-[0px] pt-[45px] pb-[55px] rounded-[30px]">
         <div className="flex flex-col items-center text-center px-8 pt-16 relative overflow-hidden">
           {/* Floating stars background effect */}
-          <motion.div 
+          {/* <motion.div 
             className="absolute inset-0 opacity-20"
             animate={{ 
               rotate: 360,
@@ -24,7 +24,7 @@ export default function Component() {
             }}
           >
             <Stars className="w-full h-full text-ramsha-tertiary" />
-          </motion.div>
+          </motion.div> */}
 
           {/* Amazing Choice text with sparkle effect */}
           <motion.p 
@@ -33,7 +33,7 @@ export default function Component() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <motion.span
+            {/* <motion.span
               className="absolute -left-6 top-1/2 -translate-y-1/2"
               animate={{ 
                 scale: [1, 1.2, 1],
@@ -46,9 +46,9 @@ export default function Component() {
               }}
             >
               <Sparkles className="w-4 h-4" />
-            </motion.span>
+            </motion.span> */}
             AMAZING CHOICE!
-            <motion.span
+            {/* <motion.span
               className="absolute -right-6 top-1/2 -translate-y-1/2"
               animate={{ 
                 scale: [1, 1.2, 1],
@@ -61,7 +61,7 @@ export default function Component() {
               }}
             >
               <Sparkles className="w-4 h-4" />
-            </motion.span>
+            </motion.span> */}
           </motion.p>
 
           {/* Main heading with stagger effect */}
@@ -140,14 +140,14 @@ export default function Component() {
               whileTap={{ scale: 0.95 }}
             >
               {/* Sparkle effects */}
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100"
                 initial={{ scale: 0 }}
                 whileHover={{ scale: 1.5 }}
                 transition={{ duration: 0.6 }}
               >
                 <Sparkles className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 opacity-50" />
-              </motion.div>
+              </motion.div> */}
 
               {/* Button content */}
               <Home className="w-5 h-5" />
@@ -167,7 +167,7 @@ export default function Component() {
           </Link>
         </motion.div>
       </section>
-      <Footer />
+      <BottomBar />
     </section>
   );
 }

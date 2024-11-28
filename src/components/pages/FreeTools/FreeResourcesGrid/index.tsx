@@ -88,7 +88,7 @@ const resources: Resource[] = [
 
 const FreeResourcesGrid: React.FC = () => {
   return (
-    <section className="pt-[64px] md:pt-[80px] xl:pt-[95px] xl:px-[40px] xl:mx-[120px] lg:px-[54px] md:px-[54px] px-[20px]">
+    <section className="bg-white pt-[64px] md:pt-[80px] xl:pt-[95px] xl:px-[40px] xl:mx-[120px] lg:px-[54px] md:px-[54px] px-[20px]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
         {resources.map((resource, index) => (
           <ResourceCard key={index} {...resource} />

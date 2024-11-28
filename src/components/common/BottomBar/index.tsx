@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from 'next/link';
 
-const Footer: React.FC = () => {
+const BottomBar: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
           href="https://aalpha.ai" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="hover:text-gray-800 transition-colors"
+          className="hover:text-gray-800 transition-colors font-extrabold text-ramsha-tertiary"
         >
           AALPHA.AI
         </Link>
@@ -81,4 +81,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer; 
+export default BottomBar; 

@@ -10,7 +10,7 @@ const ImageSection: React.FC = () => {
       <div className="flex flex-col w-full max-md:max-w-full">
         <div className="flex flex-col justify-center items-center w-full max-md:max-w-full">
           <Image
-            src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/b5545ceb3d9f83a4ef51ee112bc2a2bc991ec217627f181328bc6f360cdebf09?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"
+            src="/ramsha-pics-v2/gf5925.jpeg"
             alt="Yearly Goals Map preview"
             className="object-contain w-full aspect-[0.77] max-w-[422px] max-md:max-w-full"
             width={422}

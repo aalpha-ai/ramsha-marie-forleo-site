@@ -1,10 +1,10 @@
 import React from 'react';
-import Terms from '@/components/pages/Terms';
+import TermsOfUse from '@/components/pages/TermsOfUse';
 
 export default function Page() {
   return (
     <>
-      <Terms />
+      <TermsOfUse />
     </>
   );
 }
