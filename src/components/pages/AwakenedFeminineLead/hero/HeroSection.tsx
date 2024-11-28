@@ -26,7 +26,7 @@ const HeroText: React.FC<HeroTextProps> = ({ text, isHighlighted, delay = 0 }) =
       ease: [0.22, 1, 0.36, 1]
     }}
     viewport={{ once: true }}
-    className={`${isHighlighted ? "italic" : ""} text-white font-serif inline-block`}
+    className={`${isHighlighted ? "italic" : ""} text-white font-header inline-block`}
   >
     {text}
   </motion.span>
@@ -43,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ texts }) => {
         <section className="container flex flex-col mx-auto px-4">
           {/* White divider line */}
           
-          <h1 className="text-5xl leading-tight max-w-xl font-serif relative">
+          <h1 className="text-5xl leading-tight max-w-xl font-header relative">
             {texts.map((item, index) => (
               <React.Fragment key={index}>
                 <HeroText

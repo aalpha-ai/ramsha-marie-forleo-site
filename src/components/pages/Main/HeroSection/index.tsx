@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
 
       <div className="absolute basis-full inset-0 z-20 flex flex-col h-full items-center w-full">
         <BlurFade className="h-full">
-          <div className="h-full flex flex-col items-center pt-10 xl:pt-14 w-full max-md:px-5 font-subheader">
+          <div className="h-full flex flex-col items-center pt-10 xl:pt-14 w-full max-md:px-5 font-header">
             <h1 className="uppercase text-white text-center tracking-normal sm:tracking-wider w-full max-md:px-0 max-md:max-w-full text-3xl sm:text-3xl 2xl:text-9xl xl:text-7xl lg:text-7xl md:text-5xl 2xl:leading-[160px] xl:leading-[80px] lg:leading-[60px] md:leading-[50px] leading-[35px]">
               Let Go Let God
             </h1>

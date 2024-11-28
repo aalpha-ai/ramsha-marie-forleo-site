@@ -164,7 +164,7 @@ const Form: React.FC = () => {
           className="rounded-lg flex overflow-hidden justify-center items-start px-5 pt-3.5 pb-4 bg-white outline-none max-md:max-w-full"
         />
       </div>
-      <div className="flex flex-col pt-1.5 mt-1.5 w-full text-center text-white max-md:max-w-full">
+      <div className="font-subheader flex flex-col pt-1.5 mt-1.5 w-full text-center text-white max-md:max-w-full">
         <motion.button
           type="submit"
           disabled={isSubmitting}

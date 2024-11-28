@@ -33,7 +33,7 @@ export const DreamClub: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="font-serif text-4xl md:text-7xl leading-tight md:leading-[100px] mb-8"
+          className="font-header text-4xl md:text-7xl leading-tight md:leading-[100px] mb-8"
         >
           Join the VIP Waitlist <br /> for Awakened Feminine!
         </motion.h1>
@@ -98,7 +98,7 @@ export const DreamClub: React.FC = () => {
             >
               <Button 
                 text="GET ON THE VIP WAITLIST NOW" 
-                className="w-full bg-[#E5B5A7] text-black rounded-full px-8 py-4 font-medium tracking-wider hover:bg-white transition-colors duration-300" 
+                className="font-subheader w-full bg-[#E5B5A7] text-white rounded-full px-8 py-4 tracking-wider hover:bg-white transition-colors duration-300" 
               />
             </motion.div>
           </Link>

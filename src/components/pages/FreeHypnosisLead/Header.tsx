@@ -39,7 +39,7 @@ const Header: React.FC = () => {
     >
       <motion.h1 
         variants={itemVariants}
-        className="flex flex-col mx-auto items-center py-1.5 w-full md:text-[50px] text-[32px] font-bold text-center md:leading-[65px] leading-[40px] lg:w-[420px]"
+        className="flex flex-col font-header mx-auto items-center py-1.5 w-full md:text-[50px] text-[32px] font-bold text-center md:leading-[65px] leading-[40px] lg:w-[420px]"
       >
         Learn How to Get Your Prayers Answered <i>Instantly</i>
       </motion.h1>
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
 
       <motion.p 
         variants={itemVariants}
-        className="flex flex-col items-center px-1 pt-1.5 mt-1.5 w-full md:text-[20px] text-[18px] font-bold leading-7 text-center max-md:max-w-full"
+        className="flex font-header flex-col items-center px-1 pt-1.5 mt-1.5 w-full md:text-[20px] text-[18px] font-bold leading-7 text-center max-md:max-w-full"
       >
         Enter your name and email below...
       </motion.p>

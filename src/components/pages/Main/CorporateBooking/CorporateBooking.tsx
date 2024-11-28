@@ -158,7 +158,7 @@ const CorporateBooking = () => {
               custom={index}
             >
               {card.icon}
-              <h3 className="text-xl font-header mb-2">{card.title}</h3>
+              <h3 className="text-3xl font-header mb-2">{card.title}</h3>
               <p className="text-ramsha-tertiary">{card.description}</p>
             </motion.div>
           ))}

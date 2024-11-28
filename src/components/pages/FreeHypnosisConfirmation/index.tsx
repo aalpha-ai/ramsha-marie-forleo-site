@@ -66,14 +66,14 @@ export default function Component() {
 
           {/* Main heading with stagger effect */}
           <motion.h1 
-            className="text-5xl pb-12 max-w-4xl"
+            className="text-5xl pb-12 max-w-4xl font-header"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             You've discovered the proven path to{' '}
             <motion.span 
-              className="font-subheader inline-block"
+              className="font-header inline-block"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}

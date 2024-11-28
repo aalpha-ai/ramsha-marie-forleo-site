@@ -51,12 +51,12 @@ const Success: React.FC = () => {
               <Sparkles className="w-6 h-6 text-yellow-400" />
             </motion.span> */}
 
-            <span className="bg-gradient-to-r from-ramsha-tertiary via-purple-600 to-ramsha-tertiary bg-clip-text text-transparent">
+            <span className="font-header bg-gradient-to-r from-ramsha-tertiary via-purple-600 to-ramsha-tertiary bg-clip-text text-transparent">
               Check Your Inbox
             </span>
             <br/>
-            <span className="relative">
-              for Your
+            <span className="relative font-header">
+              For Your
               <motion.span
                 className="inline-block ml-2"
                 animate={{ 
@@ -75,7 +75,7 @@ const Success: React.FC = () => {
             </span>
             <br className="md:hidden" />
             <motion.span
-              className="relative inline-block"
+              className="relative inline-block font-header"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
@@ -129,14 +129,14 @@ const Success: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
             >
               <motion.p 
-                className="text-2xl font-subheader"
+                className="text-2xl font-header"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                Open your welcome email <span className="font-body">from me</span>
+                Open your welcome email <span className="">from me</span>
               </motion.p>
               <motion.p 
-                className="text-2xl"
+                className="text-2xl font-header"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 1 }}
@@ -155,7 +155,7 @@ const Success: React.FC = () => {
             </motion.p>
 
             <motion.p 
-              className="text-2xl italic font-bold"
+              className="text-2xl italic font-bold font-header"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1.4 }}
