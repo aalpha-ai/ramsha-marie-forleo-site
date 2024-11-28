@@ -26,7 +26,7 @@ import MediaLogos from "../Main/MediaLogos";
 
 export default function Component() {
   return (
-    <div className="font-montserrat bg-gray-50">
+    <div className="font-body bg-gray-50">
       <Header />
       <WaitlistSection />
       <FamiliarSoundSection />

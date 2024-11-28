@@ -78,7 +78,7 @@ const CorporateBooking = () => {
               ease: [0.22, 1, 0.36, 1]
             }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-caslon mb-6 leading-tight"
+            className="text-4xl md:text-5xl font-header mb-6 leading-tight"
           >
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -158,7 +158,7 @@ const CorporateBooking = () => {
               custom={index}
             >
               {card.icon}
-              <h3 className="text-xl font-caslon mb-2">{card.title}</h3>
+              <h3 className="text-xl font-header mb-2">{card.title}</h3>
               <p className="text-ramsha-tertiary">{card.description}</p>
             </motion.div>
           ))}
@@ -169,7 +169,7 @@ const CorporateBooking = () => {
             href="https://forms.gle/KV7NUaHJiVbQ3Js67"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 text-lg font-montserrat-bold text-white bg-ramsha-tertiary to-blue-500 rounded-full hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+            className="inline-flex items-center px-8 py-4 text-lg font-subheader text-white bg-ramsha-tertiary to-blue-500 rounded-full hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
             variants={buttonVariants}
             initial="hidden"
             whileInView="visible"

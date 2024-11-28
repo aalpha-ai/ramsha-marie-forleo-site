@@ -54,7 +54,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
           delay: 0.3
         }}
         viewport={{ once: true }}
-        className="mt-4 text-xs font-montserrat-bold tracking-widest uppercase text-neutral-500"
+        className="mt-4 text-xs font-subheader tracking-widest uppercase text-neutral-500"
       >
         {author}
       </motion.span>
@@ -72,7 +72,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
         href="https://www.marieforleo.com/success-stories"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 px-8 py-4 text-base font-montserrat-bold tracking-wide text-center text-white bg-ramsha-tertiary rounded-full hover:bg-black/90 w-full md:w-[200px] lg:w-[300px]"
+        className="mt-6 px-8 py-4 text-base font-subheader tracking-wide text-center text-white bg-ramsha-tertiary rounded-full hover:bg-black/90 w-full md:w-[200px] lg:w-[300px]"
       >
         Get Inspired
       </motion.a>

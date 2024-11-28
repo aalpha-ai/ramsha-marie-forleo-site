@@ -7,7 +7,7 @@ const BottomBar: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="font-montserrat-bold tracking-widest uppercase flex flex-col md:flex-row md:justify-between items-center px-10 py-8 md:py-4 text-white text-[12px] md:text-[9px] lg:text-[10px] xl:text-[12px] w-full space-y-6 md:space-y-0 border-t border-t-stone-300 xl:pb-[12px] lg:pb-[40px] md:pb-[40px] pb-[56px] pt-4 mt-10 px-[21px] md:px-[40px] lg:px-[54px] xl:px-[40px]">
+    <footer className="font-subheader tracking-widest uppercase flex flex-col md:flex-row md:justify-between items-center px-10 py-8 md:py-4 text-white text-[12px] md:text-[9px] lg:text-[10px] xl:text-[12px] w-full space-y-6 md:space-y-0 border-t border-t-stone-300 xl:pb-[12px] lg:pb-[40px] md:pb-[40px] pb-[56px] pt-4 mt-10 px-[21px] md:px-[40px] lg:px-[54px] xl:px-[40px]">
       {/* Links - Top on mobile, Left on desktop */}
       <div className="flex items-center gap-6">
         <motion.a 

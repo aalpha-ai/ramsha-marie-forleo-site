@@ -19,7 +19,7 @@ const DreamClubPitch: React.FC<DreamClubPitchProps> = ({
     <section className="flex flex-col items-center bg-landing-stone-pattern">
       <div className="flex flex-col px-14 py-20 w-full max-md:px-5 max-md:max-w-full">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-caslon w-full text-5xl leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full">
+          <h2 className="font-header w-full text-5xl leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full">
             Is Somatic Healing Right for Your Journey?
           </h2>
           <div className="flex flex-col mt-6 w-full text-base tracking-normal text-black max-md:max-w-full">
@@ -49,7 +49,7 @@ const DreamClubPitch: React.FC<DreamClubPitchProps> = ({
                 ))}
               </div>
               <h4 className="flex flex-col pb-2 w-full text-2xl font-bold tracking-wide leading-8 text-center text-neutral-800 max-md:max-w-full">
-                <div className="font-montserrat-bold px-9 max-md:px-5 max-md:max-w-full">
+                <div className="font-header px-9 max-md:px-5 max-md:max-w-full">
                   If you answered yes to 3 or more, Allah has guided you to this transformation.
                 </div>
               </h4>
@@ -71,7 +71,7 @@ const DreamClubPitch: React.FC<DreamClubPitchProps> = ({
                 <NotForYouItem key={index} {...item} />
               ))}
             </div>
-            <h4 className="px-4 mt-6 w-full text-2xl font-bold tracking-wide leading-8 text-center text-neutral-800 max-md:max-w-full">
+            <h4 className="px-4 mt-6 w-full text-2xl font-header tracking-wide leading-8 text-center text-neutral-800 max-md:max-w-full">
               <span className="text-neutral-800">The Divine Truth?</span>
               <span className="font-light text-neutral-800">
                 {" "}

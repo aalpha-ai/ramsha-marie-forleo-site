@@ -21,13 +21,6 @@ const montserratBold = Montserrat({
   variable: "--font-montserrat-bold",
 });
 
-const ivyPresto = localFont({
-  src: "../fonts/Ivy-Presto-Headline-Light.otf",
-  variable: "--font-ivy-presto",
-  display: 'swap',
-  preload: true,
-});
-
 const caslon = localFont({
   src: "../fonts/Caslon/F37Caslon-ExtraBoldDisplay.otf",
   variable: "--font-caslon",
@@ -64,7 +57,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${montserratBold.variable} ${inter.variable} ${montserrat.variable} ${ivyPresto.variable} ${seasons.variable} ${caslon.variable} ${inter.className} antialiased custom`}
+        className={`${inter.variable} ${montserrat.variable} ${montserratBold.variable} ${caslon.variable} ${seasons.variable} antialiased custom`}
       >
         <main>{children}</main>
       </body>

@@ -59,7 +59,7 @@ const FamiliarSoundSection: React.FC = () => {
       <BlurFade>
         <section className="flex flex-col max-w-6xl mx-auto lg:px-14 md:px-11 py-24 px-5">
           <h2 className="flex flex-col pt-2.5 pb-7 text-4xl text-center leading-[62.4px] text-neutral-800 max-md:max-w-full">
-            <span className="pr-52 pl-52 w-full max-md:px-5 max-md:max-w-full font-caslon">
+            <span className="pr-52 pl-52 w-full max-md:px-5 max-md:max-w-full font-header">
               Do You Feel This Divine Calling?
             </span>
           </h2>
@@ -68,7 +68,7 @@ const FamiliarSoundSection: React.FC = () => {
               <ImageGroup key={index} idx={index} images={group} />
             ))}
           </div>
-          <h4 className="px-64 mt-7 w-full text-2xl font-light tracking-wide leading-8 text-center text-neutral-800 max-md:px-5 max-md:max-w-full">
+          <h4 className="font-header px-64 mt-7 w-full text-2xl font-light tracking-wide leading-8 text-center text-neutral-800 max-md:px-5 max-md:max-w-full">
             <span className="text-neutral-800">Your soul is awakening, and </span>
             <strong className="font-bold text-neutral-800">
               you're part of a sacred sisterhood

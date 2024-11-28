@@ -27,8 +27,8 @@ export const SectionContent: React.FC<SectionContentProps> = ({
     <div className="grid md:grid-cols-2 items-center p-4 md:p-10 gap-10">
       <div className="max-md:px-3">
         <div className="flex flex-col max-w-full text-xl font-light tracking-wide leading-8 text-neutral-800 ">
-          <div className="flex flex-col items-center ">
-            <h3 className="text-2xl font-bold font-montserrat-bold">{title}</h3>
+          <div className="flex flex-col items-center font-header mb-10">
+            <h3 className="text-2xl font-bold font-header">{title}</h3>
             {subtitle && <p>{subtitle}</p>}
           </div>
         </div>

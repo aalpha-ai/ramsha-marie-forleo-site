@@ -8,7 +8,7 @@ const WaitlistButton: React.FC = () => {
     <div className="flex flex-col pt-5 mt-4 max-w-full text-base font-bold leading-5 uppercase tracking-[2.88px] w-[262px]">
       <div className="flex flex-col w-full">
         <div className="flex flex-col items-center w-full">
-          <button className="px-8 py-5 bg-ramsha-tertiary rounded-[100px] max-md:px-5 font-montserrat-bold text-white">
+          <button className="px-8 py-5 bg-ramsha-tertiary rounded-[100px] max-md:px-5 font-subheader text-white">
             Join Sacred Waitlist
           </button>
         </div>

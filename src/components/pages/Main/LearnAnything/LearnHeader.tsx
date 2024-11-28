@@ -39,7 +39,7 @@ export const LearnHeader: React.FC = () => {
     >
       <motion.h1 
         variants={itemVariants}
-        className="text-xl lg:text-[32px] font-caslon tracking-wider md:leading-[24px] lg:leading-[48.6px] text-neutral-800 max-md:px-5 mx-auto"
+        className="text-xl lg:text-[32px] font-header tracking-wider md:leading-[24px] lg:leading-[48.6px] text-neutral-800 max-md:px-5 mx-auto"
       >
         <motion.span 
           variants={itemVariants}

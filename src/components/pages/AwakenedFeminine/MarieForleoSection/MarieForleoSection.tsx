@@ -29,7 +29,7 @@ export const MarieForleoSection: React.FC<MarieForleoSectionProps> = ({
       <div className="flex-1 flex flex-col items-center bg-stone-50 max-md:max-w-full">
         <BlurFade>
           <div className="flex flex-col px-12 py-24 max-w-full  max-md:px-5">
-            <h3 className="font-caslon flex flex-col pt-2.5 pb-3.5 text-4xl leading-[58px] text-neutral-800 max-md:max-w-full">
+            <h3 className="font-header flex flex-col pt-2.5 pb-3.5 text-4xl leading-[58px] text-neutral-800 max-md:max-w-full">
               {headingText.map((line, index) => (
                 <React.Fragment key={index}>{line} </React.Fragment>
               ))}

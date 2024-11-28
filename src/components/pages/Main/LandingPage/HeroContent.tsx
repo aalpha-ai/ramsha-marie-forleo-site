@@ -27,7 +27,7 @@ const HeroContent: React.FC = () => {
             ease: [0.22, 1, 0.36, 1]
           }}
           viewport={{ once: true }}
-          className="md:w-[180px] mt-4 text-[80px] md:text-[86px] lg:text-9xl font-caslon uppercase lg:tracking-wider lg:leading-[129.2px] lg:leading-14"
+          className="md:w-[180px] mt-4 text-[80px] md:text-[86px] lg:text-9xl font-header uppercase lg:tracking-wider lg:leading-[129.2px] lg:leading-14"
         >
           MEET RAMSHA
         </motion.h2>
@@ -93,7 +93,7 @@ const HeroContent: React.FC = () => {
           }}
           viewport={{ once: true }}
         >
-          <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-montserrat-bold tracking-wide leading-6 text-center text-white capitalize bg-ramsha-primary rounded-3xl lg:w-[300px] max-md:px-5 hover:bg-white hover:text-ramsha-primary transition-all duration-300">
+          <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-subheader tracking-wide leading-6 text-center text-white capitalize bg-ramsha-primary rounded-3xl lg:w-[300px] max-md:px-5 hover:bg-white hover:text-ramsha-primary transition-all duration-300">
             <a
               href="https://www.marieforleo.com/about"
               target="_blank"

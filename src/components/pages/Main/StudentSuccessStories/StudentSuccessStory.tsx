@@ -60,7 +60,7 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
             ease: [0.22, 1, 0.36, 1]
           }}
           viewport={{ once: true }}
-          className="mt-3 w-[358px] md:w-full text-4xl lg:text-5xl md:tracking-wider md:leading-[62.4px] max-md:max-w-full font-caslon"
+          className="mt-3 w-[358px] md:w-full text-4xl lg:text-5xl md:tracking-wider md:leading-[62.4px] max-md:max-w-full font-header"
         >
           Will You Be The Next Success Story?
         </motion.h3>

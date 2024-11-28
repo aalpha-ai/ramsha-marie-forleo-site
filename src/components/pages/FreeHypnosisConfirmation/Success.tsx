@@ -31,7 +31,7 @@ const Success: React.FC = () => {
 
           {/* Main heading with gradient and animations */}
           <motion.h2 
-            className="text-4xl md:text-5xl font-montserrat-bold text-center relative"
+            className="text-4xl md:text-5xl font-subheader text-center relative"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -129,11 +129,11 @@ const Success: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
             >
               <motion.p 
-                className="text-2xl font-montserrat-bold"
+                className="text-2xl font-subheader"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                Open your welcome email <span className="font-montserrat">from me</span>
+                Open your welcome email <span className="font-body">from me</span>
               </motion.p>
               <motion.p 
                 className="text-2xl"

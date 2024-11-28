@@ -28,7 +28,7 @@ const SuccessMessage = () => {
 
       {/* Well done! heading */}
       <motion.h1 
-        className="text-4xl md:text-6xl font-caslon mb-8 relative"
+        className="text-4xl md:text-6xl font-header mb-8 relative"
         initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}

@@ -31,7 +31,7 @@ export const DreamsWorthSection: React.FC<DreamsWorthSectionProps> = ({
       <div className="max-md:max-w-full">
         <div className="h-full px-12 py-20 max-w-full max-md:px-5">
           <header className="flex flex-col pt-2.5 pb-4 max-md:max-w-full">
-            <h2 className="font-caslon w-full text-4xl text-orange-50 leading-[54px] max-md:max-w-full">
+            <h2 className="font-header w-full text-4xl text-orange-50 leading-[54px] max-md:max-w-full">
               {title}
             </h2>
             <p className="mt-3.5 w-full text-base font-bold tracking-normal leading-7 text-orange-100 max-md:max-w-full">

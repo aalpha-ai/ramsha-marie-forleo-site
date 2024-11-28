@@ -43,8 +43,8 @@ const ContinuousEvolution: React.FC = () => {
         <BlurFade>
           <div className="flex flex-wrap gap-5 justify-center mt-32 max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-col grow shrink pt-3 pb-4 text-2xl font-light tracking-wide leading-8 text-orange-50 min-w-[240px] w-[246px]">
-              <h4 className="pr-1 w-full">
-                <span className="text-orange-50">
+              <h4 className="pr-1 w-full font-header">
+                <span className="">
                   Guiding you to embrace your
                 </span>
                 <br />

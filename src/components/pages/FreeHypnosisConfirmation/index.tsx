@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Component() {
   return (
-    <section className="font-montserrat">
+    <section className="font-body">
       <section className="flex flex-col items-center bg-ramsha-accent border-ramsha-accent m-4 md:m-10 border-[10px] xl:px-[10px] xl:pt-[56px] xl:pb-[54px] px-[0px] pt-[45px] pb-[55px] rounded-[30px]">
         <div className="flex flex-col items-center text-center px-8 pt-16 relative overflow-hidden">
           {/* Floating stars background effect */}
@@ -28,7 +28,7 @@ export default function Component() {
 
           {/* Amazing Choice text with sparkle effect */}
           <motion.p 
-            className="font-montserrat-bold text-ramsha-tertiary tracking-wider pb-8 text-2xl relative"
+            className="font-subheader text-ramsha-tertiary tracking-wider pb-8 text-2xl relative"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -73,7 +73,7 @@ export default function Component() {
           >
             You've discovered the proven path to{' '}
             <motion.span 
-              className="font-montserrat-bold inline-block"
+              className="font-subheader inline-block"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
@@ -151,7 +151,7 @@ export default function Component() {
 
               {/* Button content */}
               <Home className="w-5 h-5" />
-              <span className="font-montserrat-bold tracking-wider">
+              <span className="font-subheader tracking-wider">
                 Continue Your Journey
               </span>
 

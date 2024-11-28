@@ -70,7 +70,7 @@ const MediaLogos: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="pb-px w-full text-[14px] font-montserrat-bold leading-5 text-center text-white uppercase tracking-[2.16px] max-md:max-w-full"
+        className="pb-px w-full text-[14px] font-subheader leading-5 text-center text-white uppercase tracking-[2.16px] max-md:max-w-full"
       >
         You Might Have Seen Me On
       </motion.h2>

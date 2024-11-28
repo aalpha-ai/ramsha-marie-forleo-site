@@ -28,7 +28,7 @@ const SomaticHealingSection: React.FC = () => {
       imageAlt: "Embodied leadership illustration",
     },
     {
-      title: "Sacred Nervous System Reset: Healing Generational Patterns Through Somatic Work",
+      title: "Sacred Nervous System Reset: Healing Generational Patterns Using Somatic Work",
       subtitle: "(Embracing Your Divine Design)",
       content: "Your nervous system carries both the wisdom and wounds of generations. Through gentle somatic practices and Islamic principles, we'll help you release inherited patterns that no longer serve you. Learn to regulate your nervous system while deepening your spiritual connection, creating space for new patterns aligned with your highest purpose.",
       additionalInfo: "Bismillah, we begin with intention 💝",

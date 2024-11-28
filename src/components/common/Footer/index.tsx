@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           className="flex items-center self-start"
         >
           <Link href="/">
-            <h1 className="uppercase text-4xl font-seasons text-ramsha-tertiary hover:opacity-80 transition-opacity cursor-pointer">
+            <h1 className="uppercase text-4xl font-logo text-ramsha-tertiary hover:opacity-80 transition-opacity cursor-pointer">
               Glowing Femme
             </h1>
           </Link>

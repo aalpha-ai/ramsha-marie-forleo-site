@@ -26,7 +26,7 @@ const Header: React.FC = () => {
               <span className="text-xs uppercase tracking-[2px] text-ramsha-tertiary mb-4">
                 Awakened Feminine Mastermind
               </span>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-caslon leading-tight mb-6 text-ramsha-primary">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-header leading-tight mb-6 text-ramsha-primary">
                 Somatic Healing & <span className="italic">Nervous System</span> Expansion
               </h1>
               <p className="text-lg md:text-xl text-ramsha-primary/80 max-w-xl mb-8">
@@ -83,7 +83,7 @@ const Header: React.FC = () => {
               viewport={{ once: true }}
               className="absolute inset-0 flex items-center justify-start p-8 md:p-16"
             >
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-caslon text-white max-w-2xl leading-tight">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-header text-white max-w-2xl leading-tight">
                 You Do Not Have To
                 <br />
                 Settle for the{" "}

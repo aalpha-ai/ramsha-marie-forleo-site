@@ -25,7 +25,7 @@ const EpisodeItem: React.FC<EpisodeItemProps> = ({
         </div>
 
         <div className="col-span-full sm:col-span-10">
-          <h3 className="flex flex-col grow shrink text-3xl tracking-wider leading-10  text-neutral-800 max-sm:text-xl max-md:max-w-full font-caslon">
+          <h3 className="flex flex-col grow shrink text-3xl tracking-wider leading-10  text-neutral-800 max-sm:text-xl max-md:max-w-full font-header">
             {title}
           </h3>
         </div>

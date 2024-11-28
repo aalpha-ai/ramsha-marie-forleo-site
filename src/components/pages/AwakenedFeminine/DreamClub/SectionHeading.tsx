@@ -6,7 +6,7 @@ import React from "react";
 export const SectionHeading: React.FC = () => {
   return (
     <div className="flex flex-col self-center pt-4 w-full text-center max-w-[775px]">
-      <h2 className="font-caslon pr-10 pl-10 w-full text-4xl leading-[54px] max-md:px-5 max-md:max-w-full">
+      <h2 className="font-header pr-10 pl-10 w-full text-4xl leading-[54px] max-md:px-5 max-md:max-w-full">
         Awakened Sisters Experience Deep Spiritual Growth, Divine Abundance, and True Freedom.{" "}
         <span className="italic">
           Alhamdulillah, This is Just the Beginning of Your Journey...{" "}

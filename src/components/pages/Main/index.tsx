@@ -16,7 +16,7 @@ import RichReciever from "./RichReceiver";
 
 export default function Component() {
   return (
-    <div className="font-montserrat">
+    <div className="font-body">
       <Header />
       <HeroSection />
       <LearnAnything />

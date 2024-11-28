@@ -23,7 +23,7 @@ const Heading: React.FC<HeadingProps> = ({
 
   return (
     <h2
-      className={`text-6xl font-bold text-orange-50 uppercase whitespace-nowrap leading-[72.8px] tracking-[4.48px] max-md:max-w-full max-md:text-4xl max-md:leading-[58px] ${alignmentClass} ${className}`}
+      className={`font-header text-6xl font-bold text-orange-50 uppercase whitespace-nowrap leading-[72.8px] tracking-[4.48px] max-md:max-w-full max-md:text-4xl max-md:leading-[58px] ${alignmentClass} ${className}`}
     >
       {text.split("\n").map((line, index) => (
         <React.Fragment key={index}>

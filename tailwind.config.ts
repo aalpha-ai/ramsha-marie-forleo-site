@@ -10,12 +10,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["var(--font-inter)"],
-        "montserrat-bold": ["var(--font-montserrat-bold)"],
-        "montserrat": ["var(--font-montserrat)"],
-        "caslon": ["var(--font-caslon)"],
-        "seasons": ["var(--font-seasons)", "serif"],
-        "ivy-presto": ["var(--font-ivy-presto)"],
+        "inter": ["var(--font-inter)"],
+        "subheader": ["var(--font-montserrat-bold)"],
+        "body": ["var(--font-montserrat)"],
+        "header": ["var(--font-caslon)", "serif"],
+        "logo": ["var(--font-seasons)", "serif"],
       },
       colors: {
         background: "hsl(var(--background))",

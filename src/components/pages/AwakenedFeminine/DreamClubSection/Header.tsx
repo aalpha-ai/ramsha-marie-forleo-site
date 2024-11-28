@@ -4,10 +4,10 @@ const Header: React.FC = () => {
   return (
     <header className="flex flex-col items-center px-16 text-base tracking-normal leading-7 max-md:px-5 max-md:max-w-full">
       <div className="flex flex-col pt-8 pb-4 w-full mx-auto">
-        <h1 className="text-4xl xs:text-5xl md:text-7xl font-montserrat-bold tracking-widest">
+        <h1 className="text-4xl xs:text-5xl md:text-7xl font-header tracking-widest">
           AWAKENED FEMININE
         </h1>
-        <h1 className="mt-11 text-2xl font-bold tracking-wide leading-8">
+        <h1 className="mt-11 text-2xl font-header tracking-wide leading-8">
           <span className="">Somatic Healing</span>
           <span className="font-light"> & </span>
           <span className="">Sacred Sisterhood</span>

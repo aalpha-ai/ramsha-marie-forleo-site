@@ -6,7 +6,7 @@ import React from "react";
 const Logo: React.FC = () => {
   return (
     <div className="flex justify-center items-center self-stretch w-full py-6 max-md:max-w-full">
-      <h1 className="text-4xl xs:text-5xl md:text-7xl font-montserrat-bold tracking-widest text-white">
+      <h1 className="text-4xl xs:text-5xl md:text-7xl font-header tracking-widest text-white">
         AWAKENED FEMININE
       </h1>
     </div>

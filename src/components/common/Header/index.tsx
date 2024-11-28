@@ -32,7 +32,7 @@ const Header: React.FC = () => {
   }, [pathname]);
 
   return (
-    <header className="font-montserrat-bold bg-ramsha-primary sticky top-0 z-50 flex flex-col border-b border-zinc-400 w-full max-lg:py-5">
+    <header className="font-subheader bg-ramsha-primary sticky top-0 z-50 flex flex-col border-b border-zinc-400 w-full max-lg:py-5">
       <div className="grid grid-cols-12 items-center px-7 w-full max-md:px-5 max-md:max-w-full">
         <Link href="/" className="col-span-3">
           <motion.h1 
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
               opacity: { duration: 0.6 },
               x: { duration: 0.6 }
             }}
-            className="uppercase text-3xl lg:text-2xl xl:text-3xl font-seasons text-ramsha-tertiary whitespace-nowrap font-display opacity-0"
+            className="uppercase text-3xl lg:text-2xl xl:text-3xl font-logo text-ramsha-tertiary whitespace-nowrap font-display opacity-0"
           >
             Glowing Femme
           </motion.h1>
@@ -106,7 +106,7 @@ const Header: React.FC = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.3, delay: 0.1 }}
                 >
-                  <div className="flex items-center gap-1 hidden md:flex font-montserrat-bold">
+                  <div className="flex items-center gap-1 hidden md:flex font-subheader">
                     <span className="text-base">How to Get Your Prayers Answered Instantly</span>
                     <motion.span 
                       className="px-2"
@@ -125,7 +125,7 @@ const Header: React.FC = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.2, delay: 0.2 }}
                 >
-                  <nav className="flex flex-col font-montserrat-bold">
+                  <nav className="flex flex-col font-subheader">
                     {navItems.map((item, index) => (
                       <motion.a
                         key={item.label}

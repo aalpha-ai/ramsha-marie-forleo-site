@@ -31,11 +31,11 @@ const featureCardsData: FeatureCardProps[] = [
 
 const DreamClubComponent: React.FC = () => {
   return (
-    <div className="bg-ramsha-primary text-white">
+    <div className="bg-ramsha-primary text-white py-10">
       <main className="flex flex-col text-center max-w-5xl.5 mx-auto md:px-10 px-5 ">
         <Header />
         <BlurFade>
-          <section className="flex max-md:flex-col gap-5 p-5">
+          <section className="flex max-lg:flex-col gap-5 p-5">
             {featureCardsData.map((card, index) => (
               <FeatureCard
                 key={index}

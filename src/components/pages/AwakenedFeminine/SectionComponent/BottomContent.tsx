@@ -65,7 +65,7 @@ const BottomContent: React.FC = () => {
 
       <div className="flex flex-col items-center max-w-full font-light text-center max-md:px-5">
         <div className="flex flex-col pt-6 pb-4 w-full">
-          <p className="font-caslon text-2xl tracking-wide leading-8 text-neutral-800 max-md:px-5 max-md:max-w-full max-w-[707px] mx-auto">
+          <p className="font-header text-2xl tracking-wide leading-8 text-neutral-800 max-md:px-5 max-md:max-w-full max-w-[707px] mx-auto">
             We are divinely guided sisters who
             <span className="italic"> embrace </span>
             our feminine power while honoring our deen.

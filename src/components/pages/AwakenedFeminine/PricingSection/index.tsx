@@ -37,10 +37,10 @@ const PricingSection: React.FC = () => {
   return (
     <section className="flex relative flex-col items-center bg-stone-50">
       <div className="flex z-0 flex-col self-center px-14 pt-24 pb-20 w-full max-md:px-5 max-md:max-w-full">
-        <h2 className="font-montserrat-bold w-full text-sm font-bold tracking-widest leading-6 text-center uppercase text-stone-400 max-md:px-5 max-md:max-w-full">
+        <h2 className="font-subheader w-full text-sm font-bold tracking-widest leading-6 text-center uppercase text-stone-400 max-md:px-5 max-md:max-w-full">
           Signature Program
         </h2>
-        <h3 className="font-caslon px-60 mt-3 w-full text-4xl text-center leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full">
+        <h3 className="font-header px-60 mt-3 w-full text-4xl text-center leading-[62.4px] text-neutral-800 max-md:px-5 max-md:max-w-full">
           Somatic Healing & Nervous System Expansion
         </h3>
         <p className="text-center mt-2 text-lg text-stone-600">
