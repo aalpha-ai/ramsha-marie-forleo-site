@@ -3,7 +3,7 @@ import DreamClubList from './DreamClubList';
 
 const DreamClub: React.FC = () => {
   return (
-    <DreamClubList imageSrc="/ramsha-pics-v2/gf5817.jpeg" />
+    <DreamClubList imageSrc="/ramsha-pics/gf5817.jpeg" />
   );
 };
 

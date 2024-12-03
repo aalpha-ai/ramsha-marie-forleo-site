@@ -16,7 +16,7 @@ const SomaticHealingSection: React.FC = () => {
       additionalInfo: "Includes guided somatic practices and spiritual healing sessions 🤲",
       testimonial: "SubhanAllah, the nervous system work has transformed my relationship with my body and faith. I feel a deeper connection to Allah and my feminine essence than ever before.",
       testimonialAuthor: "Noor H., Dubai",
-      imageSrc: "/ramsha-pics-v2/glowingfemme33.jpeg",
+      imageSrc: "/ramsha-pics/glowingfemme33.jpeg",
       imageAlt: "Somatic healing visualization",
     },
     {
@@ -24,7 +24,7 @@ const SomaticHealingSection: React.FC = () => {
       content: "Learn how to lead your business from a place of embodied wisdom and spiritual alignment. We'll explore how somatic practices can enhance your decision-making, strengthen your boundaries, and help you create success that honors both your faith and feminine nature. Discover how to trust your body's wisdom while maintaining tawakkul (trust in Allah).",
       testimonial: "Alhamdulillah, I've learned to trust my body's wisdom while staying anchored in my faith. The combination of somatic work and spiritual guidance has transformed my business approach.",
       testimonialAuthor: "Amira K., London",
-      imageSrc: "/ramsha-pics-v2/gfshoot9.jpeg",
+      imageSrc: "/ramsha-pics/gfshoot9.jpeg",
       imageAlt: "Embodied leadership illustration",
     },
     {
@@ -34,7 +34,7 @@ const SomaticHealingSection: React.FC = () => {
       additionalInfo: "Bismillah, we begin with intention 💝",
       testimonial: "The combination of somatic healing and Islamic wisdom has helped me break free from old patterns. My body feels lighter and my soul more connected, Alhamdulillah!",
       testimonialAuthor: "Zahra M., Malaysia",
-      imageSrc: "/ramsha-pics-v2/gf06171OMGLOOK.jpeg",
+      imageSrc: "/ramsha-pics/gf06171OMGLOOK.jpeg",
       imageAlt: "Nervous system healing concepts",
     },
     {
@@ -42,13 +42,13 @@ const SomaticHealingSection: React.FC = () => {
       content: "Experience how somatic healing can transform your relationship with abundance. Learn powerful nervous system practices that help you embody the truth that Allah is Al-Razzaq (The Provider). We'll explore how trauma and stress affect your ability to receive, and how to create new neural pathways for abundance through both spiritual and somatic practices.",
       testimonial: "MashAllah, understanding how my nervous system affects my relationship with rizq has been revolutionary. The somatic practices have helped me embody abundance while staying true to my faith.",
       testimonialAuthor: "Fatima R., Toronto",
-      imageSrc: "/ramsha-pics-v2/gf5959.jpeg",
+      imageSrc: "/ramsha-pics/gf5959.jpeg",
       imageAlt: "Embodied abundance concept",
     },
     {
       title: "🌙 Advanced Integration: For Current Program Members",
       content: "An exclusive deep-dive into advanced somatic practices and spiritual integration work, available only to sisters currently in the program. Together, we'll explore the depths of feminine embodiment while maintaining strong spiritual foundations.",
-      imageSrc: "/ramsha-pics-v2/gf55.jpeg",
+      imageSrc: "/ramsha-pics/gf55.jpeg",
       imageAlt: "Advanced healing illustration",
     }
   ];

@@ -9,7 +9,7 @@ const MainComponent: React.FC = () => {
     <main>
       <section className="relative -mb-32">
         <ImageComponent
-          src="/hero-background.webp"
+          src="/ramsha-pics/hero-background.webp"
           alt="Main content image"
         />
       </section>

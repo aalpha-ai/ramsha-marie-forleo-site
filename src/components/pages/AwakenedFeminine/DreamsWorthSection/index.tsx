@@ -77,7 +77,7 @@ const SomaticHealing: React.FC = () => {
       <DreamsWorthSection
         title="What Is Your Spiritual Transformation Worth?"
         subtitle="Bi'ithnillah, envision yourself when..."
-        imageSrc="/ramsha-pics-v2/gf77.jpeg"
+        imageSrc="/ramsha-pics/gf77.jpeg"
         dreamItems={dreamItems}
         conclusion={[
           "How would this level of embodied spiritual alignment transform your life?",

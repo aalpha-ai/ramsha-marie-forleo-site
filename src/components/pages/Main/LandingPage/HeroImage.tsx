@@ -27,7 +27,7 @@ const HeroImage: React.FC = () => {
       viewport={{ once: true }}
     >
       <Image
-        src="/hero-2.webp"
+        src="/ramsha-pics/hero-2.webp"
         alt="Ramsha's portrait"
         className="w-full h-full"
         width={500}
