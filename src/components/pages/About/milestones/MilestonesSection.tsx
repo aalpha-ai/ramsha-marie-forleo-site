@@ -6,7 +6,7 @@ import { MilestoneCard } from "./MilestoneCard";
 
 const milestoneData = [
   {
-    imageSrc: "/ramsha-pics/gfshoot9.jpeg",
+    imageSrc: "/ramsha-pics/webp/gfshoot9-sm.jpg",
     imageAlt: "Sacred healing certification",
     title: "Somatic Healing",
     description: (
@@ -19,7 +19,7 @@ const milestoneData = [
     ),
   },
   {
-    imageSrc: "/ramsha-pics/gf5924.jpeg",
+    imageSrc: "/ramsha-pics/webp/gf5924-sm.jpg",
     imageAlt: "International retreat",
     title: "Global Impact",
     description: (
@@ -40,7 +40,7 @@ const milestoneData = [
     ),
   },
   {
-    imageSrc: "/ramsha-pics/gf06171OMGLOOK.jpeg",
+    imageSrc: "/ramsha-pics/webp/gf06171OMGLOOK-sm.jpg",
     imageAlt: "Published work feature",
     title: "Sacred Wisdom",
     description: (

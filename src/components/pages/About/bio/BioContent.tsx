@@ -126,7 +126,7 @@ export const BioContent: React.FC = () => {
               </div>
               <div className="w-1/3 max-md:w-full">
                 {/* <img
-                  src="/ramsha-pics/gf5924.jpeg"
+                  src="/ramsha-pics/webp/gf5924.webp"
                   alt="Ramsha portrait"
                   className="w-full rounded-lg object-cover aspect-[3/4]"
                 /> */}

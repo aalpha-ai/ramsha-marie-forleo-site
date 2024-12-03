@@ -72,7 +72,7 @@ export const AboutPage: React.FC = () => {
         <div className="flex justify-center w-full lg:w-auto lg:min-w-[364px] pb-12">
           <div className="relative overflow-hidden rounded-2xl w-[90%] lg:w-[364px]">
             <img
-              src="/ramsha-pics/gf77.jpeg"
+              src="/ramsha-pics/webp/gf77-sm.jpg"
               alt="Sacred healing journey illustration"
               className="object-cover w-full aspect-[0.54] rounded-2xl"
               loading="lazy"

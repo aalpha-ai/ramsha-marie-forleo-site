@@ -35,7 +35,7 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
         className="absolute inset-0 w-full h-[130%]" // Reduced from 200% to 120%
         style={{
           y,
-          backgroundImage: "url('/ramsha-pics/gf7.jpeg')",
+          backgroundImage: "url('/ramsha-pics/webp/gf7-sm.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
