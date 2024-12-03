@@ -51,7 +51,7 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
           transition={{ duration: 0.8 }}
         >
           <motion.p 
-            className="text-lg leading-relaxed mb-8 text-neutral-800"
+            className="leading-relaxed mb-8 text-neutral-800"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -70,7 +70,7 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
             {quoteText.map((line, index) => (
               <motion.h2
                 key={index}
-                className="text-[2.75rem] font-display leading-[1.1] text-neutral-800"
+                className="font-display leading-[1.1] text-neutral-800"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

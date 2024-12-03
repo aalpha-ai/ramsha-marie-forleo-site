@@ -69,7 +69,7 @@ const finalQuote = [
 
 export const MilestonesSection: React.FC = () => {
   return (
-    <div className="text-xl flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <div className="flex flex-col items-center px-14 pt-20 pb-20 w-full max-md:px-5 max-md:max-w-full">
         <div className="flex flex-col pt-12 pb-6 max-w-full tracking-normal leading-8 text-black w-[850px]">
           <motion.div 
@@ -144,7 +144,7 @@ export const MilestonesSection: React.FC = () => {
         </div>
 
         <motion.div 
-          className="flex flex-col pt-8 pb-8 mt-12 max-w-full text-4xl tracking-wider leading-[62.4px] text-neutral-800 w-[850px] max-md:mt-10"
+          className="flex flex-col pt-8 pb-8 mt-12 max-w-full tracking-wider leading-[62.4px] text-neutral-800 w-[850px] max-md:mt-10"
           initial={{ opacity: 1 }}
           viewport={{ once: true }}
         >

@@ -68,7 +68,7 @@ export const AboutPage: React.FC = () => {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <div className="flex flex-wrap self-stretch my-auto min-w-[240px] max-w-full">
+      <div className="flex flex-col lg:flex-row self-stretch my-auto min-w-[240px] max-w-full">
         <motion.div 
           className="flex justify-center w-full lg:w-auto lg:min-w-[364px] pb-12"
           variants={imageVariants}

@@ -21,7 +21,7 @@ export const MilestoneCard: React.FC<MilestoneCardProps> = ({
           viewport={{ once: true }}
         />
         <motion.div
-          className="pb-px mt-6 text-xs font-extrabold leading-5 uppercase text-neutral-800 tracking-[2.16px]"
+          className="pb-px mt-6 font-extrabold leading-5 uppercase text-neutral-800 tracking-[2.16px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -30,7 +30,7 @@ export const MilestoneCard: React.FC<MilestoneCardProps> = ({
           {title}
         </motion.div>
         <motion.div
-          className="pt-2 pb-2.5 mt-3.5 text-base tracking-normal leading-8 max-w-[90%]"
+          className="pt-2 pb-2.5 mt-3.5 tracking-normal leading-8 max-w-[90%]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

@@ -45,11 +45,11 @@ export const WelcomeSection: React.FC = () => {
   const imageComponentInView = useInView(imageComponentRef, { once: true });
 
   return (
-    <div className="flex flex-col items-center py-10">
+    <div className="container mx-auto flex flex-col items-center py-10">
       <div className="flex flex-col items-center px-14 w-full max-md:px-5 max-md:max-w-full">
         <motion.div
           ref={textBlockRef1}
-          className="flex flex-col w-full text-base tracking-normal leading-8 max-w-[850px] max-md:max-w-full"
+          className="flex flex-col w-full tracking-normal leading-8 max-md:max-w-full"
           initial={{ opacity: 0, y: 20 }}
           animate={textBlockInView1 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -58,7 +58,7 @@ export const WelcomeSection: React.FC = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col max-w-full font-bold text-orange-700 w-[806px] py-10"
+          className="flex flex-col max-w-full font-bold text-orange-700 py-10"
           initial={{ opacity: 0, y: 20 }}
           animate={textBlockInView1 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
@@ -70,7 +70,7 @@ export const WelcomeSection: React.FC = () => {
 
         <motion.div
           ref={textBlockRef2}
-          className="flex flex-col pb-6 w-full text-base tracking-normal leading-8 max-w-[850px] max-md:max-w-full"
+          className="flex flex-col pb-6 w-full tracking-normal leading-8 max-md:max-w-full"
           initial={{ opacity: 0, y: 20 }}
           animate={textBlockInView2 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
@@ -98,24 +98,6 @@ export const WelcomeSection: React.FC = () => {
         >
           <LearnAnything />
         </motion.div>
-
-        {/* <motion.div
-          ref={imageComponentRef}
-          className="flex z-10 flex-col justify-center items-start mt-0 w-full max-w-[748px] max-md:max-w-full"
-          initial={{ opacity: 0, y: 20 }}
-          animate={imageComponentInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, delay: 1, ease: "easeOut" }}
-        >
-          <div className="flex overflow-hidden items-start max-w-full w-[115px]">
-            <div className="flex overflow-hidden flex-col justify-center items-center min-h-[58px] w-[115px]">
-              <ImageComponent
-                src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/a887db2766dc0644bb27ce7f45bf2f3de2dc860985b210a00fd53bf930527635?apiKey=3445d620e72b4cd99c6f91e1d18e316a&"
-                alt="Ramsha's Signature"
-                className="object-contain w-full aspect-[1.98]"
-              />
-            </div>
-          </div>
-        </motion.div> */}
       </div>
     </div>
   );

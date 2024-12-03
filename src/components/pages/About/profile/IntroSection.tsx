@@ -29,10 +29,10 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
       transition={{ duration: 0.6 }}
     >
       {/* Main content */}
-      <div className="max-w-3xl text-2xl mx-auto text-center font-body text-white">
+      <div className="max-w-3xl mx-auto text-center font-body text-white">
         {/* Main text with word-by-word animation */}
         <motion.p 
-          className="leading-relaxed tracking-wider mb-8 flex flex-wrap justify-center gap-x-2"
+          className="leading-relaxed tracking-wider mb-8 flex justify-center gap-x-2"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

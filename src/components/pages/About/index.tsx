@@ -12,7 +12,7 @@ import QuoteWithImageSection from "./QuoteWithImageSection";
 
 export default function Component() {
   return (
-    <div className="font-body bg-gray-50">
+    <div className="font-body text-[16px] bg-gray-50">
       <Header />
       <ImageLayout />
       <Profilepage />

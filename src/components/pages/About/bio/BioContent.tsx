@@ -22,7 +22,7 @@ const headingText = [
 
 export const BioContent: React.FC = () => {
   return (
-    <div className="flex flex-col items-center px-20 py-20 max-md:px-5 text-xl">
+    <div className="flex flex-col items-center px-20 py-20 max-md:px-5">
       <motion.div 
         className="max-w-[850px] w-full space-y-12"
         initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ export const BioContent: React.FC = () => {
             
             <ul className="space-y-6 list-none">
               <li className="leading-relaxed flex items-start gap-4">
-                <span className="text-ramsha-tertiary text-xl mt-1">✧</span>
+                <span className="text-ramsha-tertiary mt-1">✧</span>
                 <span>
                   Feeling disconnected from your body and spirit? I'll guide you through{" "}
                   <LinkText href="/somatic-healing" text="somatic healing" className="text-ramsha-tertiary hover:text-ramsha-tertiary/80" />{" "}
@@ -81,7 +81,7 @@ export const BioContent: React.FC = () => {
                 </span>
               </li>
               <li className="leading-relaxed flex items-start gap-4">
-                <span className="text-ramsha-tertiary text-xl mt-1">✧</span>
+                <span className="text-ramsha-tertiary mt-1">✧</span>
                 <span>
                   Struggling to find peace and balance in your life? Discover your{" "}
                   <LinkText href="/spiritual-guidance" text="inner harmony" className="text-ramsha-tertiary hover:text-ramsha-tertiary/80" />{" "}
@@ -89,7 +89,7 @@ export const BioContent: React.FC = () => {
                 </span>
               </li>
               <li className="leading-relaxed flex items-start gap-4">
-                <span className="text-ramsha-tertiary text-xl mt-1">✧</span>
+                <span className="text-ramsha-tertiary mt-1">✧</span>
                 <span>
                   Seeking to embrace your feminine essence while honoring your deen? I'll show you the{" "}
                   <LinkText href="/feminine-embodiment" text="path" className="text-ramsha-tertiary hover:text-ramsha-tertiary/80" />{" "}
@@ -115,7 +115,7 @@ export const BioContent: React.FC = () => {
 
             <div className="flex gap-8 items-center max-md:flex-col">
               <div className="flex-1">
-                <h2 className="text-4xl font-display leading-tight mb-4">
+                <h2 className="font-header text-4xl leading-tight mb-4">
                   "Your Body is a Sacred Vessel"
                 </h2>
                 <p className="leading-relaxed">
@@ -159,7 +159,7 @@ export const BioContent: React.FC = () => {
           {/* Biography Text */}
           <div className="pb-16">
             <motion.div 
-              className="text-xl leading-relaxed text-black"
+              className="leading-relaxed text-black"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -194,7 +194,7 @@ export const BioContent: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 1 + index * 0.2 }}
-                  className="text-4xl font-display tracking-wider leading-tight text-neutral-800 mb-3"
+                  className="text-4xl font-header tracking-wider leading-tight text-neutral-800 mb-3"
                 >
                   {line}
                 </motion.h2>
