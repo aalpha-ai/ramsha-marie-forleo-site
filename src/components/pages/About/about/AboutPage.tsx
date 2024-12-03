@@ -62,7 +62,7 @@ export const AboutPage: React.FC = () => {
 
   return (
     <motion.div 
-      className="flex justify-center items-center px-12 pt-12 max-md:px-5"
+      className="bg-ramsha-primary flex justify-center items-center px-12 pt-12 max-md:px-5"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -82,7 +82,7 @@ export const AboutPage: React.FC = () => {
               loading="lazy"
               src="/ramsha-pics/gf77.jpeg"
               alt="Sacred healing journey illustration"
-              className="object-contain max-w-full aspect-[0.54] w-[364px]"
+              className="object-contain max-w-full aspect-[0.54] w-[364px] rounded-2xl"
               initial={{ scale: 1.1 }}
               animate={{ scale: 1 }}
               transition={{ duration: 1.5, ease: [0.6, 0.05, 0.01, 0.9] }}

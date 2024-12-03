@@ -32,18 +32,18 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
 
   return (
     <motion.div
-      className="flex flex-col px-2.5 text-base tracking-normal leading-8 text-black min-h-[1px] min-w-[240px] w-[538px] max-md:max-w-full"
+      className="bg-ramsha-primary text-white flex flex-col px-2.5 text-base tracking-normal leading-8 min-h-[1px] min-w-[240px] w-[538px] max-md:max-w-full"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
     >
       <motion.div
-        className="flex flex-col gap-4 px-14 pt-12 pb-14 w-full bg-white max-md:px-5 max-md:max-w-full"
+        className="flex flex-col gap-4 px-14 pt-12 pb-14 w-full max-md:px-5 max-md:max-w-full"
         variants={itemVariants}
       >
         <motion.div
-          className="w-full text-5xl tracking-wider leading-[62.4px] text-neutral-800"
+          className="w-full text-5xl tracking-wider leading-[62.4px] font-logo"
           variants={itemVariants}
         >
           {title}
