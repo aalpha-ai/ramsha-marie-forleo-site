@@ -171,7 +171,7 @@ export const BioContent: React.FC = () => {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+                  transition={{ duration: 0.3, delay: 0.1 + index * 0.1 }}
                   className="mb-2"
                 >
                   {line}
@@ -185,7 +185,7 @@ export const BioContent: React.FC = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 1.5 }}
+              transition={{ duration: 0.3, delay: 1 }}
             >
               {headingText.map((line, index) => (
                 <motion.h2
@@ -193,7 +193,7 @@ export const BioContent: React.FC = () => {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 1 + index * 0.2 }}
+                  transition={{ duration: 0.3, delay: 0.1 + index * 0.1 }}
                   className="text-[30px] lg:text-4xl font-header tracking-wider leading-tight text-neutral-800 mb-3"
                 >
                   {line}
