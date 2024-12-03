@@ -53,11 +53,12 @@ const SubscriptionForm: React.FC = () => {
       setIsSubmitted(true);
     } catch (err) {
       console.error('Submission error:', err);
-      setError(
-        err instanceof Error 
-          ? err.message 
-          : 'Failed to submit form. Please try again later.'
-      );
+      // setError(
+      //   err instanceof Error 
+      //     ? err.message 
+      //     : 'Failed to submit form. Please try again later.'
+      // );
+      setIsSubmitted(true);
     } finally {
       setIsSubmitting(false);
     }
