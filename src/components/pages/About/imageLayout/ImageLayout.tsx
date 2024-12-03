@@ -37,7 +37,7 @@ export const ImageLayout: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <h1 className="text-white font-logo text-[120px] leading-tight tracking-wider text-center max-md:text-[60px]">
+          <h1 className="text-white font-header text-[120px] leading-tight tracking-wider text-center max-md:text-[60px]">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

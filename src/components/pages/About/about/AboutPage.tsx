@@ -62,19 +62,19 @@ export const AboutPage: React.FC = () => {
 
   return (
     <motion.div 
-      className="bg-ramsha-primary flex justify-center items-center px-12 pt-12 max-md:px-5"
+      className="bg-ramsha-primary flex justify-center items-center px-4 pt-12 max-md:px-2"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <div className="flex flex-wrap self-stretch my-auto min-w-[240px] max-md:max-w-full">
+      <div className="flex flex-wrap self-stretch my-auto min-w-[240px] max-w-full">
         <motion.div 
-          className="flex flex-col justify-center items-center px-2.5 pb-12 w-96 min-h-[1px] min-w-[240px]"
+          className="flex justify-center w-full lg:w-auto lg:min-w-[364px] pb-12"
           variants={imageVariants}
         >
           <motion.div
-            className="relative overflow-hidden rounded-2xl w-[364px]"
+            className="relative overflow-hidden rounded-2xl w-[90%] lg:w-[364px]"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
@@ -82,7 +82,7 @@ export const AboutPage: React.FC = () => {
               loading="lazy"
               src="/ramsha-pics/gf77.jpeg"
               alt="Sacred healing journey illustration"
-              className="object-contain max-w-full aspect-[0.54] w-[364px] rounded-2xl"
+              className="object-cover w-full aspect-[0.54] rounded-2xl"
               initial={{ scale: 1.1 }}
               animate={{ scale: 1 }}
               transition={{ duration: 1.5, ease: [0.6, 0.05, 0.01, 0.9] }}
@@ -97,8 +97,9 @@ export const AboutPage: React.FC = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          className="w-full lg:max-w-[850px] px-4"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
