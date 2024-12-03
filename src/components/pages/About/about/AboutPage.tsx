@@ -1,4 +1,7 @@
+'use client'
+
 import * as React from "react";
+import { motion } from "framer-motion";
 import { AboutSection } from "./AboutSection";
 
 export const AboutPage: React.FC = () => {
@@ -28,22 +31,87 @@ export const AboutPage: React.FC = () => {
     ],
   };
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const imageVariants = {
+    hidden: { 
+      opacity: 0,
+      scale: 0.95,
+      y: 20
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: {
+        duration: 1.2,
+        ease: [0.25, 0.1, 0.25, 1]
+      }
+    }
+  };
+
   return (
-    <div className="flex justify-center items-center px-12 pt-12 max-md:px-5">
+    <motion.div 
+      className="flex justify-center items-center px-12 pt-12 max-md:px-5"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <div className="flex flex-wrap self-stretch my-auto min-w-[240px] max-md:max-w-full">
-        <div className="flex flex-col justify-center items-center px-2.5 pb-12 w-96 min-h-[1px] min-w-[240px]">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/f51185f37a133dbb2be2ad7086cdcc2ca07a43114c3002113b935c42b3afea66?apiKey=3445d620e72b4cd99c6f91e1d18e316a&"
-            alt="Sacred healing journey illustration"
-            className="object-contain max-w-full aspect-[0.54] w-[364px]"
+        <motion.div 
+          className="flex flex-col justify-center items-center px-2.5 pb-12 w-96 min-h-[1px] min-w-[240px]"
+          variants={imageVariants}
+        >
+          <motion.div
+            className="relative overflow-hidden rounded-2xl w-[364px]"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+          >
+            <motion.img
+              loading="lazy"
+              src="/ramsha-pics/gf77.jpeg"
+              alt="Sacred healing journey illustration"
+              className="object-contain max-w-full aspect-[0.54] w-[364px]"
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1.5, ease: [0.6, 0.05, 0.01, 0.9] }}
+            />
+            <motion.div
+              className="absolute inset-0 bg-black/10"
+              initial={{ opacity: 0 }}
+              whileHover={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.3
+          }}
+        >
+          <AboutSection
+            title={aboutData.title}
+            textBlocks={aboutData.textBlocks}
           />
-        </div>
-        <AboutSection
-          title={aboutData.title}
-          textBlocks={aboutData.textBlocks}
-        />
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };

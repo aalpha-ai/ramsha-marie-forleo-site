@@ -33,9 +33,8 @@ export const WelcomeSection: React.FC = () => {
           <TextBlock content="Yes, this is a healing business, Alhamdulillah. Yes, we offer premium programs. And yes, we're deeply grateful that Allah has blessed us to serve sisters through this work. But you should know that we strive to make much of our spiritual guidance and somatic practices available at no cost, seeking only Allah's pleasure." />
 
           <div className="flex flex-col max-w-full font-bold text-orange-700 w-[806px]">
-            <div className="self-end">(To learn</div>
-            <div className="self-start mt-5">
-              more about our spiritual approach to business, click here.)
+            <div className="self-end">
+              To learn more about our spiritual approach to business, click here.
             </div>
           </div>
 
