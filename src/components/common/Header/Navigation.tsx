@@ -18,7 +18,7 @@ export const navItems: NavItem[] = [
   { label: "Blog" },
   { label: "Work With Me" },
   { label: "In The Press" },
-  { label: "About" },
+  { label: "About", href: "/about" },
 ];
 
 const Navigation: React.FC<NavigationProps> = ({ isMobile }) => {
