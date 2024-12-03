@@ -62,42 +62,26 @@ export const AboutPage: React.FC = () => {
 
   return (
     <motion.div 
-      className="bg-ramsha-primary flex justify-center items-center px-4 pt-12 max-md:px-2"
+      className="bg-ramsha-primary flex justify-center items-center pt-12"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
     >
       <div className="flex flex-col lg:flex-row self-stretch my-auto min-w-[240px] max-w-full">
-        <motion.div 
-          className="flex justify-center w-full lg:w-auto lg:min-w-[364px] pb-12"
-          variants={imageVariants}
-        >
-          <motion.div
-            className="relative overflow-hidden rounded-2xl w-[90%] lg:w-[364px]"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-          >
-            <motion.img
-              loading="lazy"
+        <div className="flex justify-center w-full lg:w-auto lg:min-w-[364px] pb-12">
+          <div className="relative overflow-hidden rounded-2xl w-[90%] lg:w-[364px]">
+            <img
               src="/ramsha-pics/gf77.jpeg"
               alt="Sacred healing journey illustration"
               className="object-cover w-full aspect-[0.54] rounded-2xl"
-              initial={{ scale: 1.1 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 1.5, ease: [0.6, 0.05, 0.01, 0.9] }}
+              loading="lazy"
             />
-            <motion.div
-              className="absolute inset-0 bg-black/10"
-              initial={{ opacity: 0 }}
-              whileHover={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            />
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         <motion.div
-          className="w-full lg:max-w-[850px] px-4"
+          className="w-full lg:max-w-[850px]"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

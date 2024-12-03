@@ -10,7 +10,7 @@ const ProfilePage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col pt-20 bg-ramsha-primary">
+    <div className="flex flex-col pt-6 lg:pt-12 bg-ramsha-primary">
       <IntroSection {...introData} />
     </div>
   );

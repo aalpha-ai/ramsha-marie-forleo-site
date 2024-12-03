@@ -5,4 +5,4 @@ export const ImageComponent: React.FC<ImageProps> = ({
   src,
   alt,
   className,
-}) => <img loading="lazy" src={src} alt={alt} className={className} />;
+}) => <img src={src} alt={alt} className={className} />;

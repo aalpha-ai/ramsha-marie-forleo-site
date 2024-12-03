@@ -16,6 +16,7 @@ export const MilestoneCard: React.FC<MilestoneCardProps> = ({
         <img
           src={imageSrc}
           alt={imageAlt}
+          loading="lazy"
           className="object-cover w-full aspect-[0.78] rounded-2xl"
         />
         <motion.div

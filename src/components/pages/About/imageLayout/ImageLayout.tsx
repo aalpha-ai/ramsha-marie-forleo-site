@@ -10,7 +10,7 @@ export const ImageLayout: React.FC = () => {
       <motion.div
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
-        className="bg-ramsha-primary flex relative justify-center items-start px-4 md:px-8 lg:px-32 py-3 min-h-[576px] max-md:px-5"
+        className="bg-ramsha-primary flex relative justify-center items-start px-4 md:px-8 lg:px-32 py-3 lg:min-h-[576px] max-md:px-5"
       >
         {/* Main Image with fade-in and contract */}
         <div className="overflow-hidden w-full flex justify-center">
@@ -103,7 +103,7 @@ export const ImageLayout: React.FC = () => {
       </motion.div>
 
       {/* Scroll down indicator */}
-      <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-50">
+      {/* <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-50">
         <motion.div 
           className="w-[55px]"
           animate={{ 
@@ -121,7 +121,7 @@ export const ImageLayout: React.FC = () => {
             className="object-contain w-full aspect-[0.57]"
           />
         </motion.div>
-      </div>
+      </div> */}
     </AnimatePresence>
   );
 };
