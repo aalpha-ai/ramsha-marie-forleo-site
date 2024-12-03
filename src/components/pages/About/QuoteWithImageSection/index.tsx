@@ -1,10 +1,12 @@
 import { QuoteWithImage } from "./QuoteWithImage";
 
 export const QuoteWithImageSection: React.FC = () => {
+  const paragraphText = "Through spiritual guidance and somatic practices, we help you reconnect with your body's wisdom and soul's purpose, creating a life of peace and divine alignment.";
+
   return (
-    <div className="flex flex-col items-center max-md:px-5">
+    <div className="flex flex-col items-center">
       <QuoteWithImage 
-        paragraphText="From years of spiritual seeking and deep personal healing, to intensive study with renowned somatic practitioners, to training in nervous system regulation and trauma healing, to guiding hundreds of Muslim women through embodied transformation, to creating a sacred space where feminine wisdom meets Islamic principles, Alhamdulillah, I am living proof that..."
+        paragraphText={paragraphText}
         quoteText={[
           "Divine healing flows",
           "through mind, body,",
