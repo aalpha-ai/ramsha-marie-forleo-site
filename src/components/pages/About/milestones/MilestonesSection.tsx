@@ -87,8 +87,8 @@ export const MilestonesSection: React.FC = () => {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{
-                      duration: 0.3,
-                      delay: (wordIndex * word.length + charIndex) * 0.03,
+                      duration: 0.1,
+                      delay: (wordIndex * word.length + charIndex) * 0.01,
                       ease: "easeOut"
                     }}
                   >
@@ -161,8 +161,8 @@ export const MilestonesSection: React.FC = () => {
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{
-                          duration: 0.3,
-                          delay: (lineIndex * 15 + wordIndex * word.length + charIndex) * 0.02,
+                          duration: 0.2,
+                          delay: (lineIndex * 15 + wordIndex * word.length + charIndex) * 0.01,
                           ease: [0.22, 1, 0.36, 1]
                         }}
                       >

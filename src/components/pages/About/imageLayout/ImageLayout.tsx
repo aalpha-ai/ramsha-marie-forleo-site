@@ -10,10 +10,10 @@ export const ImageLayout: React.FC = () => {
       <motion.div
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
-        className="bg-ramsha-primary flex relative justify-center items-start px-32 py-3 min-h-[576px] max-md:px-5"
+        className="bg-ramsha-primary flex relative justify-center items-start px-4 md:px-8 lg:px-32 py-3 min-h-[576px] max-md:px-5"
       >
         {/* Main Image with fade-in and contract */}
-        <div className="overflow-hidden">
+        <div className="overflow-hidden w-full flex justify-center">
           <motion.div
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -21,11 +21,12 @@ export const ImageLayout: React.FC = () => {
               duration: 1.2,
               ease: "easeOut"
             }}
+            className="w-full max-w-[768px]"
           >
             <ResponsiveImage
               src="/ramsha-pics/hero-2.webp"
               alt="Main content image"
-              className="object-contain z-0 my-auto max-w-screen-md aspect-[1.39] min-w-[240px] w-[768px] max-md:max-w-full"
+              className="object-contain z-0 my-auto w-full aspect-[1.39]"
             />
           </motion.div>
         </div>

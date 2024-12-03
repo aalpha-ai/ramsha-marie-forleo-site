@@ -22,17 +22,17 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
 
   return (
     <motion.div 
-      className="relative bg-ramsha-primary px-4 py-16 md:px-8"
+      className="relative bg-ramsha-primary px-4 py-16 md:px-8 w-full overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-200px" }}
       transition={{ duration: 0.6 }}
     >
       {/* Main content */}
-      <div className="max-w-3xl mx-auto text-center font-body text-white">
+      <div className="max-w-3xl mx-auto text-center font-body text-white w-full">
         {/* Main text with word-by-word animation */}
-        <motion.p 
-          className="leading-relaxed tracking-wider mb-8 flex justify-center gap-x-2"
+        <motion.div 
+          className="leading-relaxed tracking-wider mb-8 flex flex-wrap justify-center gap-2 px-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -43,20 +43,20 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
               key={index}
               variants={wordAnimation}
               whileHover={{ 
-                scale: 1.1,
+                scale: 1.05,
                 color: "var(--ramsha-primary)",
                 transition: { type: "spring", stiffness: 300 }
               }}
-              className="inline-block"
+              className="inline-block text-sm md:text-base"
             >
               {word}
             </motion.span>
           ))}
-        </motion.p>
+        </motion.div>
 
         {/* Sub text with word-by-word animation */}
-        <motion.p 
-          className="leading-relaxed tracking-wider flex flex-wrap justify-center gap-x-2"
+        <motion.div 
+          className="leading-relaxed tracking-wider flex flex-wrap justify-center gap-2 px-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -67,16 +67,16 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
               key={index}
               variants={wordAnimation}
               whileHover={{ 
-                scale: 1.1,
+                scale: 1.05,
                 color: "var(--ramsha-primary)",
                 transition: { type: "spring", stiffness: 300 }
               }}
-              className="inline-block"
+              className="inline-block text-sm md:text-base"
             >
               {word}
             </motion.span>
           ))}
-        </motion.p>
+        </motion.div>
       </div>
     </motion.div>
   );
