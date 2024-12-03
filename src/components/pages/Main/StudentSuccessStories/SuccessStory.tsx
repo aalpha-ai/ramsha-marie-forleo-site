@@ -69,7 +69,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
           delay: 0.4
         }}
         viewport={{ once: true }}
-        href="https://www.marieforleo.com/success-stories"
+        href="/awakened-feminine"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-6 px-8 py-4 text-base font-subheader tracking-wide text-center text-white bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-full w-full md:w-[200px] lg:w-[300px]"

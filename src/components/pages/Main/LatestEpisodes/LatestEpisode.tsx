@@ -61,7 +61,7 @@ const LatestEpisodes: React.FC = () => {
           className="text-white shadow-none hover:shadow-none bg-black rounded-full px-6 pt-2.5 pb-3 text-base font-bold text-center hover:bg-black/85 "
         >
           <a
-            href="https://www.marieforleo.com/podcast"
+            href="https://www.ramshasuhail.com/podcast"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -12,10 +12,6 @@ const FormDisclaimer: React.FC = () => {
             By entering your email, you&apos;ll agree to join Glowing Femme for FREE
             access to exclusive insights and offers delivered with love to your inbox.
             (Unsub anytime in a click.) You also agree to our{" "}
-            {/* By entering your info, you&apos;ll become an MF Insider – with FREE
-            access to exclusive insights, private Q+As, and inspiring episodes
-            of MarieTV, delivered with 💜 to your inbox. (Unsub anytime in a
-            click.) You also agree to our{" "} */}
             <a href="/terms-of-use" className="text-orange-700 underline">
               Terms of Use
             </a>{" "}

@@ -18,7 +18,7 @@ const resources: Resource[] = [
       "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/2f23906e60fa29a9fffeb5501c64a10f496a15e88b24816723d5fb30d8582fa8?apiKey=48a1608e30b648c89bd5ed134a49b3b8&",
     title: "How to Get Anything You Want",
     description:
-      "Listen to this FREE audio from Marie and learn the 3 steps that'll change your life, fast.",
+      "Listen to this FREE audio from Ramsha and learn the 3 steps that'll change your life, fast.",
     ctaText: "Get Free Audio Training",
   },
   {
@@ -28,7 +28,7 @@ const resources: Resource[] = [
     description:
       "Get quick, daily tips to write authentic, irresistible copy that connects with your audience and converts them to buyers.",
     ctaText: "Get My Free Guide",
-    ctaLink: "https://marielovesyou.com/freewritingclass",
+    ctaLink: "https://ramshalovesyou.com/freewritingclass",
   },
   {
     imageSrc:
@@ -37,7 +37,7 @@ const resources: Resource[] = [
     description:
       "Clarify your most important goals and let go of what's holding you back — in 10 minutes or less.",
     ctaText: "Get my Free Download",
-    ctaLink: "https://marielovesyou.com/yearly-goals-a",
+    ctaLink: "https://ramshalovesyou.com/yearly-goals-a",
   },
   {
     imageSrc:
@@ -55,7 +55,7 @@ const resources: Resource[] = [
     description:
       "Want to start a business, but have no clue what to start? Or have a million ideas, but don't know whether they'll work? This simple tool will help you find your winning idea — one that's highly profitable AND enjoyable.",
     ctaText: "Get my Free Download",
-    ctaLink: "https://marielovesyou.com/bizidea",
+    ctaLink: "https://ramshalovesyou.com/bizidea",
   },
   {
     imageSrc:
@@ -64,7 +64,7 @@ const resources: Resource[] = [
     description:
       "Stress got you spinning? This exercise will help you get out of your head and into action mode so you can focus on what matters — and feel better, fast.",
     ctaText: "Get my Free Download",
-    ctaLink: "https://marielovesyou.com/stresslog",
+    ctaLink: "https://ramshalovesyou.com/stresslog",
   },
   {
     imageSrc:
@@ -73,7 +73,7 @@ const resources: Resource[] = [
     description:
       "There's never been a better time to start a business. These 322+ business tools will help you plan, design, market, and manage your way to success — all 100% FREE.",
     ctaText: "Get My Free Guide",
-    ctaLink: "https://marieforleobschool.com/free-business-tools",
+    ctaLink: "https://ramshasuhailbschool.com/free-business-tools",
   },
   {
     imageSrc:
@@ -82,7 +82,7 @@ const resources: Resource[] = [
     description:
       "19 different ways to say no with kindness and class (word-for-word scripts included).",
     ctaText: "Get my Free Download",
-    ctaLink: "https://www.marieforleo.com/blog/how-to-say-no-ultimate-guide",
+    ctaLink: "https://www.ramshasuhail.com/blog/how-to-say-no-ultimate-guide",
   },
 ];
 

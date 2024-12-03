@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
         buttonText="Listen To The Episode"
         buttonLink="#"
         imageSrc="/british-muslim.webp"
-        imageAlt="MarieTV show preview"
+        imageAlt="Ramsha on British Muslim TV"
         backgroundColor="#FFFFFF"
       />
       <ContentSection

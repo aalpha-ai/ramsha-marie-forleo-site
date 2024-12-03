@@ -6,7 +6,7 @@ import { TextBlock } from "./TextBlock";
 import { StrongText } from "./StrongText";
 import BlurFade from "@/components/magicui/blur-fade";
 
-interface MarieForleoSectionProps {
+interface CoachSectionProps {
   headingText: string[];
   paragraphs: string[];
   strongText: {
@@ -17,7 +17,7 @@ interface MarieForleoSectionProps {
   imageSrc: string;
 }
 
-export const MarieForleoSection: React.FC<MarieForleoSectionProps> = ({
+export const CoachSection: React.FC<CoachSectionProps> = ({
   headingText,
   paragraphs,
   strongText,

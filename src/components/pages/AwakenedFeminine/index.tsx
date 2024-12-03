@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import FamiliarSoundSection from "./FamiliarSoundSection";
-import MarieForleoSection from "./MarieForleoSection";
+import RamshaSuhailSection from "./CoachSection";
 import MediaMentionsSection from "./MediaMentions";
 import DreamClubSection from "./DreamClubSection";
 import DreamClubList from "./DreamClubList";
@@ -30,7 +30,7 @@ export default function Component() {
       <Header />
       <WaitlistSection />
       <FamiliarSoundSection />
-      <MarieForleoSection />
+      <RamshaSuhailSection />
       {/* <MediaMentionsSection /> */}
       <MediaLogos />
       <DreamClubSection />

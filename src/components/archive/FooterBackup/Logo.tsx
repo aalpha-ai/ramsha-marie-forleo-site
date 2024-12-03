@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
     <div className="flex items-center self-start">
       <Image
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/97c5311d01a4d264b4e07599d3fee4ec289533bc63223c573982d307d42ff753?placeholderIfAbsent=true&apiKey=3445d620e72b4cd99c6f91e1d18e316a"
-        alt="Marie Forleo Logo"
+        alt="Ramsha Forleo Logo"
         className="object-contain self-stretch my-auto aspect-[9.62] max-w-[1200px] min-w-[240px] w-[307px]"
         width={307}
         height={307 / 9.62}

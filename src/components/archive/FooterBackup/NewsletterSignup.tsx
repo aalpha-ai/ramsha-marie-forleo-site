@@ -10,7 +10,7 @@ const NewsletterSignup: React.FC = () => {
         Become an MF Insider
       </h2>
       <p className="mt-3 text-sm tracking-normal leading-6 max-md:max-w-full">
-        Sign up for exclusive content, emails & things Marie doesn't share
+        Sign up for exclusive content, emails & things Ramsha doesn't share
         <br />
         anywhere else.
       </p>

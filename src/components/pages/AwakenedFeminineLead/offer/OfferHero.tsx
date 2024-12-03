@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { TextBlock } from "./TextBlock";
 import { CTAButton } from "./CTAButton";
 
-export const DreamClubHero: React.FC = () => {
+export const OfferHero: React.FC = () => {
   return (
     <motion.main 
       initial={{ opacity: 0 }}

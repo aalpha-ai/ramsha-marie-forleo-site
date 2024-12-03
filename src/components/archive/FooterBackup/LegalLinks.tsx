@@ -11,8 +11,8 @@ interface LinkItem {
 const legalLinks: LinkItem[] = [
   { text: "Terms", href: "/terms-of-use" },
   { text: "Privacy", href: "/privacy-policy" },
-  { text: "Cookie Policy", href: "https://www.marieforleo.com/cookie-policy" },
-  { text: "Support", href: "https://www.marieforleo.com/support" },
+  { text: "Cookie Policy", href: "https://www.ramshasuhail.com/cookie-policy" },
+  { text: "Support", href: "https://www.ramshasuhail.com/support" },
 ];
 
 const LegalLinks: React.FC = () => {
@@ -33,7 +33,7 @@ const LegalLinks: React.FC = () => {
         </div>
         <div className="flex flex-col grow shrink px-2.5 min-h-[1px] min-w-[240px] w-[380px] max-md:max-w-full">
           <p className="w-full max-md:max-w-full">
-            © 2024 Marie Forleo International
+            © 2024 Ramsha Forleo International
           </p>
         </div>
       </div>

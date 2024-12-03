@@ -45,7 +45,7 @@ const Form: React.FC = () => {
           <span>
             By entering your info, you'll become an MF Insider – with FREE access
             to exclusive insights, private Q+As, and inspiring episodes of
-            MarieTV, delivered with 💜 to your inbox.&nbsp;
+            RamshaTV, delivered with 💜 to your inbox.&nbsp;
           </span>
           <span className="italic">
             (Unsub anytime in a click.)&nbsp;

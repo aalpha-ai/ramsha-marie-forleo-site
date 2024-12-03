@@ -19,11 +19,6 @@ export const navItems: NavItem[] = [
   { label: "Work With Me" },
   { label: "In The Press" },
   { label: "About" },
-  // { label: "Courses", hasDropdown: true },
-  // { label: "MarieTV", href: "https://www.marieforleo.com/marietv" },
-  // { label: "Podcast", href: "https://www.marieforleo.com/podcast" },
-  // { label: "About", href: "https://www.marieforleo.com/about" },
-  // { label: "More", hasDropdown: true },
 ];
 
 const Navigation: React.FC<NavigationProps> = ({ isMobile }) => {

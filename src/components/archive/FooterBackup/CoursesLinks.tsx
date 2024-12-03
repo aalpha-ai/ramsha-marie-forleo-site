@@ -10,17 +10,17 @@ interface LinkItem {
 }
 
 const coursesLinks: LinkItem[] = [
-  { text: "Dream Club", href: "https://www.marieforleo.com/dreamclub" },
+  { text: "Dream Club", href: "https://www.ramshasuhail.com/dreamclub" },
   {
     text: "B-School",
-    href: "https://www.marieforleo.com/bschool",
+    href: "https://www.ramshasuhail.com/bschool",
     subItems: ["B-School Reviews"],
   },
-  { text: "The Copy Cure", href: "https://www.marieforleo.com/the-copy-cure" },
-  { text: "Time Genius", href: "https://www.marieforleo.com/time-genius" },
+  { text: "The Copy Cure", href: "https://www.ramshasuhail.com/the-copy-cure" },
+  { text: "Time Genius", href: "https://www.ramshasuhail.com/time-genius" },
   {
     text: "How to Get Anything You Want",
-    href: "https://www.marieforleo.com/how-to-get-anything-you-want",
+    href: "https://www.ramshasuhail.com/how-to-get-anything-you-want",
   },
   {
     text: "Everything Is Figureoutable",

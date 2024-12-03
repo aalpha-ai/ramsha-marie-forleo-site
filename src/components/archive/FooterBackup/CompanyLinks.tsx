@@ -10,21 +10,21 @@ interface LinkItem {
 
 const companyLinks: LinkItem[] = [
   { text: "About", href: "#" },
-  { text: "MarieTV", href: "https://www.marieforleo.com/marietv" },
+  { text: "RamshaTV", href: "https://www.ramshasuhail.com/ramshatv" },
   {
-    text: "The Marie Forleo Podcast",
-    href: "https://www.marieforleo.com/podcast",
+    text: "The Ramsha Forleo Podcast",
+    href: "https://www.ramshasuhail.com/podcast",
   },
   {
     text: "Success Stories",
-    href: "https://www.marieforleo.com/success-stories",
+    href: "https://www.ramshasuhail.com/success-stories",
   },
-  { text: "New Here?", href: "https://www.marieforleo.com/new-here" },
-  { text: "Free Tools", href: "https://www.marieforleo.com/free-tools" },
-  { text: "Press & Media", href: "https://www.marieforleo.com/press-media" },
-  { text: "Giving Back", href: "https://www.marieforleo.com/giving-back" },
-  { text: "How We Roll", href: "https://www.marieforleo.com/how-we-roll" },
-  { text: "Jobs", href: "https://www.marieforleo.com/jobs" },
+  { text: "New Here?", href: "https://www.ramshasuhail.com/new-here" },
+  { text: "Free Tools", href: "https://www.ramshasuhail.com/free-tools" },
+  { text: "Press & Media", href: "https://www.ramshasuhail.com/press-media" },
+  { text: "Giving Back", href: "https://www.ramshasuhail.com/giving-back" },
+  { text: "How We Roll", href: "https://www.ramshasuhail.com/how-we-roll" },
+  { text: "Jobs", href: "https://www.ramshasuhail.com/jobs" },
 ];
 
 const CompanyLinks: React.FC = () => {
