@@ -3,72 +3,69 @@ import { MilestoneCard } from "./MilestoneCard";
 
 const milestoneData = [
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/65b1f8e78f412f56ace515e205aeac984f14f91b3032b8960835e6472e79aaad?apiKey=3445d620e72b4cd99c6f91e1d18e316a&",
-    imageAlt: "Virgin Unite mentorship program",
-    title: "Virgin unite",
+    imageSrc: "...",
+    imageAlt: "Sacred healing certification",
+    title: "Somatic Healing",
     description: (
       <div className="text-black">
-        Sir Richard Branson invited me to
+        Alhamdulillah, completed advanced
         <br />
-        South Africa to mentor young
+        certification in somatic healing
         <br />
-        entrepreneurs at his Centre for
+        and nervous system regulation
         <br />
-        Entrepreneurship.
+        with renowned practitioners.
       </div>
     ),
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/0c97065a6d8df97efaeced236a41749ce6d98fe215daaf91e87d0c9bd8c68010?apiKey=3445d620e72b4cd99c6f91e1d18e316a&",
-    imageAlt: "Super Soul Sunday appearance",
-    title: "Super soul sunday",
+    imageSrc: "...",
+    imageAlt: "International retreat",
+    title: "Global Impact",
     description: (
       <>
         <div className="text-black">
-          Oprah had me on her Emmy
+          Led transformative retreats for
           <br />
-          Award-winning TV show Super
+          Muslim women across Dubai,
           <br />
-          Soul Sunday as a thought leader
+          Malaysia, and the UK, creating
           <br />
-          for the next generation. A few
+          spaces for deep healing and
           <br />
-          years later
+          spiritual connection.
         </div>
         <div className="flex flex-col py-0.5 pr-1.5 max-w-full font-bold text-orange-700 w-[246px]">
-          <div className="self-center ml-4">I spoke at her</div>
+          <div className="self-center ml-4">MashAllah, over</div>
           <div className="mt-5">
-            incredible SuperSoul Sessions
+            1,000 sisters transformed
             <br />
-            event.
+            through this work.
           </div>
         </div>
       </>
     ),
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/81d2b8f734d1af2347cc03ef2c2914f11ed8e93be76099c20dcad061c938dda3?apiKey=3445d620e72b4cd99c6f91e1d18e316a&",
-    imageAlt: "The Today Show appearance",
-    title: "The Today Show",
+    imageSrc: "...",
+    imageAlt: "Published work feature",
+    title: "Sacred Wisdom",
     description: (
       <>
         <div className="text-black">
-          I had a fantastic time chatting with
+          Featured in Muslim wellness
           <br />
-          Hoda and Meredith about my
+          publications for pioneering
           <br />
-          book,{" "}
+          work in Islamic{" "}
         </div>
         <div className="z-10 self-end -mt-4 mb-0 font-bold leading-8 text-orange-700 max-md:mr-2 max-md:mb-2.5">
           <a
-            href="http://everythingisfigureoutable.com/"
+            href="https://www.ramshahealing.com/embodiment"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Everything is Figureoutable.
+            somatic healing practices.
           </a>
         </div>
       </>
@@ -82,33 +79,28 @@ export const MilestonesSection: React.FC = () => {
       <div className="flex flex-col items-center px-14 pt-20 pb-20 w-full max-md:px-5 max-md:max-w-full">
         <div className="flex flex-col pt-12 pb-6 max-w-full text-base tracking-normal leading-8 text-black w-[850px]">
           <div className="w-full text-4xl tracking-wider leading-[62.4px] text-neutral-800 max-md:max-w-full">
-            I believe you must bring your whole self to
+            I believe that true healing comes from honoring
             <br />
-            the table if you want to thrive in today's
+            both your spiritual essence and your physical
             <br />
-            world.
+            being.
           </div>
           <div className="pt-2 mt-8 w-full max-md:max-w-full">
-            That includes your unique set of gifts, your personality, your sense
-            of humor and most importantly, your
+            This includes embracing your divine feminine energy, your body's innate wisdom, and most importantly, your
             <br />
-            heart. I believe that whether you run your own business or not, a
-            creative and entrepreneurial approach is
+            connection with Allah. Whether you're seeking spiritual growth or emotional healing, understanding your
             <br />
-            critical to fully blossom in the modern world and to experience the
-            happiness and fulfillment you deserve.
+            nervous system's role in transformation is essential for experiencing the deep peace and alignment you're meant for.
           </div>
           <div className="pt-2 mt-8 w-full max-md:max-w-full">
-            No matter what your dreams or obstacles, you have the power to
-            change your life and, by doing so, you'll
+            SubhanAllah, every sister has the power to heal, transform, and embody her highest purpose through
             <br />
-            change the world.
+            faith-aligned practices and divine guidance.
           </div>
           <div className="pt-2 pb-2.5 mt-8 w-full max-md:max-w-full">
-            This philosophy, a dogged amount of hard-work and a discernible
-            amount of grace have lead to some
+            By Allah's grace, this journey of combining spiritual wisdom with somatic healing has led to some
             <br />
-            wonderful milestones. For instance:
+            beautiful milestones. For instance:
           </div>
         </div>
         <div className="flex flex-wrap gap-9 justify-center self-stretch mt-12 w-full max-md:mt-10 max-md:max-w-full">
@@ -118,12 +110,13 @@ export const MilestonesSection: React.FC = () => {
         </div>
         <div className="flex flex-col pt-8 pb-8 mt-12 max-w-full text-4xl tracking-wider leading-[62.4px] text-neutral-800 w-[850px] max-md:mt-10">
           <div className="w-full max-md:max-w-full">
-            From these folks and many others, I<br />
-            continue to learn new things each day and
+            Through these experiences and countless
             <br />
-            expand my own ideas about what it means
+            divine appointments, I continue to witness
             <br />
-            to live a fully creative and meaningful life.
+            the miraculous ways Allah guides us toward
+            <br />
+            the highest purpose and the deepest peace.
           </div>
         </div>
       </div>
