@@ -6,7 +6,7 @@ export const TextBlock: React.FC<TextBlockProps> = ({
   className = "",
 }) => (
   <div
-    className={`text-base tracking-normal leading-8 text-black ${className}`}
+    className={`tracking-normal leading-8 text-black ${className}`}
   >
     {content}
   </div>

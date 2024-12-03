@@ -24,7 +24,8 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
     <motion.div 
       className="relative bg-ramsha-primary px-4 py-16 md:px-8"
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-200px" }}
       transition={{ duration: 0.6 }}
     >
       {/* Main content */}
@@ -33,7 +34,8 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
         <motion.p 
           className="leading-relaxed tracking-wider mb-8 flex flex-wrap justify-center gap-x-2"
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
           transition={{ staggerChildren: 0.1, delayChildren: 0.6 }}
         >
           {mainWords.map((word, index) => (
@@ -56,7 +58,8 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
         <motion.p 
           className="leading-relaxed tracking-wider flex flex-wrap justify-center gap-x-2"
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
           transition={{ staggerChildren: 0.1, delayChildren: 1.2 }}
         >
           {subWords.map((word, index) => (

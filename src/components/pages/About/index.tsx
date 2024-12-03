@@ -4,11 +4,11 @@ import React from "react";
 import ImageLayout from "./imageLayout/ImageLayout"
 import Profilepage from "./profile/ProfilePage"
 import { BioContent } from "./bio"
-import { BiographyContainer } from "./biography/BiographyContainer";
 import MediaLogos from "@/components/pages/Main/MediaLogos"
 import { MilestonesSection } from "./milestones/MilestonesSection"
 import { AboutPage } from "./about/AboutPage"
 import { WelcomeSection } from "./welcomeSection/WelcomeSection";
+import QuoteWithImageSection from "./QuoteWithImageSection";
 
 export default function Component() {
   return (
@@ -17,7 +17,7 @@ export default function Component() {
       <ImageLayout />
       <Profilepage />
       <BioContent />
-      <BiographyContainer />
+      <QuoteWithImageSection />
       <MediaLogos />
       <MilestonesSection />
       <AboutPage />
