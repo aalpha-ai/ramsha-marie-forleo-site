@@ -47,7 +47,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
                 color: "var(--ramsha-primary)",
                 transition: { type: "spring", stiffness: 300 }
               }}
-              className="inline-block text-sm md:text-base"
+              className="inline-block"
             >
               {word}
             </motion.span>
@@ -71,7 +71,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
                 color: "var(--ramsha-primary)",
                 transition: { type: "spring", stiffness: 300 }
               }}
-              className="inline-block text-sm md:text-base"
+              className="inline-block"
             >
               {word}
             </motion.span>

@@ -13,12 +13,10 @@ export const MilestoneCard: React.FC<MilestoneCardProps> = ({
   return (
     <div className="flex flex-col grow shrink justify-center pt-11 min-w-[240px] w-[226px]">
       <div className="flex flex-col pb-16 w-full items-center text-center">
-        <motion.img
+        <img
           src={imageSrc}
           alt={imageAlt}
-          className="object-contain w-full aspect-[0.78]"
-          initial={{ opacity: 1 }}
-          viewport={{ once: true }}
+          className="object-cover w-full aspect-[0.78] rounded-2xl"
         />
         <motion.div
           className="pb-px mt-6 font-extrabold leading-5 uppercase text-neutral-800 tracking-[2.16px]"

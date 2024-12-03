@@ -48,7 +48,7 @@ export const BioContent: React.FC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
         >
           <div className="space-y-4">
             <p className="leading-relaxed">
@@ -66,7 +66,7 @@ export const BioContent: React.FC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
         >
           <div className="space-y-4">
             <p className="">In fact, here are a few ways I might be able to help:</p>
@@ -105,7 +105,7 @@ export const BioContent: React.FC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.9 }}
+          transition={{ duration: 0.6, delay: 0.45 }}
         >
           <div className="space-y-6">
             <p className="leading-relaxed">
@@ -115,7 +115,7 @@ export const BioContent: React.FC = () => {
 
             <div className="flex gap-8 items-center max-md:flex-col">
               <div className="flex-1">
-                <h2 className="font-header text-4xl leading-tight mb-4">
+                <h2 className="font-header text-[30px] lg:text-4xl leading-tight mb-4">
                   "Your Body is a Sacred Vessel"
                 </h2>
                 <p className="leading-relaxed">
@@ -140,7 +140,7 @@ export const BioContent: React.FC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 1.2 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
         >
           <TextBlock 
             content="Together, we'll create a life filled with peace, purpose, and divine alignment."
@@ -154,7 +154,7 @@ export const BioContent: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 1.5 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
         >
           {/* Biography Text */}
           <div className="pb-16">
@@ -163,7 +163,7 @@ export const BioContent: React.FC = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 1.8 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
             >
               {biographyText.map((line, index) => (
                 <motion.p
@@ -185,7 +185,7 @@ export const BioContent: React.FC = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 2.1 }}
+              transition={{ duration: 0.6, delay: 1.5 }}
             >
               {headingText.map((line, index) => (
                 <motion.h2
@@ -194,7 +194,7 @@ export const BioContent: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 1 + index * 0.2 }}
-                  className="text-4xl font-header tracking-wider leading-tight text-neutral-800 mb-3"
+                  className="text-[30px] lg:text-4xl font-header tracking-wider leading-tight text-neutral-800 mb-3"
                 >
                   {line}
                 </motion.h2>

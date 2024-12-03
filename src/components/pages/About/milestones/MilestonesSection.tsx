@@ -73,7 +73,7 @@ export const MilestonesSection: React.FC = () => {
       <div className="flex flex-col items-center px-14 pt-20 pb-20 w-full max-md:px-5 max-md:max-w-full">
         <div className="flex flex-col pt-12 pb-6 max-w-full tracking-normal leading-8 text-black w-[850px]">
           <motion.div 
-            className="font-header w-full text-5xl tracking-wider leading-[62.4px] text-neutral-800 max-md:max-w-full"
+            className="font-header w-full text-[30px] lg:text-4xl tracking-wider leading-[62.4px] text-neutral-800 max-md:max-w-full"
             initial={{ opacity: 1 }}
             viewport={{ once: true }}
           >
@@ -148,7 +148,7 @@ export const MilestonesSection: React.FC = () => {
           initial={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <div className="w-full max-md:max-w-full font-header text-5xl">
+          <div className="w-full max-md:max-w-full font-header text-[30px] lg:text-4xl">
             {finalQuote.map((line, lineIndex) => (
               <div key={lineIndex} className="block">
                 {line.split(" ").map((word, wordIndex) => (

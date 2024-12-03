@@ -43,7 +43,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         variants={itemVariants}
       >
         <motion.div
-          className="text-3xl md:text-5xl tracking-wider leading-tight md:leading-[62.4px] font-header"
+          className="text-[30px] lg:text-4xl tracking-wider leading-tight md:leading-[62.4px] font-header"
           variants={itemVariants}
         >
           {title}
@@ -51,7 +51,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         {textBlocks.map((content, index) => (
           <motion.div 
             key={index} 
-            className="text-sm md:text-base"
+            className=""
             variants={itemVariants}
           >
             <TextBlock content={content} />
