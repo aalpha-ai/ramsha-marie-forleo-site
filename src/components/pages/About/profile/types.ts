@@ -5,7 +5,6 @@ export interface TextBlockProps {
 
 export interface IntroSectionProps {
   mainText: string;
-  subTexts: TextBlockProps[];
-  highlightText: string;
+  subTexts: string;
   imageSrc: string;
 }
