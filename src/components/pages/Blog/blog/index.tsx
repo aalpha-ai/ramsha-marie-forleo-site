@@ -1,71 +1,191 @@
+'use client'
+
 import * as React from "react";
+import { useScroll, motion, useTransform, cubicBezier } from "framer-motion";
 import { ArticleCard } from "./ArticleCard";
 import { TopPickItem } from "./TopPickItem";
-import { recentArticles, topPicks } from "./data";
+import { recentArticles } from "./data";
+
+const topPicks = [
+  {
+    category: "Writing & Creativity",
+    title: "Bryce Dallas Howard: On Being An Artist, Mother & Entrepreneur"
+  },
+  {
+    category: "Wellness",
+    title: "Sleep Revolution: Transform Your Life One Night At A Time with Arianna Huffington"
+  },
+  {
+    category: "Impact & Leadership",
+    title: "Abby Wambach: Forget Little Red Riding Hood. Be a Wolf."
+  },
+  {
+    category: "Personal Growth",
+    title: "Epic Tim Ferriss Interview: Overcoming Fear, Battling Depression and Finding Self-Love"
+  },
+  {
+    category: "Personal Growth",
+    title: "Marie & Oprah on Super Soul Sunday"
+  }
+];
 
 export const BlogLayout: React.FC = () => {
+  const containerRef = React.useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
+
+  // Slower transform for the right column
+  const rightColumnY = useTransform(
+    scrollYProgress,
+    [0, 0.75, 1], // Scroll progress points
+    ["0%", "0%", "-15%"], // Reduced movement range for slower effect
+    {
+      ease: cubicBezier(0.16, 1, 0.3, 1), // Slower easing curve
+    }
+  );
+
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex flex-col px-11 pt-20 pb-20 w-full max-md:px-5 max-md:max-w-full">
-        <div className="w-full max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col">
-            <div className="flex flex-col w-[58%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow pr-2.5 mt-0 min-h-[1px] max-md:max-w-full">
-                <div className="w-full text-3xl tracking-wider leading-loose text-neutral-800 max-md:max-w-full">
-                  Most Recent
-                </div>
-                <div className="flex flex-col pb-4 mt-4 w-full max-md:max-w-full">
-                  {recentArticles.map((article, index) => (
-                    <div key={index} className="mt-8 first:mt-0">
-                      <ArticleCard {...article} />
-                    </div>
-                  ))}
-                </div>
-                <button className="pt-2.5 pr-24 pb-3 pl-24 mt-4 text-base font-bold tracking-wide leading-relaxed text-center text-white capitalize rounded-3xl bg-neutral-800 max-w-[300px] w-[300px] max-md:px-5">
-                  Show More
-                </button>
+    <div 
+      ref={containerRef} 
+      className="relative flex flex-col items-center max-w-[1400px] mx-auto px-6 md:px-14 min-h-[200vh]"
+    >
+      <div className="w-full flex flex-col md:flex-row gap-8">
+        {/* Left Column - Most Recent */}
+        <div className="w-full md:w-[58%]">
+          <h1 className="font-display text-4xl md:text-5xl mb-8">
+            Most Recent
+          </h1>
+
+          {/* Featured Article */}
+          <div className="w-full mb-12">
+            <a href="#" className="group">
+              <div className="relative">
+                <img
+                  src="/ramsha-pics/webp/glowingfemmej3.webp"
+                  alt="Featured article image"
+                  className="w-full aspect-[16/9] object-cover rounded-lg"
+                />
               </div>
-            </div>
-            <div className="flex flex-col ml-5 w-[42%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col pt-10 min-h-[39px]">
-                <div className="flex flex-col items-start pl-16 w-full min-h-[1px] max-md:pl-5">
-                  <div className="flex justify-center items-center w-full max-w-[324px]">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/790d0bf1a45a8b19de43e068e1da0655c1ecbefe2305a0de3654c808abf58d20?apiKey=3445d620e72b4cd99c6f91e1d18e316a&"
-                      alt="Marie and Oprah interview"
-                      className="object-contain flex-1 shrink self-stretch my-auto w-full aspect-square basis-0 max-w-[324px] min-w-[240px]"
-                    />
-                  </div>
-                  <div className="flex justify-center items-start mt-3.5 w-full text-white max-w-[390px]">
-                    <div className="flex flex-col flex-1 shrink w-full basis-0 min-h-[300px] min-w-[240px]">
-                      <div className="flex flex-col px-4 pb-4 w-full min-h-[315px]">
-                        <div className="flex flex-col pt-1.5 w-full text-3xl tracking-wider leading-loose">
-                          <div className="w-full">Marie & Oprah</div>
-                        </div>
-                        <div className="flex flex-col pb-3 w-full text-xs font-extrabold leading-loose uppercase tracking-[2.16px]">
-                          <div className="z-10 pb-px">Watch Now</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col gap-6 self-stretch px-7 pt-6 pb-8 mt-3.5 w-full bg-stone-100 max-md:px-5">
-                    <div className="px-16 w-full text-3xl tracking-wider text-center leading-[49px] text-neutral-800 max-md:px-5">
-                      Top Picks
-                    </div>
-                    <div className="flex flex-col mt-6 w-full">
-                      {topPicks.map((pick, index) => (
-                        <div key={index} className="mt-6 first:mt-0">
-                          <TopPickItem {...pick} />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+              
+              <div className="mt-6">
+                <span className="text-[#D4502B] text-xs font-bold tracking-[2.16px] uppercase">
+                  Personal Growth
+                </span>
+                
+                <h2 className="font-display text-[2rem] md:text-[2.5rem] leading-[1.2] mt-3 group-hover:text-[#D4502B] transition-colors">
+                  Why Everything You Know About Success & Productivity Is Wrong with Seth Godin
+                </h2>
               </div>
-            </div>
+            </a>
+          </div>
+          <div className="w-full mb-12">
+            <a href="#" className="group">
+              <div className="relative">
+                <img
+                  src="/ramsha-pics/webp/glowingfemmej3.webp"
+                  alt="Featured article image"
+                  className="w-full aspect-[16/9] object-cover rounded-lg"
+                />
+              </div>
+              
+              <div className="mt-6">
+                <span className="text-[#D4502B] text-xs font-bold tracking-[2.16px] uppercase">
+                  Personal Growth
+                </span>
+                
+                <h2 className="font-display text-[2rem] md:text-[2.5rem] leading-[1.2] mt-3 group-hover:text-[#D4502B] transition-colors">
+                  Why Everything You Know About Success & Productivity Is Wrong with Seth Godin
+                </h2>
+              </div>
+            </a>
+          </div>
+          <div className="w-full mb-12">
+            <a href="#" className="group">
+              <div className="relative">
+                <img
+                  src="/ramsha-pics/webp/glowingfemmej3.webp"
+                  alt="Featured article image"
+                  className="w-full aspect-[16/9] object-cover rounded-lg"
+                />
+              </div>
+              
+              <div className="mt-6">
+                <span className="text-[#D4502B] text-xs font-bold tracking-[2.16px] uppercase">
+                  Personal Growth
+                </span>
+                
+                <h2 className="font-display text-[2rem] md:text-[2.5rem] leading-[1.2] mt-3 group-hover:text-[#D4502B] transition-colors">
+                  Why Everything You Know About Success & Productivity Is Wrong with Seth Godin
+                </h2>
+              </div>
+            </a>
+          </div>
+
+          {/* Show More Button */}
+          <div className="flex justify-center mt-12 mb-20">
+            <button className="bg-neutral-800 text-white font-bold py-3 px-12 rounded-full hover:bg-neutral-700 transition-colors">
+              Show More
+            </button>
           </div>
         </div>
+
+        {/* Updated Right Column with slower movement */}
+        <motion.div 
+          style={{ y: rightColumnY }}
+          className="w-full md:w-[42%] space-y-8 md:sticky md:top-8 h-fit"
+          transition={{ 
+            duration: 1.5, // Increased duration
+            ease: [0.16, 1, 0.3, 1], // Slower ease curve
+            stiffness: 50, // Reduced stiffness for slower movement
+            damping: 20, // Adjusted damping
+            mass: 1.5 // Added mass for more inertia
+          }}
+        >
+          {/* Free Audio Training */}
+          <div className="bg-[#C27C6F] rounded-lg p-6 text-white">
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-4">
+              Free Audio Training
+            </h3>
+            <h2 className="text-3xl font-bold mb-4">
+              Learn How To Get <span className="inline-block border-2 border-white rounded-full px-2">Anything</span> You Want
+            </h2>
+            <button className="bg-[#F8E577] text-black font-bold text-sm py-2 px-4 rounded-full">
+              DOWNLOAD NOW
+            </button>
+          </div>
+
+          {/* Marie & Oprah Section */}
+          <div className="relative">
+            <img
+              src="/ramsha-pics/webp/glowingfemmej3.webp"
+              alt="Marie and Oprah"
+              className="w-full aspect-[4/3] object-cover rounded-lg"
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80">
+              <h2 className="text-3xl mb-2">Marie & Oprah</h2>
+              <span className="text-xs font-bold tracking-[2.16px] uppercase">Watch Now</span>
+            </div>
+          </div>
+
+          {/* Top Picks Section */}
+          <div className="bg-stone-100 p-8 rounded-lg">
+            <h2 className="text-3xl text-center mb-8">Top Picks</h2>
+            <div className="space-y-6">
+              {topPicks.map((pick, index) => (
+                <div key={index} className="group">
+                  <span className="text-[#D4502B] text-xs font-bold tracking-[2.16px] uppercase">
+                    {pick.category}
+                  </span>
+                  <h3 className="text-lg mt-2 group-hover:text-[#D4502B] transition-colors">
+                    {pick.title}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
