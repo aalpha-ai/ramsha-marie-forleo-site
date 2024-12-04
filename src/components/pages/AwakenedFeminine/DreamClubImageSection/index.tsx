@@ -3,7 +3,7 @@ import DreamClubImageSection from './DreamClubImageSection';
 
 const DreamClub: React.FC = () => {
   return (
-    <DreamClubImageSection imageSrc="/ramsha-pics/gf5925.jpeg" />
+    <DreamClubImageSection imageSrc="/ramsha-pics/webp/gf5925.webp" />
   );
 };
 

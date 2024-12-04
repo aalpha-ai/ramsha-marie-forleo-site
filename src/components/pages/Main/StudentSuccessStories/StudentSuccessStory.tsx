@@ -89,7 +89,7 @@ const StudentSuccessStories: React.FC<StudentSuccessStoriesProps> = ({
             className="w-full"
           >
             <Image
-              src="/gridImages/image39.webp"
+              src="/gridImages/webp/image39.webp"
               alt="Student success story background"
               className="object-cover h-full w-full md:w-[450px] lg:w-[650px]"
               width={650}

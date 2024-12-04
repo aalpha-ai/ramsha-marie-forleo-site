@@ -26,7 +26,7 @@ const ImageSection: React.FC = () => {
       className="w-full xl:w-[500px] lg:w-[400px] flex justify-center items-center"
     >
       <Image
-        src="/ramsha-pics/cta-image-2.webp"
+        src="/ramsha-pics/webp/cta-image-2.webp"
         className="object-contain w-full max-w-[500px]"
         alt="Learn Anything illustration"
         width={500}

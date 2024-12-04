@@ -29,7 +29,7 @@ const CoachSectionWrapper: React.FC = () => {
     "Alhamdulillah, I've helped countless sisters unlock their divine feminine power and create lives of authentic abundance through faith and surrender. Now, it's your turn to rise.",
   ];
 
-  const imageSrc = "/ramsha-pics/gf5924.jpeg";
+  const imageSrc = "/ramsha-pics/webp/gf5924.webp";
 
   return (
     <CoachSection

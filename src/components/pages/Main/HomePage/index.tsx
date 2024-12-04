@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
         description="Inspired by clients & my own story, this episode will reveal how you can meet the right guy without compromising your values. It’s liquid gold."
         buttonText="Listen To The Episode"
         buttonLink="#"
-        imageSrc="/ramsha-pics/british-muslim.webp"
+        imageSrc="/ramsha-pics/webp/british-muslim.webp"
         imageAlt="Ramsha on British Muslim TV"
         backgroundColor="#FFFFFF"
       />
@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
         description="This book is made to open your heart to the most surrendered version of you so you can receive more success, doing less."
         buttonText="order the book"
         buttonLink="https://everythingisfigureoutable.com/"
-        imageSrc="/ramsha-pics/theory-of-everything.webp"
+        imageSrc="/ramsha-pics/webp/theory-of-everything.webp"
         imageAlt="Everything Is Figureoutable book cover"
         textContainerClassName="col-span-7"
         imageContainerClassName="col-span-5"

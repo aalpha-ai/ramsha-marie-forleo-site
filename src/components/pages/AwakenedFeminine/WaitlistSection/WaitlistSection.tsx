@@ -12,7 +12,7 @@ const WaitlistSection: React.FC = () => {
     <section 
       className="bg-black flex flex-col justify-start items-center pt-20 md:pt-0 pb-56 pr-36 pl-36 text-center min-h-[800px] max-md:px-5 max-md:py-24 relative"
       style={{
-        backgroundImage: "url('/ramsha-pics/gf33.jpeg')",
+        backgroundImage: "url('/ramsha-pics/webp/gf33.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

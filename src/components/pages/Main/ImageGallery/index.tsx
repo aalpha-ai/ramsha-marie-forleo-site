@@ -7,26 +7,26 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 const imageData = [
   [
-    { src: "/gridImages/image7.webp" },
-    { src: "/gridImages/image36.webp" },
+    { src: "/gridImages/webp/image7.webp" },
+    { src: "/gridImages/webp/image36.webp" },
   ],
   [
-    { src: "/gridImages/image8.webp" },
-    { src: "/gridImages/image23.webp" },
+    { src: "/gridImages/webp/image8.webp" },
+    { src: "/gridImages/webp/image23.webp" },
   ],
   [
-    { src: "/gridImages/image24.webp" },
-    { src: "/gridImages/image25.webp" },
+    { src: "/gridImages/webp/image24.webp" },
+    { src: "/gridImages/webp/image25.webp" },
   ],
   [
-    { src: "/gridImages/image28.webp" },
-    { src: "/gridImages/image31.webp" },
-    { src: "/gridImages/image10.webp" },
+    { src: "/gridImages/webp/image28.webp" },
+    { src: "/gridImages/webp/image31.webp" },
+    { src: "/gridImages/webp/image10.webp" },
   ],
   [
-    { src: "/gridImages/image32.webp" },
-    { src: "/gridImages/image41.webp" },
-    { src: "/gridImages/image6.webp" },
+    { src: "/gridImages/webp/image32.webp" },
+    { src: "/gridImages/webp/image41.webp" },
+    { src: "/gridImages/webp/image6.webp" },
   ],
 ];
 

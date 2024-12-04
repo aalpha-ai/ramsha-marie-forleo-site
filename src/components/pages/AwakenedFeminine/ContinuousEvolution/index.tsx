@@ -22,7 +22,7 @@ const ContinuousEvolution: React.FC = () => {
     <section 
       className="flex flex-col items-center bg-black relative"
       style={{
-        backgroundImage: "url('/ramsha-pics/glowingfemmej3.jpeg')",
+        backgroundImage: "url('/ramsha-pics/webp/glowingfemmej3.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

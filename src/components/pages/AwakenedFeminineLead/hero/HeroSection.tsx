@@ -34,7 +34,7 @@ const HeroText: React.FC<HeroTextProps> = ({ text, isHighlighted, delay = 0 }) =
 
 const HeroSection: React.FC<HeroSectionProps> = ({ texts }) => {
   return (
-    <main className="relative w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/gridImages/image30.webp')" }}>
+    <main className="relative w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/gridImages/webp/image30.webp')" }}>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent" />
 

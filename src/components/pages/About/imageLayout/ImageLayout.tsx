@@ -24,7 +24,7 @@ export const ImageLayout: React.FC = () => {
             className="w-full max-w-[768px]"
           >
             <ResponsiveImage
-              src="/ramsha-pics/hero-2.webp"
+              src="/ramsha-pics/webp/hero-2.webp"
               alt="Main content image"
               className="object-contain z-0 my-auto w-full aspect-[1.39]"
             />

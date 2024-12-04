@@ -15,32 +15,32 @@ type MediaLogoData = {
 
 const mediaLogos: MediaLogoData[] = [
   {
-    src: "/ramsha-pics/goop.webp",
+    src: "/ramsha-pics/webp/goop.webp",
     alt: "Media Logo 1",
     className: "aspect-[3.88] w-[89px]",
   },
   {
-    src: "/ramsha-pics/oprah.webp",
+    src: "/ramsha-pics/webp/oprah.webp",
     alt: "Media Logo 2",
     className: "aspect-[1.33] w-[89px]",
   },
   {
-    src: "/ramsha-pics/bazaar.webp",
+    src: "/ramsha-pics/webp/bazaar.webp",
     alt: "Media Logo 3",
     className: "aspect-[2.54] w-[89px]",
   },
   {
-    src: "/ramsha-pics/bbc.webp",
+    src: "/ramsha-pics/webp/bbc.webp",
     alt: "Media Logo 4",
     className: "aspect-[1.33] w-[89px]",
   },
   {
-    src: "/ramsha-pics/parade.webp",
+    src: "/ramsha-pics/webp/parade.webp",
     alt: "Media Logo 5",
     className: "aspect-[1.96] w-[88px]",
   },
   {
-    src: "/ramsha-pics/success-magazine.webp",
+    src: "/ramsha-pics/webp/success-magazine.webp",
     alt: "Media Logo 6",
     className: "aspect-[4.24] w-[89px]",
   },

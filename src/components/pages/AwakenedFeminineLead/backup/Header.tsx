@@ -47,7 +47,7 @@ const Header: React.FC = () => {
             >
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
                 <Image
-                  src="/gridImages/image26.webp"
+                  src="/gridImages/webp/image26.webp"
                   alt="Awakened Feminine"
                   fill
                   className="object-cover object-center hover:scale-105 transition-transform duration-700"
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="relative aspect-[16/9] md:aspect-[21/9]">
             <Image
-              src="/gridImages/image32.webp" // Make sure to add this image to your public folder
+              src="/gridImages/webp/image32.webp" // Make sure to add this image to your public folder
               alt="Modern interior with wooden stairs"
               fill
               className="object-cover"

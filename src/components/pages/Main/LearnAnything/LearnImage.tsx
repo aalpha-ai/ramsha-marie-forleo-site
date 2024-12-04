@@ -29,7 +29,7 @@ export const LearnImage: React.FC = () => {
       className="w-full md:w-[300px] lg:w-[300px]"
     >
       <Image
-        src="/ramsha-pics/cta-image-2.webp"
+        src="/ramsha-pics/webp/cta-image-2.webp"
         className="object-contain w-full"
         alt="Learn Anything illustration"
         width={500}

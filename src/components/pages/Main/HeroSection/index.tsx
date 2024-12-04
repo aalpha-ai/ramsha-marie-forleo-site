@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
       
       <div className="flex overflow-hidden z-0 flex-col flex-1 self-stretch w-full">
         <Image
-          src="/ramsha-pics/hero.webp"
+          src="/ramsha-pics/webp/hero.webp"
           alt="Background image"
           className="object-cover w-full h-full md:object-contain md:aspect-[1.78] max-md:aspect-square"
           width={1920}

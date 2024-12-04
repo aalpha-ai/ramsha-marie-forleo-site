@@ -35,7 +35,7 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({
                 viewport={{ once: true }}
               >
                 <ImageComponent
-                  src="/ramsha-pics/hero-device.webp"
+                  src="/ramsha-pics/webp/hero-device.webp"
                   alt="Podcast cover image"
                   className="absolute max-md:hidden left-8 lg:-top-32 object-contain w-full max-w-96"
                 />

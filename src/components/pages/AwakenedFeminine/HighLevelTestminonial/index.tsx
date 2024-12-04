@@ -105,7 +105,7 @@ const HighLevelTestminonial: React.FC<HighLevelTestminonialProps> = () => {
         <div className="grid md:grid-cols-[.75fr_1fr] gap-10 max-w-5xl.5 mx-auto">
           <div className="flex items-center justify-center">
             <ImageContainer
-              src="/ramsha-pics/gf5956.jpeg"
+              src="/ramsha-pics/webp/gf5956.webp"
               alt="Dream Club visual representation"
             />
           </div>
@@ -126,7 +126,7 @@ const HighLevelTestminonial: React.FC<HighLevelTestminonialProps> = () => {
             </ul>
           </div>
           <ImageContainer
-            src="/ramsha-pics/gfshoot5.jpeg"
+            src="/ramsha-pics/webp/gfshoot5.webp"
             alt="Additional Dream Club visual"
           />
         </div>
