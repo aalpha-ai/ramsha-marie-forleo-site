@@ -10,10 +10,10 @@ interface LinkItem {
 }
 
 const companyLinks: LinkItem[] = [
-  { text: "About", href: "#" },
+  { text: "About", href: "/about" },
   { text: "Work With Me", href: "#" },
   { text: "In The Press", href: "#" },
-  { text: "Blog", href: "#" },
+  { text: "Blog", href: "/blog" },
 ];
 
 const CompanyLinks: React.FC = () => {

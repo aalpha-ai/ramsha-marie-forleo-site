@@ -15,7 +15,7 @@ interface NavigationProps {
 }
 
 export const navItems: NavItem[] = [
-  { label: "Blog" },
+  { label: "Blog", href: "/blog"},
   { label: "Work With Me" },
   { label: "In The Press" },
   { label: "About", href: "/about" },
