@@ -1,6 +1,6 @@
 export interface CollectionCardProps {
-  title: string[];
-  paddingTop: string;
+  title: string;
+  image: string;
 }
 
 export interface CollectionSectionProps {
