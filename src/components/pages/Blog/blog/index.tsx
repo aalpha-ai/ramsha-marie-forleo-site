@@ -8,24 +8,24 @@ import { recentArticles } from "./data";
 
 const topPicks = [
   {
-    category: "Writing & Creativity",
-    title: "Bryce Dallas Howard: On Being An Artist, Mother & Entrepreneur"
+    category: "Spiritual Growth",
+    title: "Unlocking Your Divine Feminine: A Journey to Self-Discovery Through Islamic Teachings"
   },
   {
     category: "Wellness",
-    title: "Sleep Revolution: Transform Your Life One Night At A Time with Arianna Huffington"
+    title: "Somatic Healing: Transform Your Nervous System and Connect with Your Higher Self"
   },
   {
-    category: "Impact & Leadership",
-    title: "Abby Wambach: Forget Little Red Riding Hood. Be a Wolf."
-  },
-  {
-    category: "Personal Growth",
-    title: "Epic Tim Ferriss Interview: Overcoming Fear, Battling Depression and Finding Self-Love"
+    category: "Leadership",
+    title: "From Burnout to Balance: Embracing Your Feminine Power in Business"
   },
   {
     category: "Personal Growth",
-    title: "Marie & Oprah on Super Soul Sunday"
+    title: "The Rich Receiver Method: Opening Your Heart to Divine Abundance"
+  },
+  {
+    category: "Spiritual Practice",
+    title: "Divine Surrender: Finding Peace Through Faith and Trust in Allah"
   }
 ];
 
@@ -55,7 +55,7 @@ export const BlogLayout: React.FC = () => {
         {/* Left Column - Most Recent */}
         <div className="w-full md:w-[58%]">
           <h1 className="font-display text-4xl md:text-5xl mb-8">
-            Most Recent
+            Latest Wisdom
           </h1>
 
           {/* Featured Article */}
@@ -64,18 +64,18 @@ export const BlogLayout: React.FC = () => {
               <div className="relative">
                 <img
                   src="/ramsha-pics/webp/glowingfemmej3.webp"
-                  alt="Featured article image"
+                  alt="Woman in peaceful meditation"
                   className="w-full aspect-[16/9] object-cover rounded-lg"
                 />
               </div>
               
               <div className="mt-6">
                 <span className="text-[#D4502B] text-xs font-bold tracking-[2.16px] uppercase">
-                  Personal Growth
+                  Spiritual Growth
                 </span>
                 
                 <h2 className="font-display text-[2rem] md:text-[2.5rem] leading-[1.2] mt-3 group-hover:text-[#D4502B] transition-colors">
-                  Why Everything You Know About Success & Productivity Is Wrong with Seth Godin
+                  Embracing Divine Surrender: Your Path to Unshakeable Faith and Inner Peace
                 </h2>
               </div>
             </a>
@@ -125,8 +125,8 @@ export const BlogLayout: React.FC = () => {
 
           {/* Show More Button */}
           <div className="flex justify-center mt-12 mb-20">
-            <button className="bg-neutral-800 text-white font-bold py-3 px-12 rounded-full hover:bg-neutral-700 transition-colors">
-              Show More
+            <button className="bg-[#C27C6F] text-white font-bold py-3 px-12 rounded-full hover:bg-[#b16a5d] transition-colors">
+              Explore More Wisdom
             </button>
           </div>
         </div>
@@ -143,35 +143,35 @@ export const BlogLayout: React.FC = () => {
             mass: 1.5 // Added mass for more inertia
           }}
         >
-          {/* Free Audio Training */}
+          {/* Free Training Section */}
           <div className="bg-[#C27C6F] rounded-lg p-6 text-white">
             <h3 className="text-sm font-bold uppercase tracking-wider mb-4">
-              Free Audio Training
+              Free Meditation Training
             </h3>
             <h2 className="text-3xl font-bold mb-4">
-              Learn How To Get <span className="inline-block border-2 border-white rounded-full px-2">Anything</span> You Want
+              Unlock Your <span className="inline-block border-2 border-white rounded-full px-2">Divine</span> Feminine Power
             </h2>
             <button className="bg-[#F8E577] text-black font-bold text-sm py-2 px-4 rounded-full">
-              DOWNLOAD NOW
+              BEGIN YOUR JOURNEY
             </button>
           </div>
 
-          {/* Marie & Oprah Section */}
+          {/* Featured Section */}
           <div className="relative">
             <img
               src="/ramsha-pics/webp/glowingfemmej3.webp"
-              alt="Marie and Oprah"
+              alt="Spiritual transformation session"
               className="w-full aspect-[4/3] object-cover rounded-lg"
             />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/80">
-              <h2 className="text-3xl mb-2">Marie & Oprah</h2>
-              <span className="text-xs font-bold tracking-[2.16px] uppercase">Watch Now</span>
+              <h2 className="text-3xl mb-2">Awakened Feminine Flow</h2>
+              <span className="text-xs font-bold tracking-[2.16px] uppercase">Learn More</span>
             </div>
           </div>
 
           {/* Top Picks Section */}
-          <div className="bg-stone-100 p-8 rounded-lg">
-            <h2 className="text-3xl text-center mb-8">Top Picks</h2>
+          <div className="bg-[#FFF5F5] p-8 rounded-lg">
+            <h2 className="text-3xl text-center mb-8">Sacred Wisdom</h2>
             <div className="space-y-6">
               {topPicks.map((pick, index) => (
                 <div key={index} className="group">

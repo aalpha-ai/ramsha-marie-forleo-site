@@ -11,61 +11,40 @@ export const SearchPage: React.FC = () => {
   };
 
   return (
-    <div className="flex overflow-hidden flex-col items-center bg-white">
-      <div className="flex flex-col px-14 pt-28 w-full max-md:px-5 max-md:pt-24 max-md:max-w-full">
-        <div className="flex flex-col w-full max-md:max-w-full">
-          <div className="w-full text-5xl tracking-wider leading-none text-neutral-800 max-md:max-w-full">
-            Looking for something in particular?
-          </div>
+    <div className="w-full container mx-auto px-6 md:px-14 py-20 bg-white">
+      {/* Header Section */}
+      <div className="mx-auto text-center">
+        <h1 className="font-header text-[48px] leading-[1.05] tracking-[-0.02em] text-neutral-900 mb-6">
+          What Divine Wisdom Are You Seeking?
+        </h1>
+        <p className="text-[#D4502B] text-lg mb-14 font-light">
+          Explore our sacred collection of spiritual teachings and feminine wisdom
+        </p>
+        <div className="relative max-w-2xl mx-auto">
           <SearchInput onSearch={handleSearch} />
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#C27C6F]" />
         </div>
-        <div className="flex relative flex-col mt-9 w-full max-md:max-w-full">
-          <div className="flex z-0 flex-col w-full max-md:max-w-full">
-            <div className="flex flex-col self-center w-full max-w-[935px] max-md:max-w-full">
-              <div className="max-md:max-w-full">
-                <div className="flex gap-5 max-md:flex-col">
-                  <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                    <div className="flex flex-col grow justify-center pb-9 min-h-[360px]">
-                      <div className="flex w-full min-h-[1px]" />
-                    </div>
-                  </div>
-                  {articles.slice(0, 2).map((article, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full"
-                    >
-                      <ArticleCard {...article} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="max-md:max-w-full">
-                <div className="flex gap-5 max-md:flex-col">
-                  {articles.slice(2).map((article, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full"
-                    >
-                      <ArticleCard {...article} />
-                    </div>
-                  ))}
-                </div>
-              </div>
+      </div>
+
+      {/* Articles Grid */}
+      <div className="mt-16 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {articles.map((article, index) => (
+            <div key={index} className="group">
+              <ArticleCard {...article} />
             </div>
-            <button className="flex flex-wrap justify-center px-2.5 w-full text-sm font-bold leading-none whitespace-nowrap text-zinc-800 max-md:max-w-full">
-              <div className="flex flex-wrap flex-1 shrink gap-px py-3.5 pr-20 pl-5 rounded-sm border border-solid basis-0 bg-neutral-50 border-stone-300 min-w-[240px] size-full max-md:px-5 max-md:max-w-full">
-                <div>Next</div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/3b61a853068aaf68339443e44c27d667a2af4df4e1e1b7d35785f6918a223299?apiKey=3445d620e72b4cd99c6f91e1d18e316a&"
-                  alt=""
-                  className="object-contain shrink-0 self-start w-3 aspect-square"
-                />
-              </div>
-            </button>
-          </div>
-          <div className="flex absolute inset-y-0 right-0 z-0 max-w-full min-h-[760px] w-[915px]" />
+          ))}
         </div>
+      </div>
+
+      {/* No Results Message - Optional */}
+      <div className="text-center mt-16 hidden">
+        <h2 className="text-2xl font-display mb-4">
+          Your Journey Leads Elsewhere
+        </h2>
+        <p className="text-neutral-600 mb-8">
+          We couldn't find what you're looking for, but perhaps that's Allah's way
+        </p>
       </div>
     </div>
   );
