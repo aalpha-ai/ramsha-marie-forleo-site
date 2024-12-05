@@ -1,4 +1,7 @@
+'use client';
+
 import * as React from "react";
+import { motion } from "framer-motion";
 import { ContentItemProps } from "./types";
 
 export const ContentItem: React.FC<ContentItemProps> = ({
@@ -8,25 +11,50 @@ export const ContentItem: React.FC<ContentItemProps> = ({
   href,
 }) => {
   return (
-    <div className="group cursor-pointer transition-all duration-300 hover:opacity-80">
+    <motion.div 
+      className="group cursor-pointer"
+      whileHover={{ scale: 1.02 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="flex flex-col max-w-[400px] gap-4">
-        <div className="w-full overflow-hidden">
-          <img
+        <motion.div 
+          className="w-full overflow-hidden"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.4 }}
+        >
+          <motion.img
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
             loading="lazy"
             src={imageUrl}
             alt="Content thumbnail"
             className="w-full aspect-video object-cover"
           />
-        </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="text-[26px] leading-tight font-serif text-neutral-800">
+        </motion.div>
+        <motion.div 
+          className="flex flex-col gap-2"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+        >
+          <motion.h3 
+            className="text-[26px] leading-tight font-serif text-neutral-800"
+            whileHover={{ color: "#D4502B" }}
+            transition={{ duration: 0.2 }}
+          >
             {title}
-          </h3>
-          <p className="text-xs tracking-[0.15em] uppercase text-neutral-500 font-medium">
+          </motion.h3>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            className="text-xs tracking-[0.15em] uppercase text-neutral-500 font-medium"
+          >
             {date}
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
