@@ -51,26 +51,27 @@ export const LatestContent: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex justify-between items-center border-t border-[#D4502B] pt-4 pb-12"
+          className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-6 border-t border-[#D4502B] pt-4 pb-8 sm:pb-12"
         >
           <motion.h2 
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="font-display text-[68px] leading-none text-[#D4502B]"
+            className="font-display text-4xl sm:text-5xl md:text-[68px] leading-tight sm:leading-none text-[#D4502B] break-words"
           >
             Spiritual Growth & Empowerment
           </motion.h2>
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
+            className="shrink-0"
           >
             <Link 
               href="#" 
-              className="text-xs font-bold tracking-[2.4px] uppercase hover:opacity-70 transition-opacity flex items-center gap-2 text-[#D4502B]"
+              className="text-xs font-bold tracking-[2.4px] uppercase hover:opacity-70 transition-opacity flex items-center gap-2 text-[#D4502B] whitespace-nowrap"
             >
               <motion.span
                 whileHover={{ x: -5 }}

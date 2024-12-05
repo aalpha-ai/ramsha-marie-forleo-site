@@ -140,7 +140,6 @@ export const BlogLayout: React.FC = () => {
           </motion.div>
         </motion.div>
 
-        {/* Updated Right Column with slower movement */}
         <motion.div 
           ref={rightColumnRef}
           style={{ y: rightColumnY }}
@@ -155,10 +154,9 @@ export const BlogLayout: React.FC = () => {
             mass: 1.5
           }}
         >
-          {/* Free Training Section */}
           <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.6 }}
             className="bg-[#C27C6F] rounded-lg p-6 text-white"
@@ -178,7 +176,6 @@ export const BlogLayout: React.FC = () => {
             </motion.button>
           </motion.div>
 
-          {/* Featured Section */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -199,7 +196,6 @@ export const BlogLayout: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Top Picks Section */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

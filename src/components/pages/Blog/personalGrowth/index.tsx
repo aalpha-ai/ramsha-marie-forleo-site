@@ -10,10 +10,10 @@ export const PersonalGrowthArticle: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col md:flex-row justify-between px-6 md:px-14 py-16 w-full max-w-[1400px] gap-8"
+        className="flex flex-col md:flex-row items-start px-6 md:px-14 py-16 w-full max-w-[1400px] gap-8 md:gap-16"
       >
         {/* Left Content */}
-        <div className="flex flex-col max-w-[600px]">
+        <div className="flex flex-col w-full md:w-[60%] lg:w-[55%]">
           <motion.span
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -118,14 +118,14 @@ export const PersonalGrowthArticle: React.FC = () => {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="relative flex-1"
+          className="relative w-full md:w-[40%] lg:w-[45%] self-stretch"
         >
           <motion.img
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
             src="/ramsha-pics/webp/glowingfemmej3.webp"
             alt="Peaceful meditation session for spiritual growth"
-            className="w-full h-auto rounded-lg object-cover"
+            className="w-full h-full object-cover rounded-lg"
           />
           <motion.div
             initial={{ opacity: 0, y: -10 }}
