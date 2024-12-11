@@ -9,7 +9,6 @@ import TextContent from "./TextContent";
 import List from "./List";
 import Emphasis from "./Emphasis";
 import BottomContent from "./BottomContent";
-import BlurFade from "@/components/magicui/blur-fade";
 
 interface SectionComponentProps {}
 
@@ -17,15 +16,13 @@ const SectionComponent: React.FC<SectionComponentProps> = () => {
   return (
     <section className="flex flex-col bg-landing-stone-pattern">
       <Container>
-        <BlurFade>
-          <BackgroundBorder>
-            <Heading />
-            <TextContent />
-            <List />
-            <Emphasis />
-            <BottomContent />
-          </BackgroundBorder>
-        </BlurFade>
+        <BackgroundBorder>
+          <Heading />
+          <TextContent />
+          <List />
+          <Emphasis />
+          <BottomContent />
+        </BackgroundBorder>
       </Container>
     </section>
   );

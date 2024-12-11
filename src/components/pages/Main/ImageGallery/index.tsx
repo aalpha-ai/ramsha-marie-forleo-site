@@ -3,7 +3,6 @@
  */
 import React from "react";
 import Image from "next/image";
-import BlurFade from "@/components/magicui/blur-fade";
 
 const imageData = [
   [
@@ -40,17 +39,15 @@ export default function ImageGallery() {
             className="flex max-md:flex-col gap-5 pb-5"
           >
             {item.map((image, index) => (
-              <BlurFade key={index} inViewMargin="-200px">
-                <div className="relative md:flex-1">
-                  <Image
-                    src={image.src}
-                    width={500}
-                    height={400}
-                    className="w-full md:h-[350px] lg:h-[450px] xl:h-[650px] object-cover rounded-sm transition-transform hover:scale-[1.02] duration-300"
-                    alt="Gallery image"
-                  />
-                </div>
-              </BlurFade>
+              <div className="relative md:flex-1">
+                <Image
+                  src={image.src}
+                  width={500}
+                  height={400}
+                  className="w-full md:h-[350px] lg:h-[450px] xl:h-[650px] object-cover rounded-sm transition-transform hover:scale-[1.02] duration-300"
+                  alt="Gallery image"
+                />
+              </div>
             ))}
           </div>
         ))}

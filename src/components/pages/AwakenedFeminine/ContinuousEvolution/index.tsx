@@ -4,7 +4,6 @@
 import React from "react";
 import Heading from "./Heading";
 import JoinWaitlist from "./JoinWaitlist";
-import BlurFade from "@/components/magicui/blur-fade";
 
 interface ContentItem {
   text: string;
@@ -32,34 +31,30 @@ const ContinuousEvolution: React.FC = () => {
 
       <div className="flex flex-col px-10 pt-14 pb-5 w-full max-md:px-5 max-md:max-w-full relative z-10">
         {contentItems.map((item, index) => (
-          <BlurFade key={index}>
-            <Heading
-              text={item.text}
-              alignment={item.alignment}
-              className={index > 0 ? "mt-96 max-md:mt-10" : ""}
-            />
-          </BlurFade>
+          <Heading
+            text={item.text}
+            alignment={item.alignment}
+            className={index > 0 ? "mt-96 max-md:mt-10" : ""}
+          />
         ))}
-        <BlurFade>
-          <div className="flex flex-wrap gap-5 justify-center mt-32 max-md:mt-10 max-md:max-w-full">
-            <div className="flex flex-col grow shrink pt-3 pb-4 text-2xl font-light tracking-wide leading-8 text-orange-50 min-w-[240px] w-[246px]">
-              <h4 className="pr-1 w-full font-header">
-                <span className="">
-                  Guiding you to embrace your
-                </span>
-                <br />
-                <span className="font-bold text-orange-50">
-                  divine feminine power
-                </span>
-                <span className="text-orange-50">, bi'ithnillah.</span>
-              </h4>
-            </div>
-            <div className="flex flex-col grow shrink justify-center items-end pt-11 pb-12 w-full max-w-[388px]">
-              <div className="flex max-w-full bg-white min-h-[1px] w-[388px]" />
-            </div>
-            <JoinWaitlist />
+        <div className="flex flex-wrap gap-5 justify-center mt-32 max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-col grow shrink pt-3 pb-4 text-2xl font-light tracking-wide leading-8 text-orange-50 min-w-[240px] w-[246px]">
+            <h4 className="pr-1 w-full font-header">
+              <span className="">
+                Guiding you to embrace your
+              </span>
+              <br />
+              <span className="font-bold text-orange-50">
+                divine feminine power
+              </span>
+              <span className="text-orange-50">, bi'ithnillah.</span>
+            </h4>
           </div>
-        </BlurFade>
+          <div className="flex flex-col grow shrink justify-center items-end pt-11 pb-12 w-full max-w-[388px]">
+            <div className="flex max-w-full bg-white min-h-[1px] w-[388px]" />
+          </div>
+          <JoinWaitlist />
+        </div>
       </div>
     </section>
   );

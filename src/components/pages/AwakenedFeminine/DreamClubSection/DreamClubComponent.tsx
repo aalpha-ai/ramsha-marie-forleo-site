@@ -4,7 +4,6 @@
 import React from "react";
 import Header from "./Header";
 import FeatureCard from "./FeatureCard";
-import BlurFade from "@/components/magicui/blur-fade";
 
 interface FeatureCardProps {
   title: string;
@@ -34,17 +33,15 @@ const DreamClubComponent: React.FC = () => {
     <div className="bg-ramsha-primary text-white py-10">
       <main className="flex flex-col text-center max-w-5xl.5 mx-auto md:px-10 px-5 ">
         <Header />
-        <BlurFade>
-          <section className="flex max-lg:flex-col gap-5 p-5">
-            {featureCardsData.map((card, index) => (
-              <FeatureCard
-                key={index}
-                title={card.title}
-                content={card.content}
-              />
-            ))}
-          </section>
-        </BlurFade>
+        <section className="flex max-lg:flex-col gap-5 p-5">
+          {featureCardsData.map((card, index) => (
+            <FeatureCard
+              key={index}
+              title={card.title}
+              content={card.content}
+            />
+          ))}
+        </section>
       </main>
     </div>
   );

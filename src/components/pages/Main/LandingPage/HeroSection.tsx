@@ -4,7 +4,6 @@
 import React from "react";
 import HeroContent from "./HeroContent";
 import HeroImage from "./HeroImage";
-import BlurFade from "@/components/magicui/blur-fade";
 
 const HeroSection: React.FC = () => {
   return (

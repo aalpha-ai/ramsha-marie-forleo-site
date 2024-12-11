@@ -3,7 +3,6 @@
  */
 import React from "react";
 import { DreamsWorthSection } from "./DreamsWorthSection";
-import BlurFade from "@/components/magicui/blur-fade";
 
 const dreamItems = [
   {
@@ -73,18 +72,16 @@ const dreamItems = [
 
 const SomaticHealing: React.FC = () => {
   return (
-    <BlurFade>
-      <DreamsWorthSection
-        title="What Is Your Spiritual Transformation Worth?"
-        subtitle="Bi'ithnillah, envision yourself when..."
-        imageSrc="/ramsha-pics/webp/gf77.webp"
-        dreamItems={dreamItems}
-        conclusion={[
-          "How would this level of embodied spiritual alignment transform your life?",
-          "Your investment in this sacred container is an investment in your relationship with Allah, yourself, and your divine purpose.",
-        ]}
-      />
-    </BlurFade>
+    <DreamsWorthSection
+      title="What Is Your Spiritual Transformation Worth?"
+      subtitle="Bi'ithnillah, envision yourself when..."
+      imageSrc="/ramsha-pics/webp/gf77.webp"
+      dreamItems={dreamItems}
+      conclusion={[
+        "How would this level of embodied spiritual alignment transform your life?",
+        "Your investment in this sacred container is an investment in your relationship with Allah, yourself, and your divine purpose.",
+      ]}
+    />
   );
 };
 

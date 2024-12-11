@@ -5,7 +5,6 @@ import React from "react";
 import Logo from "./Logo";
 import Heading from "./Heading";
 import WaitlistButton from "./WaitlistButton";
-import BlurFade from "@/components/magicui/blur-fade";
 
 const WaitlistSection: React.FC = () => {
   return (
@@ -20,15 +19,13 @@ const WaitlistSection: React.FC = () => {
     >
       <div className="absolute inset-0 bg-black bg-opacity-50" />
       
-      <BlurFade className="relative z-10">
-        <div className="flex flex-col items-center self-stretch px-14 py-16 lg:py-0 max-md:px-5">
-          <Logo />
-          <Heading />
-        </div>
-        <div className="flex flex-col items-center self-stretch px-14 lg:pt-40 max-md:px-5">
-          <WaitlistButton />
-        </div>
-      </BlurFade>
+      <div className="flex flex-col items-center self-stretch px-14 py-16 lg:py-0 max-md:px-5">
+        <Logo />
+        <Heading />
+      </div>
+      <div className="flex flex-col items-center self-stretch px-14 lg:pt-40 max-md:px-5">
+        <WaitlistButton />
+      </div>
     </section>
   );
 };
