@@ -13,7 +13,7 @@ const companyLinks: LinkItem[] = [
   { text: "About", href: "/about" },
   { text: "Work With Me", href: "#" },
   { text: "In The Press", href: "#" },
-  { text: "Blog", href: "/blog" },
+  { text: "Free Hypnosis", href: "/free-hypnosis-lead" },
 ];
 
 const CompanyLinks: React.FC = () => {

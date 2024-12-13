@@ -4,7 +4,6 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { email, firstName, lastName, source, tags } = body;
-
     const result = await subscribeUser({
       email,
       firstName,

@@ -20,16 +20,19 @@ const NewsletterSignup: React.FC = () => {
     setIsSubmitting(true);
 
     try {
+      const email = formData.email; 
+      const firstName = formData.firstName;
+
       const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email: formData.email,
-          firstName: formData.firstName,
+          email,
+          firstName,
           source: 'footer_subscription',
-          tags: [process.env.NEXT_PUBLIC_NEWSLETTER_TAG_ID],
+          tags: [process.env.NEXT_PUBLIC_FREE_HYPNOSIS_TAG_ID],
         }),
       });
       

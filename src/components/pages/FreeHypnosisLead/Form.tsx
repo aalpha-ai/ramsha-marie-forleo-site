@@ -26,18 +26,19 @@ const Form: React.FC = () => {
     try {
       const firstName = formData.firstName;
       const lastName = formData.lastName;
-      
+      const email = formData.email;
+
       const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email: formData.email,
+          email,
           firstName,
           lastName,
           source: 'hypnosis_lead_magnet',
-          tags: process.env.NEXT_PUBLIC_FREE_HYPNOSIS_TAG_ID,
+          tags: [process.env.NEXT_PUBLIC_FREE_HYPNOSIS_TAG_ID],
         }),
       });
       
