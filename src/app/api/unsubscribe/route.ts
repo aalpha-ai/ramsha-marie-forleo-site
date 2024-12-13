@@ -1,43 +1,28 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET(request: NextRequest) {
   try {
-    console.log('Unsubscribe request received:', {
-      url: request.url,
-      timestamp: new Date().toISOString()
-    });
+    const subscriberId = request.nextUrl.searchParams.get('sid');
 
-    const { searchParams } = new URL(request.url);
-    const subscriberId = searchParams.get('sid');
     if (!subscriberId) {
-      console.error('Unsubscribe failed - Missing subscriber ID:', {
-        url: request.url,
-        params: Object.fromEntries(searchParams),
-        timestamp: new Date().toISOString()
-      });
-      return NextResponse.redirect(new URL('/unsubscribe', request.url));
+      console.error('Unsubscribe failed - Missing subscriber ID');
+      return NextResponse.redirect(new URL('/unsubscribe', request.nextUrl.origin));
     }
 
-    console.log('Processing unsubscribe request:', {
-      subscriberId,
-      timestamp: new Date().toISOString()
-    });
+    await unsubscribeUser(Number(subscriberId));
 
-    const result = await unsubscribeUser(Number(subscriberId));
-
-    console.log('Unsubscribe successful:', {
-      subscriberId,
-      timestamp: new Date().toISOString()
-    });
-
-    return NextResponse.redirect(new URL('/unsubscribe', request.url));
+    return NextResponse.redirect(new URL('/unsubscribe', request.nextUrl.origin));
 
   } catch (error) {
     console.error('Unsubscribe failed:', {
-      error: error instanceof Error ? error.message : 'Unknown error occurred',
-      timestamp: new Date().toISOString()
+      error: error instanceof Error ? error.message : 'Unknown error occurred'
     });
-    return NextResponse.redirect(new URL('/unsubscribe', request.url));
+
+    return NextResponse.redirect(new URL('/unsubscribe', request.nextUrl.origin));
   }
 }
 
@@ -56,7 +41,7 @@ async function unsubscribeUser(subscriberId: number): Promise<UnsubscribeRespons
       },
     });
 
-    const data = await response.json();
+    await response.json();
 
     if (!response.ok) {
       return {

@@ -6,7 +6,7 @@ import { TextBlock } from "./TextBlock";
 import { ImageComponent } from "./ImageComponent";
 import { InsiderForm } from "./InsiderForm";
 import { TrainingCard } from "./TrainingCard";
-import LearnAnything from "../../Main/LearnAnything";
+import LearnAnything from "../../Home/LearnAnything";
 
 export const WelcomeSection: React.FC = () => {
   const insiderFormData = {

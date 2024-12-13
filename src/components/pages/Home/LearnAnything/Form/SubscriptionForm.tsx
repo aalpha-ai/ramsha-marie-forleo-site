@@ -22,50 +22,37 @@ const SubscriptionForm: React.FC = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setError(null);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/subscribe`, {
+      const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
         },
         body: JSON.stringify({
           email: formData.email,
           firstName: formData.firstName,
-          lastName: formData.lastName || '',
-          clientId: '1',
+          lastName: formData.lastName || undefined,
+          source: 'learn_anything',
           tags: ['1'],
-          source: 'learn_anything'
         }),
       });
-
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => null);
-        throw new Error(errorData?.error || `HTTP error! status: ${response.status}`);
-      }
-
+      
       const data = await response.json();
-      console.log('Success:', data);
-
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe');
+      }
+    } catch (error) {
+      console.log('Subscription error:', error);
+    } finally {
       setFormData({ firstName: '', lastName: '', email: '' });
       setIsSubmitted(true);
-    } catch (err) {
-      console.error('Submission error:', err);
-      // setError(
-      //   err instanceof Error 
-      //     ? err.message 
-      //     : 'Failed to submit form. Please try again later.'
-      // );
-      setIsSubmitted(true);
-    } finally {
       setIsSubmitting(false);
     }
   };
 
   if (isSubmitted) {
-    return <SuccessMessage />;
+    return <SuccessMessage />
   }
 
   return (

@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
         viewport={{ once: true }}
         className="flex items-center gap-2"
       >
-        <span>WEBSITE BY</span>
+        <span>DESIGNED BY</span>
         <Link 
           href="https://lumina.studio" 
           target="_blank" 

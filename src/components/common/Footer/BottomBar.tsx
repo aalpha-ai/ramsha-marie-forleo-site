@@ -60,7 +60,7 @@ const BottomBar: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              WEBSITE BY
+              DESIGNED BY
             </motion.span>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -122,7 +122,7 @@ const BottomBar: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              WEBSITE BY
+              DESIGNED BY
             </motion.span>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

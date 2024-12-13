@@ -39,7 +39,7 @@ export default function ImageGallery() {
             className="flex max-md:flex-col gap-5 pb-5"
           >
             {item.map((image, index) => (
-              <div className="relative md:flex-1">
+              <div className="relative md:flex-1" key={index}>
                 <Image
                   src={image.src}
                   width={500}

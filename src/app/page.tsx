@@ -1,10 +1,10 @@
 import React from "react";
-import Main from "@/components/pages/Main";
+import HomePage from "@/components/pages/Home";
 
 export default function Home() {
   return (
     <>
-      <Main />
+      <HomePage />
     </>
   );
 }

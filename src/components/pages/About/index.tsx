@@ -4,7 +4,7 @@ import React from "react";
 import ImageLayout from "./imageLayout/ImageLayout"
 import Profilepage from "./profile/ProfilePage"
 import { BioContent } from "./bio"
-import MediaLogos from "@/components/pages/Main/MediaLogos"
+import MediaLogos from "@/components/pages/Home/MediaLogos"
 import { MilestonesSection } from "./milestones/MilestonesSection"
 import { AboutPage } from "./about/AboutPage"
 import { WelcomeSection } from "./welcomeSection/WelcomeSection";

@@ -67,7 +67,7 @@ const BottomBar: React.FC = () => {
         viewport={{ once: true }}
         className="flex items-center gap-2 text-[17px] md:text-[9px] lg:text-[10px] xl:text-[12px]"
       >
-        <span>WEBSITE BY</span>
+        <span>DESIGNED BY</span>
         <Link 
           href="https://aalpha.ai" 
           target="_blank" 

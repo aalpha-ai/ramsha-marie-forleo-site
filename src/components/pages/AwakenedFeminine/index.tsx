@@ -22,7 +22,7 @@ import FAQSection from "./FAQSection";
 import BookSectionWrapper from "./BookSectionWrapper";
 import ContinuousEvolution from "./ContinuousEvolution";
 import WaitlistSection from "./WaitlistSection/WaitlistSection";
-import MediaLogos from "../Main/MediaLogos";
+import MediaLogos from "../Home/MediaLogos";
 
 export default function Component() {
   return (

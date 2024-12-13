@@ -22,43 +22,34 @@ const Form: React.FC = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setError(null);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/subscribe`, {
+      const firstName = formData.firstName;
+      const lastName = formData.lastName;
+      
+      const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
         },
         body: JSON.stringify({
           email: formData.email,
-          firstName: formData.firstName,
-          lastName: formData.lastName || undefined,
-          clientId: '1',
-          tags: ['1'],
-          source: 'hypnosis_lead_magnet'
+          firstName,
+          lastName,
+          source: 'hypnosis_lead_magnet',
+          tags: process.env.NEXT_PUBLIC_FREE_HYPNOSIS_TAG_ID,
         }),
       });
-
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => null);
-        throw new Error(errorData?.error || `HTTP error! status: ${response.status}`);
-      }
-
+      
       const data = await response.json();
-      console.log('Success:', data);
-
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe');
+      }
+    } catch (error) {
+      console.log('Subscription error:', error);
+    } finally {
       setFormData({ firstName: '', lastName: '', email: '' });
       router.push('/free-hypnosis-confirmation');
-    } catch (err) {
-      console.error('Submission error:', err);
-      setError(
-        err instanceof Error 
-          ? err.message 
-          : 'Failed to submit form. Please try again later.'
-      );
-    } finally {
       setIsSubmitting(false);
     }
   };

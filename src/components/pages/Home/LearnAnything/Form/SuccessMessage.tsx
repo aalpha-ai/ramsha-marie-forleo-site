@@ -52,7 +52,7 @@ const SuccessMessage = () => {
 
       {/* Message text */}
       <motion.div
-        className="text-lg md:text-xl text-gray-700 space-y-4"
+        className="text-lg md:text-xl space-y-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
