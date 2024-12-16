@@ -4,10 +4,10 @@
 import React, { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertCircle, ArrowDown } from 'lucide-react';
-import FormInput from "./FormInput";
-import SubmitButton from "./SubmitButton";
-import FormDisclaimer from "./FormDisclaimer";
-import SuccessMessage from './SuccessMessage';
+import FormInput from "./Form/FormInput";
+import SubmitButton from "./Form/SubmitButton";
+import FormDisclaimer from "./Form/FormDisclaimer";
+import SuccessMessage from './Form/SuccessMessage';
 
 const SubscriptionForm: React.FC = () => {
   const [formData, setFormData] = useState({

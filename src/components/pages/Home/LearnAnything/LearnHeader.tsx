@@ -4,7 +4,7 @@
  */
 import React from "react";
 import { motion } from "framer-motion";
-import SubscriptionForm from "./Form/SubscriptionForm";
+import SubscriptionForm from "@/components/common/SubscriptionForm";
 
 export const LearnHeader: React.FC = () => {
   const containerVariants = {

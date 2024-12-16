@@ -4,7 +4,7 @@
 import React, { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertCircle, ArrowDown } from 'lucide-react';
-import SuccessMessage from "@/components/pages/Home/LearnAnything/Form/SuccessMessage";
+import SuccessMessage from "@/components/common/SubscriptionForm/Form/SuccessMessage";
 
 const NewsletterSignup: React.FC = () => {
   const [formData, setFormData] = useState({
