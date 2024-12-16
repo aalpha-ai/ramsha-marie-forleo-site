@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
 } from "@/components/ui/dialog"
 import { useUserStore } from "@/store/userStore";
 import Content from "./Content";
@@ -23,6 +24,8 @@ const DialogSubscribe = () => {
     <>
       {modal && (
         <Dialog open={modal} onOpenChange={(open) => setModal(open)}>
+          <DialogTitle>
+          </DialogTitle>
           <DialogContent hideClose className="font-body p-0 border-none">
             <Content />
           </DialogContent>

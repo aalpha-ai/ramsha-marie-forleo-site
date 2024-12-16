@@ -16,7 +16,6 @@ const SubscriptionForm: React.FC = () => {
     email: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
@@ -60,68 +59,9 @@ const SubscriptionForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 justify-center text-base text-white">
-      <AnimatePresence mode="wait">
-        {error && (
-          <motion.div
-            initial={{ opacity: 0, y: -20, height: 0 }}
-            animate={{ opacity: 1, y: 0, height: 'auto' }}
-            exit={{ opacity: 0, y: -20, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="relative mb-6"
-          >
-            <motion.div 
-              className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg shadow-sm"
-              animate={{ 
-                x: [-4, 4, -4, 4, 0],
-                transition: { duration: 0.5 }
-              }}
-            >
-              <div className="flex items-center gap-3">
-                <motion.div
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                >
-                  <AlertCircle className="h-5 w-5 text-red-400" />
-                </motion.div>
-                
-                <div className="flex-1">
-                  <h3 className="text-sm font-medium text-red-800">
-                    Oops! Something went wrong
-                  </h3>
-                  <p className="mt-1 text-sm text-red-700">
-                    {error}
-                  </p>
-                </div>
-
-                <motion.div 
-                  className="flex flex-col text-xs text-red-700"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.5 }}
-                >
-                  <div className="flex items-center gap-1">
-                    <span>Try again</span>
-                    <motion.div
-                      animate={{ y: [0, 4, 0] }}
-                      transition={{ 
-                        duration: 1, 
-                        repeat: Infinity,
-                        repeatType: "reverse" 
-                      }}
-                    >
-                      <ArrowDown className="h-3 w-3" />
-                    </motion.div>
-                  </div>
-                </motion.div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <div className="flex flex-col gap-3 justify-center w-full text-black max-md:max-w-full">
-        <div className="flex flex-col md:flex-row gap-3 justify-center w-full text-black max-md:max-w-full">
+    <form onSubmit={handleSubmit} className="flex flex-col justify-center text-base text-black">
+      <div className="flex flex-col justify-center w-full max-md:max-w-full">
+        <div className="flex flex-col md:flex-row w-full">
           <FormInput
             label="First Name"
             type="text"

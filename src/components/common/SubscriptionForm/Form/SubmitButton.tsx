@@ -3,7 +3,8 @@
  */
 import React from "react";
 import { motion } from 'framer-motion';
-import { Sparkles, Heart } from 'lucide-react';
+import { Heart } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 interface SubmitButtonProps {
   text: string;
@@ -12,52 +13,23 @@ interface SubmitButtonProps {
 
 const SubmitButton: React.FC<SubmitButtonProps> = ({ text, isSubmitting }) => {
   return (
-    <div className="flex flex-col pt-1.5 mt-1.5 w-full text-center text-white max-md:max-w-full">
+    <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full">
       <motion.button
         type="submit"
         disabled={isSubmitting}
-        className="group relative flex items-center justify-center gap-3 px-8 py-6 md:py-4 bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-full w-full md:w-auto mx-auto transition-all duration-300 ease-out overflow-hidden"
+        className="flex items-center justify-center px-8 py-2 md:py-4 bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-lg w-full transition-all duration-300"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >
-        {/* Background gradient */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-          initial={{ x: '-100%' }}
-          animate={isSubmitting ? { x: '100%' } : {}}
-          transition={{ 
-            duration: 1,
-            repeat: isSubmitting ? Infinity : 0,
-            ease: "linear"
-          }}
-        />
-
-        {/* Button content */}
-        <div className="flex items-center justify-center gap-3 relative font-subheader">
+        <div className="flex items-center justify-center gap-3 relative font-subheader text-lg font-bold tracking-wider">
           {isSubmitting ? (
-            <>
-              {/* <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-              >
-                <Sparkles className="w-6 h-6 md:w-5 md:h-5" />
-              </motion.div> */}
-              <span className="text-[20px] md:text-[18px] font-bold tracking-wider">
-                Creating Magic...
-              </span>
-            </>
+            <span>
+              Creating Magic...
+            </span>
           ) : (
             <>
-              <span className="text-[20px] md:text-[18px] font-bold tracking-wider relative">
+              <span>
                 GET MY FREE DOWNLOAD
-                {/* <motion.div
-                  className="absolute -top-1 -right-4 text-yellow-200"
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.5 }}
-                >
-                  <Sparkles className="w-4 h-4" />
-                </motion.div> */}
               </span>
               <motion.div
                 animate={{ 
@@ -74,38 +46,6 @@ const SubmitButton: React.FC<SubmitButtonProps> = ({ text, isSubmitting }) => {
             </>
           )}
         </div>
-
-        {/* Mobile-optimized hover particles */}
-        <motion.div 
-          className="absolute top-0 left-0 w-full h-full pointer-events-none"
-          initial={false}
-          animate={isSubmitting ? { opacity: 1 } : { opacity: 0 }}
-        >
-          {[...Array(3)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1.5 h-1.5 md:w-1 md:h-1 bg-white rounded-full"
-              initial={{ 
-                x: '50%',
-                y: '50%',
-                scale: 0,
-                opacity: 0.8
-              }}
-              animate={{ 
-                x: ['50%', `${50 + (i - 1) * 30}%`],
-                y: ['50%', '0%'],
-                scale: [0, 1.5],
-                opacity: [0.8, 0]
-              }}
-              transition={{ 
-                duration: 0.8,
-                repeat: Infinity,
-                delay: i * 0.2,
-                ease: "easeOut"
-              }}
-            />
-          ))}
-        </motion.div>
       </motion.button>
     </div>
   );
