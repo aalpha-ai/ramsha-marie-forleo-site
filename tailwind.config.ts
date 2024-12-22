@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         "inter": ["var(--font-inter)"],
         "subheader": ["var(--font-montserrat-bold)"],
+        // "subheader": ["var(--font-caslon)", "serif"],
         "body": ["var(--font-montserrat)"],
         "header": ["var(--font-caslon)", "serif"],
         "logo": ["var(--font-seasons)", "serif"],
