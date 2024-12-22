@@ -73,7 +73,7 @@ export const BlogLayout: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: isTitleInView ? 1 : 0, y: isTitleInView ? 0 : -20 }}
             transition={{ duration: 0.5 }}
-            className="font-display text-4xl md:text-5xl mb-8"
+            className="text-4xl md:text-5xl mb-8"
           >
             Latest Wisdom
           </motion.h1>
@@ -113,7 +113,7 @@ export const BlogLayout: React.FC = () => {
                       {article.category}
                     </span>
                     
-                    <h2 className="font-display text-[2rem] md:text-[2.5rem] leading-[1.2] mt-3 group-hover:text-[#D4502B] transition-colors">
+                    <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.2] mt-3 group-hover:text-[#D4502B] transition-colors">
                       {article.title}
                     </h2>
                   </motion.div>

@@ -86,7 +86,7 @@ export const SearchPage: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-2xl font-display mb-4"
+          className="text-2xl mb-4"
         >
           Your Journey Leads Elsewhere
         </motion.h2>

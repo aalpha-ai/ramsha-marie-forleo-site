@@ -49,7 +49,7 @@ const Header: React.FC = () => {
               opacity: { duration: 0.6 },
               x: { duration: 0.6 }
             }}
-            className="uppercase text-3xl lg:text-2xl xl:text-3xl font-logo text-ramsha-tertiary whitespace-nowrap font-display opacity-0"
+            className="uppercase text-3xl lg:text-2xl xl:text-3xl font-logo text-ramsha-tertiary whitespace-nowrap opacity-0"
           >
             Glowing Femme
           </motion.h1>

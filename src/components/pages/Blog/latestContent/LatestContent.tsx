@@ -58,7 +58,7 @@ export const LatestContent: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="font-display text-4xl sm:text-5xl md:text-[68px] leading-tight sm:leading-none text-[#D4502B] break-words"
+            className="text-4xl sm:text-5xl md:text-[68px] leading-tight sm:leading-none text-[#D4502B] break-words"
           >
             Spiritual Growth & Empowerment
           </motion.h2>

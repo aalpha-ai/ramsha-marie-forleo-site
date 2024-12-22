@@ -27,7 +27,7 @@ export const PersonalGrowthArticle: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="font-display text-[2.5rem] md:text-[3.5rem] leading-[1.2] mt-4 mb-6 text-neutral-800"
+            className="text-[2.5rem] md:text-[3.5rem] leading-[1.2] mt-4 mb-6 text-neutral-800"
           >
             Embracing Divine Feminine Energy: Your Path to Spiritual Abundance
           </motion.h1>

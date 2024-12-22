@@ -48,7 +48,7 @@ export const Collections: React.FC = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-[68px] font-display border-t border-[#D4502B] pt-6 mb-16 text-center"
+          className="text-[68px] border-t border-[#D4502B] pt-6 mb-16 text-center"
         >
           Sacred Collections
         </motion.h1>
