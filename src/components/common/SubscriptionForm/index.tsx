@@ -59,7 +59,7 @@ const SubscriptionForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col justify-center text-base text-white">
+    <form onSubmit={handleSubmit} className="flex flex-col justify-center text-base">
       <div className="flex flex-col justify-center w-full max-md:max-w-full">
         <div className="flex flex-col md:flex-row w-full space-x-2">
           <FormInput

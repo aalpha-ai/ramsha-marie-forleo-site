@@ -8,7 +8,7 @@ const FormDisclaimer: React.FC = () => {
     <div className="flex justify-center pt-1.5 w-full text-xs tracking-normal leading-5 text-center max-md:max-w-full">
       <div className="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px] max-md:max-w-full">
         <div className="flex flex-col px-3 py-1 w-full max-md:max-w-full">
-          <p className="text-white max-md:max-w-full">
+          <p className="max-md:max-w-full">
             By entering your email, you&apos;ll agree to join Glowing Femme for FREE
             access to exclusive insights and offers delivered with love to your inbox.
             (Unsub anytime in a click.) You also agree to our{" "}
