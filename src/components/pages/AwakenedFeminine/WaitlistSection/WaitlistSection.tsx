@@ -23,7 +23,7 @@ const WaitlistSection: React.FC = () => {
         {/* <Heading /> */}
       </div>
       <div className="flex flex-col items-center self-stretch px-14 lg:pt-40 max-md:px-5">
-        <PrimaryButton text="Join Sacred Waitlist" />
+        <PrimaryButton text="Sign Up for the Sacred Waitlist" />
       </div>
     </section>
   );

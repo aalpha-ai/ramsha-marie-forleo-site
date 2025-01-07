@@ -127,7 +127,7 @@ const NewsletterSignup: React.FC = () => {
         </div>
 
         {/* Submit Button */}
-        <PrimaryButton text="Join Sacred Waitlist" disabled={isSubmitting} isSubmittingMessage="SENDING..." isSubmitting={isSubmitting} />
+        <PrimaryButton text="Sign Up for the Sacred Waitlist" disabled={isSubmitting} isSubmittingMessage="SENDING..." isSubmitting={isSubmitting} />
 
         {/* Disclaimer */}
         <p className="text-xs leading-5 max-w-[385px]">

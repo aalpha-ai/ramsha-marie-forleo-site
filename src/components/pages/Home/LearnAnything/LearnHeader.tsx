@@ -61,19 +61,7 @@ export const LearnHeader: React.FC = () => {
             variants={itemVariants}
             className="text-black leading-[24px] lg:leading-[48.6px] block"
           >
-            Listen to this FREE training from Ramsha and learn the
-          </motion.span>
-          <motion.span 
-            variants={itemVariants}
-            className="text-black block"
-          >
-            ONE key shift that will put you on speed dial with God,
-          </motion.span>
-          <motion.span 
-            variants={itemVariants}
-            className="italic text-black block"
-          >
-            by relaxing your body.
+            Access the MOST POWERFUL Du'a Training of Your Life - For FREE (Limited Time Offer)
           </motion.span>
         </p>
       </motion.div>

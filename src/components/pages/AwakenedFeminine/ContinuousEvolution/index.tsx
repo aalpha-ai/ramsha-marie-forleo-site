@@ -32,6 +32,7 @@ const ContinuousEvolution: React.FC = () => {
       <div className="flex flex-col px-10 pt-14 pb-5 w-full max-md:px-5 max-md:max-w-full relative z-10">
         {contentItems.map((item, index) => (
           <Heading
+            key={index}
             text={item.text}
             alignment={item.alignment}
             className={index > 0 ? "mt-96 max-md:mt-10" : ""}
@@ -55,7 +56,7 @@ const ContinuousEvolution: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col items-center w-full">
-          <PrimaryButton text="Join Sacred Waitlist" />
+          <PrimaryButton text="Sign Up for the Sacred Waitlist" />
         </div>
       </div>
     </section>

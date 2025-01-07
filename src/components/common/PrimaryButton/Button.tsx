@@ -18,7 +18,7 @@ const Button: React.FC<{
         className={className ? `${className}` : `font-subheader px-32 py-4
       rounded-md tracking-wider max-md:px-5 disabled:opacity-50
       transition-all duration-300 ease-in-out
-      hover:brightness-110 flex flex-row items-center justify-center gap-2 ${bgColor}`}
+      hover:brightness-110 flex flex-row items-center justify-center gap-2 whitespace-nowrap ${bgColor}`}
   >
     {Icon && <Icon className="w-5 h-5" />}
     {isSubmitting ? isSubmittingMessage : text}

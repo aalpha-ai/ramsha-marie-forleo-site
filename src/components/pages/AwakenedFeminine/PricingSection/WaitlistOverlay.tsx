@@ -18,7 +18,7 @@ const WaitlistOverlay: React.FC = () => {
           Bi'ithnillah, your transformation awaits
         </p>
         <div className="flex flex-col pt-2 mt-3 w-full text-base font-subheader leading-5 text-black uppercase tracking-[2.88px] max-md:max-w-full">
-          <PrimaryButton text="Join Sacred Waitlist" />
+          <PrimaryButton text="Sign Up for the Sacred Waitlist" />
         </div>
       </div>
     </div>
