@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                   transition={{ duration: 0.3, delay: 0.1 }}
                 >
                   <div className="flex items-center gap-1 hidden md:flex font-subheader">
-                    <span className="text-base">How to Get Your Prayers Answered Instantly</span>
+                    <span className="text-base text-white">How to Get Your Prayers Answered Instantly</span>
                     <motion.span 
                       className="px-2"
                       animate={{ x: [0, 5, 0] }}

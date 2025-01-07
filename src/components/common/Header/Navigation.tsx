@@ -19,9 +19,10 @@ export const navItems = [
   },
   {
     label: "Work With Me",
+    href: "/awakened-feminine",
     items: [
       { label: "Tawakul Circle", href: "/" },
-      { label: "Awakened Feminine", href: "/" },
+      { label: "Awakened Feminine", href: "/awakened-feminine" },
       { label: "Apply for a 1:1 session", href: "/" },
     ]
   },
@@ -70,7 +71,7 @@ const Navigation: React.FC<NavigationProps> = ({ isMobile }) => {
             ))}
           </DropdownMenuContent>
         </DropdownMenu> : 
-          <Link href={section.href}>
+          <Link href={section.href} key={idx}>
             <span className="p-3 rounded-md tracking-wider uppercase font-bold text-sm lg:text-base hover:bg-ramsha-tertiary transition-colors">
               {section.label}
             </span>

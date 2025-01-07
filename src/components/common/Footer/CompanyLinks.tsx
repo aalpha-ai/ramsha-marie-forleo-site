@@ -11,8 +11,8 @@ interface LinkItem {
 
 const companyLinks: LinkItem[] = [
   { text: "About", href: "/about" },
-  { text: "Work With Me", href: "#" },
-  { text: "Podcast", href: "#" },
+  { text: "Work With Me", href: "/" },
+  { text: "Podcast", href: "/" },
   { text: "Free Training", href: "/free-hypnosis-lead" },
 ];
 
