@@ -83,23 +83,7 @@ export const DreamClub: React.FC = () => {
           </motion.div>
         </motion.section>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 20, scale: 0.95 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
-          viewport={{ once: true }}
-          className="mb-8"
-        >
-          <Link href="/">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.2 }}
-            >
-              <PrimaryButton text="GET ON THE VIP WAITLIST NOW" />
-            </motion.div>
-          </Link>
-        </motion.div>
+        <PrimaryButton href="/" text="GET ON THE VIP WAITLIST NOW" />
 
         <motion.footer 
           initial={{ opacity: 0 }}

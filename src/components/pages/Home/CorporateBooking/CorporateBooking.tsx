@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Briefcase, ArrowRight, Award, Globe } from 'lucide-react';
-
+import PrimaryButton from '@/components/common/PrimaryButton';
 const CorporateBooking = () => {
   const backgroundVariants = {
     hidden: { opacity: 0 },
@@ -165,20 +165,7 @@ const CorporateBooking = () => {
         </div>
 
         <div className="text-center">
-          <motion.a
-            href="https://forms.gle/KV7NUaHJiVbQ3Js67"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 text-lg font-subheader text-white bg-ramsha-tertiary to-blue-500 rounded-md hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
-            variants={buttonVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <Calendar className="w-5 h-5 mr-2" />
-            Apply to Book
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </motion.a>
+          <PrimaryButton icon={Calendar} afterIcon={ArrowRight} href="https://forms.gle/KV7NUaHJiVbQ3Js67" text="Apply to Book" />
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}

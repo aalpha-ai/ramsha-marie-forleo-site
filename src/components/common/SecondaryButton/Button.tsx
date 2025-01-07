@@ -12,7 +12,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ className = '', href, text }) => {
   return (
-    <ShadcnButton className="font-subheader tracking-wider font-[900] w-full lg:max-w-[300px] whitespace-nowrap lg:px-4 xl:px-8 py-3 text-base lg:text-lg text-center text-white capitalize bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-md transition-all duration-300 overflow-hidden">
+    <ShadcnButton className="font-subheader tracking-wider font-[900] w-full lg:max-w-[300px] whitespace-nowrap lg:px-4 xl:px-8 py-3 text-sm lg:text-base text-center text-white capitalize bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-md transition-all duration-300 overflow-hidden">
       <a
         href={href}
         target="_blank"

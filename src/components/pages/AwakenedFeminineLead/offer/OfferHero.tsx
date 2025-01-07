@@ -79,21 +79,7 @@ export const OfferHero: React.FC = () => {
           THIS IS AN INVITE-ONLY EXPERIENCE — AVAILABILITY IS LIMITED.
         </motion.p>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          viewport={{ once: true }}
-          className="mx-auto mb-8"
-        >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-          >
-            <PrimaryButton text="GET ON THE VIP WAITLIST NOW" />
-          </motion.div>
-        </motion.div>
+        <PrimaryButton text="GET ON THE VIP WAITLIST NOW" />
 
         <motion.footer 
           initial={{ opacity: 0 }}

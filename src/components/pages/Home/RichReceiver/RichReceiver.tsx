@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Flame, Sparkles, Rocket, Crown, ArrowRight } from 'lucide-react';
+import PrimaryButton from '@/components/common/PrimaryButton';
 
 const RichReceiver = () => {
   return (
@@ -130,26 +131,7 @@ const RichReceiver = () => {
                     Access the micro-training now for just $44 and discover the method that's transforming lives worldwide.
                   </motion.p>
 
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.98 }}
-                    transition={{ duration: 0.5, delay: 1.1 }}
-                    viewport={{ once: true }}
-                    className="text-center"
-                  >
-                    <a
-                      href="https://buy.stripe.com/7sIg1O0Ti5qz34scPn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-8 py-4 text-lg font-subheader text-white bg-ramsha-tertiary rounded-md transition-all duration-300 hover:shadow-xl"
-                    >
-                      <Flame className="w-12 h-12 md:w-6 md:h-6 mr-2" />
-                      Claim Rich Receiver Training
-                      <ArrowRight className="w-5 h-5 ml-2 max-md:hidden" />
-                    </a>
-                  </motion.div>
+                  <PrimaryButton icon={Flame} afterIcon={ArrowRight} href="https://buy.stripe.com/7sIg1O0Ti5qz34scPn" text="Claim Rich Receiver Training" />
                 </div>
               </div>
             </motion.div>

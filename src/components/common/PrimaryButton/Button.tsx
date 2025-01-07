@@ -9,9 +9,10 @@ const Button: React.FC<{
   isSubmitting?: boolean;
   className?: string;
   icon?: LucideIcon;
-}> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor = 'bg-ramsha-tertiary', className, icon: Icon }) => {
+  afterIcon?: LucideIcon;
+}> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor = 'bg-ramsha-tertiary', className, icon: Icon, afterIcon: AfterIcon }) => {
   return (
-    <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full max-w-2xl mx-auto text-lg">
+    <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full max-w-2xl mx-auto text-sm lg:text-base">
       <button
         type="submit"
         disabled={disabled}
@@ -22,6 +23,7 @@ const Button: React.FC<{
   >
     {Icon && <Icon className="w-5 h-5" />}
     {isSubmitting ? isSubmittingMessage : text}
+    {AfterIcon && <AfterIcon className="w-5 h-5" />}
     </button>
   </div>
 )};

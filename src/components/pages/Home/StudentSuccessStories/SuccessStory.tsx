@@ -4,7 +4,7 @@
 'use client'
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import PrimaryButton from '@/components/common/PrimaryButton';
 
 interface SuccessStoryProps {
   category: string;
@@ -59,23 +59,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
         {author}
       </motion.span>
 
-      <motion.a
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.98 }}
-        transition={{ 
-          duration: 0.5,
-          delay: 0.4
-        }}
-        viewport={{ once: true }}
-        href="/awakened-feminine"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-6 px-8 py-4 text-base font-subheader tracking-wide text-center text-white bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-md w-full md:w-[200px] lg:w-[300px]"
-      >
-        Get Inspired
-      </motion.a>
+      <PrimaryButton href="/awakened-feminine" text="Get Inspired" />
     </div>
   );
 };
