@@ -11,7 +11,7 @@ const Button: React.FC<{
   icon?: LucideIcon;
 }> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor = 'bg-ramsha-tertiary', className, icon: Icon }) => {
   return (
-    <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full max-w-2xl mx-auto">
+    <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full max-w-2xl mx-auto text-lg">
       <button
         type="submit"
         disabled={disabled}

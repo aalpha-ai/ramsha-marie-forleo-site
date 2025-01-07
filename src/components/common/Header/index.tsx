@@ -4,7 +4,7 @@
  */
 import React, { useState, useEffect } from "react";
 import Navigation, { navItems } from "./Navigation";
-import FreeTrainingButton from "./FreeTrainingButton";
+import SecondaryButton from "@/components/common/SecondaryButton";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { AlignJustify } from "lucide-react";
 import Link from "next/link";
@@ -65,15 +65,9 @@ const Header: React.FC = () => {
           <Navigation />
         </motion.div>
 
-        <motion.div 
-          key={`button-${pathname}`}
-          initial={{ opacity: 0, x: 20 }}
-          animate={isLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="col-span-1 col-start-12 flex justify-end items-center max-lg:hidden"
-        >
-          <FreeTrainingButton />
-        </motion.div>
+        <div className="flex justify-end items-center max-lg:hidden col-span-2">
+          <SecondaryButton href="/free-hypnosis-lead" text="Free Training" />
+        </div>
 
         <motion.div 
           key={`mobile-${pathname}`}
@@ -116,7 +110,7 @@ const Header: React.FC = () => {
                       →
                     </motion.span>
                   </div>
-                  <FreeTrainingButton />
+                  <SecondaryButton href="/free-hypnosis-lead" text="Free Training" />
                 </motion.div>
 
                 <motion.div 

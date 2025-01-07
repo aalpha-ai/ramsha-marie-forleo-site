@@ -5,7 +5,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import SecondaryButton from "@/components/common/SecondaryButton";
 
 const HeroContent: React.FC = () => {
   return (
@@ -73,15 +73,9 @@ const HeroContent: React.FC = () => {
           we take over the world.
         </motion.p>
 
-        <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-lg font-subheader tracking-wider leading-6 text-center text-white capitalize bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-md lg:w-[300px] max-md:px-5 transition-all duration-300">
-          <a
-            href="/awakened-feminine"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tell Me More
-          </a>
-        </Button>
+        <div className="mt-6">
+          <SecondaryButton href="/awakened-feminine" text="Tell Me More" />
+        </div>
       </div>
     </div>
   );

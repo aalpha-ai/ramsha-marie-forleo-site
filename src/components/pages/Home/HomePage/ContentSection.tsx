@@ -6,6 +6,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SecondaryButton from "@/components/common/SecondaryButton";
 
 type ContentSectionProps = {
   title: any;
@@ -72,17 +73,9 @@ const ContentSection: React.FC<ContentSectionProps> = ({
             >
               {description}
             </motion.p>
-            
-            <motion.a
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
-              href={buttonLink}
-              className="overflow-hidden z-10 px-6 md:px-16 py-4 md:py-4 mt-6 text-lg font-subheader tracking-wider leading-6 text-center text-white capitalize rounded-md bg-ramsha-tertiary w-full md:w-fit shadow-button hover:shadow-button-hover"
-            >
-              {buttonText}
-            </motion.a>
+            <div className="mt-6">
+              <SecondaryButton href={buttonLink} text={buttonText} />
+            </div>
           </div>
 
           <motion.div 
