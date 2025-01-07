@@ -5,6 +5,7 @@ import React, { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertCircle, ArrowDown } from 'lucide-react';
 import SuccessMessage from "@/components/common/SubscriptionForm/Form/SuccessMessage";
+import PrimaryButton from "../PrimaryButton";
 
 const NewsletterSignup: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -126,14 +127,7 @@ const NewsletterSignup: React.FC = () => {
         </div>
 
         {/* Submit Button */}
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="font-subheader px-32 py-4 bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 
-                   rounded-md tracking-wider max-md:px-5 disabled:opacity-50"
-        >
-          {isSubmitting ? 'SENDING...' : 'BISMILLAH'}
-        </button>
+        <PrimaryButton text="Join Sacred Waitlist" disabled={isSubmitting} isSubmittingMessage="SENDING..." isSubmitting={isSubmitting} />
 
         {/* Disclaimer */}
         <p className="text-xs leading-5 max-w-[385px]">

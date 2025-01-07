@@ -6,9 +6,12 @@ import React from "react";
 const Heading: React.FC = () => {
   return (
     <h2 className="mt-6 text-2xl font-header tracking-wide leading-8 text-orange-50 max-md:max-w-full">
-      Release Your Divine Feminine Power. <br />
-      Embrace <strong>Authentic Abundance</strong>, <strong>Inner Peace</strong>, and{" "}
-      <strong>Spiritual Freedom</strong>
+      Release Your Divine Feminine Power.
+      <div className="mt-2">
+        Embrace <strong>Authentic Abundance</strong>,{" "}
+        <strong>Inner Peace</strong>, and{" "}
+        <strong>Spiritual Freedom</strong>
+      </div>
     </h2>
   );
 };

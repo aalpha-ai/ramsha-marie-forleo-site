@@ -3,7 +3,7 @@
  */
 import React from "react";
 import Heading from "./Heading";
-import JoinWaitlist from "./JoinWaitlist";
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 interface ContentItem {
   text: string;
@@ -53,7 +53,9 @@ const ContinuousEvolution: React.FC = () => {
           <div className="flex flex-col grow shrink justify-center items-end pt-11 pb-12 w-full max-w-[388px]">
             <div className="flex max-w-full bg-white min-h-[1px] w-[388px]" />
           </div>
-          <JoinWaitlist />
+        </div>
+        <div className="flex flex-col items-center w-full">
+          <PrimaryButton text="Join Sacred Waitlist" />
         </div>
       </div>
     </section>
