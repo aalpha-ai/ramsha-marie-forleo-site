@@ -77,7 +77,7 @@ const config: Config = {
   				'800': 'hsl(var(--zinc-800))'
   			},
   			ramsha: {
-  				accent: '#141414',
+  				accent: '#010101',
   				primary: '#22323B',
   				secondary: '#FFF',
   				tertiary: '#AA6347'
