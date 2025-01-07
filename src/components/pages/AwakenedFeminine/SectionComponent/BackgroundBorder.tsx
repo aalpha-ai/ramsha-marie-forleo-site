@@ -9,7 +9,7 @@ interface BackgroundBorderProps {
 
 const BackgroundBorder: React.FC<BackgroundBorderProps> = ({ children }) => {
   return (
-    <div className="flex flex-col flex-1 px-12 py-8 w-full rounded-2xl border border-black border-solid bg-stone-50 max-w-5xl.5 mx-auto relative bottom-14 max-md:px-5 max-md:max-w-full">
+    <div className="flex flex-col flex-1 px-12 py-8 w-full rounded-2xl border border-black border-solid bg-ramsha-secondary max-w-5xl.5 mx-auto relative bottom-14 max-md:px-5 max-md:max-w-full">
       {children}
     </div>
   );

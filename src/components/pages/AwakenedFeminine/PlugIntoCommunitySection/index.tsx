@@ -12,7 +12,7 @@ const PlugIntoCommunitySection: React.FC<
 > = () => {
   return (
     <section className="grid md:grid-cols-[1fr_.75fr] ">
-        <TextBlock />
+      <TextBlock />
       <ImageBlock />
     </section>
   );

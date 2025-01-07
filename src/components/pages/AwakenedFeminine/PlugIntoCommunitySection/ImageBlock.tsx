@@ -8,7 +8,7 @@ interface ImageBlockProps {}
 
 export const ImageBlock: React.FC<ImageBlockProps> = () => {
   return (
-    <div className="flex flex-col grow shrink justify-center items-end  bg-stone-50  max-md:py-24 max-md:max-w-full">
+    <div className="flex flex-col grow shrink justify-center items-end bg-ramsha-secondary  max-md:py-24 max-md:max-w-full">
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/48a1608e30b648c89bd5ed134a49b3b8/2c36abb069d27807a6f870dad1080e03b4f6c7057b885c8c728a0d69eb402de5?apiKey=48a1608e30b648c89bd5ed134a49b3b8&"

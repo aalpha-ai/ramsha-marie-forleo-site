@@ -26,7 +26,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
   };
 
   return (
-    <section className="flex flex-col items-center bg-gray-900">
+    <section className="flex flex-col items-center bg-ramsha-accent text-white">
       <div className="flex flex-col justify-center px-14 pt-20 pb-20 w-full max-md:px-5 max-md:max-w-full">
         <div className="flex relative flex-col flex-1 justify-center w-full max-md:max-w-full">
           <div className="flex overflow-hidden z-0 flex-col flex-1 w-full max-md:max-w-full">

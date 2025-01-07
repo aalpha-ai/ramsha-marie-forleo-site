@@ -40,7 +40,7 @@ const DreamClubPitch: React.FC<DreamClubPitchProps> = ({
           </div>
         </div>
         <div className="py-8 w-full max-w-[830px] mx-auto max-md:max-w-full text-black">
-          <div className="flex flex-col flex-1 px-10 py-8 w-full rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
+          <div className="flex flex-col flex-1 px-10 py-8 w-full rounded-2xl border border-black border-solid bg-ramsha-secondary max-md:px-5 max-md:max-w-full">
             <div className="flex flex-col pb-4 w-full max-md:max-w-full">
               {questions.map((question, index) => (
                 <QuestionItem key={index} {...question} />

@@ -17,11 +17,11 @@ interface FAQItemProps {
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   return (
     <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1" className="border-l-[3px] border-l-red-400 bg-stone-50">
-        <AccordionTrigger className="flex flex-1 px-5 text-sm font-bold tracking-widest leading-6 uppercase text-neutral-800 hover:no-underline">
+      <AccordionItem value="item-1" className="border-l-[3px] border-l-ramsha-tertiary bg-ramsha-primary text-white">
+        <AccordionTrigger className="flex flex-1 px-5 text-sm font-bold tracking-widest leading-6 uppercase hover:no-underline">
           {question}
         </AccordionTrigger>
-        <AccordionContent className="px-5 text-neutral-700">
+        <AccordionContent className="px-5">
           {answer}
         </AccordionContent>
       </AccordionItem>

@@ -35,7 +35,7 @@ const pricingOptions: PricingOption[] = [
 
 const PricingSection: React.FC = () => {
   return (
-    <section className="flex relative flex-col items-center bg-ramsha-primary text-white">
+    <section className="flex relative flex-col items-center bg-ramsha-accent text-white">
       <div className="flex z-0 flex-col self-center px-14 pt-24 pb-20 w-full max-md:px-5 max-md:max-w-full">
         <h2 className="font-subheader w-full text-sm font-bold tracking-widest leading-6 text-center uppercase max-md:px-5 max-md:max-w-full">
           Signature Program

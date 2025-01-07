@@ -18,7 +18,7 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
 }) => {
   return (
     <div className="flex flex-col p-20 max-md:px-5 max-md:max-w-full">
-      <blockquote className="w-full text-3xl italic leading-10 text-black max-md:max-w-full">
+      <blockquote className="w-full text-3xl italic leading-10 max-md:max-w-full">
         {quote}
       </blockquote>
       <div className="flex justify-between mt-6 w-full max-md:max-w-full">
@@ -32,7 +32,7 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
               height={89}
             />
           </div>
-          <h5 className="self-stretch my-auto text-sm font-bold tracking-widest leading-6 uppercase text-neutral-800">
+          <h5 className="self-stretch my-auto text-sm font-bold tracking-widest leading-6 uppercase">
             {author}
           </h5>
         </div>

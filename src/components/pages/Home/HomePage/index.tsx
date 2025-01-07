@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
         imageAlt="Everything Is Figureoutable book cover"
         textContainerClassName="col-span-7"
         imageContainerClassName="col-span-5"
-        backgroundColor="bg-ramsha-primary text-white"
+        backgroundColor="bg-ramsha-accent text-white"
       />
     </div>
   );
