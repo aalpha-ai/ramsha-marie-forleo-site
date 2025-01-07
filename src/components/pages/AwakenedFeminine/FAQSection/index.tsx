@@ -6,6 +6,7 @@ import FAQItem from "./FAQItem";
 
 interface FAQData {
   question: string;
+  answer: string;
   id: string;
 }
 
@@ -13,47 +14,58 @@ const faqData: FAQData[] = [
   {
     question:
       "What if my schedule doesn't align with the live Nervous System Expansion sessions?",
+    answer: "Don't worry! All live sessions are recorded and made available in our member portal. You can access them at your convenience and still benefit from the full program experience. We also provide alternative time slots and one-on-one support to ensure you get the most value from the program.",
     id: "schedule",
   },
   {
     question: "What is the investment for the Somatic Healing program?",
+    answer: "The program investment varies based on the payment plan you choose. We offer flexible payment options to make this transformation accessible. Please book a discovery call to discuss the investment details and find a plan that works best for you.",
     id: "price",
   },
   {
     question: "How much time should I dedicate to my transformation journey?",
+    answer: "We recommend setting aside 2-3 hours per week for optimal results. This includes live sessions, practice time, and integration work. However, the program is designed to be flexible and can be adapted to your schedule. The key is consistency rather than quantity.",
     id: "time-investment",
   },
   {
     question: "How long will I have access to the program materials and community?",
+    answer: "You'll have lifetime access to all program materials, including future updates. The community support and resources remain available to you indefinitely, allowing you to revisit and deepen your practice at your own pace.",
     id: "access-duration",
   },
   {
     question: "Is this program halal? How does it align with Islamic principles?",
+    answer: "Yes, this program is completely halal and designed with Islamic principles at its core. All practices are vetted through Islamic scholarship and align with our faith. We focus on methods that enhance our connection with Allah while respecting Islamic boundaries.",
     id: "islamic-alignment",
   },
   {
     question: "What is your refund policy, and how does it work?",
+    answer: "We offer a 30-day satisfaction guarantee. If you've participated fully in the program and don't feel it's meeting your needs, we'll work with you to make it right or provide a refund. Full details of the refund policy will be provided upon enrollment.",
     id: "refund-policy",
   },
   {
     question: "I'm new to somatic healing and nervous system work — can I still join?",
+    answer: "Absolutely! The program is designed to welcome beginners and guides you step-by-step through the practices. We start with fundamentals and gradually build your understanding and capacity. No prior experience is needed.",
     id: "beginner",
   },
   {
     question:
       "I'm a professional or employee, not an entrepreneur. Is this program right for me?",
+    answer: "Yes! The principles and practices we teach are valuable for anyone seeking personal growth and emotional regulation. Whether you're in a corporate setting, running a business, or focused on personal development, the skills you'll learn are universally applicable.",
     id: "professional",
   },
   {
     question: "How do you incorporate Islamic principles into the somatic healing work?",
+    answer: "We integrate Islamic teachings with somatic practices by aligning them with Quranic principles and prophetic traditions. This includes using dhikr in breathwork, connecting body awareness with khushu in prayer, and understanding emotional regulation through an Islamic lens.",
     id: "islamic-integration",
   },
   {
     question: "Will there be separate spaces for sisters during group activities?",
+    answer: "Yes, we maintain strict gender separation in all group activities. This program is exclusively for sisters, creating a safe and comfortable space for deep healing work while adhering to Islamic guidelines.",
     id: "women-only",
   },
   {
     question: "I have another question not answered here. How can I connect with you?",
+    answer: "We're here to help! You can reach out through our contact form, schedule a discovery call, or email us directly at [contact email]. We typically respond within 24-48 hours and are happy to address any questions you may have.",
     id: "other-questions",
   },
 ];
@@ -70,7 +82,7 @@ const FAQSection: React.FC = () => {
         <div className="flex flex-col items-center w-full min-h-[320px] max-md:max-w-full">
           <div className="flex flex-col gap-2.5 w-full max-w-[1000px] max-md:max-w-full">
             {faqData.map((item) => (
-              <FAQItem key={item.id} question={item.question} />
+              <FAQItem key={item.id} question={item.question} answer={item.answer}/>
             ))}
           </div>
         </div>
