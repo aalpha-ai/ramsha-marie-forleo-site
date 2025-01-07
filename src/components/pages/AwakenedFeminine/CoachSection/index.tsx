@@ -4,7 +4,7 @@
 import React from "react";
 import { CoachSection } from "./CoachSection";
 
-const CoachSectionWrapper: React.FC = () => {
+const RamshaSuhailSection: React.FC = () => {
   const headingText = [
     "What If Your Divine",
     "Purpose Could Unlock",
@@ -42,4 +42,4 @@ const CoachSectionWrapper: React.FC = () => {
   );
 };
 
-export default CoachSectionWrapper;
+export default RamshaSuhailSection;

@@ -8,15 +8,15 @@ const FormDisclaimer: React.FC = () => {
     <div className="flex justify-center pt-1.5 w-full text-xs tracking-normal leading-5 text-center max-md:max-w-full">
       <div className="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px] max-md:max-w-full">
         <div className="flex flex-col px-3 py-1 w-full max-md:max-w-full">
-          <p className="text-black max-md:max-w-full">
+          <p className="text-white max-md:max-w-full">
             By entering your email, you&apos;ll agree to join Glowing Femme for FREE
             access to exclusive insights and offers delivered with love to your inbox.
             (Unsub anytime in a click.) You also agree to our{" "}
-            <a href="/terms-of-use" className="text-orange-700 underline">
+            <a href="/terms-of-use" className="text-ramsha-tertiary underline">
               Terms of Use
             </a>{" "}
             and{" "}
-            <a href="/privacy-policy" className="self-stretch underline text-orange-700">
+            <a href="/privacy-policy" className="self-stretch underline text-ramsha-tertiary">
               Privacy Policy
             </a>
             .

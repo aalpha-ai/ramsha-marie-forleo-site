@@ -49,7 +49,7 @@ const RichReceiver = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-ramsha-accent backdrop-blur-lg rounded-2xl p-8 mb-12 border border-amber-500/20 text-black"
+              className="bg-ramsha-accent backdrop-blur-lg rounded-2xl p-8 mb-12 border border-amber-500/20 text-white"
             >
               <motion.div 
                 initial={{ opacity: 0, x: -20 }}
@@ -59,7 +59,7 @@ const RichReceiver = () => {
                 className="flex items-center gap-4 mb-6"
               >
                 <Sparkles className="w-6 h-6 text-ramsha-tertiary" />
-                <h2 className="text-2xl font-header">Transform Your Destiny</h2>
+                <h2 className="text-2xl font-header font-bold">Transform Your Destiny</h2>
               </motion.div>
 
               <motion.p 
@@ -72,7 +72,7 @@ const RichReceiver = () => {
                 Unlock the frequency of overflow and become the woman who makes history. Rich Receiver is not just a program—it's a soul activation designed for trailblazing CEOs ready to alter their destiny.
               </motion.p>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="grid md:grid-cols-2 gap-6 mb-8 text-black">
                 {[
                   {
                     Icon: Crown,
@@ -94,7 +94,7 @@ const RichReceiver = () => {
                     className="bg-white p-6 rounded-xl border border-amber-500/10"
                   >
                     <item.Icon className="w-8 h-8 mb-4 text-ramsha-tertiary" />
-                    <h3 className="text-xl font-header mb-3">{item.title}</h3>
+                    <h3 className="text-xl font-header mb-3 font-bold">{item.title}</h3>
                     <p className="">{item.description}</p>
                   </motion.div>
                 ))}
@@ -107,7 +107,7 @@ const RichReceiver = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
               viewport={{ once: true }}
-              className="text-center"
+              className="text-center text-white"
             >
               <div className="p-[1px] rounded-xl">
                 <div className="bg-ramsha-accent rounded-xl p-8">
@@ -116,7 +116,7 @@ const RichReceiver = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.9 }}
                     viewport={{ once: true }}
-                    className="text-2xl font-header mb-4"
+                    className="text-2xl font-header mb-4 font-bold"
                   >
                     Begin Your Divine Journey
                   </motion.h3>

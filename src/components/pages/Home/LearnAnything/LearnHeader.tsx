@@ -35,21 +35,21 @@ export const LearnHeader: React.FC = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="flex flex-col grow gap-5 shrink px-4 lg:px-8 pt-2.5 pb-8 tracking-normal leading-9 text-center text-black md:w-[380px] lg:w-[570px] xl:w-full"
+      className="flex flex-col grow gap-5 shrink px-4 lg:px-8 pt-2.5 pb-8 tracking-normal leading-9 text-center md:w-[380px] lg:w-[570px] xl:w-full"
     >
       <motion.h1 
         variants={itemVariants}
-        className="text-2xl lg:text-4xl font-header tracking-tight md:leading-[24px] lg:leading-[48.6px] text-neutral-800 max-md:px-5 mx-auto"
+        className="text-white text-2xl lg:text-4xl font-header tracking-tight md:leading-[24px] lg:leading-[48.6px] max-md:px-5 mx-auto"
       >
         <motion.span 
           variants={itemVariants}
-          className="text-neutral-800 font-[700]"
+          className="font-[700]"
         >
           Learn How to Get Your Prayers Answered{" "}
         </motion.span>
         <motion.span 
           variants={itemVariants}
-          className="italic text-neutral-800"
+          className="italic"
         >
           Instantly
         </motion.span>
@@ -59,7 +59,7 @@ export const LearnHeader: React.FC = () => {
         <p className="lg:text-lg max-md:mr-1.5">
           <motion.span 
             variants={itemVariants}
-            className="text-black leading-[24px] lg:leading-[48.6px] block"
+            className="text-white leading-[24px] lg:leading-[48.6px] block"
           >
             Access the MOST POWERFUL Du'a Training of Your Life - For FREE (Limited Time Offer)
           </motion.span>

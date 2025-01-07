@@ -127,7 +127,7 @@ const Form: React.FC = () => {
           value={formData.firstName}
           onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
           required
-          className="rounded-lg flex overflow-hidden justify-center items-start px-5 pt-3.5 pb-4 bg-white outline-none max-md:max-w-full"
+          className="rounded-lg flex overflow-hidden justify-center items-start px-5 pt-3.5 pb-4 bg-ramsha-tertiary/10 outline-none max-md:max-w-full"
         />
       </div>
       <div className="flex flex-col pt-1.5 mt-1.5 w-full text-base font-bold text-black max-md:max-w-full">
@@ -140,7 +140,7 @@ const Form: React.FC = () => {
           placeholder="Last name"
           value={formData.lastName}
           onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
-          className="flex overflow-hidden justify-center items-start px-5 pt-3.5 pb-4 bg-white outline-none max-md:max-w-full rounded-lg"
+          className="flex overflow-hidden justify-center items-start px-5 pt-3.5 pb-4 bg-ramsha-tertiary/10 outline-none max-md:max-w-full rounded-lg"
         />
       </div>
       <div className="flex flex-col pt-1.5 mt-1.5 w-full text-base font-bold whitespace-nowrap text-black max-md:max-w-full">
@@ -154,7 +154,7 @@ const Form: React.FC = () => {
           value={formData.email}
           onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
           required
-          className="rounded-lg flex overflow-hidden justify-center items-start px-5 pt-3.5 pb-4 bg-white outline-none max-md:max-w-full"
+          className="rounded-lg flex overflow-hidden justify-center items-start px-5 pt-3.5 pb-4 bg-ramsha-tertiary/10 outline-none max-md:max-w-full"
         />
       </div>
       <PrimaryButton text="Get My Free Download" isSubmitting={isSubmitting} isSubmittingMessage="Creating Magic..."/>

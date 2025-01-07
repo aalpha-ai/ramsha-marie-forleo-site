@@ -18,7 +18,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, content }) => {
     //     <span className="w-full">{content}</span>
     //   </p>
     // </article>
-    <article className="flex flex-col gap-0 px-6 pt-5 pb-3 rounded-2xl border border-black bg-stone-50 w-full max-md:px-5">
+    <article className="flex flex-col gap-0 px-6 pt-5 pb-3 rounded-2xl border border-black bg-ramsha-secondary w-full max-md:px-5">
      <header className="h-[100px] lg:h-[150px] flex flex-col pt-4 pb-3 w-full text-[24px] font-header tracking-widest leading-6 uppercase text-neutral-800">
        <h2 className="mx-auto text-center">{title}</h2>
      </header>

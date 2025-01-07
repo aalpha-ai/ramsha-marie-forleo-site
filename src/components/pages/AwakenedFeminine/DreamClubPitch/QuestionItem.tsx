@@ -23,7 +23,7 @@ export const QuestionItem: React.FC<QuestionItemProps> = ({
           className="w-full object-contain"
         />
       </div>
-      <div className="flex-1 text-base font-light tracking-normal leading-6 text-black ">
+      <div className="flex-1 text-base font-light tracking-normal leading-6">
         {question}
       </div>
     </div>

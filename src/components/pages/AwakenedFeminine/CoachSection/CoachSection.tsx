@@ -25,7 +25,7 @@ export const CoachSection: React.FC<CoachSectionProps> = ({
 }) => {
   return (
     <section className="grid grid-cols-[1fr_.75fr] max-md:grid-cols-1 ">
-      <div className="flex-1 flex flex-col items-center bg-stone-50 max-md:max-w-full">
+      <div className="flex-1 flex flex-col items-center max-md:max-w-full">
         <div className="flex flex-col px-12 py-24 max-w-full  max-md:px-5">
           <h3 className="font-header flex flex-col pt-2.5 pb-3.5 text-4xl leading-[58px] text-neutral-800 max-md:max-w-full">
             {headingText.map((line, index) => (

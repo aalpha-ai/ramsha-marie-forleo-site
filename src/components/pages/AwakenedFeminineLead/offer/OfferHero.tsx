@@ -13,7 +13,7 @@ export const OfferHero: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="w-full bg-gradient-to-b from-neutral-950 via-black to-neutral-900 text-white text-center px-4 md:px-16"
+      className="w-full bg-gradient-to-b from-neutral-900 via-black to-neutral-1000 text-white text-center px-4 md:px-16"
     >
       <section className="max-w-[900px] mx-auto py-20">
         <motion.article 

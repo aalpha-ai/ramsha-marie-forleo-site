@@ -23,7 +23,7 @@ const DreamClubImageSection: React.FC<DreamClubImageSectionProps> = ({
         />
       </div>
       <div className="flex flex-col bg-ramsha-tertiary grow shrink justify-center items-start py-16 md:py-20 max-md:px-5 max-md:max-w-full">
-        <div className="flex flex-col relative md:right-24 p-10 rounded-2xl border border-black border-solid bg-stone-50 max-md:px-5 max-md:max-w-full">
+        <div className="flex flex-col relative md:right-24 p-10 rounded-2xl border border-black border-solid bg-ramsha-secondary max-md:px-5 max-md:max-w-full">
           <Heading />
           <TextContainer />
         </div>

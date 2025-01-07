@@ -41,7 +41,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
           ease: [0.22, 1, 0.36, 1]
         }}
         viewport={{ once: true }}
-        className="mt-6 text-[20px] md:text-[16px] leading-[1.6] tracking-normal text-black"
+        className="mt-6 text-[20px] md:text-[16px] leading-[1.6] tracking-normal text-white"
       >
         {testimonial}
       </motion.blockquote>
@@ -54,7 +54,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
           delay: 0.3
         }}
         viewport={{ once: true }}
-        className="mt-4 text-xs font-subheader tracking-widest uppercase text-neutral-500"
+        className="mt-4 text-xs font-subheader tracking-widest uppercase text-white"
       >
         {author}
       </motion.span>

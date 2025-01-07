@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
         buttonLink="#"
         imageSrc="/ramsha-pics/webp/british-muslim.webp"
         imageAlt="Ramsha on British Muslim TV"
-        backgroundColor="#FFFFFF"
+        backgroundColor="bg-ramsha-secondary"
       />
       <ContentSection
         title={
@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
         imageAlt="Everything Is Figureoutable book cover"
         textContainerClassName="col-span-7"
         imageContainerClassName="col-span-5"
-        backgroundColor="#f8e8d8"
+        backgroundColor="bg-ramsha-primary text-white"
       />
     </div>
   );

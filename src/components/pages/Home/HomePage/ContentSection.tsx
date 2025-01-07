@@ -36,13 +36,12 @@ const ContentSection: React.FC<ContentSectionProps> = ({
 }) => {
   return (
     <section 
-      className="flex flex-col items-center w-full py-11 px-5 lg:py-24 lg:px-7"
-      style={{ backgroundColor }}
+      className={`flex flex-col items-center w-full py-11 px-5 lg:py-24 lg:px-7 ${backgroundColor}`}
     >
       <div className="flex flex-col w-full max-w-5xl.5">
         <div className="flex flex-col md:flex-row w-full md:items-center md:gap-8">
           <div
-            className={`flex flex-col ${textContainerClassName} text-neutral-800 md:w-1/2 w-full order-2 md:order-1`}
+            className={`flex flex-col ${textContainerClassName} md:w-1/2 w-full order-2 md:order-1`}
           >
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -69,7 +68,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="pb-px mt-5 text-lg tracking-normal leading-[1.6] md:leading-8 text-black"
+              className="pb-px mt-5 text-lg tracking-normal leading-[1.6] md:leading-8"
             >
               {description}
             </motion.p>
