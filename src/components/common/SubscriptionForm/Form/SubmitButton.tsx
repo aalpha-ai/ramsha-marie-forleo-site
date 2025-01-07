@@ -31,18 +31,6 @@ const SubmitButton: React.FC<SubmitButtonProps> = ({ text, isSubmitting }) => {
               <span>
                 GET MY FREE DOWNLOAD
               </span>
-              <motion.div
-                animate={{ 
-                  y: [0, -4, 0]
-                }}
-                transition={{ 
-                  duration: 1.5, 
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
-              >
-                <Heart className="w-8 h-8 md:w-5 md:h-5" />
-              </motion.div>
             </>
           )}
         </div>

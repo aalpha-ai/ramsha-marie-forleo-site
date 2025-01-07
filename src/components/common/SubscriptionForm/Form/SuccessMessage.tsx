@@ -58,7 +58,7 @@ const SuccessMessage = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <p>
-          A welcome email is on its way from me to your inbox and it contains a link to your free hypnosis
+          A welcome email is on its way from me to your inbox and it contains a link to your free training
         </p>
         <p>
           If you believe there's a problem, write{' '}

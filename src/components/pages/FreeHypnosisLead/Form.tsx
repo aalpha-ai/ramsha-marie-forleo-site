@@ -194,27 +194,7 @@ const Form: React.FC = () => {
               <>
                 <span className="text-[20px] md:text-[18px] font-bold tracking-wider relative">
                   GET MY FREE DOWNLOAD
-                  {/* <motion.div
-                    className="absolute -top-1 -right-4 text-yellow-200"
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.5 }}
-                  >
-                    <Sparkles className="w-4 h-4" />
-                  </motion.div> */}
                 </span>
-                <motion.div
-                  animate={{ 
-                    y: [0, -4, 0]
-                  }}
-                  transition={{ 
-                    duration: 1.5, 
-                    repeat: Infinity,
-                    repeatType: "reverse"
-                  }}
-                >
-                  <Heart className="w-8 h-8 md:w-5 md:h-5" />
-                </motion.div>
               </>
             )}
           </div>

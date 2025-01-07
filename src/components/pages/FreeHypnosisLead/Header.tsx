@@ -46,7 +46,7 @@ const Header: React.FC = () => {
       
       <motion.div variants={itemVariants}>
         <p className="pt-2.5 pr-2 pb-1.5 pl-2 mt-1.5 w-full md:text-[18px] text-[17px] font-[400] leading-7 text-center max-md:max-w-full">
-          Listen to this FREE hypnosis from Ramsha and learn the ONE key shift that will put you on speed dial with God, <i>by relaxing your body.</i>
+          Listen to this FREE training from Ramsha and learn the ONE key shift that will put you on speed dial with God, <i>by relaxing your body.</i>
         </p>
       </motion.div>
 

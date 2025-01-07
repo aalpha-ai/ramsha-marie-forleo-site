@@ -141,7 +141,7 @@ const Success: React.FC = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 1 }}
               >
-                [subject: "Bismillah! Here's your Free Hypnosis Audio download"]
+                [subject: "Bismillah! Here's your Free Training Audio download"]
               </motion.p>
             </motion.div>
 

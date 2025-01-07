@@ -15,7 +15,7 @@ const FreeTrainingButton: React.FC<FreeTrainingButtonProps> = ({ className = '' 
         target="_blank"
         rel="noopener noreferrer"
       >
-        Free Hypnosis
+        Free Training
       </a>
     </button>
   );
