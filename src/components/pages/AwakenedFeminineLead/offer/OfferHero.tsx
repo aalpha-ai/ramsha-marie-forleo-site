@@ -5,8 +5,6 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { TextBlock } from "./TextBlock";
-import { CTAButton } from "./CTAButton";
 import PrimaryButton from "@/components/common/PrimaryButton";
 
 export const OfferHero: React.FC = () => {

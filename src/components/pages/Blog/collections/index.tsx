@@ -4,6 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { CollectionCard } from "./CollectionCard";
 import { CollectionCardProps } from "./types";
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 const allCards: CollectionCardProps[] = [
   {
@@ -74,13 +75,7 @@ export const Collections: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="flex justify-center"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-[#C27C6F] text-white font-bold px-8 py-3 rounded-full hover:bg-[#b16a5d] transition-colors"
-          >
-            Explore All
-          </motion.button>
+          <PrimaryButton text="Explore All" bgColor="bg-[#C27C6F]" />
         </motion.div>
       </div>
     </section>

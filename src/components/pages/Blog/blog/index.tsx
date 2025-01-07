@@ -5,6 +5,7 @@ import { useScroll, motion, useTransform, cubicBezier, useInView } from "framer-
 import { ArticleCard } from "./ArticleCard";
 import { TopPickItem } from "./TopPickItem";
 import { recentArticles } from "./data";
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 const topPicks = [
   {
@@ -130,13 +131,7 @@ export const BlogLayout: React.FC = () => {
             transition={{ delay: 0.8, duration: 0.5 }}
             className="flex justify-center mt-12 mb-20"
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-[#C27C6F] text-white font-bold py-3 px-12 rounded-full hover:bg-[#b16a5d] transition-colors"
-            >
-              Explore More Wisdom
-            </motion.button>
+            <PrimaryButton text="Explore More Wisdom" bgColor="bg-[#C27C6F]" />
           </motion.div>
         </motion.div>
 

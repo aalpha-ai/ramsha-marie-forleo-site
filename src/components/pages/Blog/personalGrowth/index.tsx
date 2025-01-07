@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 export const PersonalGrowthArticle: React.FC = () => {
   return (
@@ -81,36 +82,9 @@ export const PersonalGrowthArticle: React.FC = () => {
               <span className="text-xs tracking-widest uppercase">Healing</span>
             </motion.div>
           </motion.div>
-          
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ 
-              delay: 0.6, 
-              duration: 0.5,
-              type: "spring",
-              stiffness: 500
-            }}
-            className="bg-[#E7D7D7] text-black font-bold py-3 px-12 rounded-full w-fit hover:bg-[#d8c3c3] transition-colors relative overflow-hidden group"
-          >
-            <motion.span 
-              className="relative z-10"
-              whileHover={{ scale: 1.05 }}
-            >
-              Begin Your Journey
-            </motion.span>
-            <motion.div 
-              className="absolute inset-0 bg-[#d8c3c3] opacity-0 group-hover:opacity-100 transition-opacity"
-              initial={false}
-              whileHover={{ 
-                scale: 1.5,
-                opacity: 1
-              }}
-              transition={{ duration: 0.3 }}
-            />
-          </motion.button>
+          <PrimaryButton text="Begin Your Journey" className="
+            transition-all duration-300 ease-in-out hover:brightness-110 bg-[#E7D7D7]
+            text-black font-bold py-3 px-12 rounded-md max-w-md" />
         </div>
 
         {/* Right Image */}
