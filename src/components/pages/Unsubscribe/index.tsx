@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Mail, Home } from 'lucide-react';
-import Link from 'next/link';
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 export default function UnsubscribeContent() {
   return (
@@ -56,24 +56,7 @@ export default function UnsubscribeContent() {
           </motion.div>
 
           {/* Return Home Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-          >
-            <Link href="/">
-              <motion.button
-                className="group flex items-center gap-3 bg-ramsha-tertiary text-white px-8 py-4 rounded-full"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Home className="w-5 h-5" />
-                <span className="font-subheader tracking-wider">
-                  Return to Homepage
-                </span>
-              </motion.button>
-            </Link>
-          </motion.div>
+          <PrimaryButton text="Return to Homepage" icon={Home} href="/" />
         </div>
       </section>
     </section>
