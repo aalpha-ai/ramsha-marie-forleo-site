@@ -22,7 +22,7 @@ const montserratBold = Montserrat({
 });
 
 const caslon = localFont({
-  src: "../fonts/Caslon/Caslon540LTStd-Roman.woff",
+  src: "../fonts/Caslon/Caslon540LTStd-Roman.woff2",
   variable: "--font-caslon",
   display: 'swap',
   preload: true,

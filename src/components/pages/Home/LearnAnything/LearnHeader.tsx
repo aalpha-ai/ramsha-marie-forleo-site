@@ -39,11 +39,11 @@ export const LearnHeader: React.FC = () => {
     >
       <motion.h1 
         variants={itemVariants}
-        className="text-xl lg:text-[32px] font-header tracking-wider md:leading-[24px] lg:leading-[48.6px] text-neutral-800 max-md:px-5 mx-auto"
+        className="text-2xl lg:text-4xl font-header tracking-tight md:leading-[24px] lg:leading-[48.6px] text-neutral-800 max-md:px-5 mx-auto"
       >
         <motion.span 
           variants={itemVariants}
-          className="text-neutral-800"
+          className="text-neutral-800 font-[700]"
         >
           Learn How to Get Your Prayers Answered{" "}
         </motion.span>
@@ -61,7 +61,7 @@ export const LearnHeader: React.FC = () => {
             variants={itemVariants}
             className="text-black leading-[24px] lg:leading-[48.6px] block"
           >
-            Listen to this FREE hypnosis from Ramsha and learn the
+            Listen to this FREE training from Ramsha and learn the
           </motion.span>
           <motion.span 
             variants={itemVariants}

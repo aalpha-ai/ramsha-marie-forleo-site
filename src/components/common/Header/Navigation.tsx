@@ -23,7 +23,7 @@ export const navItems: NavItem[] = [
 
 const Navigation: React.FC<NavigationProps> = ({ isMobile }) => {
   return (
-    <nav className={`lg:text-[14px] xl:text-[16px] ${isMobile ? 'flex flex-col w-full' : 'flex items-center justify-between w-full max-w-[600px]'}`}>
+    <nav className={`font-[700] text-lg xl:text-xl ${isMobile ? 'flex flex-col w-full' : 'flex items-center justify-between w-full max-w-[600px]'}`}>
       {navItems.map((item, index) => (
         <NavigationItem key={index} {...item} />
       ))}

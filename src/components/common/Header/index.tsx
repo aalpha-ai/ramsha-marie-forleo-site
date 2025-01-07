@@ -32,7 +32,7 @@ const Header: React.FC = () => {
   }, [pathname]);
 
   return (
-    <header className="font-subheader bg-ramsha-primary sticky top-0 z-50 flex flex-col border-b border-zinc-400 w-full max-lg:py-5">
+    <header className="font-header bg-ramsha-primary sticky top-0 z-50 flex flex-col border-b border-zinc-400 w-full max-lg:py-5">
       <div className="grid grid-cols-12 items-center px-7 w-full max-md:px-5 max-md:max-w-full">
         <Link href="/" className="col-span-3">
           <motion.h1 
