@@ -143,7 +143,7 @@ const RichReceiver = () => {
                       href="https://buy.stripe.com/7sIg1O0Ti5qz34scPn"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-8 py-4 text-lg font-subheader text-white bg-ramsha-tertiary rounded-full transition-all duration-300 hover:shadow-xl"
+                      className="inline-flex items-center px-8 py-4 text-lg font-subheader text-white bg-ramsha-tertiary rounded-md transition-all duration-300 hover:shadow-xl"
                     >
                       <Flame className="w-12 h-12 md:w-6 md:h-6 mr-2" />
                       Claim Rich Receiver Training

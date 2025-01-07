@@ -169,7 +169,7 @@ const CorporateBooking = () => {
             href="https://forms.gle/KV7NUaHJiVbQ3Js67"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 text-lg font-subheader text-white bg-ramsha-tertiary to-blue-500 rounded-full hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+            className="inline-flex items-center px-8 py-4 text-lg font-subheader text-white bg-ramsha-tertiary to-blue-500 rounded-md hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
             variants={buttonVariants}
             initial="hidden"
             whileInView="visible"

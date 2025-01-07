@@ -73,36 +73,15 @@ const HeroContent: React.FC = () => {
           we take over the world.
         </motion.p>
 
-        <motion.div
-          initial={{ 
-            opacity: 0,
-            y: 20,
-            scale: 0.9
-          }}
-          whileInView={{ 
-            opacity: 1,
-            y: 0,
-            scale: 1
-          }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{
-            duration: 0.5,
-            delay: 0.4,
-            ease: "easeOut"
-          }}
-          viewport={{ once: true }}
-        >
-          <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-base font-subheader tracking-wide leading-6 text-center text-white capitalize bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-3xl lg:w-[300px] max-md:px-5 transition-all duration-300">
-            <a
-              href="/awakened-feminine"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Tell Me More
-            </a>
-          </Button>
-        </motion.div>
+        <Button className="overflow-hidden pt-2.5 pb-3 mt-6 max-w-full text-lg font-subheader tracking-wider leading-6 text-center text-white capitalize bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-md lg:w-[300px] max-md:px-5 transition-all duration-300">
+          <a
+            href="/awakened-feminine"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tell Me More
+          </a>
+        </Button>
       </div>
     </div>
   );

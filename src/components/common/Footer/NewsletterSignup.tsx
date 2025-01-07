@@ -130,7 +130,7 @@ const NewsletterSignup: React.FC = () => {
           type="submit"
           disabled={isSubmitting}
           className="font-subheader px-32 py-4 bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 
-                   rounded-[60px] tracking-[2px] max-md:px-5 disabled:opacity-50"
+                   rounded-md tracking-wider max-md:px-5 disabled:opacity-50"
         >
           {isSubmitting ? 'SENDING...' : 'BISMILLAH'}
         </button>
