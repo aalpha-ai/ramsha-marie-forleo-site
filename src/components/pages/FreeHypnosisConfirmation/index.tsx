@@ -4,6 +4,7 @@ import BottomBar from "@/components/common/BottomBar";
 import { motion } from "framer-motion";
 import { Sparkles, Home, Stars } from 'lucide-react';
 import Link from 'next/link';
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 export default function Component() {
   return (
@@ -126,46 +127,7 @@ export default function Component() {
           <Success />
         </div>
 
-        {/* Animated Home Button */}
-        <motion.div
-          className="mt-12 mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <Link href="/">
-            <motion.button
-              className="group relative flex items-center gap-3 bg-ramsha-tertiary text-white px-8 py-4 rounded-full overflow-hidden"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {/* Sparkle effects */}
-              {/* <motion.div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100"
-                initial={{ scale: 0 }}
-                whileHover={{ scale: 1.5 }}
-                transition={{ duration: 0.6 }}
-              >
-                <Sparkles className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 opacity-50" />
-              </motion.div> */}
-
-              {/* Button content */}
-              <Home className="w-5 h-5" />
-              <span className="font-subheader tracking-wider">
-                Continue Your Journey
-              </span>
-
-              {/* Hover gradient */}
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-ramsha-tertiary via-purple-600 to-ramsha-tertiary"
-                initial={{ x: '-100%' }}
-                whileHover={{ x: '100%' }}
-                transition={{ duration: 1, repeat: Infinity }}
-                style={{ mixBlendMode: 'overlay' }}
-              />
-            </motion.button>
-          </Link>
-        </motion.div>
+        <PrimaryButton text="Continue Your Journey" icon={Home} href="/" />
       </section>
       <motion.div
           initial={{ opacity: 0, y: 20 }}
