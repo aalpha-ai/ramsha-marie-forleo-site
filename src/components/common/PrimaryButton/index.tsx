@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import React from "react";
+import Button from "./Button";
 
 const PrimaryButton: React.FC<{
   text: string;
@@ -7,20 +9,26 @@ const PrimaryButton: React.FC<{
   isSubmittingMessage?: string;
   isSubmitting?: boolean;
   className?: string;
-}> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor = 'bg-ramsha-tertiary', className }) => {
+}> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor, className }) => {
   return (
-    <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full max-w-2xl mx-auto">
-      <button
-        type="submit"
-        disabled={disabled}
-        className={className ? `${className}` : `font-subheader px-32 py-4
-      rounded-md tracking-wider max-md:px-5 disabled:opacity-50
-      transition-all duration-300 ease-in-out
-      hover:brightness-110 ${bgColor}`}
-  >
-      {isSubmitting && isSubmittingMessage && isSubmittingMessage.length > 0 ? isSubmittingMessage : text}
-    </button>
-  </div>
-)};
+    <motion.div
+      className="group relative overflow-hidden"
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+    >
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
+        initial={{ x: '-100%' }}
+        animate={isSubmitting ? { x: '100%' } : {}}
+        transition={{ 
+          duration: 1,
+          repeat: isSubmitting ? Infinity : 0,
+          ease: "linear"
+        }}
+      />
+      <Button text={text} isSubmitting={isSubmitting} isSubmittingMessage={isSubmittingMessage} bgColor={bgColor} disabled={disabled} className={className}/>
+    </motion.div>
+  )
+};
 
 export default PrimaryButton;

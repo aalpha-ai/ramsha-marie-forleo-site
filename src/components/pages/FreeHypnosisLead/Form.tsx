@@ -8,6 +8,7 @@ import React, { useState, FormEvent } from "react";
 import { useRouter } from 'next/navigation';
 import { ChevronsRight, AlertCircle, XCircle, ArrowDown, Sparkles, Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 const Form: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -156,82 +157,7 @@ const Form: React.FC = () => {
           className="rounded-lg flex overflow-hidden justify-center items-start px-5 pt-3.5 pb-4 bg-white outline-none max-md:max-w-full"
         />
       </div>
-      <div className="font-subheader flex flex-col pt-1.5 mt-1.5 w-full text-center text-white max-md:max-w-full">
-        <motion.button
-          type="submit"
-          disabled={isSubmitting}
-          className="group relative flex items-center justify-center gap-3 px-8 py-6 md:py-4 bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 rounded-full w-full md:w-auto mx-auto transition-all duration-300 ease-out overflow-hidden"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          {/* Background gradient */}
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-            initial={{ x: '-100%' }}
-            animate={isSubmitting ? { x: '100%' } : {}}
-            transition={{ 
-              duration: 1,
-              repeat: isSubmitting ? Infinity : 0,
-              ease: "linear"
-            }}
-          />
-
-          {/* Button content */}
-          <div className="flex items-center justify-center gap-3 relative">
-            {isSubmitting ? (
-              <>
-                {/* <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                >
-                  <Sparkles className="w-6 h-6 md:w-5 md:h-5" />
-                </motion.div> */}
-                <span className="text-[20px] md:text-[18px] font-bold tracking-wider">
-                  Creating Magic...
-                </span>
-              </>
-            ) : (
-              <>
-                <span className="text-[20px] md:text-[18px] font-bold tracking-wider relative">
-                  GET MY FREE DOWNLOAD
-                </span>
-              </>
-            )}
-          </div>
-
-          {/* Mobile-optimized hover particles */}
-          <motion.div 
-            className="absolute top-0 left-0 w-full h-full pointer-events-none"
-            initial={false}
-            animate={isSubmitting ? { opacity: 1 } : { opacity: 0 }}
-          >
-            {[...Array(3)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-1.5 h-1.5 md:w-1 md:h-1 bg-white rounded-full"
-                initial={{ 
-                  x: '50%',
-                  y: '50%',
-                  scale: 0,
-                  opacity: 0.8
-                }}
-                animate={{ 
-                  x: ['50%', `${50 + (i - 1) * 30}%`],
-                  y: ['50%', '0%'],
-                  scale: [0, 1.5],
-                  opacity: [0.8, 0]
-                }}
-                transition={{ 
-                  duration: 0.8,
-                  repeat: Infinity,
-                  delay: i * 0.2,
-                  ease: "easeOut"
-                }}
-              />
-            ))}
-          </motion.div>
-        </motion.button>
-      </div>
+      <PrimaryButton text="Get My Free Download" isSubmitting={isSubmitting} isSubmittingMessage="Creating Magic..."/>
       <div className="flex justify-center pt-1.5 w-full text-xs tracking-normal leading-5 text-left max-md:max-w-full">
         <div className="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px] max-md:max-w-full">
           <div className="flex flex-col px-3 py-1 w-full max-md:max-w-full">
