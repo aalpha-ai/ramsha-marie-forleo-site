@@ -5,9 +5,9 @@ import React, { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertCircle, ArrowDown } from 'lucide-react';
 import FormInput from "./Form/FormInput";
-import SubmitButton from "./Form/SubmitButton";
 import FormDisclaimer from "./Form/FormDisclaimer";
 import SuccessMessage from './Form/SuccessMessage';
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 const SubscriptionForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -90,7 +90,9 @@ const SubscriptionForm: React.FC = () => {
           required
         />
       </div>
-      <SubmitButton text="GET INSTANT ACCESS" isSubmitting={isSubmitting} />
+      <div className="whitespace-nowrap">
+        <PrimaryButton text="GET INSTANT ACCESS" isSubmitting={isSubmitting} isSubmittingMessage="Creating Magic..."/>
+      </div>
       <FormDisclaimer />
     </form>
   );
