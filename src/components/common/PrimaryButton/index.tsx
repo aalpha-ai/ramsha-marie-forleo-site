@@ -7,7 +7,7 @@ const PrimaryButton: React.FC<{
   isSubmitting?: boolean;
 }> = ({ text, disabled, isSubmittingMessage, isSubmitting }) => {
   return (
-    <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full max-w-2xl">
+    <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full max-w-2xl mx-auto">
       <button
         type="submit"
         disabled={disabled}

@@ -7,6 +7,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { TextBlock } from "./TextBlock";
 import { CTAButton } from "./CTAButton";
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 export const OfferHero: React.FC = () => {
   return (
@@ -85,17 +86,14 @@ export const OfferHero: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
           viewport={{ once: true }}
-          className="max-w-[388px] mx-auto mb-8"
+          className="mx-auto mb-8"
         >
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.2 }}
           >
-            <CTAButton 
-              text="GET ON THE VIP WAITLIST NOW" 
-              className="w-full bg-ramsha-tertiary hover:bg-tertiary-accent/90 text-white rounded-full px-8 py-4 font-subheader tracking-wider uppercase transition-all duration-300" 
-            />
+            <PrimaryButton text="GET ON THE VIP WAITLIST NOW" />
           </motion.div>
         </motion.div>
 

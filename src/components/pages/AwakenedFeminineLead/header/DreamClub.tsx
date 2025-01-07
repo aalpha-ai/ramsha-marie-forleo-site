@@ -3,8 +3,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { TextBlock } from "./TextBlock";
-import { Button } from "./Button";
 import Link from 'next/link';
+import PrimaryButton from "@/components/common/PrimaryButton";
 
 export const DreamClub: React.FC = () => {
   return (
@@ -88,7 +88,7 @@ export const DreamClub: React.FC = () => {
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.9 }}
           viewport={{ once: true }}
-          className="max-w-[388px] mx-auto mb-8"
+          className="mb-8"
         >
           <Link href="/">
             <motion.div
@@ -96,10 +96,7 @@ export const DreamClub: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
             >
-              <Button 
-                text="GET ON THE VIP WAITLIST NOW" 
-                className="font-subheader w-full bg-ramsha-tertiary hover:bg-ramsha-tertiary/90 text-white rounded-full px-8 py-4 tracking-wider transition-colors duration-300" 
-              />
+              <PrimaryButton text="GET ON THE VIP WAITLIST NOW" />
             </motion.div>
           </Link>
         </motion.div>
