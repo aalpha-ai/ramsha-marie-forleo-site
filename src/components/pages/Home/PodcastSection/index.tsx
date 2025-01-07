@@ -14,6 +14,7 @@ const PodcastSection: React.FC = () => {
             When you embody your feminine energy,<br/>
             you will receive gifts from Allah like a Queen of Paradise.
           </span>
+          <br/>
           <span>
             Get instant access to my best-selling meditation that will relax<br/>
             your body into a deep, loving state of surrender - so you can<br/>

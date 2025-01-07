@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Briefcase, ArrowRight, Award, Globe } from 'lucide-react';
+import { Calendar, Briefcase, ArrowRight, Award, Globe, Power } from 'lucide-react';
 import PrimaryButton from '@/components/common/PrimaryButton';
 const CorporateBooking = () => {
   const backgroundVariants = {
@@ -89,7 +89,7 @@ const CorporateBooking = () => {
               }}
               viewport={{ once: true }}
             >
-              Transform
+              Elevate
             </motion.span>{" "}
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -100,7 +100,7 @@ const CorporateBooking = () => {
               }}
               viewport={{ once: true }}
             >
-              Your Corporate
+              Your Company's
             </motion.span>{" "}
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ const CorporateBooking = () => {
               }}
               viewport={{ once: true }}
             >
-              Events
+              Vibe
             </motion.span>
           </motion.h2>
           
@@ -139,12 +139,12 @@ const CorporateBooking = () => {
             },
             {
               icon: <Globe className="w-12 h-12 text-ramsha-tertiary mb-4" />,
-              title: "Global Perspective",
-              description: "International business insights adapted for your market context"
+              title: "Feminine Leadership",
+              description: "Empower your team with feminine energy and leadership"
             },
             {
               icon: <Award className="w-12 h-12 text-ramsha-tertiary mb-4" />,
-              title: "Proven Track Record",
+              title: "Seminars",
               description: "Trusted by leading organizations worldwide"
             }
           ].map((card, index) => (

@@ -81,7 +81,7 @@ const RichReceiver = () => {
                   },
                   {
                     Icon: Rocket,
-                    title: "Rapid Transformation",
+                    title: "Rapid Meditation",
                     description: "Bypass decades of growth in your marriage, business, and life with our proven method."
                   }
                 ].map((item, index) => (
@@ -118,19 +118,9 @@ const RichReceiver = () => {
                     viewport={{ once: true }}
                     className="text-2xl font-header mb-4 font-bold"
                   >
-                    Begin Your Divine Journey
+                    Begin Your Divine Journey for $44
                   </motion.h3>
                   
-                  <motion.p 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 1 }}
-                    viewport={{ once: true }}
-                    className="text-lg mb-6"
-                  >
-                    Access the micro-training now for just $44 and discover the method that's transforming lives worldwide.
-                  </motion.p>
-
                   <PrimaryButton icon={Flame} afterIcon={ArrowRight} href="https://buy.stripe.com/7sIg1O0Ti5qz34scPn" text="Claim Rich Receiver Training" />
                 </div>
               </div>
