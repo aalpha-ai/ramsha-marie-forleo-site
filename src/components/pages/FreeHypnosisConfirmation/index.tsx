@@ -79,7 +79,7 @@ export default function Component() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              transform your life through hypnosis.
+              transform your life through training.
             </motion.span>
           </motion.h1>
 

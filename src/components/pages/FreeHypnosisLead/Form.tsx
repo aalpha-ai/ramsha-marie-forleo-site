@@ -51,7 +51,7 @@ const Form: React.FC = () => {
       console.log('Subscription error:', error);
     } finally {
       setFormData({ firstName: '', lastName: '', email: '' });
-      router.push('/free-hypnosis-confirmation');
+      router.push('/free-training-confirmation');
       setIsSubmitting(false);
     }
   };

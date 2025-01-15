@@ -66,7 +66,7 @@ const Header: React.FC = () => {
         </motion.div>
 
         <div className="flex justify-end items-center max-lg:hidden col-span-2">
-          <SecondaryButton href="/free-hypnosis-lead" text="Free Training" />
+          <SecondaryButton href="/free-training-lead" text="Free Training" />
         </div>
 
         <motion.div 
@@ -110,7 +110,7 @@ const Header: React.FC = () => {
                       →
                     </motion.span>
                   </div>
-                  <SecondaryButton href="/free-hypnosis-lead" text="Free Training" />
+                  <SecondaryButton href="/free-training-lead" text="Free Training" />
                 </motion.div>
 
                 <motion.div 
