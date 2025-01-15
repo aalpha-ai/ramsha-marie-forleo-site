@@ -5,7 +5,7 @@ import React from "react";
 
 const Details: React.FC = () => {
   return (
-    <div className="max-w-[1200px] mx-auto px-6 py-12 bg-ramsha-accent">
+    <div className="max-w-[1200px] mx-auto px-6 py-12">
       <h1 className="text-[72px] font-header mb-6">Terms of Use</h1>
       
       <div className="space-y-8 text-lg">

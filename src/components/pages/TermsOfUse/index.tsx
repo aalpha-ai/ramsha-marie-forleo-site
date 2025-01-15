@@ -5,7 +5,7 @@ import Details from "./Details";
 
 export default function Component() {
   return (
-    <div className="bg-ramsha-accent">
+    <div className="bg-ramsha-accent text-white">
       <Header />
       <Details />
       <Footer />

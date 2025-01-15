@@ -43,7 +43,7 @@ export const LearnHeader: React.FC = () => {
       >
         <motion.span 
           variants={itemVariants}
-          className="font-[700]"
+          className="font-[400]"
         >
           Learn How to Get Your Prayers Answered{" "}
         </motion.span>
