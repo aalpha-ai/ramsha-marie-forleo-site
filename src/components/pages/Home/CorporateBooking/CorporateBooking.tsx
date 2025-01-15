@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Briefcase, ArrowRight, Award, Globe, Power } from 'lucide-react';
 import PrimaryButton from '@/components/common/PrimaryButton';
+
 const CorporateBooking = () => {
   const backgroundVariants = {
     hidden: { opacity: 0 },

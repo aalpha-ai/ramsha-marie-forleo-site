@@ -62,8 +62,8 @@ const SuccessMessage = () => {
         </p>
         <p>
           If you believe there's a problem, write{' '}
-          <a href="mailto:info@glowingfemme.com" className="text-[#C68B5F] hover:underline">
-            info@glowingfemme.com
+          <a href="mailto:teamgf@glowingfemme.com" className="text-[#C68B5F] hover:underline">
+            teamgf@glowingfemme.com
           </a>
           {' '}and we'll take care of you as quickly as possible.
         </p>

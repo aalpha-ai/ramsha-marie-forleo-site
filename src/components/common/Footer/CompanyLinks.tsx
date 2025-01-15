@@ -12,7 +12,7 @@ interface LinkItem {
 const companyLinks: LinkItem[] = [
   { text: "About", href: "/about" },
   { text: "Work With Me", href: "/" },
-  { text: "Podcast", href: "/" },
+  { text: "Podcast", href: "https://feeds.transistor.fm/the-let-go-let-god-movement-u3bf26ed98e652efe" },
   { text: "Free Training", href: "/free-hypnosis-lead" },
 ];
 

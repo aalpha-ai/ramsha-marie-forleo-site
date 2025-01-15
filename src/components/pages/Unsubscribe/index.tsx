@@ -47,10 +47,10 @@ export default function UnsubscribeContent() {
             <p className="text-gray-600 text-sm">
               If you have any questions or concerns, please contact us at{' '}
               <a 
-                href="mailto:info@glowingfemme.com"
+                href="mailto:teamgf@glowingfemme.com"
                 className="text-ramsha-tertiary hover:underline"
               >
-                info@glowingfemme.com
+                teamgf@glowingfemme.com
               </a>
             </p>
           </motion.div>

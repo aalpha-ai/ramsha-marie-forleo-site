@@ -68,7 +68,7 @@ export const LearnHeader: React.FC = () => {
 
       <motion.div
         variants={itemVariants}
-        className="w-full"
+        className="w-full text-white"
       >
         <SubscriptionForm />
       </motion.div>

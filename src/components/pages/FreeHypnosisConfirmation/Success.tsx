@@ -172,12 +172,12 @@ const Success: React.FC = () => {
             >
               Can't find your welcome email? We're here to help if you have a problem – just write{' '}
               <motion.a 
-                href="mailto:info@glowingfemme.com"
+                href="mailto:teamgf@glowingfemme.com"
                 className="text-ramsha-tertiary hover:underline"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                info@glowingfemme.com
+                teamgf@glowingfemme.com
               </motion.a>
               {' '}and we'll take care of you right away.
             </motion.p>

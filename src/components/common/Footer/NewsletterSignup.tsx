@@ -130,7 +130,7 @@ const NewsletterSignup: React.FC = () => {
         <PrimaryButton text="Sign Up for the Sacred Waitlist" disabled={isSubmitting} isSubmittingMessage="SENDING..." isSubmitting={isSubmitting} />
 
         {/* Disclaimer */}
-        <p className="text-xs leading-5 max-w-[385px] text-white">
+        <p className="text-xs leading-5 max-w-[385px]">
           By entering your email, you'll agree to join Glowing Femme
           for FREE access to exclusive insights and offers delivered with love to your inbox.
           (Unsub anytime in a click.) You also agree to our{" "}

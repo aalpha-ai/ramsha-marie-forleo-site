@@ -28,7 +28,7 @@ export const navItems = [
   },
   {
     label: "Podcast",
-    href: "/",
+    href: "https://feeds.transistor.fm/the-let-go-let-god-movement-u3bf26ed98e652efe",
   },
   {
     label: "About",
@@ -49,8 +49,8 @@ const Navigation: React.FC<NavigationProps> = ({ isMobile }) => {
     }`}>
       {navItems.map((section, idx) => (
         section.items ? <DropdownMenu key={idx}>
-          <DropdownMenuTrigger className="p-3 rounded-md hover:bg-ramsha-tertiary outline-none flex items-center gap-1 text-white transition-colors">
-            <span className="tracking-wider uppercase font-bold text-sm lg:text-base">
+          <DropdownMenuTrigger className="rounded-md hover:bg-ramsha-tertiary outline-none flex items-center gap-1 text-white transition-colors">
+            <span className="p-2 tracking-wider uppercase font-bold text-sm lg:text-base">
               {section.label}
             </span>
             {/* <ChevronDown className="h-4 w-4" /> */}
