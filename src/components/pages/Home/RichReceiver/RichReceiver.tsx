@@ -118,10 +118,10 @@ const RichReceiver = () => {
                     viewport={{ once: true }}
                     className="text-2xl font-header mb-4 font-bold"
                   >
-                    Begin Your Divine Journey for $44
+                    Rich Receiver Meditation is now $111
                   </motion.h3>
                   
-                  <PrimaryButton icon={Flame} afterIcon={ArrowRight} href="https://buy.stripe.com/7sIg1O0Ti5qz34scPn" text="Claim Rich Receiver Training" />
+                  <PrimaryButton icon={Flame} afterIcon={ArrowRight} href="https://buy.stripe.com/8wMeXK6dC06f34seXJ" text="Claim Rich Receiver Meditation" />
                 </div>
               </div>
             </motion.div>
