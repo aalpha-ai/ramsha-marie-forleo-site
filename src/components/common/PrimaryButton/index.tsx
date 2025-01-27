@@ -16,7 +16,9 @@ const PrimaryButton: React.FC<{
   icon?: LucideIcon;
   afterIcon?: LucideIcon;
   href?: string;
-}> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor, className, icon, afterIcon, href }) => {
+  onClick?: () => void;
+}> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor, className, icon, afterIcon, href, onClick }) => {
+
   return (
     href ? 
       <Link href={href}>
@@ -29,17 +31,7 @@ const PrimaryButton: React.FC<{
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.2 }}
         >
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-            initial={{ x: '-100%' }}
-            animate={isSubmitting ? { x: '100%' } : {}}
-            transition={{ 
-              duration: 1,
-              repeat: isSubmitting ? Infinity : 0,
-              ease: "linear"
-            }}
-          />
-          <Button icon={icon} afterIcon={afterIcon} text={text} isSubmitting={isSubmitting} isSubmittingMessage={isSubmittingMessage} bgColor={bgColor} disabled={disabled} className={className}/>
+          <Button icon={icon} afterIcon={afterIcon} text={text} isSubmitting={isSubmitting} isSubmittingMessage={isSubmittingMessage} bgColor={bgColor} disabled={disabled} className={className} onClick={onClick}/>
         </motion.div>
       </Link>
     : 
@@ -52,27 +44,9 @@ const PrimaryButton: React.FC<{
         whileTap={{ scale: 0.95 }}
         transition={{ duration: 0.2 }}
       >
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-          initial={{ x: '-100%' }}
-          animate={isSubmitting ? { x: '100%' } : {}}
-          transition={{ 
-            duration: 1,
-            repeat: isSubmitting ? Infinity : 0,
-            ease: "linear"
-          }}
-        />
-        <Button icon={icon} afterIcon={afterIcon} text={text} isSubmitting={isSubmitting} isSubmittingMessage={isSubmittingMessage} bgColor={bgColor} disabled={disabled} className={className}/>
+        <Button icon={icon} afterIcon={afterIcon} text={text} isSubmitting={isSubmitting} isSubmittingMessage={isSubmittingMessage} bgColor={bgColor} disabled={disabled} className={className} onClick={onClick}/>
       </motion.div>
   )
 };
 
 export default PrimaryButton;
-
-<motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-          >
-            <PrimaryButton text="GET ON THE VIP WAITLIST NOW" />
-          </motion.div>

@@ -10,13 +10,15 @@ const Button: React.FC<{
   className?: string;
   icon?: LucideIcon;
   afterIcon?: LucideIcon;
-}> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor = 'bg-ramsha-tertiary', className, icon: Icon, afterIcon: AfterIcon }) => {
+  onClick?: () => void;
+}> = ({ text, disabled, isSubmittingMessage, isSubmitting, bgColor = 'bg-ramsha-tertiary', className, icon: Icon, afterIcon: AfterIcon, onClick }) => {
   return (
     <div className="flex flex-col my-4 w-full text-center text-white max-md:max-w-full max-w-2xl mx-auto text-sm lg:text-base">
       <button
         type="submit"
         disabled={disabled}
-        className={className ? `${className}` : `font-subheader px-32 py-4
+        onClick={onClick}
+        className={className ? `${className}` : `px-10 font-subheader py-4
       rounded-md tracking-wider max-md:px-5 disabled:opacity-50
       transition-all duration-300 ease-in-out
       hover:brightness-110 flex flex-row items-center justify-center gap-2 whitespace-nowrap ${bgColor}`}
