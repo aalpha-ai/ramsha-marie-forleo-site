@@ -33,6 +33,16 @@ export const navItems = [
   {
     label: "About",
     href: "/about",
+  },
+  {
+    label: "Contact Us",
+    href: "/contact-us",
+    mobile: true,
+  },
+  {
+    label: "Need Help?",
+    href: "mailto:teamgf@glowingfemmme.com",
+    mobile: true,
   }
 ];
 
@@ -47,7 +57,7 @@ const Navigation: React.FC<NavigationProps> = ({ isMobile }) => {
         ? 'flex flex-col w-full gap-6' 
         : 'flex items-center justify-between w-full max-w-[600px] gap-12'
     }`}>
-      {navItems.map((section, idx) => (
+      {navItems.filter(item => !item.mobile).map((section, idx) => (
         section.items ? <DropdownMenu key={idx}>
           <DropdownMenuTrigger className="rounded-md hover:bg-ramsha-tertiary outline-none flex items-center gap-1 text-white transition-colors">
             <span className="p-2 tracking-wider uppercase font-bold text-sm lg:text-base">
