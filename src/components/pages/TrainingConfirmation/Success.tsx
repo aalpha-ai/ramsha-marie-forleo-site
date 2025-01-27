@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSection from "../FreeHypnosisLead/ImageSection";
+import ImageSection from "../TrainingLead/ImageSection";
 import { motion } from "framer-motion";
 import { Sparkles, Mail, Gift } from 'lucide-react';
 
