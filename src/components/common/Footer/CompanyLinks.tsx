@@ -14,6 +14,14 @@ const companyLinks: LinkItem[] = [
   { text: "Work With Me", href: "/" },
   { text: "Podcast", href: "https://feeds.transistor.fm/the-let-go-let-god-movement-u3bf26ed98e652efe" },
   { text: "Training", href: "https://buy.stripe.com/eVa9DqcC04mv7kI9Do" },
+  {
+    text: "Contact Us",
+    href: "/contact-us",
+  },
+  {
+    text: "Need Help?",
+    href: "mailto:teamgf@glowingfemmme.com",
+  }
 ];
 
 const CompanyLinks: React.FC = () => {
